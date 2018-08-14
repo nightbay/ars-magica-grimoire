@@ -172,16 +172,16 @@
                   <fo:table-cell width="4.2em">
                     <fo:block font-size="8pt">
                       <xsl:if test="not(preceding-sibling::*[1]/level = level)">
-                        <xsl:if test="level != 'General'">Level </xsl:if><xsl:value-of select="level"/>
+                        <xsl:if test="level != 'General'">Livello </xsl:if><xsl:value-of select="level"/>
                       </xsl:if>
                     </fo:block>
                   </fo:table-cell>    
                   <fo:table-cell>
                     <fo:block text-indent="-1em" font-size="8pt">
-                      <xsl:if test="@mystery='true'"><fo:inline font-style="italic">Mystery </fo:inline></xsl:if>
-                      <xsl:if test="@ritual='true'"><fo:inline font-style="italic">Ritual </fo:inline></xsl:if>
-                      <xsl:if test="@faerie='true'"><fo:inline font-style="italic">Faerie </fo:inline></xsl:if>
-                      <xsl:if test="@atlantean='true'"><fo:inline font-style="italic">Atlantean </fo:inline></xsl:if>
+                      <xsl:if test="@mystery='true'"><fo:inline font-style="italic">Misterico </fo:inline></xsl:if>
+                      <xsl:if test="@ritual='true'"><fo:inline font-style="italic">Rituale </fo:inline></xsl:if>
+                      <xsl:if test="@faerie='true'"><fo:inline font-style="italic">Fatato </fo:inline></xsl:if>
+                      <xsl:if test="@atlantean='true'"><fo:inline font-style="italic">Atlantideo </fo:inline></xsl:if>
                       <xsl:apply-templates select="description" mode="guideline-notes"/><xsl:call-template name="source"/>
                     </fo:block>
                   </fo:table-cell>
@@ -218,17 +218,17 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-        <fo:block font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal"><xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Spells</fo:block>
+        <fo:block font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal"><xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Incantesimi</fo:block>
         <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERAL']"/>
         <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERAL']"/>
         <xsl:variable name="levels" select="distinct-values($spells/level)"/>
 
         <xsl:if test="count($generalspells) &gt; 0">
-          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERAL</fo:block>
+          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERALE</fo:block>
           <xsl:call-template name="spells-at-level">
             <xsl:with-param name="form" select="$form"/>
             <xsl:with-param name="technique" select="$technique"/>
-            <xsl:with-param name="level" select="'GENERAL'"/>
+            <xsl:with-param name="level" select="'GENERALE'"/>
           </xsl:call-template>
           <fo:block margin-bottom="4px"> </fo:block>
         </xsl:if>
@@ -275,17 +275,17 @@
     </xsl:for-each>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="smbonuses">
-        Shape &amp; Material Bonuses<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="smbonuses" />
+        Bonus Forma e Materiale<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="smbonuses" />
       </fo:basic-link>
     </fo:block>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="book_index">
-        Spells by Book<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="book_index" />
+        Incantesimi per Libro<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="book_index" />
       </fo:basic-link>
     </fo:block>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="spell_index">
-        Spell Index<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
+        Indice Incantesimi<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
       </fo:basic-link>
     </fo:block>
   </xsl:template>
@@ -316,7 +316,7 @@
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
-          Shape &amp; Material Bonuses
+          Bonus Forma e Materiale
         </fo:block>
         <xsl:apply-templates select="$in/ars_magica/sm_bonuses/sm[@name != '']">
           <xsl:sort select="@name"/> 

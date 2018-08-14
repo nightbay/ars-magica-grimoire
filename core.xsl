@@ -14,11 +14,11 @@
   <xsl:template match="spellcount"><xsl:value-of select="format-number(count(//spell[name != '']), '# ###', 'd')"/></xsl:template>
     
   <xsl:template match="booklist">
-    <fo:inline font-family="Lauren C. Brown" font-size="10pt"> Ars Magica (<xsl:value-of select="count($in/ars_magica/spells/spell[not(@source)])"/> spells),</fo:inline>
+    <fo:inline font-family="Lauren C. Brown" font-size="10pt"> Ars Magica (<xsl:value-of select="count($in/ars_magica/spells/spell[not(@source)])"/> incantesimi),</fo:inline>
     <xsl:for-each select="$in/ars_magica/books/book">
       <xsl:sort select="name"/>
       <xsl:variable name="abbrev" select="abbreviation"/>
-      <xsl:if test="position() = last()"><xsl:text> </xsl:text>and </xsl:if><fo:inline font-family="Lauren C. Brown" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> spells)<xsl:if test="position() &lt; last()">,</xsl:if></fo:inline>
+      <xsl:if test="position() = last()"><xsl:text> </xsl:text>e </xsl:if><fo:inline font-family="Lauren C. Brown" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> incantesimi)<xsl:if test="position() &lt; last()">,</xsl:if></fo:inline>
     </xsl:for-each>
   </xsl:template>
   
@@ -83,8 +83,8 @@
   
   <xsl:template match="reference"><fo:inline font-style="italic"><xsl:value-of select="."/></fo:inline>
     <xsl:choose>
-      <xsl:when test="@page != ''">, page <xsl:value-of select="@page"/></xsl:when>
-      <xsl:when test="@chapter != ''">, chapter <xsl:value-of select="@chapter"/></xsl:when>
+      <xsl:when test="@page != ''">, pagina <xsl:value-of select="@page"/></xsl:when>
+      <xsl:when test="@chapter != ''">, capitolo <xsl:value-of select="@chapter"/></xsl:when>
     </xsl:choose>
   </xsl:template>
 
@@ -94,74 +94,74 @@
       <xsl:when test="guideline/@ward = 'true'"></xsl:when>
       <xsl:otherwise>
         <xsl:choose>
-          <xsl:when test="range = 'Personal'" />
+          <xsl:when test="range = 'Personale'" />
           <xsl:when test="range = 'Adelphixis'" />
-          <xsl:when test="range = 'Touch'">, +1 Touch</xsl:when>
-          <xsl:when test="range = 'Eye'">, +1 Eye</xsl:when>
-          <xsl:when test="range = 'Voice'">, +2 Voice</xsl:when>
-          <xsl:when test="range = 'Road'">, +2 Road</xsl:when>
-          <xsl:when test="range = 'Water-way'">, +3 Water-way</xsl:when>
-          <xsl:when test="range = 'Sight'">, +3 Sight</xsl:when>
-          <xsl:when test="range = 'Veil'">, +3 Veil</xsl:when>
-          <xsl:when test="range = 'Line'">, +3 Line</xsl:when>
-          <xsl:when test="range = 'Arcane Connection'">, +4 Arcane Connection</xsl:when>
-          <xsl:when test="range = 'Symbol'">, +4 Symbol</xsl:when>
-          <xsl:when test="range = 'Lunar'">, +4 Lunar</xsl:when>
-          <xsl:when test="range = 'Ground'">, +4 Ground</xsl:when>
-          <xsl:when test="range = 'Unlimited'">, +4 Unlimited</xsl:when>
+          <xsl:when test="range = 'Tocco'">, +1 Tocco</xsl:when>
+          <xsl:when test="range = 'Occhio'">, +1 Occhio</xsl:when>
+          <xsl:when test="range = 'Voce'">, +2 Voce</xsl:when>
+          <xsl:when test="range = 'Strada'">, +2 Strada</xsl:when>
+          <xsl:when test="range = 'Via Acquatica'">, +3 Via Acquatica</xsl:when>
+          <xsl:when test="range = 'Vista'">, +3 Vista</xsl:when>
+          <xsl:when test="range = 'Velo'">, +3 Velo</xsl:when>
+          <xsl:when test="range = 'Linea'">, +3 Linea</xsl:when>
+          <xsl:when test="range = 'Connessione Arcana'">, +4 Connessione Arcana</xsl:when>
+          <xsl:when test="range = 'Simbolo'">, +4 Simbolo</xsl:when>
+          <xsl:when test="range = 'Lunare'">, +4 Lunar</xsl:when>
+          <xsl:when test="range = 'Terreno'">, +4 Terreno</xsl:when>
+          <xsl:when test="range = 'Illimitato'">, +4 Illimitato</xsl:when>
           <xsl:otherwise>RANGE ERROR</xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
-          <xsl:when test="duration = 'Momentary'" />
-          <xsl:when test="duration = 'Special'" />
-          <xsl:when test="duration = 'Dream'">, +1 Dream</xsl:when>
-          <xsl:when test="duration = 'Concentration'">, +1 Concentration</xsl:when>
-          <xsl:when test="duration = 'Performance'">, +1 Performance</xsl:when>
-          <xsl:when test="duration = 'Diameter'">, +1 Diameter</xsl:when>
-          <xsl:when test="duration = 'While'">, +1 While</xsl:when>
-          <xsl:when test="duration = 'Fire'">, +1 Fire</xsl:when>
-          <xsl:when test="duration = 'Sun'">, +2 Sun</xsl:when>
-          <xsl:when test="duration = 'Hours'">, +2 Hours</xsl:when>
-          <xsl:when test="duration = 'Ring'">, +2 Ring</xsl:when>
-          <xsl:when test="duration = 'Moon'">, +3 Moon</xsl:when>
-          <xsl:when test="duration = 'Month'">, +3 Month</xsl:when>
+          <xsl:when test="duration = 'Istantanea'" />
+          <xsl:when test="duration = 'Speciale'" />
+          <xsl:when test="duration = 'Sogno'">, +1 Sogno</xsl:when>
+          <xsl:when test="duration = 'Concentrazione'">, +1 Concentrazione</xsl:when>
+          <xsl:when test="duration = 'Esibizione'">, +1 Esibizione</xsl:when>
+          <xsl:when test="duration = 'Diametro'">, +1 Diametro</xsl:when>
+          <xsl:when test="duration = 'Fintanto'">, +1 Fintanto</xsl:when>
+          <xsl:when test="duration = 'Fuoco'">, +1 Fuoco</xsl:when>
+          <xsl:when test="duration = 'Sole'">, +2 Sole</xsl:when>
+          <xsl:when test="duration = 'Ore'">, +2 Ore</xsl:when>
+          <xsl:when test="duration = 'Cerchio'">, +2 Cerchio</xsl:when>
+          <xsl:when test="duration = 'Luna'">, +3 Luna</xsl:when>
+          <xsl:when test="duration = 'Mese'">, +3 Mese</xsl:when>
           <xsl:when test="duration = 'Helstar'">, +3 Helstar</xsl:when>
-          <xsl:when test="duration = 'Bargain'">, +3 Bargain</xsl:when>
-          <xsl:when test="duration = 'Event'">, +3 Event</xsl:when>
-          <xsl:when test="duration = 'Until'">, +4 Until</xsl:when>
-          <xsl:when test="duration = 'Year'">, +4 Year</xsl:when>
-          <xsl:when test="duration = 'Year +1'">, +4 Year + 1</xsl:when>
-          <xsl:when test="duration = 'Symbol'">, +4 Symbol</xsl:when>
+          <xsl:when test="duration = 'Contratto'">, +3 Contratto</xsl:when>
+          <xsl:when test="duration = 'Evento'">, +3 Evento</xsl:when>
+          <xsl:when test="duration = 'Finchè'">, +4 Finchè</xsl:when>
+          <xsl:when test="duration = 'Anno'">, +4 Anno</xsl:when>
+          <xsl:when test="duration = 'Anno +1'">, +4 Anno + 1</xsl:when>
+          <xsl:when test="duration = 'Simbolo'">, +4 Simbolo</xsl:when>
           <xsl:otherwise>DURATION ERROR</xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
-          <xsl:when test="target = 'Individual'" />
-          <xsl:when test="target = 'Unborn Child'" />
-          <xsl:when test="target = 'Taste'" />
-          <xsl:when test="target = 'Circle'" />
-          <xsl:when test="target = 'Flavour'" />
-          <xsl:when test="target = 'Dream'" />
-          <xsl:when test="target = 'Arcane Circle'">+1 Arcane Circle</xsl:when>
-          <xsl:when test="target = 'Part'">, +1 Part</xsl:when>
-          <xsl:when test="target = 'Texture'">, +1 Texture</xsl:when>
-          <xsl:when test="target = 'Touch'">, +1 Touch</xsl:when>
-          <xsl:when test="target = 'Group'">, +2 Group</xsl:when>
-          <xsl:when test="target = 'Pair'">, +2 Pair</xsl:when>
-          <xsl:when test="target = 'Smell'">, +2 Smell</xsl:when>
-          <xsl:when test="target = 'Scent'">, +2 Scent</xsl:when>
-          <xsl:when test="target = 'Special'">, +2 Special</xsl:when>
-          <xsl:when test="target = 'Room'">, +2 Room</xsl:when>
-          <xsl:when test="target = 'Sight'">, +3 Sight</xsl:when>
-          <xsl:when test="target = 'Hearing'">, +3 Hearing</xsl:when>
-          <xsl:when test="target = 'Sound'">, +3 Sound</xsl:when>
-          <xsl:when test="target = 'Barrier'">, +3 Barrier</xsl:when>
-          <xsl:when test="target = 'Structure'">, +3 Structure</xsl:when>
-          <xsl:when test="target = 'Bloodline'">, +3 Bloodline</xsl:when>
+          <xsl:when test="target = 'Singolo'" />
+          <xsl:when test="target = 'Figlio non ancora nato'" />
+          <xsl:when test="target = 'Gusto'" />
+          <xsl:when test="target = 'Circolo'" />
+          <xsl:when test="target = 'Gusto'" />
+          <xsl:when test="target = 'Sogno'" />
+          <xsl:when test="target = 'Circolo Arcano'">+1 Circolo Arcano</xsl:when>
+          <xsl:when test="target = 'Parte'">, +1 Parte</xsl:when>
+          <xsl:when test="target = 'Sapore'">, +1 Sapore</xsl:when>
+          <xsl:when test="target = 'Tocco'">, +1 Tocco</xsl:when>
+          <xsl:when test="target = 'Gruppo'">, +2 Gruppo</xsl:when>
+          <xsl:when test="target = 'Paio'">, +2 Paio</xsl:when>
+          <xsl:when test="target = 'Olfatto'">, +2 Olfatto</xsl:when>
+          <xsl:when test="target = 'Profumo'">, +2 Profumo</xsl:when>
+          <xsl:when test="target = 'Speciale'">, +2 Speciale</xsl:when>
+          <xsl:when test="target = 'Stanza'">, +2 Stanza</xsl:when>
+          <xsl:when test="target = 'Vista'">, +3 Vista</xsl:when>
+          <xsl:when test="target = 'Udito'">, +3 Udito</xsl:when>
+          <xsl:when test="target = 'Suono'">, +3 Suono</xsl:when>
+          <xsl:when test="target = 'Barriera'">, +3 Barriera</xsl:when>
+          <xsl:when test="target = 'Struttura'">, +3 Struttura</xsl:when>
+          <xsl:when test="target = 'Discendenza'">, +3 Discendenza</xsl:when>
           <xsl:when test="target = 'Spectacle'">, +4 Spectacle</xsl:when>
-          <xsl:when test="target = 'Boundary'">, +4 Boundary</xsl:when>
-          <xsl:when test="target = 'Community'">, +4 Community</xsl:when>
-          <xsl:when test="target = 'Symbol'">, +4 Symbol</xsl:when>
-          <xsl:when test="target = 'Vision'">, +4 Vision</xsl:when>
+          <xsl:when test="target = 'Confine'">, +4 Confine</xsl:when>
+          <xsl:when test="target = 'Comunità'">, +4 Comunità</xsl:when>
+          <xsl:when test="target = 'Simbolo'">, +4 Simbolo</xsl:when>
+          <xsl:when test="target = 'Visione'">, +4 Visione</xsl:when>
           <xsl:otherwise>TARGET ERROR</xsl:otherwise>
         </xsl:choose>
       </xsl:otherwise>
@@ -171,16 +171,16 @@
 
   <xsl:template match="range">
     <xsl:choose>
-      <xsl:when test=". = 'Personal'">Personal</xsl:when>
-      <xsl:when test=". = 'Touch'">Touch</xsl:when>
-      <xsl:when test=". = 'Voice'">Voice</xsl:when>
+      <xsl:when test=". = 'Personale'">Personale</xsl:when>
+      <xsl:when test=". = 'Tocco'">Tocco</xsl:when>
+      <xsl:when test=". = 'Voce'">b</xsl:when>
       <xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
   <xsl:template match="duration">
     <xsl:choose>
-      <xsl:when test=". = 'Momentary'">Momentary</xsl:when>
+      <xsl:when test=". = 'Istantanea'">Istantanea</xsl:when>
       <xsl:otherwise><xsl:value-of select="." /><xsl:if test="@condition != ''"> (<xsl:value-of select="@condition"/>)</xsl:if></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -218,8 +218,8 @@
 
   <xsl:template match="requisite" mode="guideline">
     , <xsl:choose>
-        <xsl:when test="@free = 'true'"><xsl:value-of select="." /> requisite free</xsl:when>
-        <xsl:otherwise>+1 <xsl:value-of select="." /> requisite<xsl:if test="@note != ''"><xsl:text> </xsl:text><xsl:value-of select="@note" /></xsl:if></xsl:otherwise>
+        <xsl:when test="@free = 'true'"><xsl:value-of select="." /> requisito gratuito</xsl:when>
+        <xsl:otherwise>+1 <xsl:value-of select="." /> requisito<xsl:if test="@note != ''"><xsl:text> </xsl:text><xsl:value-of select="@note" /></xsl:if></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
@@ -249,15 +249,15 @@
           <fo:inline><xsl:value-of select="name" /></fo:inline><xsl:call-template name="source"/>
         </fo:block>
         <fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">
-          R: <xsl:apply-templates select="range" />, D: <xsl:apply-templates select="duration" />, T: <xsl:value-of select="target" />
-          <xsl:if test="@type='mystery'">, Mystery</xsl:if>
-          <xsl:if test="@ritual='true'">, Ritual</xsl:if>
-          <xsl:if test="@faerie='true'">, Faerie</xsl:if>
+          P: <xsl:apply-templates select="range" />, D: <xsl:apply-templates select="duration" />, B: <xsl:value-of select="target" />
+          <xsl:if test="@type='mystery'">, Misterico</xsl:if>
+          <xsl:if test="@ritual='true'">, Rituale</xsl:if>
+          <xsl:if test="@faerie='true'">, Fatato</xsl:if>
           <xsl:if test="@subtype != ''">, <xsl:value-of select="@subtype"/></xsl:if>
-          <xsl:if test="@atlantean='true'">, Atlantean</xsl:if>
+          <xsl:if test="@atlantean='true'">, Atlantideo</xsl:if>
         </fo:block>
         <xsl:if test="count(arts/requisite) &gt; 0">
-          <fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt">Requisite: <xsl:apply-templates select="arts/requisite"><xsl:sort select="."/></xsl:apply-templates></fo:block>
+          <fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt">Requisito: <xsl:apply-templates select="arts/requisite"><xsl:sort select="."/></xsl:apply-templates></fo:block>
         </xsl:if>
         <xsl:apply-templates select="description"/>
         <fo:block margin-bottom="2mm">
@@ -265,18 +265,18 @@
             <xsl:choose>
               <xsl:when test="@type = 'standard' or @type = 'mystery'">
                 <xsl:choose>
-                  <xsl:when test="guideline/@ward = 'true' and guideline/base = ''">(As ward guideline</xsl:when>
+                  <xsl:when test="guideline/@ward = 'true' and guideline/base = ''">(Come per linee guida di Difesa</xsl:when>
                   <xsl:otherwise>
                     (Base <xsl:value-of select="guideline/base" /> 
                   </xsl:otherwise>
                 </xsl:choose>
                 <xsl:call-template name="spell-guidelines" /> <xsl:apply-templates select="arts/requisite" mode="guideline"/>)
               </xsl:when>
-              <xsl:when test="@type = 'non-hermetic'">(Non-Hermetic)</xsl:when>
-              <xsl:when test="@type = 'general'">(Base effect)</xsl:when>
-              <xsl:when test="@type = 'unique'">(Unique spell)</xsl:when>
-              <xsl:when test="@type = 'mercurian'">(Mercurian Ritual)</xsl:when>
-              <xsl:when test="@type = 'special'">(Special spell)</xsl:when>
+              <xsl:when test="@type = 'non-hermetic'">(Non-Ermetico)</xsl:when>
+              <xsl:when test="@type = 'general'">(Effetto base)</xsl:when>
+              <xsl:when test="@type = 'unique'">(Incantesimo unico)</xsl:when>
+              <xsl:when test="@type = 'mercurian'">(Rituale Mercuriale)</xsl:when>
+              <xsl:when test="@type = 'special'">(Incantesimo speciale)</xsl:when>
               <xsl:otherwise>
                 ERROR
               </xsl:otherwise>
@@ -286,7 +286,7 @@
           <fo:block margin-top="0.5mm" font-family="{$urlfont}" font-size="7pt" font-weight="normal">
             <xsl:variable name="title" select="@link_title"/>
             <xsl:variable name="link" select="@link"/>
-            See <fo:inline color="{$urlcolour}" text-decoration="underline"><fo:basic-link external-destination="{$link}"><xsl:value-of select="@link_title"/></fo:basic-link></fo:inline>
+            Vedi <fo:inline color="{$urlcolour}" text-decoration="underline"><fo:basic-link external-destination="{$link}"><xsl:value-of select="@link_title"/></fo:basic-link></fo:inline>
           </fo:block>
           </xsl:if>
 
@@ -302,14 +302,14 @@
     <fo:block keep-with-next.within-page="always" color="{$color}" font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal">
       <fo:marker marker-class-name="form"><xsl:value-of select="$form"/></fo:marker>
       <fo:marker marker-class-name="technique"><xsl:value-of select="$technique"/></fo:marker>
-      <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Spells
+      <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Incantesimi
     </fo:block>
     <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERAL']"/>
     <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERAL']"/>
     <xsl:variable name="levels" select="distinct-values($spells/level)"/>
 
     <xsl:if test="count($generalspells) &gt; 0">
-      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERAL</fo:block>
+      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERALE</fo:block>
       <xsl:call-template name="spells-at-level">
         <xsl:with-param name="form" select="$form"/>
         <xsl:with-param name="technique" select="$technique"/>
@@ -319,7 +319,7 @@
     <xsl:for-each select="$levels">
         <xsl:sort select="." data-type="number"/>
       <xsl:variable name="slevel" select="."/>
-      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">LEVEL <xsl:value-of select="$slevel"/></fo:block>
+      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">LIVELLO <xsl:value-of select="$slevel"/></fo:block>
       <xsl:call-template name="spells-at-level">
         <xsl:with-param name="form" select="$form"/>
         <xsl:with-param name="technique" select="$technique"/>
@@ -404,7 +404,7 @@
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
-          Spells by Book
+          Incantesimi per Libro
         </fo:block>
         <xsl:for-each select="$spellsbybook/spell[(@type='standard' or @type='general') and name != '']">
           <xsl:variable name="name" select="name"/>

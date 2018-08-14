@@ -940,9 +940,9 @@
 <name>spell from the core book</name>
 <level>20</level>
 <arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Touch</range>
-<duration>Diameter</duration>
-<target>Individual</target>
+<range>Tocco</range>
+<duration>Diametro</duration>
+<target>Singolo</target>
 <description>
 <p>Sample spell from the core book. It has no source or page attributes.</p>
 </description>
@@ -952,9 +952,9 @@
 <name>spell from book</name>
 <level>20</level>
 <arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Touch</range>
-<duration>Momentary</duration>
-<target>Individual</target>
+<range>Tocco</range>
+<duration>Istantanea</duration>
+<target>Singolo</target>
 <description>
 <p>This spell comes from a non-core book. It has a source and a page number.</p>
 </description>
@@ -964,9 +964,9 @@
 <name>sample ritual spell</name>
 <level>20</level>
 <arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Touch</range>
-<duration>Momentary</duration>
-<target>Individual</target>
+<range>Tocco</range>
+<duration>Istantanea</duration>
+<target>Singolo</target>
 <description>
 <p>Ritual spells have a ritual="true" attribute.</p>
 </description>
@@ -976,9 +976,9 @@
 <name>spell with requisites</name>
 <level>30</level>
 <arts><form>Animal</form><technique>Creo</technique><requisite free="true">Muto</requisite><requisite>Rego</requisite></arts>
-<range>Touch</range>
-<duration>Sun</duration>
-<target>Group</target>
+<range>Tocco</range>
+<duration>Sole</duration>
+<target>Gruppo</target>
 <description>
 <p>Spells can include one or more requisites. Requisites can have a <emphasis>free="true"</emphasis> attribute if they do not affect the level of the spell</p>
 </description>
@@ -988,9 +988,9 @@
 <name>spell with flavour text</name>
 <level>40</level>
 <arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Touch</range>
-<duration>Momentary</duration>
-<target>Individual</target>
+<range>Tocco</range>
+<duration>Istantanea</duration>
+<target>Singolo</target>
 <description>
 <p>This is the spell description.</p>
 <flavour>This is flavour text. It does not explain the effects of the spell but rather world colour for the spell.</flavour>
@@ -1001,9 +1001,9 @@
 <name>sample faerie spell</name>
 <level>10</level>
 <arts><form>Animal</form><technique>Intellego</technique></arts>
-<range>Personal</range>
-<duration>Concentration</duration>
-<target>Individual</target>
+<range>Personale</range>
+<duration>Concentrazione</duration>
+<target>Singolo</target>
 <description>
 <p>Spells can have a <emphasis>faerie="true"</emphasis> attribute to designate a faerie spell.</p>
 </description>
@@ -1013,9 +1013,9 @@
 <name>spell with modifiers</name>
 <level>35</level>
 <arts><form>Animal</form><technique>Muto</technique></arts>
-<range>Voice</range>
-<duration>Diameter</duration>
-<target>Part</target>
+<range>Voce</range>
+<duration>Diametro</duration>
+<target>Parte</target>
 <description>
 <p>Spells can include additional modifiers.</p>
 </description>
@@ -1023,11 +1023,11 @@
 </spell>
 <spell id="59" type="general">
 <name>sample general spell</name>
-<level>GENERAL</level>
+<level>GENERALE</level>
 <arts><form>Animal</form><technique>Rego</technique></arts>
-<range>Touch</range>
-<duration>Ring</duration>
-<target>Circle</target>
+<range>Tocco</range>
+<duration>Cerchio</duration>
+<target>Circolo</target>
 <description>
 <p>Spells that are general have a type of general and the level says GENERAL.</p>
 </description>
