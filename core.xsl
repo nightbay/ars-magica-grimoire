@@ -52,7 +52,7 @@
     <fo:block text-indent="{$indent}" color="{$colour}" font-family="{$font}" font-size="{$size}" font-weight="normal"><xsl:apply-templates/></fo:block>
   </xsl:template>
 
-  <xsl:template match="spell-link"><xsl:variable name="sname" select="@name"/><fo:inline font-style="italic"><xsl:value-of select="@name"/> <fo:basic-link internal-destination="{generate-id($sortedspells/spell[name=$sname])}"> (pg. <fo:page-number-citation ref-id="{generate-id($sortedspells/spell[name=$sname])}" />)</fo:basic-link></fo:inline></xsl:template>
+  <xsl:template match="spell-link"><xsl:variable name="sname" select="@name"/><fo:inline font-style="italic"><xsl:value-of select="@name"/> <fo:basic-link internal-destination="{generate-id($sortedspells/spell[name=$sname])}"> (pag. <fo:page-number-citation ref-id="{generate-id($sortedspells/spell[name=$sname])}" />)</fo:basic-link></fo:inline></xsl:template>
   
   <xsl:template match="table">
     <fo:table>
@@ -101,14 +101,14 @@
           <xsl:when test="range = 'Voce'">, +2 Voce</xsl:when>
           <xsl:when test="range = 'Strada'">, +2 Strada</xsl:when>
           <xsl:when test="range = 'Via Acquatica'">, +3 Via Acquatica</xsl:when>
-          <xsl:when test="range = 'Vista'">, +3 Vista</xsl:when>
+          <xsl:when test="range = 'Visuale'">, +3 Visuale</xsl:when>
           <xsl:when test="range = 'Velo'">, +3 Velo</xsl:when>
           <xsl:when test="range = 'Linea'">, +3 Linea</xsl:when>
           <xsl:when test="range = 'Connessione Arcana'">, +4 Connessione Arcana</xsl:when>
           <xsl:when test="range = 'Simbolo'">, +4 Simbolo</xsl:when>
-          <xsl:when test="range = 'Lunare'">, +4 Lunar</xsl:when>
+          <xsl:when test="range = 'Lunare'">, +4 Lunare</xsl:when>
           <xsl:when test="range = 'Terreno'">, +4 Terreno</xsl:when>
-          <xsl:when test="range = 'Illimitato'">, +4 Illimitato</xsl:when>
+          <xsl:when test="range = 'Illimitata'">, +4 Illimitata</xsl:when>
           <xsl:otherwise>RANGE ERROR</xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
@@ -173,7 +173,7 @@
     <xsl:choose>
       <xsl:when test=". = 'Personale'">Personale</xsl:when>
       <xsl:when test=". = 'Tocco'">Tocco</xsl:when>
-      <xsl:when test=". = 'Voce'">b</xsl:when>
+      <xsl:when test=". = 'Voce'">Vocale</xsl:when>
       <xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
