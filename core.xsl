@@ -18,7 +18,8 @@
     <xsl:for-each select="$in/ars_magica/books/book">
       <xsl:sort select="name"/>
       <xsl:variable name="abbrev" select="abbreviation"/>
-      <xsl:if test="position() = last()"><xsl:text> </xsl:text>e </xsl:if><fo:inline font-family="Lauren C. Brown" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> incantesimi)<xsl:if test="position() &lt; last()">,</xsl:if></fo:inline>
+      <xsl:if test="position() = last()"><xsl:text> </xsl:text>e </xsl:if><fo:inline font-family="Lauren C. Brown" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> <xsl:choose><xsl:when test="count($in/ars_magica/spells/spell[@source=$abbrev]) = 1"> incantesimo)</xsl:when>
+        <xsl:otherwise> incantesimi)</xsl:otherwise></xsl:choose><xsl:if test="position() &lt; last()">,</xsl:if></fo:inline>
     </xsl:for-each>
   </xsl:template>
   
@@ -433,7 +434,7 @@
               <xsl:value-of select="name" />
             </fo:basic-link>
             <xsl:variable name="link" select="@link"/>
-            <fo:leader leader-pattern="dots" /><xsl:if test="@page != ''">Pg. <xsl:value-of select="@page" /></xsl:if>
+            <fo:leader leader-pattern="dots" /><xsl:if test="@page != ''">Pag. <xsl:value-of select="@page" /></xsl:if>
             <xsl:if test="@link != ''"><fo:inline color="{$urlcolour}"><fo:basic-link external-destination="{$link}">Link</fo:basic-link></fo:inline></xsl:if>
           </fo:block>
         </xsl:for-each>

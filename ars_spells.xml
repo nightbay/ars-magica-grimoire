@@ -958,7 +958,19 @@
 <description>
 <p>This spell comes from a non-core book. It has a source and a page number.</p>
 </description>
-<guideline><base>5</base><modifiers><modifier></modifier></modifiers></guideline>
+<guideline><base>5</base><modifiers><modifier>+2 perchè si</modifier></modifiers></guideline>
+</spell>
+<spell id="2" source="C" page="199" type="standard" ritual="true">
+<name>spell from book a caso</name>
+<level>20</level>
+<arts><form>Animal</form><technique>Creo</technique></arts>
+<range>Tocco</range>
+<duration>Luna</duration>
+<target>Gruppo</target>
+<description>
+<p>This spell comes from a non-core book. It has a source and a page number.</p>
+</description>
+<guideline><base>15</base><modifiers><modifier>+2 perchè si</modifier></modifiers></guideline>
 </spell>
 <spell id="3" type="standard" ritual="true">
 <name>sample ritual spell</name>
