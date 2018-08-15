@@ -305,16 +305,16 @@
       <fo:marker marker-class-name="technique"><xsl:value-of select="$technique"/></fo:marker>
       <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Incantesimi
     </fo:block>
-    <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERAL']"/>
-    <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERAL']"/>
+    <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERICO']"/>
+    <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERICO']"/>
     <xsl:variable name="levels" select="distinct-values($spells/level)"/>
 
     <xsl:if test="count($generalspells) &gt; 0">
-      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERALE</fo:block>
+      <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERICO</fo:block>
       <xsl:call-template name="spells-at-level">
         <xsl:with-param name="form" select="$form"/>
         <xsl:with-param name="technique" select="$technique"/>
-        <xsl:with-param name="level" select="'GENERAL'"/>
+        <xsl:with-param name="level" select="'GENERICO'"/>
       </xsl:call-template>
     </xsl:if>
     <xsl:for-each select="$levels">
