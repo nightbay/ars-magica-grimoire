@@ -13,7 +13,24 @@
     <name>Animal</name>
     <color>#8B4513</color>
     <description>
-      <p>Description on the art Animal</p>
+      <p>Gli incantesimi Animal influenzano tutti gli esseri viventi che non siano piante o umani,
+      e fanno agli animali ciò che quelli di Mentem e Corpus fanno alle persone: possono influenzare
+      mente o corpo della bestia. Colpiscono anche oggetti fatti con prodotti animali, come cuoio,
+      osso o lana.</p>
+      <p>Per sapere se un incantesimo Animal influenza la mente della creatura, guarda se le caratteristiche
+      di questa contengono Astuzia o Ingenium. Se la creatura possiede Ingenium, va usato un incantesimo
+      Mentem; se ha Astuzia un incantesimo Animal. Quando una creatura o una persona con la caratteristica
+      Ingenium muta forma, gli incantesimi Animal che colpiscono la mente sono inefficaci, e sono necessari
+      gli incantesimi Mentem. Tuttavia , il corpo di un simile essere può essere influenzato da incantesimi
+      Animal, come <emphasis>Cappuccio del Falcone</emphasis> (PeAn 20).</p>
+      <p>Se un corpo umano ha parti animali, come ali di pipistrello, tali parti possono essere influenzate
+      dagli incantesimi Animal, anche se per il resto del corpo sono necessari incantesimi Corpus.</p>
+      <p>Un Magus Bjornaer in forma animale è realmente un animale ,quindi la sua mente è influenzata da
+      incantesimi Animal e non Mentem, e il suo corpo da incantesimi Animal e non Corpus. Tuttavia, gli
+      incantesimi con effetto continuo lanciati su una forma seguitano a influenzare anche l'altra.
+      I mutaforma perlopiù non cambiano la loro natura intima, che resta umana, quindi i loro corpi possono
+      essere influenzati da incantesimi Corpus.</p>
+      <p>Un Singolo base per Animal è un animale più o meno delle dimensioni di un pony, Taglia +1 o meno.</p>      
     </description>
   </form>
   <form>
@@ -137,81 +154,319 @@
   <arts_guideline>
     <arts><form>Animal</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Gran Parte degli incantesimi Animal non può essere usata con Portata Personale, quindi il livello di un
+      incantesimo deve superare le linee guida fornite.</p>
+      <p>Quando crei un essere magico, la sua Potenza Magica non può superare il livello dell'incantesimo, e devono
+      essere inclusi i requisiti per qualsiasi potere speciale (come Ignem se sputa fuoco, Rego e Mentem se può
+      controllare le menti). Un requisito Vim, per la natura magica, è sempre necessario.</p>
+      <p>Per creare prodotti animali trattati, come cuoio, tagli di carne e stoffa aggiungi una Magnitudine al
+      livello necessario per creare la massa equivalente di animale morto. Per creare prodotti animali trattati e 
+      lavorati, come una giacca di cuoio o una tunica di lana, aggiungi due Magnitudini al livello necessario per 
+      creare la massa equivalente di animale morto.</p>
+      <p>Per influenzare il comportamento di un animale magico creato è necessario un requisito Rego, e poichè si
+      tratta di un effetto addizionale ciò aggiunge almeno una Magnitudine al livello dell'incantesimo. Altrimenti
+      la bestia si comporterà secondo la sua natura.</p>
+      <p>I fallimenti critici in Creo Animal produconno spesso l'animale sbagliato, o ne creano uno infuriato col
+      lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline><level>1</level><description>Concede all'animale un bonus di +1 per i tiri di Recupero.</description></guideline>
+      <guideline><level>2</level><description>Concede all'animale un bonus di +3 per i tiri di Recupero.</description></guideline>
+      <guideline><level>3</level><description>Concede all'animale un bonus di +6 per i tiri di Recupero.</description></guideline>
+      <guideline><level>4</level><description>Concede all'animale un bonus di +9 per i tiri di Recupero.</description></guideline>
+      <guideline><level>5</level><description>Concede all'animale un bonus di +12 per i tiri di Recupero.</description></guideline>
+      <guideline>
+        <level>5</level>
+        <description>
+        Crea un singolo prodotto animale come lana o tela di ragno (nota che un Singolo è un singolo filo, una singola pelle o una
+        singola zanna).
+        </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un insetto o simile.
+        </description>
+      </guideline>
+      <guideline><level>10</level><description>Crea il cadavere di un animale.</description></guideline>
+      <guideline><level>10</level><description>Crea un uccello, rettile, pesce o anfibio.</description></guideline>
+      <guideline><level>10</level><description>Concede all'animale un bonus di +15 per i tiri di Recupero.</description></guideline>
+      <guideline><level>15</level><description>Cura una Ferita Leggera.</description></guideline>
+      <guideline><level>15</level><description>Concede all'animale un bonus di +18 per i tiri di Recupero.</description></guideline>
+      <guideline><level>15</level><description>Crea un mammifero.</description></guideline>
+      <guideline>
+        <level>15</level>
+        <description>
+          Fa raggiungere all'animale la maturità completa nel corso di un singolo giorno o notte. Questa maturazione accelerata si
+          applica solo durante la Durata dell'incantesimo, quindi l'effetto completo richiede un incantesimo con Durata Sole lanciato
+          all'inizio del giorno o della notte.
+        </description>
+      </guideline>
+      <guideline><level>20</level><description>Cura una Ferita Media.</description></guideline>
+      <guideline><level>20</level><description>Concede all'animale un bonus di +21 per i tiri di Recupero.</description></guideline>
+      <guideline>
+        <level>20</level>
+        <description>
+          Fa raggiungere la maturità completa nel corso di un paio di ore.
+        </description>
+      </guideline>
+      <guideline><level>25</level><description>Arresta il progresso di una malattia.</description></guideline>
+      <guideline><level>25</level><description>Cura una Ferita Grave.</description></guideline>
+      <guideline><level>25</level><description>Ristabilisce un senso perduto.</description></guideline>
+      <guideline><level>25</level><description>Ristabilisce un arto perduto.</description></guideline>
+      <guideline><level>25</level><description>Cura una malattia contrastandone gli effetti (a meno che non sia lanciato
+      come Rituale Istantaneo, equivale ad arrestare il progresso di una malattia).</description></guideline>
+      <guideline><level>25</level><description>Fa raggiungere all'animale la maturità completa nel corso di dieci Diametri (venti minuti).</description></guideline>
+      <guideline><level>30</level><description>Cura una Ferita Incapacitante.</description></guideline>
+      <guideline><level>30</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale.</description></guideline>
+      <guideline><level>30</level><description>Fa raggiungere all'animale la maturità completa nel corso di un singolo Diametro.</description></guideline>
+      <guideline><level>35</level><description>Cura tutte le ferite.</description></guideline>
+      <guideline><level>35</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più uno.</description></guideline>
+      <guideline><level>40</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più due.</description></guideline>
+      <guideline><level>40</level><description>Fa raggiungere all'animale la maturità completa in un attimo.</description></guideline>
+      <guideline><level>45</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più tre.</description></guideline>
+      <guideline><level>50</level><description>Crea una bestia magica. Un simile incantesimo ha sempre un requisito Vim, poichè la bestia è magica,
+      e normalmente ne ha altri per i suoi vari poteri</description></guideline>
+      <guideline><level>50</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più quattro.</description></guideline>      
+      <guideline><level>55</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più cinque. Un ulteriore aumento non è nella natura dell'animale, quindi non può essere effettuato con la magia Creo.</description></guideline>      
+      <guideline><level>75</level><description>Resuscita un animale morto.</description></guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Animal</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Quando cerchi di ottenere informazioni da un animale, tieni a mente che i suoi ricordi vengono filtrati dai suoi sensi particolari, 
+      ognuno con punti di forza e debolezza. Ad esempio, i cani ricordano bene l'odore delle cose, ma dimenticano spesso i dettagli
+      sull'aspetto delle stesse.</p>
+      <p>Gli animali non ricordano le parole umane, ma possono ricordare cose come il tono della voce. Le informazioni che ottieni possono
+      essere incomplete.</p>
+      <p>Per comunicare con un animale devi portarti al suo livello mentale, un processo che potrebbe avere strani (ma temporanei) effetti.
+      Ad esempio, dopo aver comunicato con un orso, per qualche attimo potresti parlare molto lentamente o avvertire fame di carne cruda.</p>
+      <p>Poichè Animal comprende aspetti sia di Corpus che di Mentem in relazione alle bestie, è possibile applicare ad Animal le linee guida
+      che si applicano a questi. Vedi InCo e InMe per ulteriori idee.</p>
+      <p>I fallimenti critici in InAm danno di solito come risultato informazioni false.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline><level>1</level><description>Ottieni un'immagine mentale dell'animale.</description></guideline>
+      <guideline><level>3</level><description>Percepisci lo stato di coscienza di una bestia. Ottieni informazioni generali sul suo corpo.</description></guideline>
+      <guideline><level>4</level><description>Percepisci l'istinto dominante della bestia. Apprendi un fatto specifico sul suo corpo.</description></guideline>
+      <guideline><level>5</level><description>Apprendi origine, età e storia di un oggetto fatto con prodotti animali.</description></guideline>
+      <guideline><level>10</level><description>Parla con un animale. Leggi i pensieri superficiali di un animale.</description></guideline>
+      <guideline><level>15</level><description>Leggi i ricordi recenti di un animale.</description></guideline>
+      <guideline><level>20</level><description>Perlustra minuziosamente la mente di una bestia.</description></guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Animal</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Gli animali a cui sono concesse nuove abilità, come le ali, avranno bisogno di qualche minuto per abituarcisi. Quando trasformi un animale,
+      puoi trasformare ciè che trasporta se ha i requisiti appropriati: ad esempio è possibile trasformare cavallo e corazza con un requisito Terram.</p>
+      <p>Non si può tramutare un animale all'infinito: troppi di questi incantesimi, usati troppo spesso, possono distorcere la costituzione naturale
+      della bestia e persino distruggerla.</p>
+      <p>Esaminando gli incantesimi Muto Corpus troverai idee e linee guida aggiuntivi per quelli Muto Animal. Sigilli comuni fra questo tipo di incantesimi
+      sono strane alterazioni nelle nuove forme: le bestie trasformate da Julian di Flambeau con <emphasis>La Bestia Ricreata</emphasis> (MuAn 25) hanno spesso
+      il pelo rosso acceso, mentre i rospi creati da Silva di Merinita con <emphasis>Trasformazione della Bestia Famelica in Rospo Indolente</emphasis> (MuAn 30)
+      possono presentare colori ridicoli.</p>
+      <p>I fallimenti critici in MuAn scambiano spesso il lanciatore con Bersaglio, o mutano il Bersaglio in modo molto diverso da quello voluto.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline><level>1</level><description>Cambiamento superficiale (ad esempio, di colore) a una cosa fatta con prodotti animali.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambiamento profondo a una cosa fatta con prodotti animali preservandone la sostanza (ad esempio trasformare un farsetto di cuoio in una sella.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma gradualmente la carne in vermi.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambiamento superficiale a una bestia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambiamento all'arto di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Tramuta una cosa fatta con prodotti animali in un diverso prodotto animale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambiamento profondo in una bestia, benchè il tipo di animale rimanga riconoscibile (ad sempio un cavallo pià grande con diverso colore).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Tramuta una cosa fatta con prodotti animali in modo lievemente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un animale in uno differente.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Cambia un animale in modo sottile in modo che non sia più naturale (ad esempio, intona il colore del manto di un cavallo con l'araldica della Congrega).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una cosa fatta con prodotti animali in modo profondamente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un animale in umano (benchè conservi la mentalità animale e il bersaglio non ottenga un'anima, richiede un requisito Corpus).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un animale in una pianta (richiede un requisito Herbam).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasforma un animale in modo profondo e innaturale (ad esempio, concede a un cavallo artigli, zanne e pelle squamosa e corazzata).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasforma un animale in un oggetto non vivente (richiede requisito appropriato).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasforma radicalmente un animale in modo innaturale (ad esempio, dà a un cavallo le ali).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Dà a un animale un'abilità <strong>magica</strong>, come la capacità di soffiare fuoco (richiesto un requisito per l'abilità.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Animal</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Normalmente non c'è Assorbimento contro Perdo Animal. La magia non crea qualcosa che infligge danno, ma infligge danno e basta. L'unica protezione
+      è la Resistenza alla Magia</p>
+      <p>Un sigillo comune fra i Magi Flambeau ed altri che lanciano incantesimi Perdo consiste nel lasciare un qualche tipo di marchio assieme al danno</p>
+      <p>Quando inventi nuovi incantesimi, consulta la sezione Perdo Corpus per linee guida e nuove idee.</p>
+      <p>I fallimenti critici PeAn possono influenzare il lanciatore e l'animale sbagliato.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Danneggia una cosa fata con prodotti animali.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Infligge danno superficiale a una bestia (ad esempio, elimina il pelo).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge una cosa fatta con prodotti animali.</description>
+      </guideline>    
+      <guideline>
+        <level>4</level>
+        <description>Infligge a una bestia dolore, ma nessun danno reale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa perdere a una bestia un livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Ferisce un animale in modo da ostacolarlo senza danneggiarlo. Ad esempio fa azzoppare un cavallo, zittisce un uccello o indebolisce le scaglie di un serpente.
+        Ciò dimezza approssimativamente l'efficacia della bestia. Guarisce come una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge il cadavere di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge uno dei sensi secondari della bestia.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Menoma l'arto di una bestia, in modo che sia inutilizzabile ma possa guarire</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Invecchia una bestia di un dodicesimo della sua vita naturale. Influenza solo bestie che hanno già raggiunto la maturità.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge o mozza un arto della bestia così che non possa ricrescere naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge uno dei sensi principali della bestia.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Uccide un animale.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Distrugge una proprietà di un animale, come il peso o l'aggressività.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Animal</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Vedi anche Rego Corpus per idee e linee guida per controllare il corpo di un animale, e consulta gli incantesimi Rego Mentem per idee e linee guida su come controllare la mente.</p>
+      <p>Di solito, i sigilli in incantesmi Rego Animal fanno si che la bestia si comporti in determinati modi.</p>
+      <p>I fallimenti critici in ReAn pongono il lanciatore sotto il controllo dell'animale, o fanno agire quest'ultimo in modo opposto a quello voluto. Potrebbe anche sembrare che funzionino,
+      per poi rovesciarsi in un momento estremamente sconveniente.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true"><level>Generico</level><description>Crea un circolo di difesa contro animali di un Reame (Divino, Fatato, Infernale o Magico) con Potenza minore del livello
+      dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description></guideline>
+      <guideline><level>1</level><description>Manipola oggetti fatti con prodotti animali.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Infonde un singolo impulso nella mente di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Protegge il Bersaglio da attacchi di animali (influenza solo animali senza abilità mistiche).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Calma un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Manipola le emozioni di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Paralizza un animale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rende un animale comletamente passivo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Controlla completamente un animale.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
@@ -221,8 +476,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -237,8 +492,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -253,8 +508,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -269,8 +524,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -285,8 +540,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -301,8 +556,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -317,8 +572,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -333,8 +588,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -349,8 +604,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -365,8 +620,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -381,8 +636,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -397,8 +652,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -413,8 +668,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -429,8 +684,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -445,8 +700,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -461,8 +716,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -477,8 +732,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -493,8 +748,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -509,8 +764,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -525,8 +780,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -541,8 +796,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -557,8 +812,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -573,8 +828,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -589,8 +844,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -605,8 +860,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -621,8 +876,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -637,8 +892,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -653,8 +908,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -669,8 +924,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -685,8 +940,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -701,8 +956,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -717,8 +972,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -733,8 +988,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -749,8 +1004,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -765,8 +1020,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -781,8 +1036,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -797,8 +1052,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -813,8 +1068,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -829,8 +1084,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -845,8 +1100,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -861,8 +1116,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -877,8 +1132,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -893,8 +1148,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -909,8 +1164,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -925,8 +1180,8 @@
       <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
     </description>
     <guidelines>
-      <guideline><level>General</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>General</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
       <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
@@ -1035,7 +1290,7 @@
 </spell>
 <spell id="59" type="general">
 <name>sample general spell</name>
-<level>GENERALE</level>
+<level>GenericoE</level>
 <arts><form>Animal</form><technique>Rego</technique></arts>
 <range>Tocco</range>
 <duration>Cerchio</duration>
