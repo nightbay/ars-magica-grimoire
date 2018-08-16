@@ -37,7 +37,26 @@
     <name>Aquam</name>
     <color>#000080</color>
     <description>
-      <p>Description of the art Aquam</p>
+      <p>Gli incantesimi Aquam influenzano l'acqua e tutti gli altri liquidi. Non influenzano i liquidi in un corpo, come il sangue,
+      per quello è richiesto un incantesimo Corpus.</p>
+      <p>L'applicazione delle categorie Bersaglio degli incantesimi Aquam non è ovvia come quella delle altre forme, qui trovi linee guida addizionali.
+      Se si applicano i bersagli standard, possono essere usati anch'essi.</p>
+      <p>
+        <strong>Singolo: </strong>uno specchio d'acqua o corso d'acqua con la stessa composizione e corrente. Un piccolo stagno, parte di un torrente, una sorgente.
+      </p>
+      <p>
+        <strong>Parte: </strong>una parte di un individuo. Questa categoria si applica facilmente.
+      </p>
+      <p>
+        <strong>Gruppo: </strong>un certo numero di Singoli. Ciò comprende un ampio fiume, dove scorrono diverse correnti, un numero di fiumi che scorrono assieme o un lago.
+      </p>
+      <p>
+        <strong>Stanza, Struttura e Confine: </strong>funzionano come per le altre Forme, l'incantesimo influenza tutto il liquido nella zona Bersaglio.
+      </p>
+      <p>Un singolo Base per Aquam è una pozza d'acqua del diametro di circa cinque passi (quattro metri e mezzo), con una profondità al centro di due passi.
+      I liquidi naturali, come il succo di frutta o l'olio d'oliva, hanno un Singolo base pari a un decimo di tale misura, circa due passi di diametro per uno di profondità.
+      I liquidi lavorati, come vino o birra, hanno un Singolo base pari a un centesimo, cioè un passo di diametro e mezzo di profondità. I liquidi corrosivi o altrimenti
+      pericolosi hanno un Singolo Base dieci volte più piccolo, largo una trentina di centimetri e profondo quindici. I veleni hanno un Singolo base pari a una singola dose.</p>
     </description>
   </form>
   <form>
@@ -472,81 +491,234 @@
   <arts_guideline>
     <arts><form>Aquam</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Se bevuta, l'acqua creata temporaneamente placa la sete, ma non porta benefici a lungo termine. Può essere usata per lavare, e l'oggetto lavato resta pulito.
+      Sigilli comuni per incantesimi Creo Aquam includono acqua con specifici odori, colori o sapori.</p>
+      <p>I fallimenti critici in CrAq possono creare troppa acqua (pensa a <emphasis>L'apprendista Stregone</emphasis>), o il liquido errato.
+    </p>
+      <p>I liquidi leggermente innaturali hanno una difficoltà maggiore di una Magnitudine rispetto all'acqua, quelli molto innaturali di due. I veleni creati al livello
+      della linea guida hanno un Fattore Difficoltà di 3. Ogni Magnitudine aggiunta al livello dell'incantesimo aggiunge 3 al Fattore Difficoltà.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline><level>Generico</level><description>Crea una sostanza corrosiva che infligge +(Livello) danni. È una buona idea aumentare la Portata a più di Tocco.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Riempie un contenitore d'acqua (o di un altro liquido naturale, con i requisiti appropriati).</description>
+    </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea acqua (o un altro liquido naturale) non contenuta (ad esempio, sparsa su una superficie).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea acqua (o un altro liquido naturale) in una forma innaturale (ad esempio, una sfera sospesa sulla testa di qualcuno), ma l'acqua così creata si comporta naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea una sorgente con una corrente debole.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un veleno che infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea una sorgente con una corrente forte.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un geyser con un getto fortissimo.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un veleno che infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea un veleno che infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un veleno che infligge una Ferita Incapacitante</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea un veleno che infligge una Ferita Mortale.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Aquam</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Nota che gli incantesimi Intellego Aquam normalmente non necessitano di requisiti a seconda del tipo di liquido Bersaglio.</p>
+      <p>Gran parte dei sigilli negli incantesimi Intellego Aquam si manifesta facendo sì che l'informazione venga riportata con qualche particolarità.
+      Ad esempio la versione di Chavin di Tytalus di <emphasis>Voce del Lago</emphasis> dà sempre al lago una voce forte, virile e arrogante.
+    </p>
+      <p>I fallimenti critici negli incantesimi InAq forniscono generalmente informazioni false</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Rendi un senso non influenzabile dall'acqua.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Ottieni un'immagine dell'acqua entro la Portata.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Ottieni un'immagine dell'acqua e degli immediati dintorni entro la Portata.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Apprendi le proprietà naturali di un liquido.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi le proprietà naturali di una mescolanza di liquidi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Apprendi le prorietà magiche di un liquido.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Apprendi le proprietà magiche di una mescolanza di liquidi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parla con una massa di acqua naturale.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parla con una massa di acqua artificiale (ad esempio una fontana).</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Aquam</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Non puoi trasformare liquidi contenuti in un corpo a meno che l'incantesimo sia pensato appositamente (e abba un requisito Corpus o Animal).</p>
+      <p>I fallimenti critici in Muto Aquam possono mutare i liquidi del lanciatore, alterare i liquidi sbagliati o modificarli nel modo errato.</p>
+      <p>I veleni creati al livello della linea guida hanno un Fattore Difficoltà di 3. Per ogni Magnitudine aggiunta all'incantesimo, somma 3 al Fattore di Difficoltà.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline><level>Generico</level><description>Trasforma un liquido in un liquido che infligge +(Livello) punti di danno a contatto.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma in liquido naturale in un altro liquido naturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Media</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido naturale in uno leggermente innaturale (ad esempio acqua blu od olio di ricino alla fragola), o viceversa.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un solido o gas non correlato (con requisito Terram per i solidi e Auram per i gas).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Tramuta un liquido naturale in due o più liquidi naturali differenti, con i due tipi separati (anche se se può mischiarli normalmente).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un liquido molto innaturale (ad esempio, un liquido rosa acceso che causa bizzarre allucinazioni); spesso sono necessari requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un liquido in una mescolanza di qualsiasi liquido, solido (con requisito Terram) o gas (con requisito Auram). Tramuta un liquido in un solido o gas leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trascorma un liquido in un solido o gas molto innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Mortale.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Aquam</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Col Salire delle Magnitudini negli incantesimi il danno inflitto si fa più sottile o esteso.</p>
+      <p>Di solito i sigilli negli incantesimi Perdo Aquam implicano forme specifiche di distruzione.</p>
+      <p>Per eliminare l'acqua che compone un corpo, come i fluidi in un essere umano, è necessario un Bersaglio Parte; per eliminare quella che è semplicemente
+      addosso a qualcuno, come quella che inzuppa i vestiti, è necessario solo un Bersaglio Singolo.</p>
+      <p>I fallimenti critici in Perdo Aquam possono distruggere tutta l'acqua nel Lanciatore, come in <emphasis>Maledizione del Deserto</emphasis>, o crearne invece di distruggerla.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>4</level>
+        <description>Asciuga completamente qualcosa di bagnato (fino alla Taglia di una piccola casa).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Riduce considerevolmente l'ammontare di un liquido senza distruggerlo tutto.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge un liquido (possono essere richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge una proprietà di un liquido (come la capacità di intossicazione dell'alcool o la salinità dell'acqua di mare).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distruggi una piccola sorgente in modo che non sgorghi mai più acqua.</description>
+      </guideline>          
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Aquam</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Rego Aquam può mutare l'acqua in un ghiaccio o vapore, poichè sono entrambi stati in cui l'acqua può trovarsi in natura.</p>
+      <p>I fallimenti critici in Rego Aquam fanno generalmente perdere il controllo dell'acqua in modo spettacolare e pericoloso.</p>
+      <p>Aggiungi un grado se il movimento impartito è leggermente innaturale, due se è molto innaturale.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline><level>Generico</level><description>Difesa contro creature d'acqua appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
+      (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Controlla un liquido muovendolo in modo molto lieve.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido nel solido o gas corrispondente (ad esempio l'acqua in ghiaccio o vapore). Non richiede requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un liquido muovendolo in modo deciso ma calmo, come una corrente rapida ma costante.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Difesa dalle acque mondane.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un liquido muovendolo in modo violento.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un liquido muovendolo in mood estremamente violento.</description>
+      </guideline>    
     </guidelines>
   </arts_guideline>
   <arts_guideline>
@@ -1290,7 +1462,7 @@
 </spell>
 <spell id="59" type="general">
 <name>sample general spell</name>
-<level>GenericoE</level>
+<level>GENERICO</level>
 <arts><form>Animal</form><technique>Rego</technique></arts>
 <range>Tocco</range>
 <duration>Cerchio</duration>
