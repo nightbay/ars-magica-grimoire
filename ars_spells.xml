@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ars_magica>
 <preface>
-  <p indent="false" font="hand" size="24pt" colour="hand">Title,</p>
+  <p indent="false" font="hand" size="24pt" colour="hand">Le Chiavi di Costantinopoli</p>
   <p font="hand" size="18pt" colour="hand">
-    A description of the grimoire. And a list of the sources used to compile it: <booklist/>.
+    Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con incantesimi provenienti da svariate fonti: <booklist/>.
   </p>
   <toc/>
-  <p indent="false" font="hand" size="48pt" colour="#661A1A">Author</p>
+  <p indent="false" font="hand" size="48pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
 </preface>
 <arts>
   <form>
@@ -63,56 +63,121 @@
     <name>Auram</name>
     <color>#EE82EE</color>
     <description>
-      <p>Description of the art Auram</p>
+      <p>Gli incantesimi Auram sono potenti perchè l'elemento dell'aria è onnipresente; la loro debolezza è che non è di solito violento come il fuoco, né forte come la terra.
+      Auram, tuttavia, include nel suo dominio gran parte dei fenomeni atmosferici come tempeste, fulmini, pioggia e precipitazioni nevose. Gli incantesimi Auram influenzano di
+      solito l'aria come fenomeno (venti, odori) che come gas (che è un concetto moderno).</p>
+      <p>Alcune categorie di Bersaglio per Auram richiedonoqualche spiegazione. Se si applicano le normali descrizioni, ovviamente si possono utilizzare.</p>
+      <p>
+        <strong>Singolo: </strong>un singolo elemento: una nuvola, un soffio di vento, un fulmine.
+      </p>
+      <p>
+        <strong>Gruppo: </strong>diversi fenomeni correlati, come le nubi, i venti e la pioggia in una tempesta.
+      </p>
+      <p>Un Singolo base per Auram è un fenomeno atmosferico che colpisce una zona entro un Confine standard: un'area del diametro di cento passi.</p>
     </description>
   </form>
   <form>
     <name>Corpus</name>
     <color>#8B0000</color>
     <description>
-      <p>Description of the art Corpus</p>
+      <p>Gli incantesimi Corpus riguardano corpi umani o umanoidi e qualsiasi cosa coninvolga tali corp. Molte fate sono abbastanza simili agli umani da essere influenzate da questi incantesimi.</p>
+      <p>Un Singolo base per Corpus è un essere umano adulto, fino a taglia +1.</p>
     </description>
   </form>
   <form>
     <name>Herbam</name>
     <color>#006400</color>
     <description>
-      <p>Description of the art Herbam</p>
+      <p>Gli incantesimi Herbam funzionano su piante e materia vegetale, sia vive che morte. Poichè il legno è un materiale comune in armi, veicoli ed edifici, possono essere utili per
+      migliorare o distruggere oggetti, o quando necessiti l'aiuto del mondo vegetale.</p>
+      <p>Un Singolo base per Herbam è una pianta che misura circa un passo in ciascuna direzione.</p>
     </description>
   </form>
   <form>
     <name>Ignem</name>
     <color>#DC143C</color>
     <description>
-      <p>Description of the art Ignem</p>
+      <p>Questi incantesimi sono volubili e pericolosi come il fuoco. I Magi che perseguono l'Arte della fiamma lo fanno con cura e riguardo per le minacce e i poteri evocati, poichè
+      il fuoco è potente e letale tanto per i nemici quanto per gli amici. Il Cantastorie dovrebbe rendere i fallimenti critici in Ignem particolarmente micidiali.</p>
+      <p>Anche luce e calore rientrano nel dominio di questa Forma. È importante ricordare che il calore è un valore tanto in positivo quanto in negativo, quindi Ignem rende possibili
+      anche incantesimi il cui risultato sfocerà in temperature gelide.</p>
+      <p>Il Singolo base per Ignem è un grosso fuoco da campeggio o il focolare di una grande sala.</p>
     </description>
   </form>
   <form>
     <name>Imaginem</name>
     <color>#ADD8E6</color>
     <description>
-      <p>Description of the art Imaginem</p>
+      <p>Imaginem è la Forma delle sensazioni e dell'illusione. Per mezzo di essa puoi alterare ciò che percepiscono gli altri. Imaginem, tuttavia, significa <emphasis>immagine</emphasis>,
+      non <emphasis>illusione</emphasis>: quindi crea, trasforma, percepisce, distrugge e controlla immagini, non necessariamente illusioni. Un incantesimo di chiaroveggenza, quindi, è un
+      incantesimo Intellego Imaginem perchè individua immagini reali; manipolando le sensazioni puoi invece creare effettive illusioni. L'Arte di Imaginem ricompensa il Magus creativo
+      facendo fare ad altri azioni che avrebbero evitato, come camminare lungo una scogliera mentre gli occhi gli dicono che c'è un ponte sul baratro. Imaginem non influenza la luce, che
+      fa parte di Ignem, ma può influenzare le cose che la luce consente di vedere.
+    </p>
+      <p>Odori e profumi, tinte e macchie, colori e ombre, melodia e cacofonia, dolce e aspro: sono tutte percezioni, quindi manipolabili tramite l'arte di Imaginem. Un'immagine funziona
+      sui sensi, non nella mente, quindi è probabile che una bestia priva di raziocinio creda a un'immagine come un umano impressionabile; allo stesso modo, chiunque può cadere in
+      un'illusione creata con magia Imaginem. Nonostante ciò, questi incantesimi raggiungono il massimo dell'efficacia quando intralciano la comunicazione su cui dipende la società umana.
+      Probabilmente le bestie saranno ingannate dall'illusione, come i non-morti più semplici; i demoni sono difficili da raggirare, mentre le fate vedono spesso attraverso le illusioni e
+      le manipolano per ingannare te. Alcuni membri della Chiesa si sono dimostrati notevolmente abili nel distinguere le illusioni dalla realtà, ma è un talento inaffidabile.</p>
+    <p>Con un incantesimo Imaginem, imitare un oggetto o persona specifica è più difficile rispetto a un'immagine generale, e richiede un Tiro Stress di Sensus + Finezza. Ad esempio,
+      è più facile riprodurre un generico anello d'oro rispetto all'anello con iscrizioni che il barone ha presentato alla moglie in occasione del decimo anniversario di matrimonio.
+      Più è alto il tiro, più le persone sono ingannate. Ottieni un bonus al tiro se hai familiarità con ciò che stai imitando (-3 per un oggetto con cui non hai familiarità, +3 per oggetti
+      con cui sei molto familiare o puoi copiare dall'originale). Per imitare persone, un tiro di 6+ ti permette di ingannare i conoscenti, +9 gli amici e 12+ gli amici stretti e i parenti.
+      Usa una scala simile per gli oggetti. Se ottieni un fallimento critico nel tiro di Finezza, potresti credere che l'immagine è soddisfacente, ma viene scoperta non appena ne fai uso.</p>
+      <p>Un Singolo base per Imaginem è l'equivalente di un essere umano adulto; che sia un'immagine di quella Taglia, un'illusione uditiva che fa quella quantità di rumore, qualsiasi cosa.</p>
     </description>
   </form>
   <form>
     <name>Mentem</name>
     <color>#FF8C00</color>
     <description>
-      <p>Description of the art Mentem</p>
+      <p>Gli incantesimi Mentem controllano pensieri, emozioni e ricordi. Le menti intelligenti ne sono influenzate, mentre quelle delle bestie sono appannaggio degli incantesimi Animal.
+      Le Caratteristiche mentali sono Ingenium, Sensus, Gratia e Communicatio, e possono essere influenzate da incantesimi Mentem.</p>
+      <p>Poichè gli effetti degli incantesimi Mentem non sono solitamente visibili, ti concedono una grande quantità di potere quando hai a che fare con la gente comune. Anche gli incantesimi
+      che richiedono contatto oculare passano relativamente inosservati, se lanciati senza voce o gesti; tuttavia, nel Dominion solo i Magi davvero potenti possono lanciare magie in questo modo.</p>
+      <p>Le menti non hanno una dimensione, quindi i modificatori di Taglia non si applicano agli effetti con bersaglio Singolo; tuttavia possono essere contate, quindi per influenzare Gruppi
+      di persone dovrai comunque aumentare la Taglia. Allo stesso modo, gli incantesimi Mentem che influenzano chiunque si trovi in una Stanza, Struttura o Confine hanno i modificatori
+      di Taglia consueti.</p>
     </description>
   </form>
   <form>
     <name>Terram</name>
     <color>#583933</color>
     <description>
-      <p>Description of the art Terram</p>
+      <p>Gli incantesimi Terram, oltre a coprire terra, pietra, argilla, metallo e vetro, possono a volte influenzare gli oggetti inanimati in generale. Ad esempio, <emphasis>Brandire la Fionda
+      Invisibile</emphasis> (ReTe 10) lancia ogni sorta di cose non viventi.</p>
+      <p>Benchè gli incantesimi Terram colpiscano ogni sorta di oggetti solidi, alcuni materiali sono più difficili da influenzare: di seguito sono elencati, in ordine di difficoltà crescente,
+      i materiali influenzabili da Terram: terra (sabbia, terriccio, fango), argilla, pietra, vetro, metallo, gemme. Ogni livello di difficoltà non rappresenta necessariamente una Magnitudine.</p>
+      <p>Il Singolo base per Terram dipende dal Materiale. Per sabbia, terriccio, fango, argilla o sostanze simili, si tratta di un cubo di del lato di circa dieci passi; per la pietra, di un
+      singolo passo. Per i metalli di base è un cubo con lato di un piede, per quelli preziosi un decimo di questa quantità; per le pietre si tratta di un cubo con lato un pollice.</p>
     </description>
   </form>
   <form>
     <name>Vim</name>
     <color>#C0C0C0</color>
     <description>
-      <p>Description of the art Vim</p>
+      <p>Gli incantesimi Vim sono molto utili: ti aiutano a migliorare gli effetti delle tue magie, un aspetto cruciale, se consideriamo che l'efficacia degli incantesimi è la caratteristica
+      principale di un Magus maestro. Con l'immaginazione, puoi usare questi incantesimi per creare difese, allarmi, oggetti magici a uso singolo e altre cose interessanti. Molti incantesimi
+      Vim vanno lanciati insieme ad altri, di cui modificano gli effetti.</p>
+      <p>La magia Vim permette anche di affrontare i demoni. Evocare i demoni e averci a che fare è proibito dall'Ordine, ma è concesso combatterli.</p>
+      <p>I Magi usano spesso Vim per contrastare fenomeni magiic. Il Cantastorie deve assegnare livelli di incantesimi per ognuno degli avvenimenti arcani che si desidera affrontare con
+      incantesimi Vim.</p>
+      <p>Gli incantesimi Vim sono perlopiù di livello Generico, poichè il potere della magia che influenzano è piuttosto vario: un incantesimo pensato per disperdere una magia di Magnitudine 1
+      sarà molto meno potente di una pensata per disperdere un effetto di Magnitudine 5. Le linee guida degli incantesimi Vim tengono conto di ciò, e invece di fornire un livello preciso per
+      un effetto corrispondente, indicano la relazione che lega il livello dell'incantesimo Vim e quello del Bersaglio.</p>
+      <p>Come sempre, le linee guida si riferiscono a incantesimi con Portata, Durata e Bersaglio base; quando cambi questi parametri, applica il cambio di livello prima di moltiplicare o
+      dividere il livello a seconda dell'effetto. Una versione di <emphasis>Vento del Silenzio Mondano</emphasis> (PeVi) con Portata Vocale disperde un incantesimo lanciato con un totale di
+      Tecnica + Forma pari a meno di metà di (livello dell'incantesimo -10): dieci livelli di potere vanno persi per aumentare la Portata, e solo il potere rimanente è riservato all'effetto.</p>
+      <p>Il Bersaglio Singolo per un incantesimo Vim può riferirsi a un incantesimo individuale o a un singolo oggetto o persona; lo stesso vale per Gruppo. Se il Bersaglio è un oggetto o persona,
+      l'incantesimo influenza qualsiasi magia idonea che influenzi quella persona, non un singolo incantesimo. Gran parte degli incantesimi si può lanciare su altri incantesimi oppure su individui,
+      tranne nel caso in cui la descrizione indichi che possono essere lanciati su entrambi. Per esempio, <emphasis>Specchio del Contrario</emphasis> può essere lanciato solo su altri incantesimi,
+      mentre <emphasis>Rivelazione dell'Occhio Invisibile</emphasis> solo su oggetti o persone.</p>
+      <p>Incantesimi ed effetti magici non hanno Taglia, quindi i modificatori per quest'ultima non si applicano ai livelli degli incantesimi Vim con Bersaglio Singolo. Gli incantesimi Vim 
+      che influenzano diversi incantesimi o intere aree vanno aumentati di livello come di consueto.</p>
+      <p>Le linee guida fanno riferimento principalmente a incantesimi, per questioni di brevità: gli incantesimi Vim possono infatti influenzare effetti magici derivanti da oggetti magici,
+      creature magiche o demoni. Tuttavia, a meno che sia indicato diversamente, non influenzano gli oggetti magici ma solo il loro effetto; dunque, <emphasis>Vento del Silenzio Mondano</emphasis>
+      può disperdere un muro di pietra prodotto da un oggetto magico, ma è necessario un <emphasis>Disincantare</emphasis> per disperdere la magia dell'oggetto vero e proprio.</p>
+      <p>Nota che i Magi Ermetici, e alcuni incantatori non Ermetici, non hanno punteggi di Potenza, quindi non sono influenzati da difese o altri incantesimi che agiscono contro tali punteggi.</p>
     </description>
   </form>
   <technique>
@@ -168,6 +233,10 @@
   <book><abbreviation>LotN</abbreviation><name>Lands of the Nile</name></book>
   <book canon="false"><abbreviation>IBG</abbreviation><name>Iron-bound Grimoire</name></book>
   <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
+  <book>
+    <abbreviation>HP</abbreviation>
+    <name>Hermetic Projects</name>
+  </book>
 </books>
 <arts_guidelines>
   <arts_guideline>
