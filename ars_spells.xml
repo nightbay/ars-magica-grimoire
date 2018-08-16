@@ -80,7 +80,7 @@
     <name>Corpus</name>
     <color>#8B0000</color>
     <description>
-      <p>Gli incantesimi Corpus riguardano corpi umani o umanoidi e qualsiasi cosa coninvolga tali corp. Molte fate sono abbastanza simili agli umani da essere influenzate da questi incantesimi.</p>
+      <p>Gli incantesimi Corpus riguardano corpi umani o umanoidi e qualsiasi cosa coninvolga tali corpi. Molte fate sono abbastanza simili agli umani da essere influenzate da questi incantesimi.</p>
       <p>Un Singolo base per Corpus è un essere umano adulto, fino a taglia +1.</p>
     </description>
   </form>
@@ -160,7 +160,7 @@
       principale di un Magus maestro. Con l'immaginazione, puoi usare questi incantesimi per creare difese, allarmi, oggetti magici a uso singolo e altre cose interessanti. Molti incantesimi
       Vim vanno lanciati insieme ad altri, di cui modificano gli effetti.</p>
       <p>La magia Vim permette anche di affrontare i demoni. Evocare i demoni e averci a che fare è proibito dall'Ordine, ma è concesso combatterli.</p>
-      <p>I Magi usano spesso Vim per contrastare fenomeni magiic. Il Cantastorie deve assegnare livelli di incantesimi per ognuno degli avvenimenti arcani che si desidera affrontare con
+      <p>I Magi usano spesso Vim per contrastare fenomeni magici. Il Cantastorie deve assegnare livelli di incantesimi per ognuno degli avvenimenti arcani che si desidera affrontare con
       incantesimi Vim.</p>
       <p>Gli incantesimi Vim sono perlopiù di livello Generico, poichè il potere della magia che influenzano è piuttosto vario: un incantesimo pensato per disperdere una magia di Magnitudine 1
       sarà molto meno potente di una pensata per disperdere un effetto di Magnitudine 5. Le linee guida degli incantesimi Vim tengono conto di ciò, e invece di fornire un livello preciso per
@@ -762,7 +762,7 @@
       <p>Aggiungi un grado se il movimento impartito è leggermente innaturale, due se è molto innaturale.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Difesa contro creature d'acqua appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
+      <guideline ward="true"><level>Generico</level><description>Difesa contro creature d'acqua appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
       (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description></guideline>
       <guideline>
         <level>1</level>
@@ -793,81 +793,186 @@
   <arts_guideline>
     <arts><form>Auram</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>I fenomeni atmosferici si creano normalmente a Portata Visuale. Il motivo è il fatto che gran parte di essi, come nuvole, pioggia, tempeste e così via, scaturiscono
+      naturalmente dall'aria, quindi gli incantesimi che li influenzano devono avere portata sufficiente a raggiungere la zona. È possibile creare fenomeni acquatici che
+      inizino al livello del suolo, ma sono molto innaturali, e l'aumento di livello compensa l'abbassamento dato dalla riduzione della Portata a Tocco. Un Magus volante
+      potrebbe ovviamente usare la Portata Tocco per creare un fenomeno atmosferico naturale, ma tali incantesimi non sono molto popolari nell'Ordine.</p>
+      <p>I sigilli negli incantesimi Creo Auram danno di solito all'aria proprietà specifiche come profumi o colori.</p>
+      <p>I fallimenti critici in Creo Auram possono creare il tipo sbagliato di clima, o indirizzarlo sul lanciatore o qualche suo alleato.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea un fenomeno atmosferico minore: brezza, foschia, pioggerella.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un fenomeno atmosferico normale: nuvola, vento, nebbia, pioggia da una nube già esistente.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un fenomeno atmosferico intenso: tuono assordante, pioggia torrenziale, nebbia impenetrabile, bufera.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un tipo di area deabilitante: puzza nociva, veleno blando ecc.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno atmosferico molto intenso: uragani, fulmini, tornado.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno in modo leggermente innaturale: +1 magnitudine (ad esempio al chiuso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno in modo molto innaturale: +2 magnitudine.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno completamente fuori dal contesto normale (ad esempio un fulmine che si propaga dalle mani del lanciatore): +4 magnitudine.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Auram</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>I fallimenti critici in Intellego Auram rivelano solitamente informazioni false.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>I tuoi sensi non sono inalterati dall'aria (ad esempio puoi udire suoni al di sopra del fischio del vento).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Percepisci una proprietà dell'aria (ad esempio se è respirabile in sicurezza).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi tutte le proprietà mondane dell'aria. Hai un'intuizione su alcuni fatti che riguardano l'aria.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parli con l'aria.</description>
+      </guideline>    
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Auram</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Trasformare una sola proprietà dell'aria abbassa generalmente il livello di una magnitudine.</p>
+      <p>I fallimenti critici in Muto Auram possono tramutare temporaneamente il lanciatore in aria, o l'aria in qualcosa di indesiderato.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Trasforma l'aria in un gas che infligge (+ livello) danni.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma una quantità d'aria in un'altra forma d'aria.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma una quantità d'aria in un altro elemento (fuoco, terra o acqua).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una quantità d'aria in una mescolanza di elementi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una quantità d'aria in qualcosa di leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma una quantità d'aria in qualcosa di completamente innaturale.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Auram</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Causare la distruzione dell'aria con grande precisione aumenta la magnitudine di 1.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>3</level>
+        <description>rende l'aria soffocante e di difficile respirazione.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge l'acqua ferma.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge un fenomeno atmosferico minore: brezza, foschia, pioggerella.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce l'intensità di un fenomeno atmosferico di una magnitudine (ad esempio, da molto intenso a intenso o da normale a minore).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un fenomeno atmosferico intenso: tuono assordante, pioggia torrenziale, nebbia impenetrabile, bufera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un tipo di aria debilitante: puzza nociva, veleno blando ecc.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge un fenomeno atmosferico molto intenso: uragano, fulmini, tornado.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Auram</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Rego Auram permette al Magus di controllare i fenomeni atmosferici esistenti. Non consente di creare una brezza, ma è possibile dirigere il corso di una tempesta,
+      compreso far iniziare e finire la pioggia a comando.</p>
+      <p>Controllare una quantità d'aria con grande forza o precisione alza la magnitudine dell'incantesimo di 1.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro creature d'aria appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
+        (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Controlla un fenomeno atmosferico minore.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un fenomeno atmosferico normale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico minore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un fenomeno atmosferico intenso.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico normale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un fenomeno atmosferico molto intenso.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico intenso.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico molto intenso.</description>
+      </guideline>    
     </guidelines>
   </arts_guideline>
   <arts_guideline>
