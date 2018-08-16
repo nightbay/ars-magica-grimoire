@@ -246,7 +246,7 @@
     <xsl:param name="level"/>
     <xsl:for-each select="$sortedspells/spell[arts/technique=$technique and arts/form=$form and level=$level]">
       <fo:block page-break-inside="avoid">
-        <fo:block id="{generate-id(.)}" font-family="{$textfont}" font-size="9pt" font-weight="normal">
+        <fo:block id="{generate-id(.)}" font-family="{$textfont}" font-size="9pt" font-weight="bold">
           <fo:inline><xsl:value-of select="name" /></fo:inline><xsl:call-template name="source"/>
         </fo:block>
         <fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">

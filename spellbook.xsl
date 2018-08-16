@@ -160,7 +160,7 @@
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block  id="{$toc_key}" text-align="center" color="{$handcolour}" font-family="{$artfont}" font-size="18pt" font-weight="normal">
-          <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/>
+          Linee guida di <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/>
         </fo:block>
         <xsl:apply-templates select="/ars_magica/arts_guidelines/arts_guideline[arts/form=$form and arts/technique=$technique]/description/p" mode="guideline"/>
         <fo:block space-before="3pt" font-size="8pt"><xsl:text> </xsl:text></fo:block>
@@ -172,7 +172,7 @@
                   <fo:table-cell width="4.2em">
                     <fo:block font-size="8pt">
                       <xsl:if test="not(preceding-sibling::*[1]/level = level)">
-                        <xsl:if test="level != 'General'">Livello </xsl:if><xsl:value-of select="level"/>
+                        <xsl:if test="level != 'Generico'">Livello </xsl:if><xsl:value-of select="level"/>
                       </xsl:if>
                     </fo:block>
                   </fo:table-cell>    
@@ -218,24 +218,24 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-        <fo:block font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal"><xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/> Incantesimi</fo:block>
-        <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERAL']"/>
-        <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERAL']"/>
+        <fo:block font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal">Incantesimi <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/></fo:block>
+        <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERICO']"/>
+        <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERICO']"/>
         <xsl:variable name="levels" select="distinct-values($spells/level)"/>
 
         <xsl:if test="count($generalspells) &gt; 0">
-          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERALE</fo:block>
+          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">GENERICO</fo:block>
           <xsl:call-template name="spells-at-level">
             <xsl:with-param name="form" select="$form"/>
             <xsl:with-param name="technique" select="$technique"/>
-            <xsl:with-param name="level" select="'GENERALE'"/>
+            <xsl:with-param name="level" select="'GENERICO'"/>
           </xsl:call-template>
           <fo:block margin-bottom="4px"> </fo:block>
         </xsl:if>
         <xsl:for-each select="$levels">
           <xsl:sort select="." data-type="number"/>
           <xsl:variable name="slevel" select="."/>
-          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">LEVEL <xsl:value-of select="$slevel"/></fo:block>
+          <fo:block keep-with-next.within-page="always" font-size="9pt" font-family="{$textfont}" margin-bottom="0.2em">LIVELLO <xsl:value-of select="$slevel"/></fo:block>
           <xsl:call-template name="spells-at-level">
             <xsl:with-param name="form" select="$form"/>
             <xsl:with-param name="technique" select="$technique"/>
