@@ -2470,8 +2470,8 @@
   <arts_guideline>
     <arts><form>Terram</form><technique>Perdo</technique></arts>
     <description>
-      <p>Per distruggere sabbia, fango o argilla, usa lo stesso livello necessario a distruggere la terra; per pietra o vetro aggiungi una magnitudine;
-      per metallo o gemme aggiungi due magnitudini.</p>
+      <p>Per distruggere sabbia, fango o argilla, usa lo stesso livello necessario a distruggere la terra; per pietra o vetro aggiungi una Magnitudine;
+      per metallo o gemme aggiungi due Magnitudini.</p>
       <p>Oltre a distruggere la cosa sbagliata, i fallimenti critici in Perdo Terram possono distruggere il terreno su cui poggia il lanciatore,
       oppure oggetti di metallo che egli tiene in mano.</p>
     </description>
@@ -2489,8 +2489,8 @@
   <arts_guideline>
     <arts><form>Terram</form><technique>Rego</technique></arts>
     <description>
-      <p>Di seguito sono elencate le linee guida per controllare terriccio, sabbia, fango o argilla. Agginugi una magnitudine per controllare pietra o vetro
-      e due per metallo e gemme. Manipolare oggetti con grande precisione può richiedere altre magnitudini, a seconda dell'accuratezza richiesta.</p>
+      <p>Di seguito sono elencate le linee guida per controllare terriccio, sabbia, fango o argilla. Agginugi una Magnitudine per controllare pietra o vetro
+      e due per metallo e gemme. Manipolare oggetti con grande precisione può richiedere altre Magnitudini, a seconda dell'accuratezza richiesta.</p>
       <p>I fallimenti critici in Rego Terram risultano spesso in grandi ammassi di pietre volanti che piovono sul lanciatore.</p>
     </description>
     <guidelines>
@@ -2530,12 +2530,12 @@
     <guidelines>
       <guideline>
         <level>Generico</level>
-        <description>Ccrea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una magnitudine
+        <description>Ccrea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una Magnitudine
         (quest'Aura è di “magia” generica: non può fornire informazioni fuorvianti).</description>
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Crea un guscio magico che impedisce agli incantesimi Intellego con livello minore del suo più una magnitudine di comprendere qualsiasi
+        <description>Crea un guscio magico che impedisce agli incantesimi Intellego con livello minore del suo più una Magnitudine di comprendere qualsiasi
         dettaglio sulla magia lanciata sul Bersaglio.</description>
       </guideline>
       <guideline>
@@ -2569,7 +2569,7 @@
     <guidelines>
       <guideline>
         <level>1</level>
-        <description>Individua magie di magnitudine 10 o superiore.</description>
+        <description>Individua magie di Magnitudine 10 o superiore.</description>
       </guideline>
       <guideline>
         <level>1</level>
@@ -2581,7 +2581,7 @@
       </guideline>
       <guideline>
         <level>2</level>
-        <description>Individua magie di magnitudine 8 o superiore.</description>
+        <description>Individua magie di Magnitudine 8 o superiore.</description>
       </guideline>
       <guideline>
         <level>2</level>
@@ -2589,7 +2589,7 @@
       </guideline>
       <guideline>
         <level>3</level>
-        <description>Individua magie di magnitudine 6 o superiore. </description>
+        <description>Individua magie di Magnitudine 6 o superiore. </description>
       </guideline>
       <guideline>
         <level>3</level>
@@ -2599,7 +2599,7 @@
       </guideline>
       <guideline>
         <level>4</level>
-        <description>Individua magie di magnitudine 3 o superiore.</description>
+        <description>Individua magie di Magnitudine 3 o superiore.</description>
       </guideline>
       <guideline>
         <level>4</level>
@@ -2652,20 +2652,20 @@
     <guidelines>
       <guideline>
         <level>Generico</level>
-        <description>Altera in modo superficiale un incantesimo di meno del doppio del (livello +1 magnitudine) dell'incantesimo Vim; non altera l'effetto
+        <description>Altera in modo superficiale un incantesimo di meno del doppio del (livello +1 Magnitudine) dell'incantesimo Vim; non altera l'effetto
         primario dell'incantesimo o il suo potere.</description>
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Altera in modo significativo un incantesimo di livello inferiore al livello dell'incantesimo Vim +1 magnitudine; non altera la Tecnica
-        o Forma dell'incantesimo Bersaglio; mutamenti significativi comprendono l'aggiunta o la diminuzione di una magnitudine, o il cambio di Bersaglio,
+        <description>Altera in modo significativo un incantesimo di livello inferiore al livello dell'incantesimo Vim +1 Magnitudine; non altera la Tecnica
+        o Forma dell'incantesimo Bersaglio; mutamenti significativi comprendono l'aggiunta o la diminuzione di una Magnitudine, o il cambio di Bersaglio,
         se l'incantesimo originale ha un Bersaglio.</description>
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description> Altera completamente un incanteismo di meno di metà del (livello +1 magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
+        <description> Altera completamente un incanteismo di meno di metà del (livello +1 Magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
         entrambe, senza bisogno di requisiti; l'incantesimo Vim colpisce la struttura dell'incantesimo, non i Bersagli; un mutamento totale è un cambio di
-        potere di un massimo di due magnitudini. Qualsiasi cambiamento superiore richiede Creo o Perdo, per creare o distruggere l'energia magica.</description>
+        potere di un massimo di due Magnitudini. Qualsiasi cambiamento superiore richiede Creo o Perdo, per creare o distruggere l'energia magica.</description>
       </guideline>
     </guidelines>
   </arts_guideline>
@@ -2678,11 +2678,11 @@
       <guideline>
         <level>Generico</level>
         <description>Fa si che un essere (compreso un oggetto magico) appaia non magico a qualsiasi incantesimo Intellego minore del doppio di 
-        (livello +2 magnitudine di questo incantesimo).</description>
+        (livello +2 Magnitudine di questo incantesimo).</description>
       </guideline>    
       <guideline>
         <level>Generico</level>
-        <description> Disperde effetti di tipo specifico con un livello inferiore al livello dell'incantesimo Vim +4 magnitudine + dado stress 
+        <description> Disperde effetti di tipo specifico con un livello inferiore al livello dell'incantesimo Vim +4 Magnitudine + dado stress 
         (non c'è fallimento critico). Un tipo specifico può essere una magia Terram Ermetica, o una magia di controlo spirituale sciamanica. 
         Un Magus deve avere alcune conoscenze di un tipo di magia (non necessariamente saperla usare) per inventare un incantesimo che lo influenzi.
         Tutti i Magi Ermetici hanno familiarità con la Magia Ermetica.</description>
@@ -2693,11 +2693,11 @@
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Disperde qualsiasi effetto magico con un totale di lancio inferiore a metà del (livello +4 magnitudine) dell'incantesimo Vim + dado stress(non c'è fallimento critico).</description>
+        <description>Disperde qualsiasi effetto magico con un totale di lancio inferiore a metà del (livello +4 Magnitudine) dell'incantesimo Vim + dado stress(non c'è fallimento critico).</description>
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Riduce il totale di lancio per tutte le magie lanciate dal Bersaglio di metà del (livello +2 magnitudine) dell'incantesimo. Se due o più
+        <description>Riduce il totale di lancio per tutte le magie lanciate dal Bersaglio di metà del (livello +2 Magnitudine) dell'incantesimo. Se due o più
         di tali incantesimi influenzano un Bersaglio, solo il maggiore ha effetto: le riduzioni non si sommano. L'incantesimo deve penetrare la resistenza alla
         magia del Bersaglio per avere effetto.</description>
       </guideline>
@@ -2750,17 +2750,17 @@
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Mantiene o sopprime un incantesimo da te lanciato il cui livello sia inferiore al livello +2 magnitudine dell'incantesimo Vim.</description>
+        <description>Mantiene o sopprime un incantesimo da te lanciato il cui livello sia inferiore al livello +2 Magnitudine dell'incantesimo Vim.</description>
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description>Crea un condotto o un contenitore per incantesimi di livello inferiore al livello +5 magnitudine dell'incantesimo Vim. Un condotto crea
+        <description>Crea un condotto o un contenitore per incantesimi di livello inferiore al livello +5 Magnitudine dell'incantesimo Vim. Un condotto crea
         un contatto mistico fra te e il Bersaglio (Portata effettiva Tocco), mentre un contenitore trattiene un incantesimo per un lasso di tempo specifico
         prima di rilasciarlo.</description>
       </guideline>
        <guideline>
         <level>Generico</level>
-        <description>Sostiene o sopprime un incantesimo lanciato da un altro con livello inferiore di metà del (livello +5 magnitudine) dell'incantesimo Vim.</description>
+        <description>Sostiene o sopprime un incantesimo lanciato da un altro con livello inferiore di metà del (livello +5 Magnitudine) dell'incantesimo Vim.</description>
       </guideline>
       <guideline>
         <level>10</level>
@@ -2955,7 +2955,7 @@
       <form>Ignem</form>
       <technique>Creo</technique>
       <guideline>
-        <base></base>
+        <base>10</base>
         <modifiers>        
         </modifiers>
       </guideline>
