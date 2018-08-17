@@ -823,15 +823,15 @@
       </guideline>
       <guideline>
         <level>5</level>
-        <description>Crea un fenomeno in modo leggermente innaturale: +1 magnitudine (ad esempio al chiuso).</description>
+        <description>Crea un fenomeno in modo leggermente innaturale: +1 Magnitudine (ad esempio al chiuso).</description>
       </guideline>
       <guideline>
         <level>5</level>
-        <description>Crea un fenomeno in modo molto innaturale: +2 magnitudine.</description>
+        <description>Crea un fenomeno in modo molto innaturale: +2 Magnitudine.</description>
       </guideline>
       <guideline>
         <level>5</level>
-        <description>Crea un fenomeno completamente fuori dal contesto normale (ad esempio un fulmine che si propaga dalle mani del lanciatore): +4 magnitudine.</description>
+        <description>Crea un fenomeno completamente fuori dal contesto normale (ad esempio un fulmine che si propaga dalle mani del lanciatore): +4 Magnitudine.</description>
       </guideline>
     </guidelines>
   </arts_guideline>
@@ -862,7 +862,7 @@
   <arts_guideline>
     <arts><form>Auram</form><technique>Muto</technique></arts>
     <description>
-      <p>Trasformare una sola proprietà dell'aria abbassa generalmente il livello di una magnitudine.</p>
+      <p>Trasformare una sola proprietà dell'aria abbassa generalmente il livello di una Magnitudine.</p>
       <p>I fallimenti critici in Muto Auram possono tramutare temporaneamente il lanciatore in aria, o l'aria in qualcosa di indesiderato.</p>
     </description>
     <guidelines>
@@ -895,7 +895,7 @@
   <arts_guideline>
     <arts><form>Auram</form><technique>Perdo</technique></arts>
     <description>
-      <p>Causare la distruzione dell'aria con grande precisione aumenta la magnitudine di 1.</p>
+      <p>Causare la distruzione dell'aria con grande precisione aumenta la Magnitudine di 1.</p>
     </description>
     <guidelines>
       <guideline>
@@ -912,7 +912,7 @@
       </guideline>
       <guideline>
         <level>4</level>
-        <description>Riduce l'intensità di un fenomeno atmosferico di una magnitudine (ad esempio, da molto intenso a intenso o da normale a minore).</description>
+        <description>Riduce l'intensità di un fenomeno atmosferico di una Magnitudine (ad esempio, da molto intenso a intenso o da normale a minore).</description>
       </guideline>
       <guideline>
         <level>5</level>
@@ -933,7 +933,7 @@
     <description>
       <p>Rego Auram permette al Magus di controllare i fenomeni atmosferici esistenti. Non consente di creare una brezza, ma è possibile dirigere il corso di una tempesta,
       compreso far iniziare e finire la pioggia a comando.</p>
-      <p>Controllare una quantità d'aria con grande forza o precisione alza la magnitudine dell'incantesimo di 1.</p>
+      <p>Controllare una quantità d'aria con grande forza o precisione alza la Magnitudine dell'incantesimo di 1.</p>
     </description>
     <guidelines>
       <guideline ward="true">
@@ -978,554 +978,1795 @@
   <arts_guideline>
     <arts><form>Corpus</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Molti incantesimi Creo Corpus raggiungono il massimo dell'efficacia come rituali. A meno che non si diversamente indicato, un incantesimo di guarigione lanciato come rituale
+      con Durata diversa da Istantaneo sospende il processo di guarigione, dunque alla fine della Durata le ferite sono fresche come al momento del lancio. Nessun incantesimo Ermetico
+      può ripristinare i livelli di fatica.</p>
+      <p>Un incantesimo in grado di guarire qualcosa guarisce anche versioni meno serie della stessa cosa: dunque, se può guarire Ferite Medie guarisce anche quelle Leggere.</p>
+      <p>Un incantesimo per le ferite non cura però le malattie, a prescindere dal livello, e viceversa.</p>
+      <p>Le caratteristiche fisiche sono Fortitudo, Vigor, Decteritas e Celeritas, e possono essere influenzate e migliorate dalla magia Corpus.</p>
+      <p>I fallimenti critici in Creo Corpus infliggono sovente danni invece di guarirli.</p>
+      <p>Gli incantesimi Creo Animal possono fungere da guida ed esempi per incantesimi Creo Corpus.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Concede a un personaggio un bonus di +1 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Concede a un personaggio un bonus di +3 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Preserva un cadavere dalla decomposizione.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Concede a un personaggio un bonus di +6 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Impedisce a tutte le ferite del Bersaglio di peggiorare.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Concede a un personaggio un bonus di +9 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Concede a un personaggio un bonus di +12 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un cadavere umano intero.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Concede a un personaggio un bonus di +15 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>15</level>
+        <description>Cura una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Concede a un personaggio un bonus di +18 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>15</level>
+        <description>Risolve una crisi d'invecchiamento minore.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>20</level>
+        <description>Cura una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Cura gli effetti debilitanti di una malattia, veleno o ferita.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>20</level>
+        <description>Risolve una crisi d'invecchiamento seria.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Cura una Ferita Grave. </description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Ripristina un arto perduto.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Risolve una crisi d'invecchiamento maggiore.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Cura una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di 0.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Fa raggiungere a una persona la maturità fisica completa nel corso di un singolo giorno o notte. Questa maturazione accelerata si applica solo durante
+        la Durata dell'incantesimo, quindi l'effetto completo richiede un incantesimo con Durata Sole lanciato all'inizio del giorno o della notte. Le persone non imparano 
+        sotto l'influenza dell'incantesimo, e a questi fini la maturità completa si raggiunge attorno ai vent'anni.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Risolve una crisi d'invecchiamento critica.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Cura tutte le ferite.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Risolve una crisi d'invecchiamento fatale.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +1.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>40</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +2.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>45</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +3.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>50</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +4.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>55</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +5. Un ulteriore aumento non è nella natura umana, quindi non può
+        essere effettuato con la Magia Creo.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>70</level>
+        <description>Resuscita i morti, fino a un certo punto (vedi <emphasis>Ombra della Vita Rinnovata</emphasis>).</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Corpus</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Sigilli comuni negli inatesimi Intellego Corpus riportano solitamente le informazioni in modi strani o particolari.</p>
+      <p>Come gran parte dei casi di Intellego, i fallimenti critici in Intellego Corpus forniscono di solito informazioni false.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>3</level>
+        <description>Localizza una persona con cui hai una Connessione Arcana.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Percepisci informazioni molto generali su un corpo.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Percepisci un informazione specifica su un corpo.</description>
+      </guideline>    
+      <guideline>
+        <level>5</level>
+        <description>Parli con un corpo morto.</description>
+      </guideline>    
+      <guideline>
+        <level>10</level>
+        <description>Percepisci tutte le informazioni utili su un corpo.</description>
+      </guideline>    
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Corpus</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi trasformano le persone: ce ne sono di benefici per te e i tuoi compagni, e di dannosi per i tuoi nemici.</p>
+      <p>Le trasformazioni non eliminano completamente la forma originale: qualcosa ne rimane sempre. Se trasformi in lupo un uomo grasso con
+      un braccio solo, il lupo sarà grasso, maschio e con tre zampe.</p>
+      <p>Le trasformazioni possono avere effetti permanenti letteri (o a volte gravi). Trascorrendo un mese o più come animale si inizia ad agire
+      e pensare come tale, e alla fine, se si ha una volonta debole, l'identità umana si perde del tutto. Quando torna umano, il Bersaglio
+      potrebbe mantenere temporaneamente o per sempre alcune caratteristiche dell'altra forma. A volte, dopo un periodo da coniglio, si mantengono
+      una passione per le carote e orecchie più grandi del normale. Le trasformazioni possono essere insidiose.</p>
+      <p>Gli incantesimi Muto Corpus non possono alterare la mente di una persona, quindi lasciano immutate inteligenza e coscienze. I Magi in forma
+      animale possono lanciare incantesimi, ma subiscono la normale penalità di -15 perché non hanno mani ne voce. La persona trasformata ottiene
+      qualsiasi abilità dell'aspetto animale, ma potrebbe volerci circa un giorno di esperinza perché si abitui a usarla.</p>
+      <p>Trasformare l'equipaggiamento assieme al corpo richiede dei requisiti; ad esempio, è necessario un requisito di lancio Animal per il cuoio,
+      Aquam per eventuali liquidi portati e Terram per gli oggetti di metallo (comprese le borchie delle corazze). Gli oggetti vengono trasfromati
+      solo se sono indossati, non basta tenerli in mano. In termini semplici possono non trasformarsi per due motivi: perché scegli di non usare i
+      requisiti di lancio o perché il Cantastorie stabilisce che non fanno parte integrante dell'equipaggiamento indossato. Gli oggetti non
+      trasformati cadono a terra.</p>
+      <p>Alcuni incantesimi di mutazione permettono di assumere di nuovo l'aspetto normale concentrandosi. Mentre ti concentri, rimuovi un oggetto
+      simbolico per spezzare l'incantesimo in questo modo: se lo lanci senza di essi, devi disperdere la magia con Perdo Vim o attendere che termini
+      la durata.</p>
+      <p>I fallimenti critici in Muto Corpus possono portare a una durata indefina e dimostrarsi ardui da disperdere.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma una persona in moda da conferirle un abilità minore.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambia completamente aspetto o taglia di una persona (che deve comunque mantenere la forma umana).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Rende un corpo resistente al danno (+1 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rrasforma un umano in un animale terrestre (con requisito Animal).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rende un corpo resistente al danno (+2 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rende un corpo resistente al danno (+3 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasforma un umano in un uccello o pesce (requisito Animal).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende un corpo resistente al danno (+4 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasforma un umano in oggetto solido inanimanto (requisito Terram).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Rende un corpo resistente al danno (+5 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasforma un umano in una pianta (requisito Herbam).</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Trasforma un umano in un oggetto inconsistente (requisito Auram).</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Corpus</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi infliggono danni diretti e spesso permanenti, a meno che non vengano guariti con altre magie.</p>
+      <p>Le malattie causate dalla magia hanno un Fattore Difficoltà base di 6, che si alza di 1 per ogni Magnitudine di 
+      cui si alza il livello dell'incantesimo. Non è possibile ridurre il livello riducendo il Fattore Difficoltà.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>3</level>
+        <description>Infligge danno superficiale a un corpo (ad esempio rimuove i capelli).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Infligge a una persona dolore, ma nessun danno reale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un cadavere.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Ferisce una persona in modo da ostacolarla senza danneggiarla: ad esempio la azzoppa o ne annebbia la vista. Guarisce come una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Causa la perdita di una livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa invecchiare di cinque anni.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Menoma un arto, in modo che sia inutilizzabile ma possa guarire. Guarisce come una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge uno dei sensi secondari di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge uno dei sensi principali di una persona. Guarisce come una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una malattia grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge o mozza un arto in modo che non possa guarire naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Uccide una persona.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Distrugge una proprietà di una persona, come il peso o la solidità.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Corpus</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>I fallimenti critici in Rego Corpus prendono spesso il controllo del lanciatore e lo muovono in maniera indesiderata.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro le creature associate a Corpus di una Reame (Divino, Fatato, Infernale o Magico) con potenza inferiore
+        al livello dell'incantesimo. Nota che i Magi Ermetici non hanno Potenza quindi non sono influenzati da tali incantesimi
+        (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Il Bersaglio perde il controllo di una parte del corpo.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Muove un Bersaglio lentamente in una direzione finché la superficie su cui si sposta ne mantiene il peso.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla a grandi linee i movimenti fisici del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Muove un Bersaglio lentamente in qualsiasi direzione tu desideri.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Muove un Bersaglio lentamente, diritto o in un'altra direzione, su superfici che non lo sostengono.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Tiene immobile il corpo del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Muove un Bersaglio lentamente in qualsiasi direzione tu desideri, anche se il Bersaglio non ha un sostegno.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla i movimenti del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Elimina le penalità di Fatica e ferite.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Anima un cadavere.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasporta il Bersaglio istantamente di un massimo di 5 passi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Dirige il flusso delle energie corporee.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Muove un Bersaglio rapidamente in qualsiasi direzione tu desideri.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasporta il Bersaglio istantameneamente di un massimo di 50 passi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Difende un Bersaglio da altri esseri umani. Nota che per respingere un Magus Ermetico la difesa deve penetrarne la Resistenza alla Magia.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di 500 passi.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di una lega.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di sette leghe.</description>
+      </guideline>
+      <guideline>
+        <level>35</level>
+        <description>Trasporta il Bersaglio istantaneamente in un luogo con cui hai una Connessione Arcana.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Herbam</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi creano e guariscono piante. Per creare cibo nutriente è necessario ricorrere ai rituali;
+      i livelli indicati di seguito si riferiscono alle parti fogliose.</p>
+      <p>Si possono creare piante vive o morte con uguale facilità. Per creare prodotti di Herbam trattati (come legno
+      tagliato, un pasto vegetariano, tessuti di lino o cotone) aggiungi una Magnitudine al livello necessario per
+      creare la quantità equivalente di piante vive o morte non trattate. Per creare prodotti di Herbam trattati e
+      lavorati, come vestiti o mobili aggiungi 2 gradi.</p>
+      <p>Un singolo incantesimo genera solo un tipo di prodotto vegetale.</p>
+      <p>I fallimenti critici in Creo Herbam possono creare piante sbagliate, o crearle nei luoghi sbagliati.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Fa in modo che una pianta cresca forte per la durata dell'incantesimo. Questa linea guida può
+        influenzare una pianta grande fino a un massimo di dieci passi in qualsiasi direzione, come un grosso albero
+        (quindi include l'aumento di taglia di +3).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea un prodotto vegetale come un frutto o una foglia.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Impedisce a una pianta di ammalarsi.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un prodotto vegetale trattato, come un asse di legno.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea legno in forma innaturale, come un muro o un ponte viventi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Porta una pianta alla maturità in un singolo giorno o notte. La crescita accelerata avviene solo 
+        durante l'incantesimo, quindi per la maturità completa è necessario un incantesimo con Durata Sole lanciato 
+        subito dopo l'alba o il tramonto.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Porta una pianta alla maturità in circa due ore.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Porta una pianta alla maturità in circa dieci diametri (20 minuti).</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Porta una pianta alla maturità in un singolo diametro.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Porta una pianta alla maturità in un attimo.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Herbam</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
-    </description>
+      <p>Com'è comune con la magia Intellego, i fallimenti critici in Intellego Herbam forniscono generalmente informazioni false.</p>
+     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Ottieni una conoscenza intuitiva di una pianta (ad esempio, sai se con una determinata azione la danneggieresti).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Individua una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Apprendi informazioni generali o un singolo fatto specifico su una pianta o un oggetto fatto con prodotti vegetali.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi tutti gli aspetti mondani di una pianta o di un oggetto ottenuto da prodotti vegetali.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parla con una pianta.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Herbam</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Queste linee guida presumono che quando trasformi una pianta, essa rimanga in qualche modo una pianta. Trasformarlo in qualcosa d'altro 
+      richiede un incantesimo di una Magnitudine più alta della linea guida più appropriata all'azione. Trasformare piante in materiale trattato
+      o finito (ad esempio mobili, un pasto vegetariano, stoffa di lino o cotone) aggiunge una Magnitudine al livello necessario a trasformare 
+      piante in altre piante naturali e non trattate.</p>
+      <p>I fallimenti critici in Muto Herbam possono trasformare il lanciatore in una pianta, o il bersaglio in una pianta animata ostile al lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma una pianta o un prodotto di origine vegetale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma una pianta o un prodotto di origine vegetale in metallo o pietra (requisito Terram). </description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Risveglia la coscienza di una pianta (requisito Mentem).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Consente a una pianta di piegarsi o torcersi rapidamente sul posto.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Herbam</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesi distruggono piante e materiale vegetale e, poiché molti oggetti sono di legno,
+      spesso possono essere piuttosto devastanti. Le linee guida fornite sono per distruggere il legno
+      morto. Con quello vivo è di solito più difficile: aggiungi una Magnitudine.</p>
+      <p>I fallimenti critici in Perdo Herbam distruggono solitamente la cosa sbagliata, magari uno dei vestiti del lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Fa cadere le foglie da una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Rovina un piccolo quantitativo di cibo.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge un piccolo quantitativo di legno morto.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge una pianta.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Herbam</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>La difficoltà per controllare il legno vivo o morto è la stessa.</p>
+      <p>I fallimenti critici in Rego Herbam causano di solito un comportamento del legno opposto ai desideri del lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>difesa contro creature associate al legno appartenenti a un Reame (Divino, Fatato, Infernale, Magico)
+        con potenza inferiore del livello dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un piccolo quantitativo di legna.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Devia un singolo attacco di un arma di legno.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un intera pianta, muovendola come desideri; se ha le radici, rimane radicata.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un intera pianta, muovendola come desideri; non è necessario che resti radicata.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Evoca una pianta mobile.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Fa si che una pianta o un prodotto vegetale possa muoversi con convinzione e inteligenza, senza che sia richiesto il tuo controllo costante.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Difende qualcuno contro prodotti vegetali mondani.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa fiorire un albero fuori stagione in un attimo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Intesse filo facendone una tunica.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Ignem</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Incantesimi che creano il fuoco sono armi versatili, che distruggono i viventi, non morti, edifici e il morale del nemico.
+      Facendovi troppo affidamento, però, si corre un rischio con i fallimenti critici: il fuoco non perdona chi perde il controllo,
+      e c'è sempre la possibilità di incendiarsi da soli.</p>
+      <p>Sigilli tipici di incantesimi Creo Ignem sono fiamme di colori o forme specifiche, o con odori insoliti.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea luce equivalente a un chiaro di luna.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea luce equivalente a una candela.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Rende un oggetto caldo al tocco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Incendia un oggetto estremamente infiammabile, come dell'olio o una miccia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea luce equivalente a una torcia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Rende un oggetto rovente al tocco.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Incendia un oggetto molto infiammabile, come una pergamena.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>crea fuoco che infligge +5 danni.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea luce equivalente a una giornata nuvolosa. </description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Incendia un oggetto infiammabile, come legno secco o della carbonella.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Rende un oggetto così caldo da far bollire l'acqua.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fuoco che infligge +10 danni.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fuoco che infligge +5 danni in una forma innaturale, come un cerchio, un lenzuolo, o in modo che copra un oggetto
+        (le forme puramente decorative sono gratuite).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea luce equivalente a quella solare in una giornata tersa. </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Incendia un oggetto leggermente infiammabile, come del cuoio o del legno bagnato. </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Rende un oggetto incandescente.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un fuoco che infligge +15 danni.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un fuoco che infligge +10 danni in una forma innaturale. </description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Incendia un oggetto a mala pena infiammabile come un corpo umano. </description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riscalda un oggetto al punto di sciogliere il piombo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea un fuoco che infligge +20 danni.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un fuoco che infligge +25 danni.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un fuoco che infligge +20 danni in una forma innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea un fluoco che infligge +30 danni.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Ignem</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>I fallimenti critici in Intellego Ignem forniscono di solito informazioni false, ma possono anche rendere
+      il lanciatore incapace di individuare colore o fiamme per un certo periodo.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Percepisci una caratteristica di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>percepisci tutte le caratteristiche mondane di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Sei consapevole di tutti i fuochi nell'area Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Vedi un fuoco con cui hai una Connessione Arcana.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Percepisci i livelli di calore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Vedi chiaramente attraverso le fiamme (può essere necessario un requisito Auram se è presente anche del fumo).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi le proprietà magiche di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Vedi un fuoco con cui hai una Connessione Arcana e tutto ciò che illumina (per esempio un fuoco da campo e tutto ciò che rientra nel suo cerchio di luce).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parli con un fuoco.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Ignem</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>L'intensità di un fuoco influenza anche la capacità di mutarlo.</p>
+      <p>Per ogni 5 punti di cui il danno del fuoco supera +5, aggiungi una Magnitudine al livello dell'incantesimo.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una caratteristica di un fuoco nell'area Bersaglio (ad esempio lo rende più vivido o gli fa produrre più fumo).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description> Trasforma totalmente un fuoco in un altro fuoco naturale (cambiandone una o anche tutte le caratteristiche).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>trasforma un fuoco in modo leggermente innaturale (ad esempio colora le fiamme o fa profumare il fumo di rose). Può richiedere requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>trasforma un fuoco in modo completamente innaturale (ad esempio con fiamme multi colori che formano immagini mentre il crepitare del fuoco produce musica).
+        Richiede spesso requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un fuoco in un esempio naturale di un altro elemento.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un fuoco in un esempio innaturale di un altro elemento, con il requisito appropriato.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Ignem</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>L'intensità del fuoco influenza anche la capacità di distruggerlo. Per ogni 5 punti in cui il danno del fuoco supera +5 aggiungi una Magnitudine al livello dell'incantesimo.</p>
+      <p>I fallimenti critici in Perdo Ignem possono creare fuoco invece di distruggerlo, o congelare il lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Riduce considerevolmente la luce in un area.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Estingue completamente la luce in un area.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Riduce la taglia di un fuoco senza distruggerlo del tutto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Spegne un fuoco, le cui ceneri diventano appena calde.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Raffredda un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Raffredda una persona in modo che perda un livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Raffreda parecchio un oggetto (ad esempio, gela l'acqua).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Raffredda una persona in modo che subisca +5 danni.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge un aspetto di un fuoco (ad esempio, la luce o il calore).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Raffredda una persona così tanto da infliggerle +10 danni.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Ignem</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>L'intensità di un fuoco influenza anche la capacità di controllarlo. Per ogni 5 punti di cui il danno del fuoco supera +5, aggiungi una Magnitudine al livello dell'incantesimo.</p>
+      <p>Gli incantesimi Rego Ignem possono controllare luce e calore come fanno col fuoco.</p>
+      <p>Con il fallimento critico in Rego Ignem, il fuoco fa di solito esattamente ciò che il lanciatore non vuole.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>difesa contro creature di fuoco appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o 
+        inferiore al livello dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un fuoco in modo naturale (ad esempio, controlla la direzione delle fiamme).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Sposta un fuoco rapidamente in modo che continui a bruciare naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un fuoco in modo leggermente innaturale (ad esempio, gli impedisce di bruciare una persona).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un fuoco in modo molto innaturale (ad esempio, gli dà l'aspetto di una forma umanoide danzante).</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Imaginem</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi creano e riparano immagini. È importante ricordare che gli incantesimi Creo Imaginem creano solo le immagini,
+      non le cose in sé: l'immagine di un secchio non trattiene l'acqua versata, né l'immagine di un cavallo sarà in grado di sorreggere
+      un cavaliere. Questo è spesso il primo (e più importante) indizio che l'immagine è solo un'illusione. D'altro canto, l'illusione di
+      un muro può sembrare solida, ma non farà resistenza se qualcuno ci infla una mano.</p>
+      <p>Aumentare la complessità di una creazione sensoriale, come creare un immagine che si muove o che pronuncia parole chiare invece
+      di rumore, aggiunge una Magnitudine. Far muovere un'immagine o far udire dei suoni nel modo da te voluto mentre ti concentri agginge
+      due Magnitudini. Inoltre, anche immagini molto complicate (come un ponte con decorazioni sfarzose) sono generalmente di una Magnitudine
+      più alta.</p>
+      <p>I sigilli arcani possono essere molto ovvi negli incantesimi Creo Imaginem. Le illusioni hanno di solito dei piccoli tratti che le
+      identificano come create da un determinato Magus. Ad esempio, quelle lanciate da Fortunatus di Jerbiton hanno spesso piccole icone
+      religiose inserite nella struttura, dovete al modo in cui inventa gli incantesimi.</p>
+      <p>I fallimenti critici in Creo Imaginem possono creare illusioni ovvie chiaramente collegate al lanciatore, facendo capire che è uno stregone.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea un'immagine che influnza un singolo senso.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un immagine che influenza due sensi.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un immagine che influenza tre sensi.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea un immagine che influenza quattro sensi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un immagine che influenza cinque sensi.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Imaginem</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi sono generalmente meno correlati alle illusioni degli altri incantesimi Imaginem, perchè si individua un immagine senza 
+      alterarla o controllarla. Essi migliorano i tuoi sensi immettendo immagini (solitamente sonore o visive) che normalmente non percepirebbero.</p>
+      <p>Nota che vedere o udire qualcosa in un'altra stanza o a centinaia di chilometri non ha alcun effetto se in quel luogo non c'è luce o rumore.
+      Come per gli incantesimi CrIm, ogni senso addizionale che vuoi percepire aumenta il livello di una Magnitudine.</p>
+      <p>Come di consueto con la magia Intellego, i fallimenti critici in Intellego Imaginem forniscono di solito informazioni false.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Discerni illusioni causate da incantesimi di livello uguale o minore a quello di questo incantesimo (Bersaglio Visuale).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Usi un senso a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Memorizza o perfeziona i tuoi ricordi di un'immagine in cui ti sei appena imbattuto.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Sei in modo di discernere le tue false immagini.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Usi due sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Usi tre sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Migliora uno dei tuoi sensi in uno specifico modo (vedere chiaramente a distanza, vedere cose piccole o vedere al buio per esempio).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Usi quattro sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Usi tutti i sensi a distanza.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Imaginem</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Si tratta di illusioni utili e potenti, che alterano l'immagine visiva, il suono, l'odore o il gusto di un oggetto o un essere.
+      L'immagine, senza la tua concentrazione, rimane inalterata e si adatta in maniera appropriata alle circostanze del caso. La riuscita
+      del duplicato dipende dalle tue conoscenze dell'oggetto: ad esempio, se vuoi imitare la voce di una persona specifica, devi avere 
+      familiarità con essa. Coloro che hanno profonda familiarità con il volto, la voce, la corporature o altri aspetti che stai imitando
+      possono esserre in grado di scoprire l'illusione con mezzi mondani (“Duca Tybol, non avevate la cicatrice sulla guancia sinistra?”).</p>
+      <p>Muto Imaginem, o qualsiasi altra magia Imaginem, non può prevaricare gli effetti del Dono, anche se può attenuarli leggermente.</p>
+      <p>I fallimenti critici in Muto Imaginem cambiano spesso l'aspetto del lanciatore in modi pericolosi o imbarazzanti.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una sensazione di un oggetto (ad esempio, fa si che una foglia sembri una moneta), ma non il suo tipo (quindi l'aspetto non può diventare suono).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambia due sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambia tre sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambia quattro sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Cambia un oggetto completamente, in tutti gli aspetti eccetto quello tattile.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Imaginem</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Oltre a distruggere immagini animate, questi incantesimi attenuano le proprietà sensoriali, rendendo il vino insapore,
+      i passi silenziosi e i Magi invisibili. Distruggere immagini in movimento è più difficile: aggingi una Magnitudine agli incantesimi di questo tipo.</p>
+      <p>Nota che in natura le immagini sono generate in maniera continua, quindi un incantesimo Perdo Imaginem con Durata Istantanea fa solo sfarfallare
+      l'oggetto per un attimo. Se l'immagine deve scomparire per del tempo, è richiesta una durata maggiore.</p>
+      <p>Nota anche che le ombre sono dovute alla presenza del corpo che blocca la luce: distruggere un ombra è quindi competenza di Creo Ignem,
+      o magari Rego Ignem, non di Perdo Imaginem. Gli specchi invece riflettono le immagini sulla loro superficie, quindi un incantesimo che distrugge
+      (o muta) l'immagine ha l'effetto anche su quella dello secchio.</p>
+      <p>I fallimenti critici in Perdo Imaginem possono rendere l'immagine più intensa o distruggere quella sbagliata.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Distrugge la capacità di un oggetto di influenzare gusto o tatto.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge la capacità di un oggetto di influenzare olfatto e udito.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge la capacità di un oggetto di influenzare gusto e tatto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge la capacità di un oggetto di influenzare la vista.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge la capacità di un oggetto di influenzare tre sensi fra gusto, tatto, olfatto e udito.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge la capacità di un oggetto di influenzare quattro sensi.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge la capacità di un oggetto di influenzare tutti e cinque i sensi.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Imaginem</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi fanno apparire le cose in un luogo diverso da dove sono in realtà. Come per CrIm e PeIm,
+      influenzare le immagini in movimento è leggermente più difficile: aggiunge una Magnitudine all''incantesimo. 
+      Aggiunge una alle linee guida anche se l'immagine deve cambiare assieme all'oggetto, e un'altra per ogni senso
+      addizionale da influenzare.</p>
+      <p>I fallimenti critici in Rego Imaginem controllano l'immagine sbagliata, o fanno all'immagine Bersaglio qualcosa di completamente inappropriato.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Fa apprire un oggetto (per un senso) a un massimo di un passo dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Fa apparire un oggetto (per un senso) a un massimo di cinque passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Fa sembrare che gli oggetti si muovano rapidamente in modo confusionario.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>fa apparire un oggetto (per un senso) a un massimo di quindici passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa si che un oggetto appaia (per un senso) contenuto o aggregato a un altro oggetto definito al momento del
+        lancio (ad esempio fa sembrare che una voce venga da dentro una borsa).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Fa apparire un oggetto (per un senso) a un massimo di cento passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Fa apparire un oggetto (per un senso) entro la Visuale della posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa apparire un oggetto (per un senso) in un luogo con cui il lanciatore ha una Connessione Arcana.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Mentem</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Oltre a guarire la mente, questi incantesimi possono creare pensieri, emozioni e memorie nella testa di un'altra persona. 
+      Queste creazioni interagiscono normalmente con gli altri pensieri del Bersaglio, e possono essere cambiate nel processo.</p>
+      <p>Sigilli tipici per gli incantesimi Creo Mentem sono piccoli dettagli in ciò che viene creato. Ad esempio, potrebbe rimanere
+      un'idea specifica di fondo nei ricordi che vengono creati.</p>
+      <p>I fallimenti critici in Creo Mentem possono creare emozioni inappropriate nella mente del lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Forma parole nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Installa pensieri o emozioni nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un ricordo nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di 0.</description>
+      </guideline>
+      <guideline>
+        <level>35</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +1.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +2.</description>
+      </guideline>
+      <guideline>
+        <level>45</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +3.</description>
+      </guideline>
+      <guideline>
+        <level>50</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +4.</description>
+      </guideline>
+      <guideline>
+        <level>55</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +5.</description>
+      </guideline>
+      </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Mentem</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi sono superbi per evitare la confusione delle interazioni sociali e l'infinito chiacchiericcio della feccia. Anche gli incantesimi InAn che influenzano
+      la mente possono essere usati come idee e linee guida per questa sezione.</p>
+      <p>Nota che la scrittura non contiene informazioni in sé, ed è in genere legata ad Animal, Herbam o Terram a seconda del materiale, non Mentem. Hai comunque bisogno di
+      qualcuno che sappia tradurre, anche se puoi leggere la traduzione direttamente nella tua mente.</p>
+      <p>Un incantesimo Mentem istantaneo può fornire risposta a una singola domanda, anche se non è necessario che la risposta sia breve; può illustrarti ad esempio i sentimenti
+      che il Bersaglio prova verso suo padre, a prescindere dalla loro complessità, ma non ti dirà perché si sente in quel modo. Per scoprire numerose informazioni ci vuole tempo.</p>
+      <p>Sigilli per incantesimi InMe implicano di solito una trasmissione particolare delle informazioni.</p>
+      <p>I fallimenti critici di Intellego Mentem forniscono di solito informazioni errate.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>4</level>
+        <description>Avverti lo stato di coscienza di un essere intelligente (ad esempio, sveglio, addormentato, in meditazione, morto, drogato, pazzo o comatoso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Avverti una singola emozione in un essere. Comprendi il significato dietro le parole pronunciate.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Avverti tutte le emozioni in un essere.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Scopri la verità in una frase.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parli con un qualsiasi umano.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Leggi i pensieri superficiali di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Estrai una singola risposta dalla mente di un Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Leggi i ricordi degli ultimi giorni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Apprendi tutte le informazioni che desideri dalla mente di qualcuno.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Mentem</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Gli incantesimi Muto Mentem danno a una mente proprietà che non avrebbe normalmente. Queste ricadopno sotto tre categorie.</p>
+      <p>Per prima cosa si possono cambiare i ricordi. I ricordi si deteriorano naturalmente col tempo, ma non mutano radicalmente, quindi ciò rientra nel dominio di Muto.</p>
+      <p>Secondo, le persone avvertono emozioni e pensieri che di solito non sentono; sono compresi i pensieri degli animali e cose simili.</p>
+      <p>Terzo, proprietà non mentali, come dare un aspetto fisico alla mente, ma questi effetti sono molto difficili.</p>
+      <p>I fallimenti critici in Muto Mentem possono cambiare la mente del lanciatore, quindi si tratta di una magia potenzialmente molto rischiosa.</p>
+      <p>Concedere un senso magico a più persone ha un livello base maggiore di una Magnitudine rispetto a concederlo a una persona singola con Intellego,
+      e ha come requisiti Intellego e la Forma appropriata. Gli aumenti relativi di Portata e Bersaglio aumentano il livello ulteriormente.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Effettua un cambiamento sottile nei ricordi di un evento.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Effettua un grosso cambiamento nei ricordi di un evento.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Effettua un grosso cambiamento nei ricordi di una serie di eventi.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Effettua un grosso cambiamento nelle emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Effettua grossi cambiamenti nei ricordi di un periodo della vita.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambia completamente le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riscrive completamente i ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rende visibile una mente o uno spirito (requisito Imaginem).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Cambia completamente la mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende solida una mente o uno spirito (requisito della Forma dell'aspetto).</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Mentem</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Le emozioni riappaiono naturalmente in una persona, quindi gli incantesimi che le distruggono devono avere Durata continua per impedire che facciano ritorno.
+      I ricordi non tornano naturalmente, quindi gli incantesimi con Durata Istantanea li rimuovono per sempre, anche se è possibile raccontare a una persona ciò che
+      ha dimenticato o ricostruire il ricordo da memorie presenti, un incantesimo continuo, però, impedisce di apprendere nuovamente tali informazioni.</p>
+      <p>I fallimenti critici in Perdo Mentem possono distruggere più del voluto, o eliminare elementi dalla mente del lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>3</level>
+        <description>Rimuove un dettaglio minore dai ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Rimuove un dettaglio importante dai ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce una singola capacità mentale di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce l'intensità di tutte le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Placa un emozione di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rimuove un ricordo minore o breve dalla mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riduce tutte le capacità mentali di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rimuove un ricordo importante o lungo dalla mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rimuove tutte le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa impazzire una persona.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Rende una persona un guscio senza mente.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Mentem</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Gli incantesimi Rego Animal che riguardano la mente possono servire come linee guida per i livelli di incantesimo Rego Mentem.
+      Molti mutamenti della mente sono effetti Rego, poiché sono stati che la mente può assumere in modo naturale.</p>
+      <p>I fallimenti critici in Rego Mentem possono mutare lo stato mentale del Bersaglio in modo errato, o cambiare quello del lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro spiriti appartenenti a un Reame (Divino, Fatato, Infernale o Magico) con potenza inferiore al livello dell'incantesimo (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Altera in maniera sottile lo stato mentale del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla lo stato mentale del Bersaglio (ad esempio, sveglio, addormentato, confuso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un'emozione naturale, come calma o paura. Il Bersaglio deve avvertire l'emozione prima che tu possa controllarla.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla uno spirito disincarnato.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Spinge una persona a un particolare tipo di risposta.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un'emozione di una persona in modo innaturale, ad esempio aumenta il suo senso di coraggio dove invece è solitamente paurosa.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infonde una particolare emozione in tutte le risposte della persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Controlla un essere umano fintanto che lo vedi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Evoca un fantasma.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Impartisce a una persona un comando complesso, che quella cercherà di eseguire al meglio delle sue capacità.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Controlla completamente le emozioni e la mente di una persona.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Terram</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Creare terra con aspetto elaborato o con proprietà innaturali comporta una maggiorazione di una Magnitudine rispetto alle linee guida indicate.</p>
+      <p>I sigilli arcani visibili comunemente negli incantesimi Creo Terram rendolo la creazione in qualche modo bizzarra, come del terriccio con colori o grana specifici.</p>
+      <p>I fallimenti critici in Creo Terram possono seppellire il lanciatore sotto terra o pietra, creare il materiale sbagliato o farlo materializzare nel luogo errato.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
-    </guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea sabbia, terriccio, fango o argilla.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea pietra o vetro.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea metallo semplice.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea metallo prezioso.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea una gemma.</description>
+      </guideline>
+  </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Terram</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Il livello degli incantesimi Intellego Terram non sono influenzati dal materiale del Bersaglio.</p>
+      <p>I fallimenti critici in Intellego Terram forniscono solitamente informazioni errate.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Apprendi una caratteristica percepibile di un oggetto, che una persona con le abilità appropriate potrebbe determinare esaminandolo.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi una caratteristica mondana di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Vedi un oggetto e l'ambiente circostante.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Apprendi tutti i componenti di una lega o materiale complesso.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Apprendi tutte le proprietà naturali di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Percepisci tutte le proprietà mondane di un oggetto complesso.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Apprendi le proprietà magiche di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende i tuoi sensi immuni alla terra, ad esempio permettendoti di vedere attraverso una roccia.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parli con una roccia naturale, ad esempio un masso.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Parli con una roccia lavorata, ad esempio una statua.</description>
+      </guideline>    
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Terram</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>I Bersagli elencati sotto si riferiscono al terriccio. Per trasformazioni da o verso sabbia, fango o argilla, usa la stessa Magnitudine;
+      per pietra o vetro, aggiungi una Magnitudine; per metallo o pietre preziose, aggiungi due Magnitudini. Questi modificatori si applicano una
+      singola volta, quindi per trasformare un metallo in un altro sono richiesti solo due Magnitudini in più.</p>
+      <p>Le quantità massime e minime dei materiali che è possibile trasformare sono limitate dalle linee guida; dunque con un singolo base è
+      possibile trasformare un passo cubo di pietra in un cubo di gemme di lato un pollice.</p>
+      <p>I fallimenti critici gravi in Muto Terram tendono a trasformare il lanciatore in metallo o pietra, quelli di minore importanza trasformano
+      il Bersaglio sbagliato o tramutano le cose nel modo errato.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una proprietà del terriccio.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma il terriccio in un altro tipo di terra naturale (ad esempio la sabbia in argilla).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in modo leggermente innaturale (possono esserre richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in liquido o gas (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in pietra o viceversa.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in modo molto innaturale (spesso sono richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in un composto di liquidi, solidi e gas (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in una pianta (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa crescere qualcosa di otto volte il suo volume precedente.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma il terriccio in un linquido o gas leggermente innaturale (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma il terriccio in un animale (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma il terriccio in un liquido o gas molto innaturale (con requisiti).</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Terram</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Per distruggere sabbia, fango o argilla, usa lo stesso livello necessario a distruggere la terra; per pietra o vetro aggiungi una magnitudine;
+      per metallo o gemme aggiungi due magnitudini.</p>
+      <p>Oltre a distruggere la cosa sbagliata, i fallimenti critici in Perdo Terram possono distruggere il terreno su cui poggia il lanciatore,
+      oppure oggetti di metallo che egli tiene in mano.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Indebolisce il terriccio.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge il terriccio.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Terram</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Di seguito sono elencate le linee guida per controllare terriccio, sabbia, fango o argilla. Agginugi una magnitudine per controllare pietra o vetro
+      e due per metallo e gemme. Manipolare oggetti con grande precisione può richiedere altre magnitudini, a seconda dell'accuratezza richiesta.</p>
+      <p>I fallimenti critici in Rego Terram risultano spesso in grandi ammassi di pietre volanti che piovono sul lanciatore.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro creature di pietra appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza inferiore al
+        livello dell'incantesimo (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Controlla o muove il terriccio in modo naturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Controlla o muove il terriccio in modo leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Tiene il terriccio lontano da te, sotto il tuo controllo cosciente (devi quindi essere consapevole della sua presenza).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla o muove il terriccio in modo molto innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Tiene lontano dal tuo corpo tutto il terriccio o difende il bersaglio dal terriccio.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Vim</form><technique>Creo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Sono pochi gli incantesimi Creo Vim conosciuti nell'Ordine.</p>
+      <p>I fallimenti critici in Creo Vim conferiscono di solito al lanciatore ulteriori Punti Distorsione, visto che la magia rozza sfugge al controllo.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Ccrea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una magnitudine
+        (quest'Aura è di “magia” generica: non può fornire informazioni fuorvianti).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Crea un guscio magico che impedisce agli incantesimi Intellego con livello minore del suo più una magnitudine di comprendere qualsiasi
+        dettaglio sulla magia lanciata sul Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Marca qualcosa con la magia.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un getto di magia che da al Bersaglio un Punto Distorsione. Gli incantesimi che danno Distorsione non possono avere Durata maggiore
+        di Istantanea. Nota che fare questo a un Magus costituisce un attacco e una chiara violazione del Codice.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Dà al Bersaglio due Punti Distorsione.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Dà al Bersaglio tre Punti Distorsione.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Vim</form><technique>Intellego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Poiché la magia è infida da comprendere, gli incantesimi che la individuano sono difficili ma importanti. I demoni sono esseri di Vim, ma sono fatti
+      dell'essenza stessa dell'inganno; per questo, è impossibile individuarli se non lo desiderano (almeno secondo le conoscenze dell'Ordine), e non ci sono
+      magie in grado di localizzarli. Non è possibile investigare sugli oggetti magici con specifici incantesimi: l'investigazione richiede che tu trascorra
+      almeno una stagione in laboratorio per scoprire la magia contenuta in un oggetto incantato. Un incantesimo può comunque rivelare se un oggetto è magico,
+      e potrebbe fornire qualche indizio sui suoi poteri. Gli incantesimi non rivelano mai come usare un oggetto.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua magie di magnitudine 10 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua la presenza di un'Aura mistica.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua la presenza di vis; in quanto magia concentrata non è difficile da trovare.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Individua magie di magnitudine 8 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Determina il potere di un'Aura mistica.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Individua magie di magnitudine 6 o superiore. </description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Individua i limiti di una <emphasis>Regio</emphasis>. Se lanciato con Bersaglio Visuale, ciò fornisce informazioni a sufficienza per trovare un passaggio
+        fra i livelli (per le <emphasis>Regiones</emphasis> che consentono di entrarvi in tal modo); altrimenti rivela la prensenza di una <emphasis>Regio</emphasis>,
+        e forse la sua forma grezza.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Individua magie di magnitudine 3 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Stabilisce l'ammontare di vis presente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Discerne l'Arte della vis.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Individua qualsiasi magia attiva.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Individua le tracce di magia potente.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Individua la presenza recente di magia debole.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Vim</form><technique>Muto</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Questi incantesimi ti permettono di cambiare altri incantesimi. Durano perlopiù come l'incantesimo che alterano, anche se la Durata nominale è Istantanea.
+      Non è normalmente possibile avere un incantesimo Muto Vim che duri più di quello Bersaglio.</p>
+      <p>Questi incantesimi metamagici hanno restrizioni particolari, che si applicano a tutti gli incantesimi Muto Vim inventati secondo la teoria Ermetica.</p>
+      <p>Per prima cosa, non possono essere lanciati su incantesimi spontanei: tale magia si manipola al momento, e qualsiasi ulteriore tentativo fa perdere il
+      controllo al lanciatore (ciò è necessario per il bilanciamento del gioco).</p>
+      <p>Secondo, devi effettuare un tiro di Ingenium + Concentrazione di 9+ se lanci entrambi gli incantesimi (quello MuVi e quello influenzato). Se fallisci,
+      gli incantesimi non partono; se ottieni un fallimento critico, lo ottieni per entrambi (è leggermente più facile del solito).</p>
+      <p>Se desideri lanciare uno di questi incantesimi su uno che sta venendo lanciato da un altro Magus, dovete cooperare, oppure devi essere rapido a lanciare
+      l'incantesimo MuVi. Non c'è atro modo per coordinare gli incantesimi. Inoltre, a meno che non cooperiate, per alterare l'incantesimo il tuo totale di 
+      Penetrazione per l'incantesimo Muto Vim deve battere il Totale di Penetrazione dell'altro Magus.</p>
+      <p>Per influenzare i tuoi incantesimi è sufficiente la Portata Tocco, ma per influenzare quelli di un altro è richiesta almeno la Portata Vocale. 
+      Non puoi toccare l'incantesimo in se.</p>
+      <p>È possibile usare questi incantesimi solo sulla magia Ermetica, poiché dipendono da una buona comprensione dei processi coinvolti.</p>
+      <p>Puoi inserire un effetto Muto Vim in un oggetto magico solo se deve influenzare un altro effetto nello stesso oggetto. Tutti gli incantesimi Muto Vim
+      vanno adattati all'uso specifico, e l'effetto di un oggetto magico non può essere così adattato.</p>
+      <p>Nota che un incantesimo inventato secondo una delle linee guida fornite altera un altro incantesimo in modo specifico: non è possibile inventare un
+      incantesimo che ne altera un altro in un modo non prestabilito. Vedi gli esempi di incantesimi per idee su come interpretare la natura specifica.</p>
+      <p>Per ragioni non meglio note ai teorici Ermetici, non è possibile usare Muto Vim per modificare un incantesimo dopo il lancio.</p>
+      <p>I fallimenti critici in Muto Vim possono avere qualsiasi effetto concepibile, poiché alterano l'altro incantesimo in modo imprevedibile.</p>
+      <p>Un incantesimo Muto Vim, come ogni altro incantesimo Muto, modifica il Bersaglio solo fintanto che è in vigore, dunque la sua Durata deve essere
+      normalmente almeno pari a quella dell'incantesimo Bersaglio. Gli incantesimi elencati hanno Durata Istantanea, ma possono essere inventate versioni
+      con Durata maggiore come di consueto.</p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Altera in modo superficiale un incantesimo di meno del doppio del (livello +1 magnitudine) dell'incantesimo Vim; non altera l'effetto
+        primario dell'incantesimo o il suo potere.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Altera in modo significativo un incantesimo di livello inferiore al livello dell'incantesimo Vim +1 magnitudine; non altera la Tecnica
+        o Forma dell'incantesimo Bersaglio; mutamenti significativi comprendono l'aggiunta o la diminuzione di una magnitudine, o il cambio di Bersaglio,
+        se l'incantesimo originale ha un Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description> Altera completamente un incanteismo di meno di metà del (livello +1 magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
+        entrambe, senza bisogno di requisiti; l'incantesimo Vim colpisce la struttura dell'incantesimo, non i Bersagli; un mutamento totale è un cambio di
+        potere di un massimo di due magnitudini. Qualsiasi cambiamento superiore richiede Creo o Perdo, per creare o distruggere l'energia magica.</description>
+      </guideline>
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Vim</form><technique>Perdo</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Per lanciare un incanteismo Perdo Vim su un personaggio con Resistenza alla Magia, devi superare quest'ultima. </p>
     </description>
     <guidelines>
-      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
-      <guideline><level>1</level><description>Sample guideline.</description></guideline>
-      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
-      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
-      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
-      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Fa si che un essere (compreso un oggetto magico) appaia non magico a qualsiasi incantesimo Intellego minore del doppio di 
+        (livello +2 magnitudine di questo incantesimo).</description>
+      </guideline>    
+      <guideline>
+        <level>Generico</level>
+        <description> Disperde effetti di tipo specifico con un livello inferiore al livello dell'incantesimo Vim +4 magnitudine + dado stress 
+        (non c'è fallimento critico). Un tipo specifico può essere una magia Terram Ermetica, o una magia di controlo spirituale sciamanica. 
+        Un Magus deve avere alcune conoscenze di un tipo di magia (non necessariamente saperla usare) per inventare un incantesimo che lo influenzi.
+        Tutti i Magi Ermetici hanno familiarità con la Magia Ermetica.</description>
+      </guideline>    
+      <guideline>
+        <level>Generico</level>
+        <description>Riduce il punteggio di potenza di un Bersaglio del livello dell'incantesimo +10, fintanto che l'incantesimo penetra la resistenza della creatura.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Disperde qualsiasi effetto magico con un totale di lancio inferiore a metà del (livello +4 magnitudine) dell'incantesimo Vim + dado stress(non c'è fallimento critico).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Riduce il totale di lancio per tutte le magie lanciate dal Bersaglio di metà del (livello +2 magnitudine) dell'incantesimo. Se due o più
+        di tali incantesimi influenzano un Bersaglio, solo il maggiore ha effetto: le riduzioni non si sommano. L'incantesimo deve penetrare la resistenza alla
+        magia del Bersaglio per avere effetto.</description>
+      </guideline>
+      <guideline page="136">
+        <level>5</level>
+        <description>Riduce la Durata di una Connessione Arcana di un passo sulla tabella delle connessioni Arcane. Se ciò porta la Durata al di sotto di ore,
+        la Conessione termina immediatamente. Non funziona su Connessioni che hanno naturalmente Durata Indefinita, ma può far scadere una Connessione Arcana
+        saldata in laboratorio. Nota che la Portata è quella verso la Connessione Arcana, e devi sapere a cosa stai mirando, come per ogni altro incantesimo.</description>
+      </guideline>
+      <guideline page="136">
+        <level>10</level>
+        <description>Riduce la Durata di una Connessione Arcana di due passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>15</level>
+        <description>Riduce la Durata di una Connessione Arcana di tre passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>20</level>
+        <description>Riduce la Durata di una Connessione Arcana di quattro passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>25</level>
+        <description>Riduce la Durata di una Connessione Arcana di cinque passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>30</level>
+        <description>Riduce la Durata di una Connessione Arcana di sei passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.
+        Un effetto di questo livello è sufficiente a far terminare all'istante pressocché ogni Connessione Arcana.</description>
+      </guideline>
+
     </guidelines>
   </arts_guideline>
   <arts_guideline>
     <arts><form>Vim</form><technique>Rego</technique></arts>
     <description>
-      <p>Description of this form/technique pairing.</p>
-      <p>Descriptions can include <strong>bold</strong> and <emphasis>italic</emphasis> text.</p>
+      <p>Gli incantesimi Rego Vim respingono demoni e altre creature mistiche. Con questi incantesimi è possibile in teoria convocare e controllare 
+      demoni ma il Codice Ermetico proibisce questa conoscenza e il suo utilizzo. Chiunque scopra e desideri usare queste nozioni affonta due minacce:
+      quella degli esseri richiamati e quella dell'Ordine di Hermes, che avversa fortemente queste pratiche. </p>
+      <p>Rego Vim è anche la combinazione di Arti che conferisce resistenza alla Magia, ma nemmeno Bonisagus fu in grado di trasformare la Parma Magica
+      in un incantesimo. Il massimo mai ottenuto è <emphasis>Egida del Focolare</emphasis>, che non è completamente integrato nella teoria Ermetica.</p>
     </description>
     <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difende il Bersaglio da creature con potenza inferiore al livello dell'incantesimo. La creatura contro cui ci si difende non può
+        influenzare direttamente il Bersaglio, sia fisicamente che con mezzi magici. Un incantesimo di questo tipo protegge solo da creature di un Reame
+        (Divino, Fatato, Infernale o Magico). Nota che le protezioni da creature magiche e fatate possono essere ottenuto anche con altre Forme, più 
+        limitate però negli effetti (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Mantiene o sopprime un incantesimo da te lanciato il cui livello sia inferiore al livello +2 magnitudine dell'incantesimo Vim.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Crea un condotto o un contenitore per incantesimi di livello inferiore al livello +5 magnitudine dell'incantesimo Vim. Un condotto crea
+        un contatto mistico fra te e il Bersaglio (Portata effettiva Tocco), mentre un contenitore trattiene un incantesimo per un lasso di tempo specifico
+        prima di rilasciarlo.</description>
+      </guideline>
+       <guideline>
+        <level>Generico</level>
+        <description>Sostiene o sopprime un incantesimo lanciato da un altro con livello inferiore di metà del (livello +5 magnitudine) dell'incantesimo Vim.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Muovi la vis grezza da un oggetto fisico a un altro senza bisogno di laboratorio. </description>
+      </guideline>     
+      <!--
       <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
       <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
       <guideline><level>1</level><description>Sample guideline.</description></guideline>
@@ -1533,118 +2774,199 @@
       <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
       <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
       <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      -->
     </guidelines>
   </arts_guideline>
 </arts_guidelines>
 <spells>
-<spell id="0" source="" page="" type="standard">
-<name>spell from the core book</name>
-<level>20</level>
-<arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Tocco</range>
-<duration>Diametro</duration>
-<target>Singolo</target>
-<description>
-<p>Sample spell from the core book. It has no source or page attributes.</p>
-</description>
-<guideline><base>10</base><modifiers></modifiers></guideline>
-</spell>
-<spell id="1" source="C" page="99" type="standard" ritual="true">
-<name>spell from book</name>
-<level>20</level>
-<arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Tocco</range>
-<duration>Istantanea</duration>
-<target>Singolo</target>
-<description>
-<p>This spell comes from a non-core book. It has a source and a page number.</p>
-</description>
-<guideline><base>5</base><modifiers><modifier>+2 perchè si</modifier></modifiers></guideline>
-</spell>
-<spell id="2" source="C" page="199" type="standard" ritual="true">
-<name>spell from book a caso</name>
-<level>20</level>
-<arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Tocco</range>
-<duration>Luna</duration>
-<target>Gruppo</target>
-<description>
-<p>This spell comes from a non-core book. It has a source and a page number.</p>
-</description>
-<guideline><base>15</base><modifiers><modifier>+2 perchè si</modifier></modifiers></guideline>
-</spell>
-<spell id="3" type="standard" ritual="true">
-<name>sample ritual spell</name>
-<level>20</level>
-<arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Tocco</range>
-<duration>Istantanea</duration>
-<target>Singolo</target>
-<description>
-<p>Ritual spells have a ritual="true" attribute.</p>
-</description>
-<guideline><base>15</base><modifiers></modifiers></guideline>
-</spell>
-<spell id="6" type="standard">
-<name>spell with requisites</name>
-<level>30</level>
-<arts><form>Animal</form><technique>Creo</technique><requisite free="true">Muto</requisite><requisite>Rego</requisite></arts>
-<range>Tocco</range>
-<duration>Sole</duration>
-<target>Gruppo</target>
-<description>
-<p>Spells can include one or more requisites. Requisites can have a <emphasis>free="true"</emphasis> attribute if they do not affect the level of the spell</p>
-</description>
-<guideline><base>5</base><modifiers></modifiers></guideline>
-</spell>
-<spell id="11" type="standard">
-<name>spell with flavour text</name>
-<level>40</level>
-<arts><form>Animal</form><technique>Creo</technique></arts>
-<range>Tocco</range>
-<duration>Istantanea</duration>
-<target>Singolo</target>
-<description>
-<p>This is the spell description.</p>
-<flavour>This is flavour text. It does not explain the effects of the spell but rather world colour for the spell.</flavour>
-</description>
-<guideline><base>35</base><modifiers></modifiers></guideline>
-</spell>
-<spell id="16" type="standard" faerie="true">
-<name>sample faerie spell</name>
-<level>10</level>
-<arts><form>Animal</form><technique>Intellego</technique></arts>
-<range>Personale</range>
-<duration>Concentrazione</duration>
-<target>Singolo</target>
-<description>
-<p>Spells can have a <emphasis>faerie="true"</emphasis> attribute to designate a faerie spell.</p>
-</description>
-<guideline><base>4</base><modifiers></modifiers></guideline>
-</spell>
-<spell type="standard">
-<name>spell with modifiers</name>
-<level>35</level>
-<arts><form>Animal</form><technique>Muto</technique></arts>
-<range>Voce</range>
-<duration>Diametro</duration>
-<target>Parte</target>
-<description>
-<p>Spells can include additional modifiers.</p>
-</description>
-<guideline><base>5</base><modifiers><modifier>+2 poison effect</modifier></modifiers></guideline>
-</spell>
-<spell id="59" type="general">
-<name>sample general spell</name>
-<level>GENERICO</level>
-<arts><form>Animal</form><technique>Rego</technique></arts>
-<range>Tocco</range>
-<duration>Cerchio</duration>
-<target>Circolo</target>
-<description>
-<p>Spells that are general have a type of general and the level says GENERAL.</p>
-</description>
-<guideline><base></base><modifiers></modifiers></guideline>
-</spell>
+  <spell id="0" source="" page="" type="standard">
+    <name>spell from the core book</name>
+    <level>20</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Creo</technique>
+      </arts>
+    <range>Tocco</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Sample spell from the core book. It has no source or page attributes.</p>
+    </description>
+    <guideline>
+      <base>10</base>
+      <modifiers>        
+      </modifiers>
+    </guideline>
+  </spell>
+  <spell id="1" source="C" page="99" type="standard" ritual="true">
+    <name>spell from book</name>
+    <level>20</level>
+    <arts><form>Animal</form><technique>Creo</technique></arts>
+    <range>Tocco</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+    <description>
+      <p>This spell comes from a non-core book. It has a source and a page number.</p>
+    </description>
+    <guideline>
+      <base>5</base>
+      <modifiers>
+        <modifier>+2 perchè si</modifier>
+      </modifiers>
+    </guideline>
+  </spell>
+  <spell id="2" source="C" page="199" type="standard" ritual="true">
+    <name>spell from book a caso</name>
+    <level>20</level>
+    <arts>
+      <form>Animal</form>
+    <technique>Creo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Luna</duration>
+    <target>Gruppo</target>
+    <description>
+      <p>This spell comes from a non-core book. It has a source and a page number.</p>
+    </description>
+    <guideline>
+      <base>15</base>
+      <modifiers>
+        <modifier>+2 perchè si</modifier>
+      </modifiers>
+    </guideline>
+  </spell>
+  <spell id="3" type="standard" ritual="true">
+    <name>sample ritual spell</name>
+    <level>20</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Creo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Ritual spells have a ritual="true" attribute.</p>
+    </description>
+    <guideline>
+      <base>15</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="6" type="standard">
+    <name>spell with requisites</name>
+    <level>30</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Creo</technique>
+      <requisite free="true">Muto</requisite>
+      <requisite>Rego</requisite>
+    </arts>
+    <range>Tocco</range>
+    <duration>Sole</duration>
+    <target>Gruppo</target>
+    <description>
+      <p>Spells can include one or more requisites. Requisites can have a <emphasis>free="true"</emphasis> attribute if they do not affect the level of the spell</p>
+    </description>
+    <guideline>
+      <base>5</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="11" type="standard">
+    <name>spell with flavour text</name>
+    <level>40</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Creo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+    <description>
+      <p>This is the spell description.</p>
+      <flavour>This is flavour text. It does not explain the effects of the spell but rather world colour for the spell.</flavour>
+    </description>
+    <guideline>
+      <base>35</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="16" type="standard" faerie="true">
+    <name>sample faerie spell</name>
+    <level>10</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Intellego</technique>
+    </arts>
+    <range>Personale</range>
+    <duration>Concentrazione</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Spells can have a <emphasis>faerie="true"</emphasis> attribute to designate a faerie spell.</p>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+  </guideline>
+  </spell>
+  <spell type="standard">
+    <name>spell with modifiers</name>
+    <level>35</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Muto</technique>
+    </arts>
+    <range>Voce</range>
+    <duration>Diametro</duration>
+    <target>Parte</target>
+    <description>
+      <p>Spells can include additional modifiers.</p>
+    </description>
+    <guideline>
+      <base>5</base>
+      <modifiers>
+        <modifier>+2 poison effect</modifier>
+      </modifiers>
+  </guideline>
+  </spell>
+  <spell id="59" type="general">
+    <name>sample general spell</name>
+    <level>GENERICO</level>
+    <arts>
+      <form>Animal</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Cerchio</duration>
+    <target>Circolo</target>
+    <description>
+      <p>Spells that are general have a type of general and the level says GENERAL.</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="xxx" type="standard" >
+    <name>Pilum di Fuoco</name>
+    <level>20</level>
+    <arts>
+      <form>Ignem</form>
+      <technique>Creo</technique>
+      <guideline>
+        <base></base>
+        <modifiers>        
+        </modifiers>
+      </guideline>
+    </arts>
+    <description>
+      <p>Uno spesso getto di fuoco di 60 centimetri a forma di lancia vola dai tuoi palmi, infliggendo +15 danni all'individuo colpito.</p>
+      <flavour>"Certo che devi combattere il fuoco con il fuoco. Devi combattere qualsiasi cosa con il fuoco." - Eufemia Angelina Porfirogenita</flavour>
+    </description>
+    <range>Voce</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+  </spell>
 </spells>
 </ars_magica>
