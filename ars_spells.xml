@@ -202,6 +202,7 @@
   </technique>
 </arts>
 <books>
+  <!--
   <book><abbreviation>C</abbreviation><name>Covenants</name></book>
   <book><abbreviation>App</abbreviation><name>Apprentices</name></book>
   <book><abbreviation>AM</abbreviation><name>Ancient Magic</name></book>
@@ -233,6 +234,11 @@
   <book><abbreviation>LotN</abbreviation><name>Lands of the Nile</name></book>
   <book canon="false"><abbreviation>IBG</abbreviation><name>Iron-bound Grimoire</name></book>
   <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
+  -->
+  <book canon="false">
+    <abbreviation>SEU</abbreviation>
+    <name>Studi di Eufemia</name>
+  </book>
   <book>
     <abbreviation>HP</abbreviation>
     <name>Hermetic Projects</name>
@@ -622,7 +628,7 @@
       <p>Gran parte dei sigilli negli incantesimi Intellego Aquam si manifesta facendo sì che l'informazione venga riportata con qualche particolarità.
       Ad esempio la versione di Chavin di Tytalus di <emphasis>Voce del Lago</emphasis> dà sempre al lago una voce forte, virile e arrogante.
     </p>
-      <p>I fallimenti critici negli incantesimi InAq forniscono generalmente informazioni false</p>
+      <p>I fallimenti critici negli incantesimi InAq forniscono generalmente informazioni false.</p>
     </description>
     <guidelines>
       <guideline>
@@ -2663,7 +2669,7 @@
       </guideline>
       <guideline>
         <level>Generico</level>
-        <description> Altera completamente un incanteismo di meno di metà del (livello +1 Magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
+        <description>Altera completamente un incantesimo di meno di metà del (livello +1 Magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
         entrambe, senza bisogno di requisiti; l'incantesimo Vim colpisce la struttura dell'incantesimo, non i Bersagli; un mutamento totale è un cambio di
         potere di un massimo di due Magnitudini. Qualsiasi cambiamento superiore richiede Creo o Perdo, per creare o distruggere l'energia magica.</description>
       </guideline>
@@ -2779,176 +2785,166 @@
   </arts_guideline>
 </arts_guidelines>
 <spells>
-  <spell id="0" source="" page="" type="standard">
-    <name>spell from the core book</name>
-    <level>20</level>
+  <spell id="0" page="233" type="standard">
+    <name>Brandire la Fionda Invisibile</name>
+    <level>10</level>
     <arts>
-      <form>Animal</form>
-      <technique>Creo</technique>
+      <form>Terram</form>
+      <technique>Rego</technique>
       </arts>
-    <range>Tocco</range>
-    <duration>Diametro</duration>
+    <range>Vocale</range>
+    <duration>Concentrazione</duration>
     <target>Singolo</target>
     <description>
-      <p>Sample spell from the core book. It has no source or page attributes.</p>
+      <p>Lancia verso un Bersaglio entro la Portata un qualsiasi oggetto vicino che potrebbe normalmente essere lanciato da una persona.
+      L'oggetto non deve essere trattenuto o in qualche modo bloccato. Il danno dipende dall'oggetto, con un massimo di +5 per una pietra
+      grossa come un pugno. Sono richiesti requisiti di lancio della Forma appropriata al Bersaglio.</p>
     </description>
     <guideline>
-      <base>10</base>
+      <base>4</base>
       <modifiers>        
       </modifiers>
     </guideline>
   </spell>
-  <spell id="1" source="C" page="99" type="standard" ritual="true">
-    <name>spell from book</name>
-    <level>20</level>
-    <arts><form>Animal</form><technique>Creo</technique></arts>
-    <range>Tocco</range>
-    <duration>Istantanea</duration>
-    <target>Singolo</target>
-    <description>
-      <p>This spell comes from a non-core book. It has a source and a page number.</p>
-    </description>
-    <guideline>
-      <base>5</base>
-      <modifiers>
-        <modifier>+2 perchè si</modifier>
-      </modifiers>
-    </guideline>
-  </spell>
-  <spell id="2" source="C" page="199" type="standard" ritual="true">
-    <name>spell from book a caso</name>
-    <level>20</level>
-    <arts>
-      <form>Animal</form>
-    <technique>Creo</technique>
-    </arts>
-    <range>Tocco</range>
-    <duration>Luna</duration>
-    <target>Gruppo</target>
-    <description>
-      <p>This spell comes from a non-core book. It has a source and a page number.</p>
-    </description>
-    <guideline>
-      <base>15</base>
-      <modifiers>
-        <modifier>+2 perchè si</modifier>
-      </modifiers>
-    </guideline>
-  </spell>
-  <spell id="3" type="standard" ritual="true">
-    <name>sample ritual spell</name>
-    <level>20</level>
-    <arts>
-      <form>Animal</form>
-      <technique>Creo</technique>
-    </arts>
-    <range>Tocco</range>
-    <duration>Istantanea</duration>
-    <target>Singolo</target>
-    <description>
-      <p>Ritual spells have a ritual="true" attribute.</p>
-    </description>
-    <guideline>
-      <base>15</base>
-      <modifiers></modifiers>
-    </guideline>
-  </spell>
-  <spell id="6" type="standard">
-    <name>spell with requisites</name>
-    <level>30</level>
-    <arts>
-      <form>Animal</form>
-      <technique>Creo</technique>
-      <requisite free="true">Muto</requisite>
-      <requisite>Rego</requisite>
-    </arts>
-    <range>Tocco</range>
-    <duration>Sole</duration>
-    <target>Gruppo</target>
-    <description>
-      <p>Spells can include one or more requisites. Requisites can have a <emphasis>free="true"</emphasis> attribute if they do not affect the level of the spell</p>
-    </description>
-    <guideline>
-      <base>5</base>
-      <modifiers></modifiers>
-    </guideline>
-  </spell>
-  <spell id="11" type="standard">
-    <name>spell with flavour text</name>
-    <level>40</level>
-    <arts>
-      <form>Animal</form>
-      <technique>Creo</technique>
-    </arts>
-    <range>Tocco</range>
-    <duration>Istantanea</duration>
-    <target>Singolo</target>
-    <description>
-      <p>This is the spell description.</p>
-      <flavour>This is flavour text. It does not explain the effects of the spell but rather world colour for the spell.</flavour>
-    </description>
-    <guideline>
-      <base>35</base>
-      <modifiers></modifiers>
-    </guideline>
-  </spell>
-  <spell id="16" type="standard" faerie="true">
-    <name>sample faerie spell</name>
+  <spell id="1" page="213" type="standard">
+    <name>Calore della Forgia Ardente</name>
     <level>10</level>
-    <arts>
-      <form>Animal</form>
-      <technique>Intellego</technique>
-    </arts>
-    <range>Personale</range>
-    <duration>Concentrazione</duration>
+    <arts><form>Ignem</form><technique>Creo</technique></arts>
+    <range>Vocale</range>
+    <duration>Istantanea</duration>
     <target>Singolo</target>
     <description>
-      <p>Spells can have a <emphasis>faerie="true"</emphasis> attribute to designate a faerie spell.</p>
+      <p>Rende un pezzo di metallo troppo caldo per tenerlo in mano. Un oggetto della Taglia di una corazza pettorale o un elmo infligge
+      +5 danni se in diretto contatto con la pelle per un turno. In ogni turno addizionale viene inflitto ulteriore danno, in quantità
+      che scende di due punti ogni volta (+3 danni nel secondo turno, poi +1). Gli oggetti pià piccoli non infliggono danno. Le armature
+      metalliche si indossano perlopiù sopra cuoio e stoffa, e questo tipo di protezioni conferiscono un bonus di +3 all'Assorbimento
+      contro il calore.</p>
     </description>
     <guideline>
       <base>4</base>
-      <modifiers></modifiers>
-  </guideline>
-  </spell>
-  <spell type="standard">
-    <name>spell with modifiers</name>
-    <level>35</level>
-    <arts>
-      <form>Animal</form>
-      <technique>Muto</technique>
-    </arts>
-    <range>Voce</range>
-    <duration>Diametro</duration>
-    <target>Parte</target>
-    <description>
-      <p>Spells can include additional modifiers.</p>
-    </description>
-    <guideline>
-      <base>5</base>
       <modifiers>
-        <modifier>+2 poison effect</modifier>
       </modifiers>
-  </guideline>
+    </guideline>
   </spell>
-  <spell id="59" type="general">
-    <name>sample general spell</name>
+  <spell id="2" page="239" type="general">
+    <name>Comunione dello Stregone</name>
     <level>GENERICO</level>
     <arts>
-      <form>Animal</form>
+      <form>Vim</form>
+      <technique>Muto</technique>
+    </arts>
+    <range>Vocale</range>
+    <duration>Istantanea</duration>
+    <target>Gruppo</target>
+    <description>
+      <p>Consente ai Magi di combinare i loro poteri per lanciare gli incantesimi. Il gruppo lavora in concerto per lanciare un incantesimo specifico
+      attraverso il potere unificato della <self/>. Può unirsi alla <self/> un Magus addizionale per ogni
+      5 livelli dell'incantesimo lanciato. Uno dei Magi nel gruppo deve conoscere l'incantesimo specificato.</p>
+      <p>Tutti i Magi del gruppo che conoscono <self/> aggiungono il livello a cui lo conoscono per determinare il livello 
+      livello effettivo di <self/>. Il totale ottenuto deve essere almeno il doppio del livello dell'incantesimo che sta venendo
+      lanciato.
+      </p>
+      <p>Il tiro viene effettuato da un Magus, come se lanciasse l'incantesimo specificato da solo. Tuttavia, il numero da battere per il lancio è il
+      livello dell'incantesimo diviso per il numero di Magi nella <self/>: quindi, se cinque Magi partecipano al lancio di un
+      incantesimo di livello 50, il lanciatore deve lanciarne con successo uno di livello 10, ovviamente con tutti i requisiti. Questo metodo di lancio
+      aggiunge un tiro per il fallimento critico per ogni Magus che partecipa. Con un fallimento critico, tutti i partecipanti ottengono Punti Distorsione
+      e devono tirare per il Crepuscolo.
+      </p>
+      <p><self/> è un rimasuglio di rituale Mercuriale, quindi non si possono lanciare in tal modo incantesimi spontanei, e non si
+      inserisce alla perfezione nelle linee guida della teoria Ermetica</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers>
+      </modifiers>
+    </guideline>
+  </spell>
+  <spell id="3" page="241" type="general">
+    <name>Mantenere l'Incantesimo Impegnativo</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
       <technique>Rego</technique>
     </arts>
     <range>Tocco</range>
-    <duration>Cerchio</duration>
-    <target>Circolo</target>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
     <description>
-      <p>Spells that are general have a type of general and the level says GENERAL.</p>
+      <p>Questo incantesimo va lanciato su un incantesimo che hai già lanciato e che stai mantenendo con la concentrazione. L'incantesimo che richiede
+      concentrazione viene mantenuto automaticamente per la Durata di questo incantesimo, anche se non ti concentri. Non puoi alterare gli effetti del
+      primo incantesimo senza concentrarti di nuovo su di esso: per esempio puoi usare <emphasis>Braccio Invisibile</emphasis> (ReTe 5) per sostenere un
+      oggetto un oggetto senza concentrarti, ma per muoverlo è richiesta la concentrazione. Devi effettuare un Tiro Stress di Ingenium + Concentrazione
+      di 6+ per lanciare questo incantesimo mentre mantieni l'altro (un risultato inferiore al normale, perchè l'incantesimo è pensato proprio per questo).
+      Funziona solo su incantesimi di livello pari o inferiore.
+    </p>
     </description>
     <guideline>
       <base></base>
       <modifiers></modifiers>
     </guideline>
   </spell>
-  <spell id="xxx" type="standard" >
+  <spell id="4" page="194" type="standard">
+    <name>Carica dei Venti Furiosi</name>
+    <level>15</level>
+    <arts>
+      <form>Auram</form>
+      <technique>Creo</technique>
+    </arts>
+    <range>Vocale</range>
+    <duration>Concentrazione</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Un muro di vento parte ruggendo da te, iniziando da una distanza massima di 10 passi e continuando fino a dissiparsi naturalmente. Il vento è
+      confinato da qualsiasi barriera esistente, ma in assenza di queste può raggiungere un'ampiezza di cento passi. Tutto ciò che si trova nella zona
+      deve effettuare un Tiro Stress di Dexteritas + Taglia di 9+ o cadere ed essere trascinato dai venti. I tiri vanno effettuati all'inizio della
+      bufera e ad ogni turno seguente in cui il vento è mantenuto. Devi concentrarti sulla bufera. Attraversarla con proiettili è inutile, e marciarvi
+      contro richiede un Tiro Stress di Fortitudo + taglia di 15. Fallire comporta un altro Tiro Stress di Dexteritas + Taglia di 12+ per non cadere.</p>
+    </description>
+    <guideline>
+      <base>3</base>
+      <modifiers>
+        <modifier>+1 innaturale</modifier>
+      </modifiers>
+    </guideline>
+  </spell>
+  <spell id="5" source="SEU" type="standard">
+    <name>Corpo Come Cenere in un Camino</name>
+    <level>15</level>
+    <arts>
+      <form>Corpus</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Concentrazione</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Consente al bersaglio di fluttuare in qualunque direzione e a qualunque altezza, portando fino a 25 kg e muovendosi con la velocità del fumo
+      o più lentamente in caso di carichi pesanti.</p>
+    </description>
+    <guideline>
+      <base>5</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="6" page="228" type="standard">
+    <name>Aura di Legittima Autorità</name>
+    <level>20</level>
+    <arts>
+      <form>Mentem</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Occhio</range>
+    <duration>Sole</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Il Bersaglio di <self/> è fortemente incline a obbedirti come se fossi il suo naturale superiore.</p>
+    </description>
+    <guideline>
+      <base>5</base>
+      <modifiers></modifiers>
+  </guideline>
+  </spell>
+  <spell id="7" page="213" type="standard" >
     <name>Pilum di Fuoco</name>
     <level>20</level>
     <arts>
@@ -2964,7 +2960,7 @@
       <p>Uno spesso getto di fuoco di 60 centimetri a forma di lancia vola dai tuoi palmi, infliggendo +15 danni all'individuo colpito.</p>
       <flavour>"Certo che devi combattere il fuoco con il fuoco. Devi combattere qualsiasi cosa con il fuoco." - Eufemia Angelina Porfirogenita</flavour>
     </description>
-    <range>Voce</range>
+    <range>Vocale</range>
     <duration>Istantanea</duration>
     <target>Singolo</target>
   </spell>
