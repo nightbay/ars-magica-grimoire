@@ -99,7 +99,7 @@
           <xsl:when test="range = 'Adelphixis'" />
           <xsl:when test="range = 'Tocco'">, +1 Tocco</xsl:when>
           <xsl:when test="range = 'Occhio'">, +1 Occhio</xsl:when>
-          <xsl:when test="range = 'Voce'">, +2 Voce</xsl:when>
+          <xsl:when test="range = 'Vocale'">, +2 Vocale</xsl:when>
           <xsl:when test="range = 'Strada'">, +2 Strada</xsl:when>
           <xsl:when test="range = 'Via Acquatica'">, +3 Via Acquatica</xsl:when>
           <xsl:when test="range = 'Visuale'">, +3 Visuale</xsl:when>
@@ -414,13 +414,13 @@
           <xsl:variable name="book">
             <xsl:choose>
               <xsl:when test="@source != ''"><xsl:value-of select="$in//book[abbreviation = $source]/name"/></xsl:when>
-              <xsl:otherwise>ArM5</xsl:otherwise>
+              <xsl:otherwise>Ars Magica</xsl:otherwise>
             </xsl:choose>
           </xsl:variable>
           <xsl:variable name="prevbook">
             <xsl:choose>
               <xsl:when test="$prev/@source != ''"><xsl:value-of select="$in//book[abbreviation = $prev/@source]/name"/></xsl:when>
-              <xsl:otherwise>ArM5</xsl:otherwise>
+              <xsl:otherwise>Ars Magica</xsl:otherwise>
             </xsl:choose>
           </xsl:variable>
 
