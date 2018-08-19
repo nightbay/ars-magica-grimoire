@@ -174,7 +174,7 @@
     <xsl:choose>
       <xsl:when test=". = 'Personale'">Personale</xsl:when>
       <xsl:when test=". = 'Tocco'">Tocco</xsl:when>
-      <xsl:when test=". = 'Voce'">Vocale</xsl:when>
+      <xsl:when test=". = 'Vocale'">Vocale</xsl:when>
       <xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -266,8 +266,7 @@
             <xsl:choose>
               <xsl:when test="@type = 'standard' or @type = 'mystery'">
                 <xsl:choose>
-                  <xsl:when test="guideline/@ward = 'true' and guideline/base = ''">(Come per linee guida di Difesa</xsl:when>
-                  <xsl:otherwise>
+                  <xsl:when test="guideline/@ward = 'true' and string(guideline/base) = ''">(Come per linee guida di Difesa</xsl:when>                 <xsl:otherwise>
                     (Base <xsl:value-of select="guideline/base" /> 
                   </xsl:otherwise>
                 </xsl:choose>
