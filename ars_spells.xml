@@ -66,7 +66,7 @@
       <p>Gli incantesimi Auram sono potenti perchè l'elemento dell'aria è onnipresente; la loro debolezza è che non è di solito violento come il fuoco, né forte come la terra.
       Auram, tuttavia, include nel suo dominio gran parte dei fenomeni atmosferici come tempeste, fulmini, pioggia e precipitazioni nevose. Gli incantesimi Auram influenzano di
       solito l'aria come fenomeno (venti, odori) che come gas (che è un concetto moderno).</p>
-      <p>Alcune categorie di Bersaglio per Auram richiedonoqualche spiegazione. Se si applicano le normali descrizioni, ovviamente si possono utilizzare.</p>
+      <p>Alcune categorie di Bersaglio per Auram richiedono qualche spiegazione. Se si applicano le normali descrizioni, ovviamente si possono utilizzare.</p>
       <p>
         <strong>Singolo: </strong>un singolo elemento: una nuvola, un soffio di vento, un fulmine.
       </p>
@@ -148,7 +148,7 @@
       Invisibile</emphasis> (ReTe 10) lancia ogni sorta di cose non viventi.</p>
       <p>Benchè gli incantesimi Terram colpiscano ogni sorta di oggetti solidi, alcuni materiali sono più difficili da influenzare: di seguito sono elencati, in ordine di difficoltà crescente,
       i materiali influenzabili da Terram: terra (sabbia, terriccio, fango), argilla, pietra, vetro, metallo, gemme. Ogni livello di difficoltà non rappresenta necessariamente una Magnitudine.</p>
-      <p>Il Singolo base per Terram dipende dal Materiale. Per sabbia, terriccio, fango, argilla o sostanze simili, si tratta di un cubo di del lato di circa dieci passi; per la pietra, di un
+      <p>Il Singolo base per Terram dipende dal Materiale. Per sabbia, terriccio, fango, argilla o sostanze simili, si tratta di un cubo del lato di circa dieci passi; per la pietra, di un
       singolo passo. Per i metalli di base è un cubo con lato di un piede, per quelli preziosi un decimo di questa quantità; per le pietre si tratta di un cubo con lato un pollice.</p>
     </description>
   </form>
@@ -236,8 +236,8 @@
   <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
   -->
   <book canon="false">
-    <abbreviation>SEU</abbreviation>
-    <name>Studi di Eufemia</name>
+    <abbreviation>EEE</abbreviation>
+    <name>Esperimenti Ermetici di Eufemia</name>
   </book>
   <book>
     <abbreviation>HP</abbreviation>
@@ -1497,7 +1497,7 @@
       </guideline>
       <guideline>
         <level>4</level>
-        <description>Trasforma una pianta o un prodotto di origine vegetale in metallo o pietra (requisito Terram). </description>
+        <description>Trasforma una pianta o un prodotto di origine vegetale in metallo o pietra (requisito Terram).</description>
       </guideline>
       <guideline>
         <level>4</level>
@@ -2734,7 +2734,6 @@
         <description>Riduce la Durata di una Connessione Arcana di sei passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.
         Un effetto di questo livello è sufficiente a far terminare all'istante pressocché ogni Connessione Arcana.</description>
       </guideline>
-
     </guidelines>
   </arts_guideline>
   <arts_guideline>
@@ -2907,7 +2906,7 @@
       </modifiers>
     </guideline>
   </spell>
-  <spell id="5" source="SEU" type="standard">
+  <spell id="5" source="EEE" page="1" type="standard">
     <name>Corpo Come Cenere in un Camino</name>
     <level>15</level>
     <arts>
@@ -2963,6 +2962,294 @@
     <range>Vocale</range>
     <duration>Istantanea</duration>
     <target>Singolo</target>
+  </spell>
+  <spell id="8" page="240" type="general" subtype="Canale Intangibile" >
+    <name>Aprire il Canale Intangibile</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Connessione Arcana</range>
+    <duration>Concentrazione</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Apri un canale magico da te a un Bersaglio; esso ti consente di lanciare sul Bersaglio qualsiasi incantesimo con Portata maggiore di Personale.
+      Il canale in sé non fornisce alcuna impressione sensoriale riguardo al Bersaglio: se desideri vederlo, devi lanciare gli incantesimi appropriati
+      attraverso il canale. Gli incantesimi lanciati attraverso il canale non possono avere livello maggiore di questo incantesimo. Devi effettuare tiri
+      di Concentrazione standard per mantenere la concentrazione su questo incantesimo mentre ne lanci un altro.</p>
+      <p>Un Magus che riconosce magicamente il canale (con <emphasis>Rivelazione dell'Occhio Invisibile</emphasis> o simili) può lanciare incantesimi
+      tramite esso su di te, senza concentrarsi per tenerlo aperto. Se tale Magus è il bersaglio dell'incantesimo, è considerato in Portata Tocco;
+      altrimenti la Portata effettiva verso di te è quella che va da lui al Bersaglio del canale.</p>
+      <p>Se il Bersaglio dell'incantesimo ha Resistenza alla Magia, devi penetrarla per aprire il canale. Gli incantesimi lanciati attraverso il canale
+      devono penetrare la Resistenza alla Magia come di consueto</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="9" page="80" source="HP" type="general" subtype="Canale Intangibile" >
+    <name>Il Momento della Resa dei Conti</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Connessione Arcana</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Questo incantesimo apre un canale magico dal lanciatore al Bersaglio. Gli incantesimi lanciati attraverso il canale non possono avere livello 
+      maggiore di questo incantesimo.</p>
+      <p>A differenza dell'incantesimo <spell-link name="Aprire il Canale Intangibile"/> l'incantesimo non deve essere mantenuto con Concentrazione;
+      Questo porta sia vantaggi (il Magus non deve mantenere la Concentrazione) e svantaggi (il canale non può essere chiuso rapidamente smettendo di
+      concentrarsi).</p>
+      <p>Nota che, nonostante il nome di questo incantesimo, un incantesimo con Durata Diametro dura effettivamente due minuti.</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="10" page="80" source="HP" type="general" subtype="Canale Intangibile" >
+    <name>Il Giorno Fatale</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Connessione Arcana</range>
+    <duration>Sole</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Questo incantesimo apre un canale magico dal lanciatore al Bersaglio. Gli incantesimi lanciati attraverso il canale devono essere almeno
+      una Magnitudine meno di del livello di questo incantesimo.</p>
+      <p>A differenza dell'incantesimo <spell-link name="Aprire il Canale Intangibile"/> l'incantesimo non deve essere mantenuto con Concentrazione;
+      Questo porta sia vantaggi (il Magus non deve mantenere la Concentrazione) e svantaggi (il canale non può essere chiuso rapidamente smettendo di
+      concentrarsi).</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="11" page="80" source="HP" type="general" subtype="Canale Intangibile"  >
+    <name>L'Assedio del Mago</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Connessione Arcana</range>
+    <duration>Luna</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Questo incantesimo apre un canale magico dal lanciatore al Bersaglio. Gli incantesimi lanciati attraverso il canale devono essere almeno
+      due Magnitudini meno di del livello di questo incantesimo.</p>
+      <p>A differenza dell'incantesimo <spell-link name="Aprire il Canale Intangibile"/> l'incantesimo non deve essere mantenuto con Concentrazione;
+      Questo porta sia vantaggi (il Magus non deve mantenere la Concentrazione) e svantaggi (il canale non può essere chiuso rapidamente smettendo di
+      concentrarsi).</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="12" page="80" source="HP" type="general" subtype="Canale Intangibile" >
+    <name>To Matiasma</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Visuale</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <flavour>Scagliare il Malocchio</flavour>
+      <p>A volte un Magus non è in grado di acquisire una Connessione Arcana con il proprio Bersaglio. Questo incantesimo apre un canale magico dal 
+      Magus ad un qualunqe Bersaglio entro il suo raggio visivo.</p>
+      <p>Il vantaggio di ciò è che questo riduce la distanza effettiva tra il Magus e il suo Bersaglio, il che si traduce nella possibilità
+      di lanciare incantesimi di Magnitudine minore sul Bersaglio, aumentando così il Totale di Penetrazione effettivo.</p>
+      <p>Gli effetti lanciati attraverso un canale <self/> devono essere al più una Magnitudine superiore all'incantesimo <self/>.</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="12" page="1" source="EEE" type="general" subtype="Canale Intangibile" >
+    <name>Rimprovero della Madre Adirata</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Vocale</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Come per <spell-link name="To Matiasma"/>, lanciato a Distanza Vocale e con Durata Diametro.</p>
+      <p>Il vantaggio di ciò è che questo riduce la distanza effettiva tra il Magus e il suo Bersaglio, il che si traduce nella possibilità
+      di lanciare incantesimi di Magnitudine minore sul Bersaglio, aumentando così il Totale di Penetrazione effettivo.</p>
+      <p>Gli effetti lanciati attraverso un canale <self/> devono essere al più due Magnitudini superiore all'incantesimo <self/>.</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="13" page="1" source="EEE" type="general" subtype="Canale Intangibile" >
+    <name>Espandere il Tunnel Intangibile</name>
+    <level>GENERALE</level>
+    <arts>
+      <form>Vim</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Come per <spell-link name="Aprire il Canale Intangibile"/>, lanciato a distanza Tocco e con durata Diametro.</p>
+      <p>Il vantaggio di ciò è che questo riduce la distanza effettiva tra il Magus e il suo Bersaglio, il che si traduce nella possibilità
+      di lanciare incantesimi di Magnitudine minore sul Bersaglio, aumentando così il Totale di Penetrazione effettivo.</p>
+      <p>Gli effetti lanciati attraverso un canale <self/> devono essere al più tre Magnitudini superiore all'incantesimo <self/>.</p>
+    </description>
+    <guideline>
+      <base></base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="14" page="84" source="HP" type="standard" >
+    <name>Tocco Gelido dell'Abbandono</name>
+    <level>5</level>
+    <arts>
+      <form>Ignem</form>
+      <technique>Perdo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Il Bersaglio trema come un bambino indesiderato abbandonato da solo in una gelida conca, perdendo un livello di Fatica. Lanci ripetuti
+      di questo incantesimo possono rendere Privo di Sensi il personaggio; questo di solito richiede 5 lanci. Padroneggiare questo incantesimo 
+      con Lancio Multiplo può ridurre il tempo necessario perchè questo accada. Una volta che il Bersaglio è Privo di Sensi, lanci aggiuntivi
+      dell'incantesimo incrementano la durata di tempo in cui il Bersaglio resta naturalmente Privo di Sensi.</p>
+      <p>Se il Bersaglio è Privo di Sensi durante l'Alba o il Tramonto, in questo caso la sua Parma Magica scade.</p>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="14" page="1" source="EEE" type="standard" >
+    <name>Vento Gelido delle Terre dei Variaghi</name>
+    <level>10</level>
+    <arts>
+      <form>Ignem</form>
+      <technique>Perdo</technique>
+      <requisite free="true">Auram</requisite>
+    </arts>
+    <range>Tocco</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Il Bersaglio si raffredda e perde calore come se esposto ai venti gelidi delle steppe della Rus', perdendo un livello di Fatica ogni turno
+      fino al termine di questo incantesimo. Se il Bersaglio è Privo di Sensi, i turni aggiuntivi incrementano la durata di tempo in cui il Bersaglio
+      resta naturalmente Privo di Sensi.</p>
+      <p>Se il Bersaglio è Privo di Sensi durante l'Alba o il Tramonto, in questo caso la sua Parma Magica scade.</p>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="15" page="84" source="HP" type="standard" >
+    <name>Tocco Bruciante</name>
+    <level>5</level>
+    <arts>
+      <form>Ignem</form>
+      <technique>Creo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Istantanea</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Le dita del Magus bruciano il Bersaglio, lasciando un marchio con la forma delle dita. Il Bersaglio subisce +5 danni. Nota che se questo
+      incantesimo non viene lanciato attraverso un <emphasis>Canale Intangibile</emphasis>, il Magus subirà egli stesso i danni.</p>
+      <flavour>
+        <p>"Dai un fuoco ad un uomo, ed egli avrà caldo per un giorno. Ma dai fuoco ad un uomo, ed egli avrà caldo per il resto della sua vita."</p>Eufemia Angelina Porfirogenita </flavour>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="16" page="85" source="HP" type="standard" >
+    <name>Colpo della Magia Assente</name>
+    <level>10</level>
+    <arts>
+      <form>Mentem</form>
+      <technique>Perdo</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Il Bersaglio dimentica come usare coscientemente una Forma per la durata dell'incantesimo. Questo include il lancio Formulaico, Spontaneo e 
+      Rituale della Forma. Sono inclusi anche gli usi della Forma come Requisito. L'uso non cosciente della Forma (ad esempio, il Bonus di Forma di
+      Resistenza alla Magia) non è influenzato da questo incantesimo.</p>
+      <p>Allo scadere dell'incantesimo, il Bersaglio ricorda nuovamente come usare la Forma.</p>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="17" page="85" source="HP" type="standard" >
+    <name>Tocco di Piume Cadenti</name>
+    <level>5</level>
+    <arts>
+      <form>Mentem</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Tocco</range>
+    <duration>Diametro</duration>
+    <target>Singolo</target>
+    <description>
+      <p>Il Bersaglio cade rapidamente in un sonno profondo. Poichè l'incantesimo ha durata non Istantanea, il Bersaglio non può essere svegliato
+        naturalmente a meno che questo incantesimo non sia dissolto, oppure sia trascorsa l'intera Durata.</p>
+      <p>Se il Bersaglio è addormentato all'Alba o al Tramonto, in questo caso la sua Parma Magica scade.</p>
+    </description>
+    <guideline>
+      <base>4</base>
+      <modifiers></modifiers>
+    </guideline>
+  </spell>
+  <spell id="18" page="1" source="EEE" type="standard" >
+    <name>Il Rapido Respiro delle Fauci della Terra</name>
+    <level>25</level>
+    <arts>
+      <form>Terram</form>
+      <technique>Rego</technique>
+    </arts>
+    <range>Vocale</range>
+    <duration>Istantanea</duration>
+    <target>Parte</target>
+    <description>
+      <p>Un'area di terreno, indicata dal Magus, pari a un cilindro di nove piedi di raggio e nove piedi di profondità, viene scagliata verso l'alto
+      per un'altezza di trenta piedi; il cilindro puà contenere terriccio e pietra, ma erba, persone, acqua corrente o stagnante, animali sotterranei etc. non
+      ne subiscono gli effetti. La presenza di metalli o pietre preziose all'interno del cilindro provoca il fallimento dell'incantesimo. Il materiale così
+      scagliato è poi libero di agire così come Dio ha stabilito, cosa che normalmente comporta il ricadere da un'altezza di trenda piedi.</p>
+      <flavour>"Un individuo posizionato sopra il cilindro sarà probabilmente scagliato in aria e successivamente cadrà, se non immune alla magia 
+      o dotato di Resistenza alla Magia, perdendo dignità e l'equibrio ma probabilmente non la vita o un arto. Un individuo immune alla magia che si trovi
+      sul cilindro non sarà influenzato dalla magia, e molto probabilmente cadrà nella buca che si riempirà rapidamente." - Eufemia Angelina Porfirogenita.</flavour>
+    </description>
+    <guideline>
+      <base>3</base>
+      <modifiers>+2 Taglia</modifiers>
+    </guideline>
   </spell>
 </spells>
 </ars_magica>
