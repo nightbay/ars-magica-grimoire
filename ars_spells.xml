@@ -3,10 +3,11 @@
 <preface>
   <p indent="false" font="hand" size="24pt" colour="hand">Le Chiavi di Costantinopoli</p>
   <p font="hand" size="18pt" colour="hand">
-    Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con incantesimi provenienti da svariate fonti: <booklist/>.
+    Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi provenienti da svariate fonti: <booklist/>.
   </p>
-  <toc/>
+
   <p indent="false" font="hand" size="48pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
+  <toc/>
 </preface>
 <arts>
   <form>
@@ -149,7 +150,7 @@
       <p>Benchè gli incantesimi Terram colpiscano ogni sorta di oggetti solidi, alcuni materiali sono più difficili da influenzare: di seguito sono elencati, in ordine di difficoltà crescente,
       i materiali influenzabili da Terram: terra (sabbia, terriccio, fango), argilla, pietra, vetro, metallo, gemme. Ogni livello di difficoltà non rappresenta necessariamente una Magnitudine.</p>
       <p>Il Singolo base per Terram dipende dal Materiale. Per sabbia, terriccio, fango, argilla o sostanze simili, si tratta di un cubo del lato di circa dieci passi; per la pietra, di un
-      singolo passo. Per i metalli di base è un cubo con lato di un piede, per quelli preziosi un decimo di questa quantità; per le pietre si tratta di un cubo con lato un pollice.</p>
+      singolo passo. Per i metalli di base è un cubo con lato di un piede, per quelli preziosi un decimo di questa quantità; per le pietre preziose si tratta di un cubo con lato un pollice.</p>
     </description>
   </form>
   <form>
@@ -243,6 +244,10 @@
     <abbreviation>HP</abbreviation>
     <name>Hermetic Projects</name>
   </book>
+  <!--<book canon="false">
+    <abbreviation>CRL</abbreviation>
+    <name>della Costante Ricerca di Leonardo</name>
+  </book>-->  
 </books>
 <arts_guidelines>
   <arts_guideline>
@@ -1122,7 +1127,7 @@
   <arts_guideline>
     <arts><form>Corpus</form><technique>Intellego</technique></arts>
     <description>
-      <p>Sigilli comuni negli inatesimi Intellego Corpus riportano solitamente le informazioni in modi strani o particolari.</p>
+      <p>Sigilli comuni negli incantesimi Intellego Corpus riportano solitamente le informazioni in modi strani o particolari.</p>
       <p>Come gran parte dei casi di Intellego, i fallimenti critici in Intellego Corpus forniscono di solito informazioni false.</p>
     </description>
     <guidelines>
@@ -2536,7 +2541,7 @@
     <guidelines>
       <guideline>
         <level>Generico</level>
-        <description>Ccrea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una Magnitudine
+        <description>Crea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una Magnitudine
         (quest'Aura è di “magia” generica: non può fornire informazioni fuorvianti).</description>
       </guideline>
       <guideline>
@@ -3228,7 +3233,7 @@
     </guideline>
   </spell>
   <spell id="18" page="1" source="EEE" type="standard" >
-    <name>Il Rapido Respiro delle Fauci della Terra</name>
+    <name>Il Breve Sbuffo delle Fauci della Terra</name>
     <level>25</level>
     <arts>
       <form>Terram</form>
@@ -3238,17 +3243,21 @@
     <duration>Istantanea</duration>
     <target>Parte</target>
     <description>
-      <p>Un'area di terreno, indicata dal Magus, pari a un cilindro di nove piedi di raggio e nove piedi di profondità, viene scagliata verso l'alto
-      per un'altezza di trenta piedi; il cilindro puà contenere terriccio e pietra, ma erba, persone, acqua corrente o stagnante, animali sotterranei etc. non
-      ne subiscono gli effetti. La presenza di metalli o pietre preziose all'interno del cilindro provoca il fallimento dell'incantesimo. Il materiale così
-      scagliato è poi libero di agire così come Dio ha stabilito, cosa che normalmente comporta il ricadere da un'altezza di trenda piedi.</p>
+      <p>
+        Il terreno in un'area indicata dal Magus, pari a un cilindro di nove piedi di raggio e nove piedi di profondità, viene scagliato verso l'alto
+        per un'altezza di trenta piedi; il cilindro puà contenere terriccio e pietra, ma erba, persone, acqua corrente o stagnante, animali sotterranei etc. non
+        ne subiscono gli effetti. La presenza di metalli o pietre preziose all'interno del cilindro provoca il fallimento dell'incantesimo. Il materiale così
+        scagliato è poi libero di agire così come Dio ha stabilito, cosa che normalmente comporta il ricadere da un'altezza di trenta piedi.
+      </p>
       <flavour>"Un individuo posizionato sopra il cilindro sarà probabilmente scagliato in aria e successivamente cadrà, se non immune alla magia 
       o dotato di Resistenza alla Magia, perdendo dignità e l'equibrio ma probabilmente non la vita o un arto. Un individuo immune alla magia che si trovi
       sul cilindro non sarà influenzato dalla magia, e molto probabilmente cadrà nella buca che si riempirà rapidamente." - Eufemia Angelina Porfirogenita.</flavour>
     </description>
     <guideline>
       <base>3</base>
-      <modifiers>+2 Taglia</modifiers>
+      <modifiers>
+        <modifier>+2 Taglia</modifier>
+      </modifiers>
     </guideline>
   </spell>
 </spells>
