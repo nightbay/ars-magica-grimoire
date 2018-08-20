@@ -1,0 +1,3028 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ars_magica>
+  <preface>
+    <p indent="false" font="hand" size="24pt" colour="hand">Enchiridion Caeruleae Rosae</p>
+    <p font="hand" size="18pt" colour="hand">
+      Dello studio e della raccolta delle formule e dei riti Ermetici, di come farli propri e di come migliorarli. Un compendio di <spellcount/> incantesimi tratti da: <booklist/>
+    </p>
+    <toc/>
+    <p indent="false" font="Parchment" size="48pt" colour="#661A1A">Leonardo Teofrasto Mocenigo</p>
+  </preface>
+  <arts>
+  <form>
+    <name>Animal</name>
+    <color>#8B4513</color>
+    <description>
+      <p>Gli incantesimi Animal influenzano tutti gli esseri viventi che non siano piante o umani,
+      e fanno agli animali ciò che quelli di Mentem e Corpus fanno alle persone: possono influenzare
+      mente o corpo della bestia. Colpiscono anche oggetti fatti con prodotti animali, come cuoio,
+      osso o lana.</p>
+      <p>Per sapere se un incantesimo Animal influenza la mente della creatura, guarda se le caratteristiche
+      di questa contengono Astuzia o Ingenium. Se la creatura possiede Ingenium, va usato un incantesimo
+      Mentem; se ha Astuzia un incantesimo Animal. Quando una creatura o una persona con la caratteristica
+      Ingenium muta forma, gli incantesimi Animal che colpiscono la mente sono inefficaci, e sono necessari
+      gli incantesimi Mentem. Tuttavia , il corpo di un simile essere può essere influenzato da incantesimi
+      Animal, come <emphasis>Cappuccio del Falcone</emphasis> (PeAn 20).</p>
+      <p>Se un corpo umano ha parti animali, come ali di pipistrello, tali parti possono essere influenzate
+      dagli incantesimi Animal, anche se per il resto del corpo sono necessari incantesimi Corpus.</p>
+      <p>Un Magus Bjornaer in forma animale è realmente un animale ,quindi la sua mente è influenzata da
+      incantesimi Animal e non Mentem, e il suo corpo da incantesimi Animal e non Corpus. Tuttavia, gli
+      incantesimi con effetto continuo lanciati su una forma seguitano a influenzare anche l'altra.
+      I mutaforma perlopiù non cambiano la loro natura intima, che resta umana, quindi i loro corpi possono
+      essere influenzati da incantesimi Corpus.</p>
+      <p>Un Singolo base per Animal è un animale più o meno delle dimensioni di un pony, Taglia +1 o meno.</p>      
+    </description>
+  </form>
+  <form>
+    <name>Aquam</name>
+    <color>#000080</color>
+    <description>
+      <p>Gli incantesimi Aquam influenzano l'acqua e tutti gli altri liquidi. Non influenzano i liquidi in un corpo, come il sangue,
+      per quello è richiesto un incantesimo Corpus.</p>
+      <p>L'applicazione delle categorie Bersaglio degli incantesimi Aquam non è ovvia come quella delle altre forme, qui trovi linee guida addizionali.
+      Se si applicano i bersagli standard, possono essere usati anch'essi.</p>
+      <p>
+        <strong>Singolo: </strong>uno specchio d'acqua o corso d'acqua con la stessa composizione e corrente. Un piccolo stagno, parte di un torrente, una sorgente.
+      </p>
+      <p>
+        <strong>Parte: </strong>una parte di un individuo. Questa categoria si applica facilmente.
+      </p>
+      <p>
+        <strong>Gruppo: </strong>un certo numero di Singoli. Ciò comprende un ampio fiume, dove scorrono diverse correnti, un numero di fiumi che scorrono assieme o un lago.
+      </p>
+      <p>
+        <strong>Stanza, Struttura e Confine: </strong>funzionano come per le altre Forme, l'incantesimo influenza tutto il liquido nella zona Bersaglio.
+      </p>
+      <p>Un singolo Base per Aquam è una pozza d'acqua del diametro di circa cinque passi (quattro metri e mezzo), con una profondità al centro di due passi.
+      I liquidi naturali, come il succo di frutta o l'olio d'oliva, hanno un Singolo base pari a un decimo di tale misura, circa due passi di diametro per uno di profondità.
+      I liquidi lavorati, come vino o birra, hanno un Singolo base pari a un centesimo, cioè un passo di diametro e mezzo di profondità. I liquidi corrosivi o altrimenti
+      pericolosi hanno un Singolo Base dieci volte più piccolo, largo una trentina di centimetri e profondo quindici. I veleni hanno un Singolo base pari a una singola dose.</p>
+    </description>
+  </form>
+  <form>
+    <name>Auram</name>
+    <color>#EE82EE</color>
+    <description>
+      <p>Gli incantesimi Auram sono potenti perchè l'elemento dell'aria è onnipresente; la loro debolezza è che non è di solito violento come il fuoco, né forte come la terra.
+      Auram, tuttavia, include nel suo dominio gran parte dei fenomeni atmosferici come tempeste, fulmini, pioggia e precipitazioni nevose. Gli incantesimi Auram influenzano di
+      solito l'aria come fenomeno (venti, odori) che come gas (che è un concetto moderno).</p>
+      <p>Alcune categorie di Bersaglio per Auram richiedono qualche spiegazione. Se si applicano le normali descrizioni, ovviamente si possono utilizzare.</p>
+      <p>
+        <strong>Singolo: </strong>un singolo elemento: una nuvola, un soffio di vento, un fulmine.
+      </p>
+      <p>
+        <strong>Gruppo: </strong>diversi fenomeni correlati, come le nubi, i venti e la pioggia in una tempesta.
+      </p>
+      <p>Un Singolo base per Auram è un fenomeno atmosferico che colpisce una zona entro un Confine standard: un'area del diametro di cento passi.</p>
+    </description>
+  </form>
+  <form>
+    <name>Corpus</name>
+    <color>#8B0000</color>
+    <description>
+      <p>Gli incantesimi Corpus riguardano corpi umani o umanoidi e qualsiasi cosa coninvolga tali corpi. Molte fate sono abbastanza simili agli umani da essere influenzate da questi incantesimi.</p>
+      <p>Un Singolo base per Corpus è un essere umano adulto, fino a taglia +1.</p>
+    </description>
+  </form>
+  <form>
+    <name>Herbam</name>
+    <color>#006400</color>
+    <description>
+      <p>Gli incantesimi Herbam funzionano su piante e materia vegetale, sia vive che morte. Poichè il legno è un materiale comune in armi, veicoli ed edifici, possono essere utili per
+      migliorare o distruggere oggetti, o quando necessiti l'aiuto del mondo vegetale.</p>
+      <p>Un Singolo base per Herbam è una pianta che misura circa un passo in ciascuna direzione.</p>
+    </description>
+  </form>
+  <form>
+    <name>Ignem</name>
+    <color>#DC143C</color>
+    <description>
+      <p>Questi incantesimi sono volubili e pericolosi come il fuoco. I Magi che perseguono l'Arte della fiamma lo fanno con cura e riguardo per le minacce e i poteri evocati, poichè
+      il fuoco è potente e letale tanto per i nemici quanto per gli amici. Il Cantastorie dovrebbe rendere i fallimenti critici in Ignem particolarmente micidiali.</p>
+      <p>Anche luce e calore rientrano nel dominio di questa Forma. È importante ricordare che il calore è un valore tanto in positivo quanto in negativo, quindi Ignem rende possibili
+      anche incantesimi il cui risultato sfocerà in temperature gelide.</p>
+      <p>Il Singolo base per Ignem è un grosso fuoco da campeggio o il focolare di una grande sala.</p>
+    </description>
+  </form>
+  <form>
+    <name>Imaginem</name>
+    <color>#ADD8E6</color>
+    <description>
+      <p>Imaginem è la Forma delle sensazioni e dell'illusione. Per mezzo di essa puoi alterare ciò che percepiscono gli altri. Imaginem, tuttavia, significa <emphasis>immagine</emphasis>,
+      non <emphasis>illusione</emphasis>: quindi crea, trasforma, percepisce, distrugge e controlla immagini, non necessariamente illusioni. Un incantesimo di chiaroveggenza, quindi, è un
+      incantesimo Intellego Imaginem perchè individua immagini reali; manipolando le sensazioni puoi invece creare effettive illusioni. L'Arte di Imaginem ricompensa il Magus creativo
+      facendo fare ad altri azioni che avrebbero evitato, come camminare lungo una scogliera mentre gli occhi gli dicono che c'è un ponte sul baratro. Imaginem non influenza la luce, che
+      fa parte di Ignem, ma può influenzare le cose che la luce consente di vedere.
+    </p>
+      <p>Odori e profumi, tinte e macchie, colori e ombre, melodia e cacofonia, dolce e aspro: sono tutte percezioni, quindi manipolabili tramite l'arte di Imaginem. Un'immagine funziona
+      sui sensi, non nella mente, quindi è probabile che una bestia priva di raziocinio creda a un'immagine come un umano impressionabile; allo stesso modo, chiunque può cadere in
+      un'illusione creata con magia Imaginem. Nonostante ciò, questi incantesimi raggiungono il massimo dell'efficacia quando intralciano la comunicazione su cui dipende la società umana.
+      Probabilmente le bestie saranno ingannate dall'illusione, come i non-morti più semplici; i demoni sono difficili da raggirare, mentre le fate vedono spesso attraverso le illusioni e
+      le manipolano per ingannare te. Alcuni membri della Chiesa si sono dimostrati notevolmente abili nel distinguere le illusioni dalla realtà, ma è un talento inaffidabile.</p>
+    <p>Con un incantesimo Imaginem, imitare un oggetto o persona specifica è più difficile rispetto a un'immagine generale, e richiede un Tiro Stress di Sensus + Finezza. Ad esempio,
+      è più facile riprodurre un generico anello d'oro rispetto all'anello con iscrizioni che il barone ha presentato alla moglie in occasione del decimo anniversario di matrimonio.
+      Più è alto il tiro, più le persone sono ingannate. Ottieni un bonus al tiro se hai familiarità con ciò che stai imitando (-3 per un oggetto con cui non hai familiarità, +3 per oggetti
+      con cui sei molto familiare o puoi copiare dall'originale). Per imitare persone, un tiro di 6+ ti permette di ingannare i conoscenti, +9 gli amici e 12+ gli amici stretti e i parenti.
+      Usa una scala simile per gli oggetti. Se ottieni un fallimento critico nel tiro di Finezza, potresti credere che l'immagine è soddisfacente, ma viene scoperta non appena ne fai uso.</p>
+      <p>Un Singolo base per Imaginem è l'equivalente di un essere umano adulto; che sia un'immagine di quella Taglia, un'illusione uditiva che fa quella quantità di rumore, qualsiasi cosa.</p>
+    </description>
+  </form>
+  <form>
+    <name>Mentem</name>
+    <color>#FF8C00</color>
+    <description>
+      <p>Gli incantesimi Mentem controllano pensieri, emozioni e ricordi. Le menti intelligenti ne sono influenzate, mentre quelle delle bestie sono appannaggio degli incantesimi Animal.
+      Le Caratteristiche mentali sono Ingenium, Sensus, Gratia e Communicatio, e possono essere influenzate da incantesimi Mentem.</p>
+      <p>Poichè gli effetti degli incantesimi Mentem non sono solitamente visibili, ti concedono una grande quantità di potere quando hai a che fare con la gente comune. Anche gli incantesimi
+      che richiedono contatto oculare passano relativamente inosservati, se lanciati senza voce o gesti; tuttavia, nel Dominion solo i Magi davvero potenti possono lanciare magie in questo modo.</p>
+      <p>Le menti non hanno una dimensione, quindi i modificatori di Taglia non si applicano agli effetti con bersaglio Singolo; tuttavia possono essere contate, quindi per influenzare Gruppi
+      di persone dovrai comunque aumentare la Taglia. Allo stesso modo, gli incantesimi Mentem che influenzano chiunque si trovi in una Stanza, Struttura o Confine hanno i modificatori
+      di Taglia consueti.</p>
+    </description>
+  </form>
+  <form>
+    <name>Terram</name>
+    <color>#583933</color>
+    <description>
+      <p>Gli incantesimi Terram, oltre a coprire terra, pietra, argilla, metallo e vetro, possono a volte influenzare gli oggetti inanimati in generale. Ad esempio, <emphasis>Brandire la Fionda
+      Invisibile</emphasis> (ReTe 10) lancia ogni sorta di cose non viventi.</p>
+      <p>Benchè gli incantesimi Terram colpiscano ogni sorta di oggetti solidi, alcuni materiali sono più difficili da influenzare: di seguito sono elencati, in ordine di difficoltà crescente,
+      i materiali influenzabili da Terram: terra (sabbia, terriccio, fango), argilla, pietra, vetro, metallo, gemme. Ogni livello di difficoltà non rappresenta necessariamente una Magnitudine.</p>
+      <p>Il Singolo base per Terram dipende dal Materiale. Per sabbia, terriccio, fango, argilla o sostanze simili, si tratta di un cubo del lato di circa dieci passi; per la pietra, di un
+      singolo passo. Per i metalli di base è un cubo con lato di un piede, per quelli preziosi un decimo di questa quantità; per le pietre preziose si tratta di un cubo con lato un pollice.</p>
+    </description>
+  </form>
+  <form>
+    <name>Vim</name>
+    <color>#C0C0C0</color>
+    <description>
+      <p>Gli incantesimi Vim sono molto utili: ti aiutano a migliorare gli effetti delle tue magie, un aspetto cruciale, se consideriamo che l'efficacia degli incantesimi è la caratteristica
+      principale di un Magus maestro. Con l'immaginazione, puoi usare questi incantesimi per creare difese, allarmi, oggetti magici a uso singolo e altre cose interessanti. Molti incantesimi
+      Vim vanno lanciati insieme ad altri, di cui modificano gli effetti.</p>
+      <p>La magia Vim permette anche di affrontare i demoni. Evocare i demoni e averci a che fare è proibito dall'Ordine, ma è concesso combatterli.</p>
+      <p>I Magi usano spesso Vim per contrastare fenomeni magici. Il Cantastorie deve assegnare livelli di incantesimi per ognuno degli avvenimenti arcani che si desidera affrontare con
+      incantesimi Vim.</p>
+      <p>Gli incantesimi Vim sono perlopiù di livello Generico, poichè il potere della magia che influenzano è piuttosto vario: un incantesimo pensato per disperdere una magia di Magnitudine 1
+      sarà molto meno potente di una pensata per disperdere un effetto di Magnitudine 5. Le linee guida degli incantesimi Vim tengono conto di ciò, e invece di fornire un livello preciso per
+      un effetto corrispondente, indicano la relazione che lega il livello dell'incantesimo Vim e quello del Bersaglio.</p>
+      <p>Come sempre, le linee guida si riferiscono a incantesimi con Portata, Durata e Bersaglio base; quando cambi questi parametri, applica il cambio di livello prima di moltiplicare o
+      dividere il livello a seconda dell'effetto. Una versione di <emphasis>Vento del Silenzio Mondano</emphasis> (PeVi) con Portata Vocale disperde un incantesimo lanciato con un totale di
+      Tecnica + Forma pari a meno di metà di (livello dell'incantesimo -10): dieci livelli di potere vanno persi per aumentare la Portata, e solo il potere rimanente è riservato all'effetto.</p>
+      <p>Il Bersaglio Singolo per un incantesimo Vim può riferirsi a un incantesimo individuale o a un singolo oggetto o persona; lo stesso vale per Gruppo. Se il Bersaglio è un oggetto o persona,
+      l'incantesimo influenza qualsiasi magia idonea che influenzi quella persona, non un singolo incantesimo. Gran parte degli incantesimi si può lanciare su altri incantesimi oppure su individui,
+      tranne nel caso in cui la descrizione indichi che possono essere lanciati su entrambi. Per esempio, <emphasis>Specchio del Contrario</emphasis> può essere lanciato solo su altri incantesimi,
+      mentre <emphasis>Rivelazione dell'Occhio Invisibile</emphasis> solo su oggetti o persone.</p>
+      <p>Incantesimi ed effetti magici non hanno Taglia, quindi i modificatori per quest'ultima non si applicano ai livelli degli incantesimi Vim con Bersaglio Singolo. Gli incantesimi Vim 
+      che influenzano diversi incantesimi o intere aree vanno aumentati di livello come di consueto.</p>
+      <p>Le linee guida fanno riferimento principalmente a incantesimi, per questioni di brevità: gli incantesimi Vim possono infatti influenzare effetti magici derivanti da oggetti magici,
+      creature magiche o demoni. Tuttavia, a meno che sia indicato diversamente, non influenzano gli oggetti magici ma solo il loro effetto; dunque, <emphasis>Vento del Silenzio Mondano</emphasis>
+      può disperdere un muro di pietra prodotto da un oggetto magico, ma è necessario un <emphasis>Disincantare</emphasis> per disperdere la magia dell'oggetto vero e proprio.</p>
+      <p>Nota che i Magi Ermetici, e alcuni incantatori non Ermetici, non hanno punteggi di Potenza, quindi non sono influenzati da difese o altri incantesimi che agiscono contro tali punteggi.</p>
+    </description>
+  </form>
+  <technique>
+    <name>Creo</name>
+    <color>#FFFFF0</color>
+  </technique>
+  <technique>
+    <name>Intellego</name>
+    <color>#FFD700</color>
+  </technique>
+  <technique>
+    <name>Muto</name>
+    <color>#F0E68C</color>
+  </technique>
+  <technique>
+    <name>Perdo</name>
+    <color>#000000</color>
+  </technique>
+  <technique>
+    <name>Rego</name>
+    <color>#800080</color>
+  </technique>
+</arts>
+<books>
+  <!--
+  <book><abbreviation>C</abbreviation><name>Covenants</name></book>
+  <book><abbreviation>App</abbreviation><name>Apprentices</name></book>
+  <book><abbreviation>AM</abbreviation><name>Ancient Magic</name></book>
+  <book><abbreviation>F</abbreviation><name>Faerie</name></book>
+  <book><abbreviation>TTT</abbreviation><name>Thrice Told Tales</name></book>
+  <book><abbreviation>G</abbreviation><name>Grogs</name></book>
+  <book><abbreviation>HoH:TL</abbreviation><name>House of Hermes: True Lineages</name></book>
+  <book><abbreviation>TC</abbreviation><name>The Church</name></book>
+  <book><abbreviation>HoH:MC</abbreviation><name>House of Hermes: Mystery Cults</name></book>
+  <book><abbreviation>HoH:S</abbreviation><name>House of Hermes: Societates</name></book>
+  <book><abbreviation>H</abbreviation><name>Hooks</name></book>
+  <book><abbreviation>RoP:TD</abbreviation><name>Realms of Power: The Divine</name></book>
+  <book><abbreviation>GotF</abbreviation><name>Guardians of the Forest</name></book>
+  <book><abbreviation>AtD</abbreviation><name>Against The Dark</name></book>
+  <book><abbreviation>BSaS</abbreviation><name>Between Sand and Sea</name></book>
+  <book><abbreviation>BCoC</abbreviation><name>Broken Covenant of Calebais</name></book>
+  <book><abbreviation>FaF</abbreviation><name>Faith and Flame</name></book>
+  <book><abbreviation>LatL</abbreviation><name>Lily and the Lion</name></book>
+  <book><abbreviation>TMRE</abbreviation><name>The Mysteries Revised Edition</name></book>
+  <book><abbreviation>ML</abbreviation><name>Mythic Locations</name></book>
+  <book><abbreviation>CaG</abbreviation><name>City and Guild</name></book>
+  <book><abbreviation>TSE</abbreviation><name>The Sundered Eagle</name></book>
+  <book><abbreviation>TCaTC</abbreviation><name>The Cradle and The Crescent</name></book>
+  <book><abbreviation>TCI</abbreviation><name>The Contested Isle</name></book>
+  <book><abbreviation>ToME</abbreviation><name>Tales of Mythic Europe</name></book>
+  <book><abbreviation>RM</abbreviation><name>Rival Magic</name></book>
+  <book><abbreviation>LoM</abbreviation><name>Lords of Men</name></book>
+  <book><abbreviation>TME</abbreviation><name>Transforming Mythic Europe</name></book>
+  <book><abbreviation>LotN</abbreviation><name>Lands of the Nile</name></book>
+  <book canon="false"><abbreviation>IBG</abbreviation><name>Iron-bound Grimoire</name></book>
+  <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
+  -->
+  <!--<book canon="false">
+    <abbreviation>EEE</abbreviation>
+    <name>Esperimenti Ermetici di Eufemia</name>
+  </book>
+  <book>
+    <abbreviation>HP</abbreviation>
+    <name>Hermetic Projects</name>
+  </book>-->
+  <book canon="false">
+    <abbreviation>CRL</abbreviation>
+    <name>della Costante Ricerca di Leonardo</name>
+  </book>
+</books>
+<arts_guidelines>
+  <arts_guideline>
+    <arts><form>Animal</form><technique>Creo</technique></arts>
+    <description>
+      <p>Gran Parte degli incantesimi Animal non può essere usata con Portata Personale, quindi il livello di un
+      incantesimo deve superare le linee guida fornite.</p>
+      <p>Quando crei un essere magico, la sua Potenza Magica non può superare il livello dell'incantesimo, e devono
+      essere inclusi i requisiti per qualsiasi potere speciale (come Ignem se sputa fuoco, Rego e Mentem se può
+      controllare le menti). Un requisito Vim, per la natura magica, è sempre necessario.</p>
+      <p>Per creare prodotti animali trattati, come cuoio, tagli di carne e stoffa aggiungi una Magnitudine al
+      livello necessario per creare la massa equivalente di animale morto. Per creare prodotti animali trattati e 
+      lavorati, come una giacca di cuoio o una tunica di lana, aggiungi due Magnitudini al livello necessario per 
+      creare la massa equivalente di animale morto.</p>
+      <p>Per influenzare il comportamento di un animale magico creato è necessario un requisito Rego, e poichè si
+      tratta di un effetto addizionale ciò aggiunge almeno una Magnitudine al livello dell'incantesimo. Altrimenti
+      la bestia si comporterà secondo la sua natura.</p>
+      <p>I fallimenti critici in Creo Animal produconno spesso l'animale sbagliato, o ne creano uno infuriato col
+      lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline><level>1</level><description>Concede all'animale un bonus di +1 per i tiri di Recupero.</description></guideline>
+      <guideline><level>2</level><description>Concede all'animale un bonus di +3 per i tiri di Recupero.</description></guideline>
+      <guideline><level>3</level><description>Concede all'animale un bonus di +6 per i tiri di Recupero.</description></guideline>
+      <guideline><level>4</level><description>Concede all'animale un bonus di +9 per i tiri di Recupero.</description></guideline>
+      <guideline><level>5</level><description>Concede all'animale un bonus di +12 per i tiri di Recupero.</description></guideline>
+      <guideline>
+        <level>5</level>
+        <description>
+        Crea un singolo prodotto animale come lana o tela di ragno (nota che un Singolo è un singolo filo, una singola pelle o una
+        singola zanna).
+        </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un insetto o simile.
+        </description>
+      </guideline>
+      <guideline><level>10</level><description>Crea il cadavere di un animale.</description></guideline>
+      <guideline><level>10</level><description>Crea un uccello, rettile, pesce o anfibio.</description></guideline>
+      <guideline><level>10</level><description>Concede all'animale un bonus di +15 per i tiri di Recupero.</description></guideline>
+      <guideline><level>15</level><description>Cura una Ferita Leggera.</description></guideline>
+      <guideline><level>15</level><description>Concede all'animale un bonus di +18 per i tiri di Recupero.</description></guideline>
+      <guideline><level>15</level><description>Crea un mammifero.</description></guideline>
+      <guideline>
+        <level>15</level>
+        <description>
+          Fa raggiungere all'animale la maturità completa nel corso di un singolo giorno o notte. Questa maturazione accelerata si
+          applica solo durante la Durata dell'incantesimo, quindi l'effetto completo richiede un incantesimo con Durata Sole lanciato
+          all'inizio del giorno o della notte.
+        </description>
+      </guideline>
+      <guideline><level>20</level><description>Cura una Ferita Media.</description></guideline>
+      <guideline><level>20</level><description>Concede all'animale un bonus di +21 per i tiri di Recupero.</description></guideline>
+      <guideline>
+        <level>20</level>
+        <description>
+          Fa raggiungere la maturità completa nel corso di un paio di ore.
+        </description>
+      </guideline>
+      <guideline><level>25</level><description>Arresta il progresso di una malattia.</description></guideline>
+      <guideline><level>25</level><description>Cura una Ferita Grave.</description></guideline>
+      <guideline><level>25</level><description>Ristabilisce un senso perduto.</description></guideline>
+      <guideline><level>25</level><description>Ristabilisce un arto perduto.</description></guideline>
+      <guideline><level>25</level><description>Cura una malattia contrastandone gli effetti (a meno che non sia lanciato
+      come Rituale Istantaneo, equivale ad arrestare il progresso di una malattia).</description></guideline>
+      <guideline><level>25</level><description>Fa raggiungere all'animale la maturità completa nel corso di dieci Diametri (venti minuti).</description></guideline>
+      <guideline><level>30</level><description>Cura una Ferita Incapacitante.</description></guideline>
+      <guideline><level>30</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale.</description></guideline>
+      <guideline><level>30</level><description>Fa raggiungere all'animale la maturità completa nel corso di un singolo Diametro.</description></guideline>
+      <guideline><level>35</level><description>Cura tutte le ferite.</description></guideline>
+      <guideline><level>35</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più uno.</description></guideline>
+      <guideline><level>40</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più due.</description></guideline>
+      <guideline><level>40</level><description>Fa raggiungere all'animale la maturità completa in un attimo.</description></guideline>
+      <guideline><level>45</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più tre.</description></guideline>
+      <guideline><level>50</level><description>Crea una bestia magica. Un simile incantesimo ha sempre un requisito Vim, poichè la bestia è magica,
+      e normalmente ne ha altri per i suoi vari poteri</description></guideline>
+      <guideline><level>50</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più quattro.</description></guideline>      
+      <guideline><level>55</level><description>Aumenta una caratteristica dell'animale di un punto, fino a un massimo del punteggio medio
+      per quel tipo di animale più cinque. Un ulteriore aumento non è nella natura dell'animale, quindi non può essere effettuato con la magia Creo.</description></guideline>      
+      <guideline><level>75</level><description>Resuscita un animale morto.</description></guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Animal</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Quando cerchi di ottenere informazioni da un animale, tieni a mente che i suoi ricordi vengono filtrati dai suoi sensi particolari, 
+      ognuno con punti di forza e debolezza. Ad esempio, i cani ricordano bene l'odore delle cose, ma dimenticano spesso i dettagli
+      sull'aspetto delle stesse.</p>
+      <p>Gli animali non ricordano le parole umane, ma possono ricordare cose come il tono della voce. Le informazioni che ottieni possono
+      essere incomplete.</p>
+      <p>Per comunicare con un animale devi portarti al suo livello mentale, un processo che potrebbe avere strani (ma temporanei) effetti.
+      Ad esempio, dopo aver comunicato con un orso, per qualche attimo potresti parlare molto lentamente o avvertire fame di carne cruda.</p>
+      <p>Poichè Animal comprende aspetti sia di Corpus che di Mentem in relazione alle bestie, è possibile applicare ad Animal le linee guida
+      che si applicano a questi. Vedi InCo e InMe per ulteriori idee.</p>
+      <p>I fallimenti critici in InAm danno di solito come risultato informazioni false.</p>
+    </description>
+    <guidelines>
+      <guideline><level>1</level><description>Ottieni un'immagine mentale dell'animale.</description></guideline>
+      <guideline><level>3</level><description>Percepisci lo stato di coscienza di una bestia. Ottieni informazioni generali sul suo corpo.</description></guideline>
+      <guideline><level>4</level><description>Percepisci l'istinto dominante della bestia. Apprendi un fatto specifico sul suo corpo.</description></guideline>
+      <guideline><level>5</level><description>Apprendi origine, età e storia di un oggetto fatto con prodotti animali.</description></guideline>
+      <guideline><level>10</level><description>Parla con un animale. Leggi i pensieri superficiali di un animale.</description></guideline>
+      <guideline><level>15</level><description>Leggi i ricordi recenti di un animale.</description></guideline>
+      <guideline><level>20</level><description>Perlustra minuziosamente la mente di una bestia.</description></guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Animal</form><technique>Muto</technique></arts>
+    <description>
+      <p>Gli animali a cui sono concesse nuove abilità, come le ali, avranno bisogno di qualche minuto per abituarcisi. Quando trasformi un animale,
+      puoi trasformare ciè che trasporta se ha i requisiti appropriati: ad esempio è possibile trasformare cavallo e corazza con un requisito Terram.</p>
+      <p>Non si può tramutare un animale all'infinito: troppi di questi incantesimi, usati troppo spesso, possono distorcere la costituzione naturale
+      della bestia e persino distruggerla.</p>
+      <p>Esaminando gli incantesimi Muto Corpus troverai idee e linee guida aggiuntivi per quelli Muto Animal. Sigilli comuni fra questo tipo di incantesimi
+      sono strane alterazioni nelle nuove forme: le bestie trasformate da Julian di Flambeau con <emphasis>La Bestia Ricreata</emphasis> (MuAn 25) hanno spesso
+      il pelo rosso acceso, mentre i rospi creati da Silva di Merinita con <emphasis>Trasformazione della Bestia Famelica in Rospo Indolente</emphasis> (MuAn 30)
+      possono presentare colori ridicoli.</p>
+      <p>I fallimenti critici in MuAn scambiano spesso il lanciatore con Bersaglio, o mutano il Bersaglio in modo molto diverso da quello voluto.</p>
+    </description>
+    <guidelines>
+      <guideline><level>1</level><description>Cambiamento superficiale (ad esempio, di colore) a una cosa fatta con prodotti animali.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambiamento profondo a una cosa fatta con prodotti animali preservandone la sostanza (ad esempio trasformare un farsetto di cuoio in una sella.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma gradualmente la carne in vermi.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambiamento superficiale a una bestia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambiamento all'arto di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Tramuta una cosa fatta con prodotti animali in un diverso prodotto animale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambiamento profondo in una bestia, benchè il tipo di animale rimanga riconoscibile (ad sempio un cavallo pià grande con diverso colore).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Tramuta una cosa fatta con prodotti animali in modo lievemente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un animale in uno differente.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Cambia un animale in modo sottile in modo che non sia più naturale (ad esempio, intona il colore del manto di un cavallo con l'araldica della Congrega).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una cosa fatta con prodotti animali in modo profondamente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un animale in umano (benchè conservi la mentalità animale e il bersaglio non ottenga un'anima, richiede un requisito Corpus).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un animale in una pianta (richiede un requisito Herbam).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasforma un animale in modo profondo e innaturale (ad esempio, concede a un cavallo artigli, zanne e pelle squamosa e corazzata).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasforma un animale in un oggetto non vivente (richiede requisito appropriato).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasforma radicalmente un animale in modo innaturale (ad esempio, dà a un cavallo le ali).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Dà a un animale un'abilità <strong>magica</strong>, come la capacità di soffiare fuoco (richiesto un requisito per l'abilità.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Animal</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Normalmente non c'è Assorbimento contro Perdo Animal. La magia non crea qualcosa che infligge danno, ma infligge danno e basta. L'unica protezione
+      è la Resistenza alla Magia</p>
+      <p>Un sigillo comune fra i Magi Flambeau ed altri che lanciano incantesimi Perdo consiste nel lasciare un qualche tipo di marchio assieme al danno</p>
+      <p>Quando inventi nuovi incantesimi, consulta la sezione Perdo Corpus per linee guida e nuove idee.</p>
+      <p>I fallimenti critici PeAn possono influenzare il lanciatore e l'animale sbagliato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Danneggia una cosa fata con prodotti animali.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Infligge danno superficiale a una bestia (ad esempio, elimina il pelo).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge una cosa fatta con prodotti animali.</description>
+      </guideline>    
+      <guideline>
+        <level>4</level>
+        <description>Infligge a una bestia dolore, ma nessun danno reale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa perdere a una bestia un livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Ferisce un animale in modo da ostacolarlo senza danneggiarlo. Ad esempio fa azzoppare un cavallo, zittisce un uccello o indebolisce le scaglie di un serpente.
+        Ciò dimezza approssimativamente l'efficacia della bestia. Guarisce come una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge il cadavere di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge uno dei sensi secondari della bestia.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Menoma l'arto di una bestia, in modo che sia inutilizzabile ma possa guarire</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Invecchia una bestia di un dodicesimo della sua vita naturale. Influenza solo bestie che hanno già raggiunto la maturità.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge o mozza un arto della bestia così che non possa ricrescere naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge uno dei sensi principali della bestia.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Uccide un animale.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Distrugge una proprietà di un animale, come il peso o l'aggressività.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Animal</form><technique>Rego</technique></arts>
+    <description>
+      <p>Vedi anche Rego Corpus per idee e linee guida per controllare il corpo di un animale, e consulta gli incantesimi Rego Mentem per idee e linee guida su come controllare la mente.</p>
+      <p>Di solito, i sigilli in incantesmi Rego Animal fanno si che la bestia si comporti in determinati modi.</p>
+      <p>I fallimenti critici in ReAn pongono il lanciatore sotto il controllo dell'animale, o fanno agire quest'ultimo in modo opposto a quello voluto. Potrebbe anche sembrare che funzionino,
+      per poi rovesciarsi in un momento estremamente sconveniente.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true"><level>Generico</level><description>Crea un circolo di difesa contro animali di un Reame (Divino, Fatato, Infernale o Magico) con Potenza minore del livello
+      dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description></guideline>
+      <guideline><level>1</level><description>Manipola oggetti fatti con prodotti animali.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Infonde un singolo impulso nella mente di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Protegge il Bersaglio da attacchi di animali (influenza solo animali senza abilità mistiche).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Calma un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Manipola le emozioni di un animale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Paralizza un animale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rende un animale comletamente passivo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Controlla completamente un animale.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Aquam</form><technique>Creo</technique></arts>
+    <description>
+      <p>Se bevuta, l'acqua creata temporaneamente placa la sete, ma non porta benefici a lungo termine. Può essere usata per lavare, e l'oggetto lavato resta pulito.
+      Sigilli comuni per incantesimi Creo Aquam includono acqua con specifici odori, colori o sapori.</p>
+      <p>I fallimenti critici in CrAq possono creare troppa acqua (pensa a <emphasis>L'apprendista Stregone</emphasis>), o il liquido errato.
+    </p>
+      <p>I liquidi leggermente innaturali hanno una difficoltà maggiore di una Magnitudine rispetto all'acqua, quelli molto innaturali di due. I veleni creati al livello
+      della linea guida hanno un Fattore Difficoltà di 3. Ogni Magnitudine aggiunta al livello dell'incantesimo aggiunge 3 al Fattore Difficoltà.</p>
+    </description>
+    <guidelines>
+      <guideline><level>Generico</level><description>Crea una sostanza corrosiva che infligge +(Livello) danni. È una buona idea aumentare la Portata a più di Tocco.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Riempie un contenitore d'acqua (o di un altro liquido naturale, con i requisiti appropriati).</description>
+    </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea acqua (o un altro liquido naturale) non contenuta (ad esempio, sparsa su una superficie).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea acqua (o un altro liquido naturale) in una forma innaturale (ad esempio, una sfera sospesa sulla testa di qualcuno), ma l'acqua così creata si comporta naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea una sorgente con una corrente debole.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un veleno che infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea una sorgente con una corrente forte.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un geyser con un getto fortissimo.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un veleno che infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea un veleno che infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un veleno che infligge una Ferita Incapacitante</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea un veleno che infligge una Ferita Mortale.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Aquam</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Nota che gli incantesimi Intellego Aquam normalmente non necessitano di requisiti a seconda del tipo di liquido Bersaglio.</p>
+      <p>Gran parte dei sigilli negli incantesimi Intellego Aquam si manifesta facendo sì che l'informazione venga riportata con qualche particolarità.
+      Ad esempio la versione di Chavin di Tytalus di <emphasis>Voce del Lago</emphasis> dà sempre al lago una voce forte, virile e arrogante.
+    </p>
+      <p>I fallimenti critici negli incantesimi InAq forniscono generalmente informazioni false.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Rendi un senso non influenzabile dall'acqua.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Ottieni un'immagine dell'acqua entro la Portata.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Ottieni un'immagine dell'acqua e degli immediati dintorni entro la Portata.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Apprendi le proprietà naturali di un liquido.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi le proprietà naturali di una mescolanza di liquidi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Apprendi le prorietà magiche di un liquido.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Apprendi le proprietà magiche di una mescolanza di liquidi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parla con una massa di acqua naturale.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parla con una massa di acqua artificiale (ad esempio una fontana).</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Aquam</form><technique>Muto</technique></arts>
+    <description>
+      <p>Non puoi trasformare liquidi contenuti in un corpo a meno che l'incantesimo sia pensato appositamente (e abba un requisito Corpus o Animal).</p>
+      <p>I fallimenti critici in Muto Aquam possono mutare i liquidi del lanciatore, alterare i liquidi sbagliati o modificarli nel modo errato.</p>
+      <p>I veleni creati al livello della linea guida hanno un Fattore Difficoltà di 3. Per ogni Magnitudine aggiunta all'incantesimo, somma 3 al Fattore di Difficoltà.</p>
+    </description>
+    <guidelines>
+      <guideline><level>Generico</level><description>Trasforma un liquido in un liquido che infligge +(Livello) punti di danno a contatto.</description></guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma in liquido naturale in un altro liquido naturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Media</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido naturale in uno leggermente innaturale (ad esempio acqua blu od olio di ricino alla fragola), o viceversa.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un solido o gas non correlato (con requisito Terram per i solidi e Auram per i gas).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Tramuta un liquido naturale in due o più liquidi naturali differenti, con i due tipi separati (anche se se può mischiarli normalmente).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma un liquido in un liquido molto innaturale (ad esempio, un liquido rosa acceso che causa bizzarre allucinazioni); spesso sono necessari requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un liquido in una mescolanza di qualsiasi liquido, solido (con requisito Terram) o gas (con requisito Auram). Tramuta un liquido in un solido o gas leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trascorma un liquido in un solido o gas molto innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un liquido in un veleno che infligge una Ferita Mortale.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Aquam</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Col Salire delle Magnitudini negli incantesimi il danno inflitto si fa più sottile o esteso.</p>
+      <p>Di solito i sigilli negli incantesimi Perdo Aquam implicano forme specifiche di distruzione.</p>
+      <p>Per eliminare l'acqua che compone un corpo, come i fluidi in un essere umano, è necessario un Bersaglio Parte; per eliminare quella che è semplicemente
+      addosso a qualcuno, come quella che inzuppa i vestiti, è necessario solo un Bersaglio Singolo.</p>
+      <p>I fallimenti critici in Perdo Aquam possono distruggere tutta l'acqua nel Lanciatore, come in <emphasis>Maledizione del Deserto</emphasis>, o crearne invece di distruggerla.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>4</level>
+        <description>Asciuga completamente qualcosa di bagnato (fino alla Taglia di una piccola casa).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Riduce considerevolmente l'ammontare di un liquido senza distruggerlo tutto.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge un liquido (possono essere richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge una proprietà di un liquido (come la capacità di intossicazione dell'alcool o la salinità dell'acqua di mare).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distruggi una piccola sorgente in modo che non sgorghi mai più acqua.</description>
+      </guideline>          
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Aquam</form><technique>Rego</technique></arts>
+    <description>
+      <p>Rego Aquam può mutare l'acqua in un ghiaccio o vapore, poichè sono entrambi stati in cui l'acqua può trovarsi in natura.</p>
+      <p>I fallimenti critici in Rego Aquam fanno generalmente perdere il controllo dell'acqua in modo spettacolare e pericoloso.</p>
+      <p>Aggiungi un grado se il movimento impartito è leggermente innaturale, due se è molto innaturale.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true"><level>Generico</level><description>Difesa contro creature d'acqua appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
+      (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description></guideline>
+      <guideline>
+        <level>1</level>
+        <description>Controlla un liquido muovendolo in modo molto lieve.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma un liquido nel solido o gas corrispondente (ad esempio l'acqua in ghiaccio o vapore). Non richiede requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un liquido muovendolo in modo deciso ma calmo, come una corrente rapida ma costante.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Difesa dalle acque mondane.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un liquido muovendolo in modo violento.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un liquido muovendolo in mood estremamente violento.</description>
+      </guideline>    
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Auram</form><technique>Creo</technique></arts>
+    <description>
+      <p>I fenomeni atmosferici si creano normalmente a Portata Visuale. Il motivo è il fatto che gran parte di essi, come nuvole, pioggia, tempeste e così via, scaturiscono
+      naturalmente dall'aria, quindi gli incantesimi che li influenzano devono avere portata sufficiente a raggiungere la zona. È possibile creare fenomeni acquatici che
+      inizino al livello del suolo, ma sono molto innaturali, e l'aumento di livello compensa l'abbassamento dato dalla riduzione della Portata a Tocco. Un Magus volante
+      potrebbe ovviamente usare la Portata Tocco per creare un fenomeno atmosferico naturale, ma tali incantesimi non sono molto popolari nell'Ordine.</p>
+      <p>I sigilli negli incantesimi Creo Auram danno di solito all'aria proprietà specifiche come profumi o colori.</p>
+      <p>I fallimenti critici in Creo Auram possono creare il tipo sbagliato di clima, o indirizzarlo sul lanciatore o qualche suo alleato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea un fenomeno atmosferico minore: brezza, foschia, pioggerella.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un fenomeno atmosferico normale: nuvola, vento, nebbia, pioggia da una nube già esistente.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un fenomeno atmosferico intenso: tuono assordante, pioggia torrenziale, nebbia impenetrabile, bufera.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un tipo di area deabilitante: puzza nociva, veleno blando ecc.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno atmosferico molto intenso: uragani, fulmini, tornado.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno in modo leggermente innaturale: +1 Magnitudine (ad esempio al chiuso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno in modo molto innaturale: +2 Magnitudine.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fenomeno completamente fuori dal contesto normale (ad esempio un fulmine che si propaga dalle mani del lanciatore): +4 Magnitudine.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Auram</form><technique>Intellego</technique></arts>
+    <description>
+      <p>I fallimenti critici in Intellego Auram rivelano solitamente informazioni false.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>I tuoi sensi non sono inalterati dall'aria (ad esempio puoi udire suoni al di sopra del fischio del vento).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Percepisci una proprietà dell'aria (ad esempio se è respirabile in sicurezza).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi tutte le proprietà mondane dell'aria. Hai un'intuizione su alcuni fatti che riguardano l'aria.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parli con l'aria.</description>
+      </guideline>    
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Auram</form><technique>Muto</technique></arts>
+    <description>
+      <p>Trasformare una sola proprietà dell'aria abbassa generalmente il livello di una Magnitudine.</p>
+      <p>I fallimenti critici in Muto Auram possono tramutare temporaneamente il lanciatore in aria, o l'aria in qualcosa di indesiderato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>Generico</level>
+        <description>Trasforma l'aria in un gas che infligge (+ livello) danni.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma una quantità d'aria in un'altra forma d'aria.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma una quantità d'aria in un altro elemento (fuoco, terra o acqua).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una quantità d'aria in una mescolanza di elementi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma una quantità d'aria in qualcosa di leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma una quantità d'aria in qualcosa di completamente innaturale.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Auram</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Causare la distruzione dell'aria con grande precisione aumenta la Magnitudine di 1.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>rende l'aria soffocante e di difficile respirazione.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge l'acqua ferma.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge un fenomeno atmosferico minore: brezza, foschia, pioggerella.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce l'intensità di un fenomeno atmosferico di una Magnitudine (ad esempio, da molto intenso a intenso o da normale a minore).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un fenomeno atmosferico intenso: tuono assordante, pioggia torrenziale, nebbia impenetrabile, bufera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un tipo di aria debilitante: puzza nociva, veleno blando ecc.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge un fenomeno atmosferico molto intenso: uragano, fulmini, tornado.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Auram</form><technique>Rego</technique></arts>
+    <description>
+      <p>Rego Auram permette al Magus di controllare i fenomeni atmosferici esistenti. Non consente di creare una brezza, ma è possibile dirigere il corso di una tempesta,
+      compreso far iniziare e finire la pioggia a comando.</p>
+      <p>Controllare una quantità d'aria con grande forza o precisione alza la Magnitudine dell'incantesimo di 1.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro creature d'aria appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o inferiore al livello dell'incantesimo
+        (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Controlla un fenomeno atmosferico minore.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un fenomeno atmosferico normale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico minore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un fenomeno atmosferico intenso.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico normale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un fenomeno atmosferico molto intenso.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico intenso.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Difende qualcuno contro un tipo di fenomeno atmosferico molto intenso.</description>
+      </guideline>    
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Corpus</form><technique>Creo</technique></arts>
+    <description>
+      <p>Molti incantesimi Creo Corpus raggiungono il massimo dell'efficacia come rituali. A meno che non si diversamente indicato, un incantesimo di guarigione lanciato come rituale
+      con Durata diversa da Istantaneo sospende il processo di guarigione, dunque alla fine della Durata le ferite sono fresche come al momento del lancio. Nessun incantesimo Ermetico
+      può ripristinare i livelli di fatica.</p>
+      <p>Un incantesimo in grado di guarire qualcosa guarisce anche versioni meno serie della stessa cosa: dunque, se può guarire Ferite Medie guarisce anche quelle Leggere.</p>
+      <p>Un incantesimo per le ferite non cura però le malattie, a prescindere dal livello, e viceversa.</p>
+      <p>Le caratteristiche fisiche sono Fortitudo, Vigor, Decteritas e Celeritas, e possono essere influenzate e migliorate dalla magia Corpus.</p>
+      <p>I fallimenti critici in Creo Corpus infliggono sovente danni invece di guarirli.</p>
+      <p>Gli incantesimi Creo Animal possono fungere da guida ed esempi per incantesimi Creo Corpus.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Concede a un personaggio un bonus di +1 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Concede a un personaggio un bonus di +3 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Preserva un cadavere dalla decomposizione.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Concede a un personaggio un bonus di +6 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Impedisce a tutte le ferite del Bersaglio di peggiorare.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Concede a un personaggio un bonus di +9 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Concede a un personaggio un bonus di +12 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un cadavere umano intero.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Concede a un personaggio un bonus di +15 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>15</level>
+        <description>Cura una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Concede a un personaggio un bonus di +18 ai tiri per il Recupero.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>15</level>
+        <description>Risolve una crisi d'invecchiamento minore.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>20</level>
+        <description>Cura una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Cura gli effetti debilitanti di una malattia, veleno o ferita.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>20</level>
+        <description>Risolve una crisi d'invecchiamento seria.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Cura una Ferita Grave. </description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Ripristina un arto perduto.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>25</level>
+        <description>Risolve una crisi d'invecchiamento maggiore.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Cura una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di 0.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Fa raggiungere a una persona la maturità fisica completa nel corso di un singolo giorno o notte. Questa maturazione accelerata si applica solo durante
+        la Durata dell'incantesimo, quindi l'effetto completo richiede un incantesimo con Durata Sole lanciato all'inizio del giorno o della notte. Le persone non imparano 
+        sotto l'influenza dell'incantesimo, e a questi fini la maturità completa si raggiunge attorno ai vent'anni.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>30</level>
+        <description>Risolve una crisi d'invecchiamento critica.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Cura tutte le ferite.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Risolve una crisi d'invecchiamento fatale.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>35</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +1.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>40</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +2.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>45</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +3.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>50</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +4.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>55</level>
+        <description>Aumenta una Caratteristica fisica di una persona di un punto, per un massimo di +5. Un ulteriore aumento non è nella natura umana, quindi non può
+        essere effettuato con la Magia Creo.</description>
+      </guideline>
+      <guideline ritual="true">
+        <level>70</level>
+        <description>Resuscita i morti, fino a un certo punto (vedi <emphasis>Ombra della Vita Rinnovata</emphasis>).</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Corpus</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Sigilli comuni negli incantesimi Intellego Corpus riportano solitamente le informazioni in modi strani o particolari.</p>
+      <p>Come gran parte dei casi di Intellego, i fallimenti critici in Intellego Corpus forniscono di solito informazioni false.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Localizza una persona con cui hai una Connessione Arcana.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Percepisci informazioni molto generali su un corpo.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Percepisci un informazione specifica su un corpo.</description>
+      </guideline>    
+      <guideline>
+        <level>5</level>
+        <description>Parli con un corpo morto.</description>
+      </guideline>    
+      <guideline>
+        <level>10</level>
+        <description>Percepisci tutte le informazioni utili su un corpo.</description>
+      </guideline>    
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Corpus</form><technique>Muto</technique></arts>
+    <description>
+      <p>Questi incantesimi trasformano le persone: ce ne sono di benefici per te e i tuoi compagni, e di dannosi per i tuoi nemici.</p>
+      <p>Le trasformazioni non eliminano completamente la forma originale: qualcosa ne rimane sempre. Se trasformi in lupo un uomo grasso con
+      un braccio solo, il lupo sarà grasso, maschio e con tre zampe.</p>
+      <p>Le trasformazioni possono avere effetti permanenti letteri (o a volte gravi). Trascorrendo un mese o più come animale si inizia ad agire
+      e pensare come tale, e alla fine, se si ha una volonta debole, l'identità umana si perde del tutto. Quando torna umano, il Bersaglio
+      potrebbe mantenere temporaneamente o per sempre alcune caratteristiche dell'altra forma. A volte, dopo un periodo da coniglio, si mantengono
+      una passione per le carote e orecchie più grandi del normale. Le trasformazioni possono essere insidiose.</p>
+      <p>Gli incantesimi Muto Corpus non possono alterare la mente di una persona, quindi lasciano immutate inteligenza e coscienze. I Magi in forma
+      animale possono lanciare incantesimi, ma subiscono la normale penalità di -15 perché non hanno mani ne voce. La persona trasformata ottiene
+      qualsiasi abilità dell'aspetto animale, ma potrebbe volerci circa un giorno di esperinza perché si abitui a usarla.</p>
+      <p>Trasformare l'equipaggiamento assieme al corpo richiede dei requisiti; ad esempio, è necessario un requisito di lancio Animal per il cuoio,
+      Aquam per eventuali liquidi portati e Terram per gli oggetti di metallo (comprese le borchie delle corazze). Gli oggetti vengono trasfromati
+      solo se sono indossati, non basta tenerli in mano. In termini semplici possono non trasformarsi per due motivi: perché scegli di non usare i
+      requisiti di lancio o perché il Cantastorie stabilisce che non fanno parte integrante dell'equipaggiamento indossato. Gli oggetti non
+      trasformati cadono a terra.</p>
+      <p>Alcuni incantesimi di mutazione permettono di assumere di nuovo l'aspetto normale concentrandosi. Mentre ti concentri, rimuovi un oggetto
+      simbolico per spezzare l'incantesimo in questo modo: se lo lanci senza di essi, devi disperdere la magia con Perdo Vim o attendere che termini
+      la durata.</p>
+      <p>I fallimenti critici in Muto Corpus possono portare a una durata indefina e dimostrarsi ardui da disperdere.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma una persona in moda da conferirle un abilità minore.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambia completamente aspetto o taglia di una persona (che deve comunque mantenere la forma umana).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Rende un corpo resistente al danno (+1 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rrasforma un umano in un animale terrestre (con requisito Animal).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rende un corpo resistente al danno (+2 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rende un corpo resistente al danno (+3 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasforma un umano in un uccello o pesce (requisito Animal).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende un corpo resistente al danno (+4 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasforma un umano in oggetto solido inanimanto (requisito Terram).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Rende un corpo resistente al danno (+5 Assorbimento).</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasforma un umano in una pianta (requisito Herbam).</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Trasforma un umano in un oggetto inconsistente (requisito Auram).</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Corpus</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Questi incantesimi infliggono danni diretti e spesso permanenti, a meno che non vengano guariti con altre magie.</p>
+      <p>Le malattie causate dalla magia hanno un Fattore Difficoltà base di 6, che si alza di 1 per ogni Magnitudine di 
+      cui si alza il livello dell'incantesimo. Non è possibile ridurre il livello riducendo il Fattore Difficoltà.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Infligge danno superficiale a un corpo (ad esempio rimuove i capelli).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Infligge a una persona dolore, ma nessun danno reale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Infligge una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge un cadavere.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Ferisce una persona in modo da ostacolarla senza danneggiarla: ad esempio la azzoppa o ne annebbia la vista. Guarisce come una Ferita Leggera.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infligge una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Causa la perdita di una livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa invecchiare di cinque anni.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Menoma un arto, in modo che sia inutilizzabile ma possa guarire. Guarisce come una Ferita Media.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Distrugge uno dei sensi secondari di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Infligge una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge uno dei sensi principali di una persona. Guarisce come una Ferita Grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una malattia grave.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Distrugge o mozza un arto in modo che non possa guarire naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Infligge una Ferita Incapacitante.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Uccide una persona.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Distrugge una proprietà di una persona, come il peso o la solidità.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Corpus</form><technique>Rego</technique></arts>
+    <description>
+      <p>I fallimenti critici in Rego Corpus prendono spesso il controllo del lanciatore e lo muovono in maniera indesiderata.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro le creature associate a Corpus di una Reame (Divino, Fatato, Infernale o Magico) con potenza inferiore
+        al livello dell'incantesimo. Nota che i Magi Ermetici non hanno Potenza quindi non sono influenzati da tali incantesimi
+        (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Il Bersaglio perde il controllo di una parte del corpo.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Muove un Bersaglio lentamente in una direzione finché la superficie su cui si sposta ne mantiene il peso.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla a grandi linee i movimenti fisici del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Muove un Bersaglio lentamente in qualsiasi direzione tu desideri.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Muove un Bersaglio lentamente, diritto o in un'altra direzione, su superfici che non lo sostengono.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Tiene immobile il corpo del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Muove un Bersaglio lentamente in qualsiasi direzione tu desideri, anche se il Bersaglio non ha un sostegno.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla i movimenti del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Elimina le penalità di Fatica e ferite.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Anima un cadavere.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasporta il Bersaglio istantamente di un massimo di 5 passi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Dirige il flusso delle energie corporee.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Muove un Bersaglio rapidamente in qualsiasi direzione tu desideri.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Trasporta il Bersaglio istantameneamente di un massimo di 50 passi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Difende un Bersaglio da altri esseri umani. Nota che per respingere un Magus Ermetico la difesa deve penetrarne la Resistenza alla Magia.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di 500 passi.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di una lega.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Trasporta il Bersaglio istantaneamente di un massimo di sette leghe.</description>
+      </guideline>
+      <guideline>
+        <level>35</level>
+        <description>Trasporta il Bersaglio istantaneamente in un luogo con cui hai una Connessione Arcana.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Herbam</form><technique>Creo</technique></arts>
+    <description>
+      <p>Questi incantesimi creano e guariscono piante. Per creare cibo nutriente è necessario ricorrere ai rituali;
+      i livelli indicati di seguito si riferiscono alle parti fogliose.</p>
+      <p>Si possono creare piante vive o morte con uguale facilità. Per creare prodotti di Herbam trattati (come legno
+      tagliato, un pasto vegetariano, tessuti di lino o cotone) aggiungi una Magnitudine al livello necessario per
+      creare la quantità equivalente di piante vive o morte non trattate. Per creare prodotti di Herbam trattati e
+      lavorati, come vestiti o mobili aggiungi 2 gradi.</p>
+      <p>Un singolo incantesimo genera solo un tipo di prodotto vegetale.</p>
+      <p>I fallimenti critici in Creo Herbam possono creare piante sbagliate, o crearle nei luoghi sbagliati.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Fa in modo che una pianta cresca forte per la durata dell'incantesimo. Questa linea guida può
+        influenzare una pianta grande fino a un massimo di dieci passi in qualsiasi direzione, come un grosso albero
+        (quindi include l'aumento di taglia di +3).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea un prodotto vegetale come un frutto o una foglia.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Crea una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Impedisce a una pianta di ammalarsi.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un prodotto vegetale trattato, come un asse di legno.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea legno in forma innaturale, come un muro o un ponte viventi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Porta una pianta alla maturità in un singolo giorno o notte. La crescita accelerata avviene solo 
+        durante l'incantesimo, quindi per la maturità completa è necessario un incantesimo con Durata Sole lanciato 
+        subito dopo l'alba o il tramonto.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Porta una pianta alla maturità in circa due ore.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Porta una pianta alla maturità in circa dieci diametri (20 minuti).</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Porta una pianta alla maturità in un singolo diametro.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Porta una pianta alla maturità in un attimo.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Herbam</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Com'è comune con la magia Intellego, i fallimenti critici in Intellego Herbam forniscono generalmente informazioni false.</p>
+     </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Ottieni una conoscenza intuitiva di una pianta (ad esempio, sai se con una determinata azione la danneggieresti).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Individua una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Apprendi informazioni generali o un singolo fatto specifico su una pianta o un oggetto fatto con prodotti vegetali.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi tutti gli aspetti mondani di una pianta o di un oggetto ottenuto da prodotti vegetali.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parla con una pianta.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Herbam</form><technique>Muto</technique></arts>
+    <description>
+      <p>Queste linee guida presumono che quando trasformi una pianta, essa rimanga in qualche modo una pianta. Trasformarlo in qualcosa d'altro 
+      richiede un incantesimo di una Magnitudine più alta della linea guida più appropriata all'azione. Trasformare piante in materiale trattato
+      o finito (ad esempio mobili, un pasto vegetariano, stoffa di lino o cotone) aggiunge una Magnitudine al livello necessario a trasformare 
+      piante in altre piante naturali e non trattate.</p>
+      <p>I fallimenti critici in Muto Herbam possono trasformare il lanciatore in una pianta, o il bersaglio in una pianta animata ostile al lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma una pianta o un prodotto di origine vegetale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma una pianta o un prodotto di origine vegetale in metallo o pietra (requisito Terram).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Risveglia la coscienza di una pianta (requisito Mentem).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Consente a una pianta di piegarsi o torcersi rapidamente sul posto.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Herbam</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Questi incantesi distruggono piante e materiale vegetale e, poiché molti oggetti sono di legno,
+      spesso possono essere piuttosto devastanti. Le linee guida fornite sono per distruggere il legno
+      morto. Con quello vivo è di solito più difficile: aggiungi una Magnitudine.</p>
+      <p>I fallimenti critici in Perdo Herbam distruggono solitamente la cosa sbagliata, magari uno dei vestiti del lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Fa cadere le foglie da una pianta.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Rovina un piccolo quantitativo di cibo.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge un piccolo quantitativo di legno morto.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge una pianta.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Herbam</form><technique>Rego</technique></arts>
+    <description>
+      <p>La difficoltà per controllare il legno vivo o morto è la stessa.</p>
+      <p>I fallimenti critici in Rego Herbam causano di solito un comportamento del legno opposto ai desideri del lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>difesa contro creature associate al legno appartenenti a un Reame (Divino, Fatato, Infernale, Magico)
+        con potenza inferiore del livello dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un piccolo quantitativo di legna.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Devia un singolo attacco di un arma di legno.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un intera pianta, muovendola come desideri; se ha le radici, rimane radicata.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un intera pianta, muovendola come desideri; non è necessario che resti radicata.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Evoca una pianta mobile.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Fa si che una pianta o un prodotto vegetale possa muoversi con convinzione e inteligenza, senza che sia richiesto il tuo controllo costante.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Difende qualcuno contro prodotti vegetali mondani.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa fiorire un albero fuori stagione in un attimo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Intesse filo facendone una tunica.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Ignem</form><technique>Creo</technique></arts>
+    <description>
+      <p>Incantesimi che creano il fuoco sono armi versatili, che distruggono i viventi, non morti, edifici e il morale del nemico.
+      Facendovi troppo affidamento, però, si corre un rischio con i fallimenti critici: il fuoco non perdona chi perde il controllo,
+      e c'è sempre la possibilità di incendiarsi da soli.</p>
+      <p>Sigilli tipici di incantesimi Creo Ignem sono fiamme di colori o forme specifiche, o con odori insoliti.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea luce equivalente a un chiaro di luna.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea luce equivalente a una candela.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Rende un oggetto caldo al tocco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Incendia un oggetto estremamente infiammabile, come dell'olio o una miccia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea luce equivalente a una torcia.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Rende un oggetto rovente al tocco.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Incendia un oggetto molto infiammabile, come una pergamena.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>crea fuoco che infligge +5 danni.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea luce equivalente a una giornata nuvolosa. </description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Incendia un oggetto infiammabile, come legno secco o della carbonella.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Rende un oggetto così caldo da far bollire l'acqua.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fuoco che infligge +10 danni.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un fuoco che infligge +5 danni in una forma innaturale, come un cerchio, un lenzuolo, o in modo che copra un oggetto
+        (le forme puramente decorative sono gratuite).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea luce equivalente a quella solare in una giornata tersa. </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Incendia un oggetto leggermente infiammabile, come del cuoio o del legno bagnato. </description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Rende un oggetto incandescente.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un fuoco che infligge +15 danni.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Crea un fuoco che infligge +10 danni in una forma innaturale. </description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Incendia un oggetto a mala pena infiammabile come un corpo umano. </description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riscalda un oggetto al punto di sciogliere il piombo.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea un fuoco che infligge +20 danni.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un fuoco che infligge +25 danni.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Crea un fuoco che infligge +20 danni in una forma innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea un fluoco che infligge +30 danni.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Ignem</form><technique>Intellego</technique></arts>
+    <description>
+      <p>I fallimenti critici in Intellego Ignem forniscono di solito informazioni false, ma possono anche rendere
+      il lanciatore incapace di individuare colore o fiamme per un certo periodo.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Percepisci una caratteristica di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>percepisci tutte le caratteristiche mondane di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Sei consapevole di tutti i fuochi nell'area Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Vedi un fuoco con cui hai una Connessione Arcana.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Percepisci i livelli di calore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Vedi chiaramente attraverso le fiamme (può essere necessario un requisito Auram se è presente anche del fumo).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi le proprietà magiche di un fuoco.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Vedi un fuoco con cui hai una Connessione Arcana e tutto ciò che illumina (per esempio un fuoco da campo e tutto ciò che rientra nel suo cerchio di luce).</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parli con un fuoco.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Ignem</form><technique>Muto</technique></arts>
+    <description>
+      <p>L'intensità di un fuoco influenza anche la capacità di mutarlo.</p>
+      <p>Per ogni 5 punti di cui il danno del fuoco supera +5, aggiungi una Magnitudine al livello dell'incantesimo.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una caratteristica di un fuoco nell'area Bersaglio (ad esempio lo rende più vivido o gli fa produrre più fumo).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description> Trasforma totalmente un fuoco in un altro fuoco naturale (cambiandone una o anche tutte le caratteristiche).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>trasforma un fuoco in modo leggermente innaturale (ad esempio colora le fiamme o fa profumare il fumo di rose). Può richiedere requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>trasforma un fuoco in modo completamente innaturale (ad esempio con fiamme multi colori che formano immagini mentre il crepitare del fuoco produce musica).
+        Richiede spesso requisiti.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma un fuoco in un esempio naturale di un altro elemento.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma un fuoco in un esempio innaturale di un altro elemento, con il requisito appropriato.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Ignem</form><technique>Perdo</technique></arts>
+    <description>
+      <p>L'intensità del fuoco influenza anche la capacità di distruggerlo. Per ogni 5 punti in cui il danno del fuoco supera +5 aggiungi una Magnitudine al livello dell'incantesimo.</p>
+      <p>I fallimenti critici in Perdo Ignem possono creare fuoco invece di distruggerlo, o congelare il lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Riduce considerevolmente la luce in un area.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Estingue completamente la luce in un area.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Riduce la taglia di un fuoco senza distruggerlo del tutto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Spegne un fuoco, le cui ceneri diventano appena calde.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Raffredda un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Raffredda una persona in modo che perda un livello di Fatica.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Raffreda parecchio un oggetto (ad esempio, gela l'acqua).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Raffredda una persona in modo che subisca +5 danni.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge un aspetto di un fuoco (ad esempio, la luce o il calore).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Raffredda una persona così tanto da infliggerle +10 danni.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Ignem</form><technique>Rego</technique></arts>
+    <description>
+      <p>L'intensità di un fuoco influenza anche la capacità di controllarlo. Per ogni 5 punti di cui il danno del fuoco supera +5, aggiungi una Magnitudine al livello dell'incantesimo.</p>
+      <p>Gli incantesimi Rego Ignem possono controllare luce e calore come fanno col fuoco.</p>
+      <p>Con il fallimento critico in Rego Ignem, il fuoco fa di solito esattamente ciò che il lanciatore non vuole.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>difesa contro creature di fuoco appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza pari o 
+        inferiore al livello dell'incantesimo (Portata Tocco, Durata Cerchio, Bersaglio Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla un fuoco in modo naturale (ad esempio, controlla la direzione delle fiamme).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Sposta un fuoco rapidamente in modo che continui a bruciare naturalmente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla un fuoco in modo leggermente innaturale (ad esempio, gli impedisce di bruciare una persona).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un fuoco in modo molto innaturale (ad esempio, gli dà l'aspetto di una forma umanoide danzante).</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Imaginem</form><technique>Creo</technique></arts>
+    <description>
+      <p>Questi incantesimi creano e riparano immagini. È importante ricordare che gli incantesimi Creo Imaginem creano solo le immagini,
+      non le cose in sé: l'immagine di un secchio non trattiene l'acqua versata, né l'immagine di un cavallo sarà in grado di sorreggere
+      un cavaliere. Questo è spesso il primo (e più importante) indizio che l'immagine è solo un'illusione. D'altro canto, l'illusione di
+      un muro può sembrare solida, ma non farà resistenza se qualcuno ci infla una mano.</p>
+      <p>Aumentare la complessità di una creazione sensoriale, come creare un immagine che si muove o che pronuncia parole chiare invece
+      di rumore, aggiunge una Magnitudine. Far muovere un'immagine o far udire dei suoni nel modo da te voluto mentre ti concentri agginge
+      due Magnitudini. Inoltre, anche immagini molto complicate (come un ponte con decorazioni sfarzose) sono generalmente di una Magnitudine
+      più alta.</p>
+      <p>I sigilli arcani possono essere molto ovvi negli incantesimi Creo Imaginem. Le illusioni hanno di solito dei piccoli tratti che le
+      identificano come create da un determinato Magus. Ad esempio, quelle lanciate da Fortunatus di Jerbiton hanno spesso piccole icone
+      religiose inserite nella struttura, dovete al modo in cui inventa gli incantesimi.</p>
+      <p>I fallimenti critici in Creo Imaginem possono creare illusioni ovvie chiaramente collegate al lanciatore, facendo capire che è uno stregone.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea un'immagine che influnza un singolo senso.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea un immagine che influenza due sensi.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea un immagine che influenza tre sensi.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Crea un immagine che influenza quattro sensi.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un immagine che influenza cinque sensi.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Imaginem</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Questi incantesimi sono generalmente meno correlati alle illusioni degli altri incantesimi Imaginem, perchè si individua un immagine senza 
+      alterarla o controllarla. Essi migliorano i tuoi sensi immettendo immagini (solitamente sonore o visive) che normalmente non percepirebbero.</p>
+      <p>Nota che vedere o udire qualcosa in un'altra stanza o a centinaia di chilometri non ha alcun effetto se in quel luogo non c'è luce o rumore.
+      Come per gli incantesimi CrIm, ogni senso addizionale che vuoi percepire aumenta il livello di una Magnitudine.</p>
+      <p>Come di consueto con la magia Intellego, i fallimenti critici in Intellego Imaginem forniscono di solito informazioni false.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>Generico</level>
+        <description>Discerni illusioni causate da incantesimi di livello uguale o minore a quello di questo incantesimo (Bersaglio Visuale).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Usi un senso a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Memorizza o perfeziona i tuoi ricordi di un'immagine in cui ti sei appena imbattuto.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Sei in modo di discernere le tue false immagini.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Usi due sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Usi tre sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Migliora uno dei tuoi sensi in uno specifico modo (vedere chiaramente a distanza, vedere cose piccole o vedere al buio per esempio).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Usi quattro sensi a distanza.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Usi tutti i sensi a distanza.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Imaginem</form><technique>Muto</technique></arts>
+    <description>
+      <p>Si tratta di illusioni utili e potenti, che alterano l'immagine visiva, il suono, l'odore o il gusto di un oggetto o un essere.
+      L'immagine, senza la tua concentrazione, rimane inalterata e si adatta in maniera appropriata alle circostanze del caso. La riuscita
+      del duplicato dipende dalle tue conoscenze dell'oggetto: ad esempio, se vuoi imitare la voce di una persona specifica, devi avere 
+      familiarità con essa. Coloro che hanno profonda familiarità con il volto, la voce, la corporature o altri aspetti che stai imitando
+      possono esserre in grado di scoprire l'illusione con mezzi mondani (“Duca Tybol, non avevate la cicatrice sulla guancia sinistra?”).</p>
+      <p>Muto Imaginem, o qualsiasi altra magia Imaginem, non può prevaricare gli effetti del Dono, anche se può attenuarli leggermente.</p>
+      <p>I fallimenti critici in Muto Imaginem cambiano spesso l'aspetto del lanciatore in modi pericolosi o imbarazzanti.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una sensazione di un oggetto (ad esempio, fa si che una foglia sembri una moneta), ma non il suo tipo (quindi l'aspetto non può diventare suono).</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Cambia due sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Cambia tre sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambia quattro sensazioni di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Cambia un oggetto completamente, in tutti gli aspetti eccetto quello tattile.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Imaginem</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Oltre a distruggere immagini animate, questi incantesimi attenuano le proprietà sensoriali, rendendo il vino insapore,
+      i passi silenziosi e i Magi invisibili. Distruggere immagini in movimento è più difficile: aggingi una Magnitudine agli incantesimi di questo tipo.</p>
+      <p>Nota che in natura le immagini sono generate in maniera continua, quindi un incantesimo Perdo Imaginem con Durata Istantanea fa solo sfarfallare
+      l'oggetto per un attimo. Se l'immagine deve scomparire per del tempo, è richiesta una durata maggiore.</p>
+      <p>Nota anche che le ombre sono dovute alla presenza del corpo che blocca la luce: distruggere un ombra è quindi competenza di Creo Ignem,
+      o magari Rego Ignem, non di Perdo Imaginem. Gli specchi invece riflettono le immagini sulla loro superficie, quindi un incantesimo che distrugge
+      (o muta) l'immagine ha l'effetto anche su quella dello secchio.</p>
+      <p>I fallimenti critici in Perdo Imaginem possono rendere l'immagine più intensa o distruggere quella sbagliata.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Distrugge la capacità di un oggetto di influenzare gusto o tatto.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge la capacità di un oggetto di influenzare olfatto e udito.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge la capacità di un oggetto di influenzare gusto e tatto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge la capacità di un oggetto di influenzare la vista.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Distrugge la capacità di un oggetto di influenzare tre sensi fra gusto, tatto, olfatto e udito.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Distrugge la capacità di un oggetto di influenzare quattro sensi.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Distrugge la capacità di un oggetto di influenzare tutti e cinque i sensi.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Imaginem</form><technique>Rego</technique></arts>
+    <description>
+      <p>Questi incantesimi fanno apparire le cose in un luogo diverso da dove sono in realtà. Come per CrIm e PeIm,
+      influenzare le immagini in movimento è leggermente più difficile: aggiunge una Magnitudine all''incantesimo. 
+      Aggiunge una alle linee guida anche se l'immagine deve cambiare assieme all'oggetto, e un'altra per ogni senso
+      addizionale da influenzare.</p>
+      <p>I fallimenti critici in Rego Imaginem controllano l'immagine sbagliata, o fanno all'immagine Bersaglio qualcosa di completamente inappropriato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Fa apprire un oggetto (per un senso) a un massimo di un passo dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Fa apparire un oggetto (per un senso) a un massimo di cinque passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Fa sembrare che gli oggetti si muovano rapidamente in modo confusionario.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>fa apparire un oggetto (per un senso) a un massimo di quindici passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa si che un oggetto appaia (per un senso) contenuto o aggregato a un altro oggetto definito al momento del
+        lancio (ad esempio fa sembrare che una voce venga da dentro una borsa).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Fa apparire un oggetto (per un senso) a un massimo di cento passi dalla posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Fa apparire un oggetto (per un senso) entro la Visuale della posizione reale.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa apparire un oggetto (per un senso) in un luogo con cui il lanciatore ha una Connessione Arcana.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Mentem</form><technique>Creo</technique></arts>
+    <description>
+      <p>Oltre a guarire la mente, questi incantesimi possono creare pensieri, emozioni e memorie nella testa di un'altra persona. 
+      Queste creazioni interagiscono normalmente con gli altri pensieri del Bersaglio, e possono essere cambiate nel processo.</p>
+      <p>Sigilli tipici per gli incantesimi Creo Mentem sono piccoli dettagli in ciò che viene creato. Ad esempio, potrebbe rimanere
+      un'idea specifica di fondo nei ricordi che vengono creati.</p>
+      <p>I fallimenti critici in Creo Mentem possono creare emozioni inappropriate nella mente del lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Forma parole nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Installa pensieri o emozioni nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un ricordo nella mente di un altro.</description>
+      </guideline>
+      <guideline>
+        <level>30</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di 0.</description>
+      </guideline>
+      <guideline>
+        <level>35</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +1.</description>
+      </guideline>
+      <guideline>
+        <level>40</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +2.</description>
+      </guideline>
+      <guideline>
+        <level>45</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +3.</description>
+      </guideline>
+      <guideline>
+        <level>50</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +4.</description>
+      </guideline>
+      <guideline>
+        <level>55</level>
+        <description>Aumenta una Caratteristica mentale di una persona di un punto, per un massimo di +5.</description>
+      </guideline>
+      </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Mentem</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Questi incantesimi sono superbi per evitare la confusione delle interazioni sociali e l'infinito chiacchiericcio della feccia. Anche gli incantesimi InAn che influenzano
+      la mente possono essere usati come idee e linee guida per questa sezione.</p>
+      <p>Nota che la scrittura non contiene informazioni in sé, ed è in genere legata ad Animal, Herbam o Terram a seconda del materiale, non Mentem. Hai comunque bisogno di
+      qualcuno che sappia tradurre, anche se puoi leggere la traduzione direttamente nella tua mente.</p>
+      <p>Un incantesimo Mentem istantaneo può fornire risposta a una singola domanda, anche se non è necessario che la risposta sia breve; può illustrarti ad esempio i sentimenti
+      che il Bersaglio prova verso suo padre, a prescindere dalla loro complessità, ma non ti dirà perché si sente in quel modo. Per scoprire numerose informazioni ci vuole tempo.</p>
+      <p>Sigilli per incantesimi InMe implicano di solito una trasmissione particolare delle informazioni.</p>
+      <p>I fallimenti critici di Intellego Mentem forniscono di solito informazioni errate.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>4</level>
+        <description>Avverti lo stato di coscienza di un essere intelligente (ad esempio, sveglio, addormentato, in meditazione, morto, drogato, pazzo o comatoso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Avverti una singola emozione in un essere. Comprendi il significato dietro le parole pronunciate.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Avverti tutte le emozioni in un essere.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Scopri la verità in una frase.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Parli con un qualsiasi umano.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Leggi i pensieri superficiali di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Estrai una singola risposta dalla mente di un Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Leggi i ricordi degli ultimi giorni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Apprendi tutte le informazioni che desideri dalla mente di qualcuno.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Mentem</form><technique>Muto</technique></arts>
+    <description>
+      <p>Gli incantesimi Muto Mentem danno a una mente proprietà che non avrebbe normalmente. Queste ricadopno sotto tre categorie.</p>
+      <p>Per prima cosa si possono cambiare i ricordi. I ricordi si deteriorano naturalmente col tempo, ma non mutano radicalmente, quindi ciò rientra nel dominio di Muto.</p>
+      <p>Secondo, le persone avvertono emozioni e pensieri che di solito non sentono; sono compresi i pensieri degli animali e cose simili.</p>
+      <p>Terzo, proprietà non mentali, come dare un aspetto fisico alla mente, ma questi effetti sono molto difficili.</p>
+      <p>I fallimenti critici in Muto Mentem possono cambiare la mente del lanciatore, quindi si tratta di una magia potenzialmente molto rischiosa.</p>
+      <p>Concedere un senso magico a più persone ha un livello base maggiore di una Magnitudine rispetto a concederlo a una persona singola con Intellego,
+      e ha come requisiti Intellego e la Forma appropriata. Gli aumenti relativi di Portata e Bersaglio aumentano il livello ulteriormente.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Effettua un cambiamento sottile nei ricordi di un evento.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Effettua un grosso cambiamento nei ricordi di un evento.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Effettua un grosso cambiamento nei ricordi di una serie di eventi.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Effettua un grosso cambiamento nelle emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Effettua grossi cambiamenti nei ricordi di un periodo della vita.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Cambia completamente le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riscrive completamente i ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rende visibile una mente o uno spirito (requisito Imaginem).</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Cambia completamente la mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende solida una mente o uno spirito (requisito della Forma dell'aspetto).</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Mentem</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Le emozioni riappaiono naturalmente in una persona, quindi gli incantesimi che le distruggono devono avere Durata continua per impedire che facciano ritorno.
+      I ricordi non tornano naturalmente, quindi gli incantesimi con Durata Istantanea li rimuovono per sempre, anche se è possibile raccontare a una persona ciò che
+      ha dimenticato o ricostruire il ricordo da memorie presenti, un incantesimo continuo, però, impedisce di apprendere nuovamente tali informazioni.</p>
+      <p>I fallimenti critici in Perdo Mentem possono distruggere più del voluto, o eliminare elementi dalla mente del lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>3</level>
+        <description>Rimuove un dettaglio minore dai ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Rimuove un dettaglio importante dai ricordi di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce una singola capacità mentale di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Riduce l'intensità di tutte le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Placa un emozione di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Rimuove un ricordo minore o breve dalla mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Riduce tutte le capacità mentali di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rimuove un ricordo importante o lungo dalla mente di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Rimuove tutte le emozioni di una persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Fa impazzire una persona.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Rende una persona un guscio senza mente.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Mentem</form><technique>Rego</technique></arts>
+    <description>
+      <p>Gli incantesimi Rego Animal che riguardano la mente possono servire come linee guida per i livelli di incantesimo Rego Mentem.
+      Molti mutamenti della mente sono effetti Rego, poiché sono stati che la mente può assumere in modo naturale.</p>
+      <p>I fallimenti critici in Rego Mentem possono mutare lo stato mentale del Bersaglio in modo errato, o cambiare quello del lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro spiriti appartenenti a un Reame (Divino, Fatato, Infernale o Magico) con potenza inferiore al livello dell'incantesimo (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Altera in maniera sottile lo stato mentale del Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Controlla lo stato mentale del Bersaglio (ad esempio, sveglio, addormentato, confuso).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla un'emozione naturale, come calma o paura. Il Bersaglio deve avvertire l'emozione prima che tu possa controllarla.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Controlla uno spirito disincarnato.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Spinge una persona a un particolare tipo di risposta.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Controlla un'emozione di una persona in modo innaturale, ad esempio aumenta il suo senso di coraggio dove invece è solitamente paurosa.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Infonde una particolare emozione in tutte le risposte della persona.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Controlla un essere umano fintanto che lo vedi.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Evoca un fantasma.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Impartisce a una persona un comando complesso, che quella cercherà di eseguire al meglio delle sue capacità.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Controlla completamente le emozioni e la mente di una persona.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Terram</form><technique>Creo</technique></arts>
+    <description>
+      <p>Creare terra con aspetto elaborato o con proprietà innaturali comporta una maggiorazione di una Magnitudine rispetto alle linee guida indicate.</p>
+      <p>I sigilli arcani visibili comunemente negli incantesimi Creo Terram rendolo la creazione in qualche modo bizzarra, come del terriccio con colori o grana specifici.</p>
+      <p>I fallimenti critici in Creo Terram possono seppellire il lanciatore sotto terra o pietra, creare il materiale sbagliato o farlo materializzare nel luogo errato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Crea sabbia, terriccio, fango o argilla.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Crea pietra o vetro.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Crea metallo semplice.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Crea metallo prezioso.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Crea una gemma.</description>
+      </guideline>
+  </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Terram</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Il livello degli incantesimi Intellego Terram non sono influenzati dal materiale del Bersaglio.</p>
+      <p>I fallimenti critici in Intellego Terram forniscono solitamente informazioni errate.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Apprendi una caratteristica percepibile di un oggetto, che una persona con le abilità appropriate potrebbe determinare esaminandolo.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Apprendi una caratteristica mondana di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Vedi un oggetto e l'ambiente circostante.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Apprendi tutti i componenti di una lega o materiale complesso.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Apprendi tutte le proprietà naturali di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Percepisci tutte le proprietà mondane di un oggetto complesso.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Apprendi le proprietà magiche di un oggetto.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Rende i tuoi sensi immuni alla terra, ad esempio permettendoti di vedere attraverso una roccia.</description>
+      </guideline>
+      <guideline>
+        <level>20</level>
+        <description>Parli con una roccia naturale, ad esempio un masso.</description>
+      </guideline>
+      <guideline>
+        <level>25</level>
+        <description>Parli con una roccia lavorata, ad esempio una statua.</description>
+      </guideline>    
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Terram</form><technique>Muto</technique></arts>
+    <description>
+      <p>I Bersagli elencati sotto si riferiscono al terriccio. Per trasformazioni da o verso sabbia, fango o argilla, usa la stessa Magnitudine;
+      per pietra o vetro, aggiungi una Magnitudine; per metallo o pietre preziose, aggiungi due Magnitudini. Questi modificatori si applicano una
+      singola volta, quindi per trasformare un metallo in un altro sono richiesti solo due Magnitudini in più.</p>
+      <p>Le quantità massime e minime dei materiali che è possibile trasformare sono limitate dalle linee guida; dunque con un singolo base è
+      possibile trasformare un passo cubo di pietra in un cubo di gemme di lato un pollice.</p>
+      <p>I fallimenti critici gravi in Muto Terram tendono a trasformare il lanciatore in metallo o pietra, quelli di minore importanza trasformano
+      il Bersaglio sbagliato o tramutano le cose nel modo errato.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Cambia una proprietà del terriccio.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Trasforma il terriccio in un altro tipo di terra naturale (ad esempio la sabbia in argilla).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in modo leggermente innaturale (possono esserre richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in liquido o gas (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Trasforma il terriccio in pietra o viceversa.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in modo molto innaturale (spesso sono richiesti requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in un composto di liquidi, solidi e gas (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Trasforma il terriccio in una pianta (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Fa crescere qualcosa di otto volte il suo volume precedente.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma il terriccio in un linquido o gas leggermente innaturale (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Trasforma il terriccio in un animale (con requisiti).</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Trasforma il terriccio in un liquido o gas molto innaturale (con requisiti).</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Terram</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Per distruggere sabbia, fango o argilla, usa lo stesso livello necessario a distruggere la terra; per pietra o vetro aggiungi una Magnitudine;
+      per metallo o gemme aggiungi due Magnitudini.</p>
+      <p>Oltre a distruggere la cosa sbagliata, i fallimenti critici in Perdo Terram possono distruggere il terreno su cui poggia il lanciatore,
+      oppure oggetti di metallo che egli tiene in mano.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>2</level>
+        <description>Indebolisce il terriccio.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Distrugge il terriccio.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Terram</form><technique>Rego</technique></arts>
+    <description>
+      <p>Di seguito sono elencate le linee guida per controllare terriccio, sabbia, fango o argilla. Agginugi una Magnitudine per controllare pietra o vetro
+      e due per metallo e gemme. Manipolare oggetti con grande precisione può richiedere altre Magnitudini, a seconda dell'accuratezza richiesta.</p>
+      <p>I fallimenti critici in Rego Terram risultano spesso in grandi ammassi di pietre volanti che piovono sul lanciatore.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difesa contro creature di pietra appartenenti a un Reame (Divino, Fatato, Infernale, Magico) con potenza inferiore al
+        livello dell'incantesimo (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Controlla o muove il terriccio in modo naturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Controlla o muove il terriccio in modo leggermente innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Tiene il terriccio lontano da te, sotto il tuo controllo cosciente (devi quindi essere consapevole della sua presenza).</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Controlla o muove il terriccio in modo molto innaturale.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Tiene lontano dal tuo corpo tutto il terriccio o difende il bersaglio dal terriccio.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Vim</form><technique>Creo</technique></arts>
+    <description>
+      <p>Sono pochi gli incantesimi Creo Vim conosciuti nell'Ordine.</p>
+      <p>I fallimenti critici in Creo Vim conferiscono di solito al lanciatore ulteriori Punti Distorsione, visto che la magia rozza sfugge al controllo.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>Generico</level>
+        <description>Crea un guscio magico che sembra una cosa vera per gli incantesimi Intellego con livello minore del doppio del suo, più una Magnitudine
+        (quest'Aura è di “magia” generica: non può fornire informazioni fuorvianti).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Crea un guscio magico che impedisce agli incantesimi Intellego con livello minore del suo più una Magnitudine di comprendere qualsiasi
+        dettaglio sulla magia lanciata sul Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Marca qualcosa con la magia.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Crea un getto di magia che da al Bersaglio un Punto Distorsione. Gli incantesimi che danno Distorsione non possono avere Durata maggiore
+        di Istantanea. Nota che fare questo a un Magus costituisce un attacco e una chiara violazione del Codice.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Dà al Bersaglio due Punti Distorsione.</description>
+      </guideline>
+      <guideline>
+        <level>15</level>
+        <description>Dà al Bersaglio tre Punti Distorsione.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Vim</form><technique>Intellego</technique></arts>
+    <description>
+      <p>Poiché la magia è infida da comprendere, gli incantesimi che la individuano sono difficili ma importanti. I demoni sono esseri di Vim, ma sono fatti
+      dell'essenza stessa dell'inganno; per questo, è impossibile individuarli se non lo desiderano (almeno secondo le conoscenze dell'Ordine), e non ci sono
+      magie in grado di localizzarli. Non è possibile investigare sugli oggetti magici con specifici incantesimi: l'investigazione richiede che tu trascorra
+      almeno una stagione in laboratorio per scoprire la magia contenuta in un oggetto incantato. Un incantesimo può comunque rivelare se un oggetto è magico,
+      e potrebbe fornire qualche indizio sui suoi poteri. Gli incantesimi non rivelano mai come usare un oggetto.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>1</level>
+        <description>Individua magie di Magnitudine 10 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua la presenza di un'Aura mistica.</description>
+      </guideline>
+      <guideline>
+        <level>1</level>
+        <description>Individua la presenza di vis; in quanto magia concentrata non è difficile da trovare.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Individua magie di Magnitudine 8 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>2</level>
+        <description>Determina il potere di un'Aura mistica.</description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Individua magie di Magnitudine 6 o superiore. </description>
+      </guideline>
+      <guideline>
+        <level>3</level>
+        <description>Individua i limiti di una <emphasis>Regio</emphasis>. Se lanciato con Bersaglio Visuale, ciò fornisce informazioni a sufficienza per trovare un passaggio
+        fra i livelli (per le <emphasis>Regiones</emphasis> che consentono di entrarvi in tal modo); altrimenti rivela la prensenza di una <emphasis>Regio</emphasis>,
+        e forse la sua forma grezza.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Individua magie di Magnitudine 3 o superiore.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Stabilisce l'ammontare di vis presente.</description>
+      </guideline>
+      <guideline>
+        <level>4</level>
+        <description>Discerne l'Arte della vis.</description>
+      </guideline>
+      <guideline>
+        <level>5</level>
+        <description>Individua qualsiasi magia attiva.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Individua le tracce di magia potente.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Individua la presenza recente di magia debole.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Vim</form><technique>Muto</technique></arts>
+    <description>
+      <p>Questi incantesimi ti permettono di cambiare altri incantesimi. Durano perlopiù come l'incantesimo che alterano, anche se la Durata nominale è Istantanea.
+      Non è normalmente possibile avere un incantesimo Muto Vim che duri più di quello Bersaglio.</p>
+      <p>Questi incantesimi metamagici hanno restrizioni particolari, che si applicano a tutti gli incantesimi Muto Vim inventati secondo la teoria Ermetica.</p>
+      <p>Per prima cosa, non possono essere lanciati su incantesimi spontanei: tale magia si manipola al momento, e qualsiasi ulteriore tentativo fa perdere il
+      controllo al lanciatore (ciò è necessario per il bilanciamento del gioco).</p>
+      <p>Secondo, devi effettuare un tiro di Ingenium + Concentrazione di 9+ se lanci entrambi gli incantesimi (quello MuVi e quello influenzato). Se fallisci,
+      gli incantesimi non partono; se ottieni un fallimento critico, lo ottieni per entrambi (è leggermente più facile del solito).</p>
+      <p>Se desideri lanciare uno di questi incantesimi su uno che sta venendo lanciato da un altro Magus, dovete cooperare, oppure devi essere rapido a lanciare
+      l'incantesimo MuVi. Non c'è atro modo per coordinare gli incantesimi. Inoltre, a meno che non cooperiate, per alterare l'incantesimo il tuo totale di 
+      Penetrazione per l'incantesimo Muto Vim deve battere il Totale di Penetrazione dell'altro Magus.</p>
+      <p>Per influenzare i tuoi incantesimi è sufficiente la Portata Tocco, ma per influenzare quelli di un altro è richiesta almeno la Portata Vocale. 
+      Non puoi toccare l'incantesimo in se.</p>
+      <p>È possibile usare questi incantesimi solo sulla magia Ermetica, poiché dipendono da una buona comprensione dei processi coinvolti.</p>
+      <p>Puoi inserire un effetto Muto Vim in un oggetto magico solo se deve influenzare un altro effetto nello stesso oggetto. Tutti gli incantesimi Muto Vim
+      vanno adattati all'uso specifico, e l'effetto di un oggetto magico non può essere così adattato.</p>
+      <p>Nota che un incantesimo inventato secondo una delle linee guida fornite altera un altro incantesimo in modo specifico: non è possibile inventare un
+      incantesimo che ne altera un altro in un modo non prestabilito. Vedi gli esempi di incantesimi per idee su come interpretare la natura specifica.</p>
+      <p>Per ragioni non meglio note ai teorici Ermetici, non è possibile usare Muto Vim per modificare un incantesimo dopo il lancio.</p>
+      <p>I fallimenti critici in Muto Vim possono avere qualsiasi effetto concepibile, poiché alterano l'altro incantesimo in modo imprevedibile.</p>
+      <p>Un incantesimo Muto Vim, come ogni altro incantesimo Muto, modifica il Bersaglio solo fintanto che è in vigore, dunque la sua Durata deve essere
+      normalmente almeno pari a quella dell'incantesimo Bersaglio. Gli incantesimi elencati hanno Durata Istantanea, ma possono essere inventate versioni
+      con Durata maggiore come di consueto.</p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>Generico</level>
+        <description>Altera in modo superficiale un incantesimo di meno del doppio del (livello +1 Magnitudine) dell'incantesimo Vim; non altera l'effetto
+        primario dell'incantesimo o il suo potere.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Altera in modo significativo un incantesimo di livello inferiore al livello dell'incantesimo Vim +1 Magnitudine; non altera la Tecnica
+        o Forma dell'incantesimo Bersaglio; mutamenti significativi comprendono l'aggiunta o la diminuzione di una Magnitudine, o il cambio di Bersaglio,
+        se l'incantesimo originale ha un Bersaglio.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Altera completamente un incantesimo di meno di metà del (livello +1 Magnitudine) dell'incantesimo Vim; può cambiare Tecnica, Forma o
+        entrambe, senza bisogno di requisiti; l'incantesimo Vim colpisce la struttura dell'incantesimo, non i Bersagli; un mutamento totale è un cambio di
+        potere di un massimo di due Magnitudini. Qualsiasi cambiamento superiore richiede Creo o Perdo, per creare o distruggere l'energia magica.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Vim</form><technique>Perdo</technique></arts>
+    <description>
+      <p>Per lanciare un incanteismo Perdo Vim su un personaggio con Resistenza alla Magia, devi superare quest'ultima. </p>
+    </description>
+    <guidelines>
+      <guideline>
+        <level>Generico</level>
+        <description>Fa si che un essere (compreso un oggetto magico) appaia non magico a qualsiasi incantesimo Intellego minore del doppio di 
+        (livello +2 Magnitudine di questo incantesimo).</description>
+      </guideline>    
+      <guideline>
+        <level>Generico</level>
+        <description> Disperde effetti di tipo specifico con un livello inferiore al livello dell'incantesimo Vim +4 Magnitudine + dado stress 
+        (non c'è fallimento critico). Un tipo specifico può essere una magia Terram Ermetica, o una magia di controlo spirituale sciamanica. 
+        Un Magus deve avere alcune conoscenze di un tipo di magia (non necessariamente saperla usare) per inventare un incantesimo che lo influenzi.
+        Tutti i Magi Ermetici hanno familiarità con la Magia Ermetica.</description>
+      </guideline>    
+      <guideline>
+        <level>Generico</level>
+        <description>Riduce il punteggio di potenza di un Bersaglio del livello dell'incantesimo +10, fintanto che l'incantesimo penetra la resistenza della creatura.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Disperde qualsiasi effetto magico con un totale di lancio inferiore a metà del (livello +4 Magnitudine) dell'incantesimo Vim + dado stress(non c'è fallimento critico).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Riduce il totale di lancio per tutte le magie lanciate dal Bersaglio di metà del (livello +2 Magnitudine) dell'incantesimo. Se due o più
+        di tali incantesimi influenzano un Bersaglio, solo il maggiore ha effetto: le riduzioni non si sommano. L'incantesimo deve penetrare la resistenza alla
+        magia del Bersaglio per avere effetto.</description>
+      </guideline>
+      <guideline page="136">
+        <level>5</level>
+        <description>Riduce la Durata di una Connessione Arcana di un passo sulla tabella delle connessioni Arcane. Se ciò porta la Durata al di sotto di ore,
+        la Conessione termina immediatamente. Non funziona su Connessioni che hanno naturalmente Durata Indefinita, ma può far scadere una Connessione Arcana
+        saldata in laboratorio. Nota che la Portata è quella verso la Connessione Arcana, e devi sapere a cosa stai mirando, come per ogni altro incantesimo.</description>
+      </guideline>
+      <guideline page="136">
+        <level>10</level>
+        <description>Riduce la Durata di una Connessione Arcana di due passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>15</level>
+        <description>Riduce la Durata di una Connessione Arcana di tre passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>20</level>
+        <description>Riduce la Durata di una Connessione Arcana di quattro passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>25</level>
+        <description>Riduce la Durata di una Connessione Arcana di cinque passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.</description>
+      </guideline>
+      <guideline page="136">
+        <level>30</level>
+        <description>Riduce la Durata di una Connessione Arcana di sei passi sulla tabella delle connessioni Arcane, con le limitazioni di cui sopra.
+        Un effetto di questo livello è sufficiente a far terminare all'istante pressocché ogni Connessione Arcana.</description>
+      </guideline>
+    </guidelines>
+  </arts_guideline>
+  <arts_guideline>
+    <arts><form>Vim</form><technique>Rego</technique></arts>
+    <description>
+      <p>Gli incantesimi Rego Vim respingono demoni e altre creature mistiche. Con questi incantesimi è possibile in teoria convocare e controllare 
+      demoni ma il Codice Ermetico proibisce questa conoscenza e il suo utilizzo. Chiunque scopra e desideri usare queste nozioni affonta due minacce:
+      quella degli esseri richiamati e quella dell'Ordine di Hermes, che avversa fortemente queste pratiche. </p>
+      <p>Rego Vim è anche la combinazione di Arti che conferisce resistenza alla Magia, ma nemmeno Bonisagus fu in grado di trasformare la Parma Magica
+      in un incantesimo. Il massimo mai ottenuto è <emphasis>Egida del Focolare</emphasis>, che non è completamente integrato nella teoria Ermetica.</p>
+    </description>
+    <guidelines>
+      <guideline ward="true">
+        <level>Generico</level>
+        <description>Difende il Bersaglio da creature con potenza inferiore al livello dell'incantesimo. La creatura contro cui ci si difende non può
+        influenzare direttamente il Bersaglio, sia fisicamente che con mezzi magici. Un incantesimo di questo tipo protegge solo da creature di un Reame
+        (Divino, Fatato, Infernale o Magico). Nota che le protezioni da creature magiche e fatate possono essere ottenuto anche con altre Forme, più 
+        limitate però negli effetti (Tocco, Cerchio, Circolo).</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Mantiene o sopprime un incantesimo da te lanciato il cui livello sia inferiore al livello +2 Magnitudine dell'incantesimo Vim.</description>
+      </guideline>
+      <guideline>
+        <level>Generico</level>
+        <description>Crea un condotto o un contenitore per incantesimi di livello inferiore al livello +5 Magnitudine dell'incantesimo Vim. Un condotto crea
+        un contatto mistico fra te e il Bersaglio (Portata effettiva Tocco), mentre un contenitore trattiene un incantesimo per un lasso di tempo specifico
+        prima di rilasciarlo.</description>
+      </guideline>
+       <guideline>
+        <level>Generico</level>
+        <description>Sostiene o sopprime un incantesimo lanciato da un altro con livello inferiore di metà del (livello +5 Magnitudine) dell'incantesimo Vim.</description>
+      </guideline>
+      <guideline>
+        <level>10</level>
+        <description>Muovi la vis grezza da un oggetto fisico a un altro senza bisogno di laboratorio. </description>
+      </guideline>     
+      <!--
+      <guideline><level>Generico</level><description>Sample general guidleline.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>Generico</level><description>Sample general guideline from non-core book.</description></guideline>
+      <guideline><level>1</level><description>Sample guideline.</description></guideline>
+      <guideline ritual="true"><level>2</level><description>Guidelines can also be designated as a ritual.</description></guideline>
+      <guideline source="RoP:M" page="27"><level>3</level><description>Sample guideline from non-core book.</description></guideline>
+      <guideline><level>5</level><description>Sample guideline with <strong>bold</strong> and <emphasis>italic</emphasis> text.</description></guideline>
+      <guideline mystery="true"><level>10</level><description>Guidelines can also be mysteries.</description></guideline>
+      -->
+    </guidelines>
+  </arts_guideline>
+</arts_guidelines>
+  <spells>
+    <spell id="1000" type="standard">
+      <name>Sortilegio contro la putrefazione</name>
+      <level>10</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Impedisce la decomposizione di un cadavere umano o di una parte del corpo mozzata. I necromanti la usano per preservare i corpi resuscitati.</p>
+        <flavour>"La sostanza umana è estremamente complessa e caduca al contempo, perciò studiarla richiede più tempo di quello che la natura delle cose concede." - L.T. Mocenigo</flavour>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1001" source="CRL" type="standard">
+      <name>Purificazione delle ferite infette migliorata</name>
+      <level>25</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il bersaglio ottiene +12 ai tiri per il Recupero per guarire da ferite o malattie, ma deve trovarsi sotto l'influsso dell'incantesimo per tutta la durata dell'intervallo di recupero. Questo viene calcolato dal momento del lancio dell'incantesimo: tutto il resto è ignorato.</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1002" type="standard" ritual="true">
+      <name>Guarigione del corpo profanato</name>
+      <level>25</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Rimuove gli effetti magligni o le deformazioni causate da ferite, malattie, veleno o invecchiamento prematuro. Gli effetti dell'invecchiamento naturale non possono essere prevenuti con questo o altri incantesimi. Non guarisce le ferite, solo gli effetti aggiuntivi. </p>
+        <flavour>"Ci sono carni che solo il dono può sanare. Per tutto il resto c'è il triarca." - L.T. Mocenigo</flavour>
+      </description>
+      <guideline>
+        <base>20</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1003" type="standard">
+      <name>Svelare i difetti della carne mortale</name>
+      <level>10</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Sei in grado di trovare qualsiasi difetto medico in una persona o in un essere che stai toccando. Fornisce un maggior numero di informazioni, più specifiche, di occhio del medico.</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1004" type="standard">
+      <name>Caccia all'erba selvaggia </name>
+      <level>5</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Concentrazione</duration>
+      <target>Olfatto</target>
+      <description>
+        <p>Quando lanci questo incantesimo puoi sentire l'odore di un tipo di pianta finché mantieni la concentrazione. Devi avere un pezzo del tipo di pianta che cerchi. È necessario un Tiro Stress di Sensus di 6+ per seguire l'odore. Se non c'è alcuna pianta di quel tipo nei paraggi (abbastanza vicina da sentirne l'odore), non senti nulla, anche se l'incantesimo funziona.</p>
+        <flavour>"Anselmo, sono abbastanza sicuro che in quella insenatura, su quella parete di roccia, proprio affianco a quel vespaio lì in alto, ci sia della belladonna, me ne serve almeno un altro cesto." L.T. Mocenigo </flavour>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1005" type="standard">
+      <name>Ferita lacrimante</name>
+      <level>15</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Perdo</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Quando lanci l'incantesimo indichi la vittima, sul suo corpo si apre un'ampia ferita; non è profonda ma sanguina copiosamente. È solo una Ferita Leggera, ma sembra peggiore.</p>
+        <flavour>"Ecco qua piccole, facciamo si che non si sprechi nemmeno una goccia di questo male necessario." - L.T. Mocenigo</flavour>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1006" type="standard">
+      <name>Muro di spine</name>
+      <level>20</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Sole</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>Crea nel giro di pochi secondi un muro dritto di robusti cespugli spinosi, lungo fino a 20 passi, spesso 1 e alto 4. Le spine, con una resistenza innaturale, hanno +15 Assorbimento, si tagliano solo con armi taglienti e per fenderle bisogna infliggere una Ferita Grave. Passarvi attraverso con la forza richiuede un tiro di Fortitudo 9+ e infligge +15 danni a prescindere dalla riuscita del tentativo. Con un fallimento critico si subiscono 5 danni addizionali. Il muro spunta da cespugli esistenti o terreno fertile. Un Tiro Stress di Atletica contro un Fattore Difficoltà di 9 permette a un personaggio di scalarlo, subendo però +10 danni nel processo. </p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1007" type="standard">
+      <name>Crescita degli esserini schifosi</name>
+      <level>15</level>
+      <arts>
+        <form>Animal</form>
+        <technique>Muto</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Fa crescere un insetto, topo, rospo o un'altra creatura di taglia piccola (Taglia -9) fino a quattro volte le sue dimensioni normali. Se prima era velenosa ora lo è anche di più. Le creature semivelenose, come gran parte dei ragni, con un Fattore Difficoltà 6 che infligge una Ferita Leggera.</p>
+      </description>
+      <guideline>
+        <base>4</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1008" type="general">
+      <name>Comunione dello Stregone</name>
+      <level>GENERICO</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Muto</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Istantanea</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>
+          Consente ai Magi di combinare i loro poteri per lanciare gli incantesimi. Il gruppo lavora in concerto per lanciare un incantesimo specifico
+          attraverso il potere unificato della <self/>. Può unirsi alla <self/> un Magus addizionale per ogni
+          5 livelli dell'incantesimo lanciato. Uno dei Magi nel gruppo deve conoscere l'incantesimo specificato.
+        </p>
+        <p>
+          Tutti i Magi del gruppo che conoscono <self/> aggiungono il livello a cui lo conoscono per determinare il livello
+          effettivo di <self/>. Il totale ottenuto deve essere almeno il doppio del livello dell'incantesimo che sta venendo
+          lanciato.
+        </p>
+        <p>
+          Il tiro viene effettuato da un Magus, come se lanciasse l'incantesimo specificato da solo. Tuttavia, il numero da battere per il lancio è il
+          livello dell'incantesimo diviso per il numero di Magi nella <self/>: quindi, se cinque Magi partecipano al lancio di un
+          incantesimo di livello 50, il lanciatore deve lanciarne con successo uno di livello 10, ovviamente con tutti i requisiti. Questo metodo di lancio
+          aggiunge un tiro per il fallimento critico per ogni Magus che partecipa. Con un fallimento critico, tutti i partecipanti ottengono Punti Distorsione
+          e devono tirare per il Crepuscolo.
+        </p>
+        <p>
+          <self/> è un rimasuglio di rituale Mercuriale, quindi non si possono lanciare in tal modo incantesimi spontanei, e non si
+          inserisce alla perfezione nelle linee guida della teoria Ermetica
+        </p>
+      </description>
+      <guideline>
+        <base></base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1009" type="general" ritual="true">
+      <name>Guscio di false valutazioni</name>
+      <level>20</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Crea un "guscio" di magia attorno ad un oggetto, riparandolo dalla curiosità degli altri Magi. Ogni tentativo di studiare l'oggetto magico fornisce informazioni false sui suoi poteri, a meno che il tiro di investigazione del Magus non superi la metà del livello del guscio.</p>
+        <flavour>"La curiosità è cosa buona, è l'anima della conoscenza... ma non ho mai detto che puoi curiosare delle mie cose." - L.T. Mocenigo</flavour>
+      </description>
+      <guideline>
+        <base></base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="1010" source="CRL" type="standard">
+      <name>Dislessia inaspettata</name>
+      <level>5</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Diametro</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il bersaglio balbetta e biascica. I tiri su Communicatio del bersaglio hanno -3 ed ha una Penalità di -6 al lancio di incantesimi non sileziosi (e un Dado Fallimento Critico aggiuntivo).</p>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+  </spells>
+
+</ars_magica>
