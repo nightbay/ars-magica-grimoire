@@ -14,11 +14,18 @@
   <xsl:template match="spellcount"><xsl:value-of select="format-number(count(//spell[name != '']), '# ###', 'd')"/></xsl:template>
     
   <xsl:template match="booklist">
-    <fo:inline font-family="Lauren C. Brown" font-size="10pt"> Ars Magica (<xsl:value-of select="count($in/ars_magica/spells/spell[not(@source)])"/> incantesimi),</fo:inline>
+    <xsl:variable name="font">
+      <xsl:choose>
+        <xsl:when test="@font = 'hand'"><xsl:value-of select="$handfont"/></xsl:when>
+        <xsl:when test="@font"><xsl:value-of select="@font"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="$bookfont"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>	
+    <fo:inline font-family="{$font}" font-size="10pt"> Ars Magica (<xsl:value-of select="count($in/ars_magica/spells/spell[not(@source)])"/> incantesimi),</fo:inline>
     <xsl:for-each select="$in/ars_magica/books/book">
       <xsl:sort select="name"/>
       <xsl:variable name="abbrev" select="abbreviation"/>
-      <xsl:if test="position() = last()"><xsl:text> </xsl:text>e </xsl:if><fo:inline font-family="Lauren C. Brown" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> <xsl:choose><xsl:when test="count($in/ars_magica/spells/spell[@source=$abbrev]) = 1"> incantesimo)</xsl:when>
+      <xsl:if test="position() = last()"><xsl:text> </xsl:text>e </xsl:if><fo:inline font-family="{$font}" font-size="10pt"><xsl:value-of select="name" /><xsl:text> </xsl:text>(<xsl:value-of select="abbreviation" />, <xsl:value-of select="count($in/ars_magica/spells/spell[@source=$abbrev])"/> <xsl:choose><xsl:when test="count($in/ars_magica/spells/spell[@source=$abbrev]) = 1"> incantesimo)</xsl:when>
         <xsl:otherwise> incantesimi)</xsl:otherwise></xsl:choose><xsl:if test="position() &lt; last()">,</xsl:if></fo:inline>
     </xsl:for-each>
   </xsl:template>

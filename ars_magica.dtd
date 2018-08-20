@@ -17,6 +17,7 @@
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT spellcount EMPTY>
 <!ELEMENT booklist EMPTY>
+<!ATTLIST booklist font CDATA #IMPLIED>
 <!ELEMENT self EMPTY>
 <!ELEMENT spell-link EMPTY>
 <!ELEMENT sm_bonuses (sm*)>

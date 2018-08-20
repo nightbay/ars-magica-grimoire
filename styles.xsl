@@ -7,9 +7,12 @@
   <xsl:variable name="handcolour">#2B1B09</xsl:variable>
   <xsl:variable name="textcolour">#000000</xsl:variable>
   <xsl:variable name="artfont">Lombardy MC</xsl:variable>
-  <xsl:variable name="handfont">Asphyxiate</xsl:variable>
+  <xsl:variable name="handfont">Pristina</xsl:variable>
+  <!-- <xsl:variable name="bookfont">Lauren C. Brown</xsl:variable> -->
+  <xsl:variable name="bookfont">Pristina</xsl:variable>
   <xsl:variable name="sigfont">Asphyxiate</xsl:variable>
   <xsl:variable name="textfont">Calibri</xsl:variable>
+  <!-- <xsl:variable name="textfont">Pristina</xsl:variable> -->
   <xsl:variable name="urlfont">Vera Sans</xsl:variable>
   <xsl:variable name="urlcolour">#00008B</xsl:variable>
 </xsl:stylesheet>
