@@ -22,6 +22,14 @@
       <xsl:otherwise>2</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
+  <xsl:variable name="tablecols">
+    <xsl:choose>
+      <xsl:when test="$uorientation='LANDSCAPE' and $upaper='TABLOID'">5</xsl:when>
+      <xsl:when test="$upaper='TABLOID'">4</xsl:when>
+      <xsl:when test="$uorientation='LANDSCAPE'">4</xsl:when>
+      <xsl:otherwise>3</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>  
   <xsl:variable name="textcols">
     <xsl:choose>
       <xsl:when test="$uorientation='LANDSCAPE' and $upaper='TABLOID'">3</xsl:when>

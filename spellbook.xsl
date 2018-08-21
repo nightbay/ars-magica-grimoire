@@ -49,7 +49,7 @@
         </fo:simple-page-master>
 
         <fo:simple-page-master master-name="arts-guideline" page-height="{$height}" page-width="{$width}">
-          <fo:region-body column-count="{$textcols}" margin="2cm"/>
+          <fo:region-body column-count="{$cols}" margin="2cm"/>
           <fo:region-before region-name="xsl-region-before" extent="1.9cm" />
           <fo:region-after region-name="xsl-region-after" extent=".5in" />
         </fo:simple-page-master>
@@ -59,7 +59,13 @@
           <fo:region-before region-name="xsl-region-before" extent=".5in" />
           <fo:region-after region-name="xsl-region-after" extent=".5in" margin-right="2cm"/>
         </fo:simple-page-master>
-        
+      
+        <fo:simple-page-master master-name="artifact-list" page-height="{$height}" page-width="{$width}">
+          <fo:region-body column-count="{$tablecols}" margin-bottom="0.5in"  margin-top="0.5in" margin-left="2cm" margin-right="2cm"/>
+          <fo:region-before region-name="xsl-region-before" extent=".5in" />
+          <fo:region-after region-name="xsl-region-after" extent=".5in" margin-right="2cm"/>
+        </fo:simple-page-master>
+		
       </fo:layout-master-set>
 
       <xsl:if test="$cover = 'true'">
@@ -102,9 +108,9 @@
         </xsl:if>
       </xsl:for-each>
 
-      <xsl:call-template name="smbonuses"></xsl:call-template>
       <xsl:call-template name="bookindex"></xsl:call-template>
       <xsl:call-template name="spellindex"></xsl:call-template>
+      <xsl:call-template name="smbonuses"></xsl:call-template>
 
     </fo:root>
   </xsl:template>
@@ -274,11 +280,6 @@
       </xsl:for-each>
     </xsl:for-each>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
-      <fo:basic-link internal-destination="smbonuses">
-        Bonus Forma e Materiale<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="smbonuses" />
-      </fo:basic-link>
-    </fo:block>
-    <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="book_index">
         Incantesimi per Libro<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="book_index" />
       </fo:basic-link>
@@ -288,10 +289,15 @@
         Indice Incantesimi<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
       </fo:basic-link>
     </fo:block>
+    <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+      <fo:basic-link internal-destination="smbonuses">
+        Bonus Foggia e Materiale<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="smbonuses" />
+      </fo:basic-link>
+    </fo:block>
   </xsl:template>
  
   <xsl:template name="smbonuses">
-    <fo:page-sequence master-reference="spell-list">
+    <fo:page-sequence master-reference="artifact-list">
       <fo:static-content flow-name="xsl-region-before">
         <xsl:if test="$edit = ''">
           <fo:block-container absolute-position="absolute" top="0cm" left="0cm" width="{$width}" height="{$height}">
@@ -316,7 +322,7 @@
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
-          Bonus Forma e Materiale
+          Bonus Foggia e Materiale
         </fo:block>
         <xsl:apply-templates select="$in/ars_magica/sm_bonuses/sm[@name != '']">
           <xsl:sort select="@name"/> 
