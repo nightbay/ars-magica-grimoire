@@ -12,6 +12,7 @@
   <xsl:decimal-format name="d" decimal-separator="." grouping-separator=" "/>
   
   <xsl:template match="spellcount"><xsl:value-of select="format-number(count(//spell[name != '']), '# ###', 'd')"/></xsl:template>
+  <xsl:template match="artifactcount"><xsl:value-of select="format-number(count(//artifact[name != '']), '# ###', 'd')"/></xsl:template>
     
   <xsl:template match="booklist">
     <xsl:variable name="font">
@@ -223,7 +224,30 @@
       <xsl:when test=". = 'Rego'">Re</xsl:when>
     </xsl:choose><xsl:if test="position() &lt; last()">, </xsl:if>
   </xsl:template>
+  
+  <xsl:template match="arts/*" mode="abbreviation">
+	<xsl:if test="name() = 'requisite'">(</xsl:if>
+    <xsl:choose>
+      <xsl:when test=". = 'Animal'">An</xsl:when>
+      <xsl:when test=". = 'Corpus'">Co</xsl:when>
+      <xsl:when test=". = 'Herbam'">He</xsl:when>
+      <xsl:when test=". = 'Ignem'">Ig</xsl:when>
+      <xsl:when test=". = 'Auram'">Au</xsl:when>
+      <xsl:when test=". = 'Aquam'">Aq</xsl:when>
+      <xsl:when test=". = 'Mentem'">Me</xsl:when>
+      <xsl:when test=". = 'Imaginem'">Im</xsl:when>
+      <xsl:when test=". = 'Terram'">Te</xsl:when>
+      <xsl:when test=". = 'Vim'">Vi</xsl:when>
 
+      <xsl:when test=". = 'Creo'">Cr</xsl:when>
+      <xsl:when test=". = 'Muto'">Mu</xsl:when>
+      <xsl:when test=". = 'Perdo'">Pe</xsl:when>
+      <xsl:when test=". = 'Intellego'">In</xsl:when>
+      <xsl:when test=". = 'Rego'">Re</xsl:when>
+    </xsl:choose>
+	<xsl:if test="name() = 'requisite'">)</xsl:if>
+  </xsl:template>
+  
   <xsl:template match="requisite" mode="guideline">
     , <xsl:choose>
         <xsl:when test="@free = 'true'"><xsl:value-of select="." /> requisito gratuito</xsl:when>
@@ -360,6 +384,9 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
+        <fo:block span="all" keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
+          Indice Incantesimi
+        </fo:block>	  
         <xsl:for-each select="$sortedspells/spell[(@type='standard' or @type='general') and name != '']">
           <xsl:variable name="first" select="substring(name,1,1)"/>
           <xsl:variable name="prev" select="preceding-sibling::*[1]"/>

@@ -21,7 +21,14 @@
       <xsl:copy-of select="current()"/>
     </xsl:for-each>
   </xsl:variable>
-
+  
+  <xsl:variable name="sortedartifacts">
+    <xsl:for-each select="$in/ars_magica/artifacts/artifact">
+      <xsl:sort select="name"/>
+      <xsl:copy-of select="current()"/>
+    </xsl:for-each>
+  </xsl:variable>
+  
   <xsl:variable name="spellsbybook">
     <xsl:for-each select="$in/ars_magica/spells/spell[name != '']">
       <xsl:sort select="@source"/>
@@ -107,10 +114,13 @@
           </xsl:for-each>
         </xsl:if>
       </xsl:for-each>
-
-      <xsl:call-template name="bookindex"></xsl:call-template>
+	  
+      <xsl:call-template name="artifacts"></xsl:call-template>
       <xsl:call-template name="spellindex"></xsl:call-template>
+      <xsl:call-template name="bookindex"></xsl:call-template>
+	  <xsl:call-template name="artifactindex"></xsl:call-template>
       <xsl:call-template name="smbonuses"></xsl:call-template>
+
 
     </fo:root>
   </xsl:template>
@@ -165,7 +175,7 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-        <fo:block  id="{$toc_key}" text-align="center" color="{$handcolour}" font-family="{$artfont}" font-size="18pt" font-weight="normal">
+        <fo:block  span="all" id="{$toc_key}" text-align="center" color="{$handcolour}" font-family="{$artfont}" font-size="18pt" font-weight="normal" margin-bottom="2mm">
           Linee guida di <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/>
         </fo:block>
         <xsl:apply-templates select="/ars_magica/arts_guidelines/arts_guideline[arts/form=$form and arts/technique=$technique]/description/p" mode="guideline"/>
@@ -224,7 +234,7 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-        <fo:block font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal">Incantesimi <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/></fo:block>
+        <fo:block text-align="center" span="all" font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal">Incantesimi <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/></fo:block>
         <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERICO']"/>
         <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERICO']"/>
         <xsl:variable name="levels" select="distinct-values($spells/level)"/>
@@ -270,7 +280,7 @@
       <xsl:for-each select="$in/ars_magica/arts/technique">
         <xsl:variable name="technique" select="name"/>
         <xsl:variable name="toc_key"><xsl:value-of select="$technique"/> <xsl:value-of select="$form"/></xsl:variable>
-        <fo:block margin-left="1em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+        <fo:block span="all" margin-left="1em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
           <fo:basic-link internal-destination="{$toc_key}">
             <xsl:value-of select="$technique" />
             <fo:leader leader-pattern="dots" />
@@ -280,13 +290,23 @@
       </xsl:for-each>
     </xsl:for-each>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+      <fo:basic-link internal-destination="spell_index">
+        Indice Incantesimi<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
+      </fo:basic-link>
+    </fo:block>
+    <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="book_index">
         Incantesimi per Libro<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="book_index" />
       </fo:basic-link>
     </fo:block>
+    <fo:block span="all" margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+      <fo:basic-link internal-destination="artifacts">
+        Artefatti Magici<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="artifacts" />
+      </fo:basic-link>
+    </fo:block>	
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
-      <fo:basic-link internal-destination="spell_index">
-        Indice Incantesimi<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
+      <fo:basic-link internal-destination="artifact_index">
+        Indice Artefatti<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="artifact_index" />
       </fo:basic-link>
     </fo:block>
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
@@ -321,7 +341,7 @@
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
-        <fo:block keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
+        <fo:block text-align="center" span="all" keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
           Bonus Foggia e Materiale
         </fo:block>
         <xsl:apply-templates select="$in/ars_magica/sm_bonuses/sm[@name != '']">
@@ -331,6 +351,105 @@
     </fo:page-sequence>
   </xsl:template>
 
+  <xsl:template name="artifacts">
+    <fo:page-sequence master-reference="spell-list">
+      <fo:static-content flow-name="xsl-region-before">
+        <xsl:if test="$edit = ''">
+          <fo:block-container absolute-position="absolute" top="0cm" left="0cm" width="{$width}" height="{$height}">
+            <fo:block>
+              <fo:external-graphic src="images/index-paper{$wide}.jpg" content-height="scale-to-fit" height="{$height}" content-width="{$width}" scaling="non-uniform"/>
+            </fo:block>
+          </fo:block-container>
+        </xsl:if>
+        <fo:block id="artifacts">
+          <fo:inline-container vertical-align="top" inline-progression-dimension="49.9%">
+            <fo:block></fo:block>
+          </fo:inline-container>
+          <fo:inline-container vertical-align="top" inline-progression-dimension="49.9%">
+            <fo:block></fo:block>
+          </fo:inline-container>
+        </fo:block>
+      </fo:static-content>
+      <fo:static-content flow-name="xsl-region-after">
+        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
+          <fo:page-number/><fo:leader leader-pattern="space" /> 
+        </fo:block>
+      </fo:static-content>
+      <fo:flow flow-name="xsl-region-body">
+        <fo:block text-align="center" span="all" keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em" margin-bottom="2mm">
+          Artefatti Magici
+        </fo:block>
+		<xsl:for-each select="$sortedartifacts/artifact">
+		  <fo:block page-break-inside="avoid" keep-together.within-column="always" >
+			<fo:block id="{generate-id(.)}" font-size="12pt" text-align="center" font-style="italic" font-family="{$textfont}" font-weight="bold" >
+			  <fo:inline><xsl:value-of select="name" /></fo:inline><xsl:call-template name="source"/>
+			</fo:block>			
+			<fo:block font-size="10pt" margin-bottom="2mm">
+			  <xsl:apply-templates select="description"/>
+			</fo:block>
+			<xsl:for-each select="spell">
+				<fo:block font-family="{$textfont}" font-size="9pt" font-weight="bold">
+				  <fo:inline><xsl:value-of select="name" /></fo:inline><xsl:call-template name="source"/>
+				</fo:block>
+				<fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">
+				  Pen:
+				  <xsl:choose>
+					<xsl:when test="(guideline/modifiers/modifier/@penetration)[1]"><xsl:value-of select="(guideline/modifiers/modifier/@penetration)[1]" /></xsl:when>
+					<xsl:otherwise>0</xsl:otherwise>
+				  </xsl:choose>,
+				  <xsl:choose>
+					<xsl:when test="(guideline/modifiers/modifier/@frequency)[1]"><xsl:value-of select="(guideline/modifiers/modifier/@frequency)[1]" /></xsl:when>
+					<xsl:otherwise>1/giorno</xsl:otherwise>
+				  </xsl:choose>
+				</fo:block>			
+				<fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">
+				  <xsl:apply-templates select="arts/*" mode="abbreviation"><xsl:sort select="."/></xsl:apply-templates><xsl:text> </xsl:text><xsl:value-of select="level" />	
+				</fo:block>
+				<fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">				
+				  P: <xsl:apply-templates select="range" />, D: <xsl:apply-templates select="duration" />, B: <xsl:value-of select="target" />
+				  <xsl:if test="@type='mystery'">, Misterico</xsl:if>
+				  <xsl:if test="@ritual='true'">, Rituale</xsl:if>
+				  <xsl:if test="@faerie='true'">, Fatato</xsl:if>
+				  <xsl:if test="@subtype != ''">, <xsl:value-of select="@subtype"/></xsl:if>
+				  <xsl:if test="@atlantean='true'">, Atlantideo</xsl:if>
+				</fo:block>
+				<xsl:apply-templates select="description"/>
+				<fo:block margin-bottom="2mm">
+				  <fo:block font-family="{$textfont}" font-size="7pt" font-style="italic" font-weight="normal">
+					<xsl:choose>
+					  <xsl:when test="@type = 'standard' or @type = 'mystery'">
+						<xsl:choose>
+						  <xsl:when test="guideline/@ward = 'true' and string(guideline/base) = ''">(Come per linee guida di Difesa</xsl:when>                 <xsl:otherwise>
+							(Base <xsl:value-of select="guideline/base" /> 
+						  </xsl:otherwise>
+						</xsl:choose>
+						<xsl:call-template name="spell-guidelines" /> <xsl:apply-templates select="arts/requisite" mode="guideline"/>)
+					  </xsl:when>
+					  <xsl:when test="@type = 'non-hermetic'">(Non-Ermetico)</xsl:when>
+					  <xsl:when test="@type = 'general'">(Effetto base)</xsl:when>
+					  <xsl:when test="@type = 'unique'">(Incantesimo unico)</xsl:when>
+					  <xsl:when test="@type = 'mercurian'">(Rituale Mercuriale)</xsl:when>
+					  <xsl:when test="@type = 'special'">(Incantesimo speciale)</xsl:when>
+					  <xsl:otherwise>
+						ERROR
+					  </xsl:otherwise>
+					</xsl:choose>
+				  </fo:block>
+				  <xsl:if test="@link != ''">
+				  <fo:block margin-top="0.5mm" font-family="{$urlfont}" font-size="7pt" font-weight="normal">
+					<xsl:variable name="title" select="@link_title"/>
+					<xsl:variable name="link" select="@link"/>
+					Vedi <fo:inline color="{$urlcolour}" text-decoration="underline"><fo:basic-link external-destination="{$link}"><xsl:value-of select="@link_title"/></fo:basic-link></fo:inline>
+				  </fo:block>
+				  </xsl:if>
+				</fo:block>
+			</xsl:for-each>		
+		  </fo:block>
+		</xsl:for-each>
+      </fo:flow>
+    </fo:page-sequence>
+  </xsl:template>
+  
   <xsl:template match="sm">
     <fo:block page-break-inside="avoid">
       <fo:block margin-top="0.2em" font-family="{$textfont}" font-size="9pt" font-weight="bold">
@@ -347,6 +466,59 @@
     <fo:block margin-left="1em" font-family="{$textfont}" font-size="9pt" font-weight="normal">
       +<xsl:value-of select="@value" /><xsl:text>  </xsl:text><xsl:value-of select="." /><xsl:call-template name="source"/>
     </fo:block> 
+  </xsl:template>
+  
+  <xsl:template name="artifactindex">
+    <fo:page-sequence master-reference="spell-list">
+      <fo:static-content flow-name="xsl-region-before">
+        <xsl:if test="$edit = ''">
+          <fo:block-container absolute-position="absolute" top="0cm" left="0cm" width="{$width}" height="{$height}">
+            <fo:block>
+              <fo:external-graphic src="images/index-paper{$wide}.jpg" content-height="scale-to-fit" height="{$height}" content-width="{$width}" scaling="non-uniform"/>
+            </fo:block>
+          </fo:block-container>
+        </xsl:if>
+        <fo:block id="artifact_index">
+          <fo:inline-container vertical-align="top" inline-progression-dimension="49.9%">
+            <fo:block></fo:block>
+          </fo:inline-container>
+          <fo:inline-container vertical-align="top" inline-progression-dimension="49.9%">
+            <fo:block></fo:block>
+          </fo:inline-container>
+        </fo:block>
+      </fo:static-content>
+      <fo:static-content flow-name="xsl-region-after">
+        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
+          <fo:page-number/><fo:leader leader-pattern="space" /> 
+        </fo:block>
+      </fo:static-content>
+      <fo:flow flow-name="xsl-region-body">
+        <fo:block span="all" keep-with-next.within-page="always" font-family="{$artfont}" font-size="14pt" font-weight="normal" margin-top="0.5em">
+          Indice Artefatti
+        </fo:block>	  
+        <xsl:for-each select="$sortedartifacts/artifact">
+          <xsl:variable name="first" select="substring(name,1,1)"/>
+          <xsl:variable name="prev" select="preceding-sibling::*[1]"/>
+          <xsl:variable name="name" select="name"/>
+
+          <xsl:if test="not(substring($prev/name, 1, 1)=$first)">
+            <fo:block keep-with-next.within-page="always" font-family="{$artfont}" font-size="12pt" font-weight="normal" margin-top="0.5em">
+              <xsl:choose>
+              <xsl:when test="$first = '('"></xsl:when>
+              <xsl:otherwise><xsl:value-of select="$first"/></xsl:otherwise>
+              </xsl:choose>
+            </fo:block>
+          </xsl:if>
+          <fo:block font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+            <fo:basic-link internal-destination="{generate-id(.)}">
+              <xsl:value-of select="name" />
+              <fo:leader leader-pattern="dots" />
+              <fo:page-number-citation ref-id="{generate-id(.)}" />              
+            </fo:basic-link>
+          </fo:block>
+        </xsl:for-each>
+      </fo:flow>
+    </fo:page-sequence>
   </xsl:template>
   
 </xsl:stylesheet>

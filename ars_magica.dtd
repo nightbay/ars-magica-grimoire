@@ -1,4 +1,4 @@
-<!ELEMENT ars_magica (preface|books|sm_bonuses|laboratory|arts|arts_guidelines|spells|casting_tablets)*>
+<!ELEMENT ars_magica (preface|books|sm_bonuses|laboratory|arts|arts_guidelines|spells|casting_tablets|artifacts)*>
 <!ATTLIST spell-link name CDATA #IMPLIED>
 <!ELEMENT preface (toc|p)*>
 <!ELEMENT toc EMPTY>
@@ -81,6 +81,8 @@
 <!ELEMENT guidelines (guideline)*>
 <!ELEMENT arts_guideline (arts|description|guidelines)*>
 <!ELEMENT arts_guidelines (arts_guideline)*>
+<!ELEMENT artifacts (artifact)*>
+<!ELEMENT artifact (name|description|spell)*>
 <!ELEMENT spells (spell)*>
 <!ELEMENT spell (name|level|arts|range|duration|target|description|guideline|mage)*>
 <!ATTLIST spell id CDATA #IMPLIED>
