@@ -6,7 +6,6 @@
     <p font="hand" size="18pt" colour="hand">
       Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi provenienti da svariate fonti: <booklist/>.
     </p>
-
     <p indent="false" font="hand" size="48pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
     <toc/>
   </preface>
@@ -3510,6 +3509,7 @@
         </modifiers>
       </guideline>
     </spell>-->
+    <!-- Leonardo -->
   </spells>
   <!-- INCANTESIMI -->
 
@@ -3917,4 +3917,201 @@
   </sm_bonuses>
   <!-- FOGGIA E MATERIALI -->
 
+  <!-- ARTEFATTI MAGICI -->
+  <artifacts>
+    <artifact>
+      <name>L'artefatto che fa tutto</name>
+      <description>
+        <p>
+        Lorem ipsum <emphasis>dolor sit amet</emphasis>, <strong>consectetur adipiscing</strong> elit. Duis ut metus consequat, ornare massa ac, imperdiet felis. Etiam a erat id lorem euismod congue. Nulla tempus risus sit amet diam suscipit, nec vestibulum sapien hendrerit. Cras mollis diam tortor, at porttitor lectus ultrices efficitur. Vestibulum ut malesuada nibh. Integer in orci laoreet, dictum nisi non, consequat turpis. Aliquam lectus est, euismod vitae dui ut, venenatis porta nisi. Morbi fermentum porttitor arcu, quis faucibus metus facilisis ac. Suspendisse consectetur nisi a lacus imperdiet, sit amet finibus nulla vehicula. Nullam id est tempor, cursus nulla a, tristique libero. Aliquam ac justo dapibus, varius diam in, viverra enim. Aliquam tincidunt, quam ut tincidunt aliquam, nunc felis mattis nibh, a placerat velit ipsum in dui. Nunc dictum eu nibh non bibendum.
+      </p>
+        <p>
+        Etiam quis justo feugiat, egestas quam vitae, dictum dolor. Donec sagittis viverra ex convallis pellentesque. Ut vel ipsum venenatis risus rhoncus rutrum. Mauris et augue sit amet enim finibus hendrerit. Nulla facilisi. Donec massa massa, malesuada sollicitudin velit non, ultrices egestas orci. Pellentesque in lectus nunc. In fermentum purus sit amet nunc fermentum eleifend. Quisque vestibulum viverra orci eu lacinia. Ut sed eros arcu. Integer non ipsum euismod, iaculis tortor vel, gravida nibh. Suspendisse potenti. Curabitur venenatis metus porta, eleifend neque sit amet, pellentesque justo.
+        </p>
+      </description>
+      <spell type="standard" >
+        <name>Fare tutto</name>
+        <level>125</level>
+        <arts>
+          <form>Creo</form>
+          <technique>Ignem</technique>
+          <requisite>Terram</requisite>
+          <requisite>Rego</requisite>
+          <requisite>Intellego</requisite>
+          <requisite>Perdo</requisite>
+          <requisite>Muto</requisite>
+          <requisite>Auram</requisite>
+          <requisite>Vim</requisite>
+          <requisite>Herbam</requisite>
+          <requisite>Corpus</requisite>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Nunc augue risus, sagittis non dui ut, convallis gravida sapien. Curabitur iaculis, sem vitae accumsan egestas, orci elit tincidunt sem, eu eleifend odio odio a purus. Sed sit amet facilisis tortor. Morbi non nulla viverra, aliquet sapien vel, ultrices arcu. Curabitur eleifend lacinia rhoncus. Sed ac arcu eu ipsum porta tristique id eget odio. Ut accumsan, odio et efficitur vehicula, quam sem ultricies lectus, at efficitur neque metus id magna. In auctor velit eu dolor suscipit semper. Mauris mattis dictum metus ut faucibus. Aenean vitae cursus tellus. Etiam finibus finibus nunc, vitae consequat sem blandit sed. Sed at mattis est. Nulla nibh dolor, molestie id hendrerit sit amet, rutrum et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas blandit leo quis risus tempor ornare. Vivamus et justo augue.
+          </p>
+          <flavour>
+            "Ora avrò tempo per bruciare qualcosa" - Eufemia Angelina Porfirogenita.
+          </flavour>
+        </description>
+        <guideline>
+          <base>25</base>
+          <modifiers>
+            <modifier>+20 Taglia</modifier>
+            <modifier penetration="30">+15 Penetrazione</modifier>
+            <modifier frequency="costante">+4 costante</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="standard" >
+        <name>L'effetto che non fa nulla</name>
+        <level>1</level>
+        <arts>
+          <form>Muto</form>
+          <technique>Imaginem</technique>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam pellentesque mi sit amet dolor ultrices suscipit. Duis varius justo enim, nec luctus erat laoreet sit amet. Nunc sit amet arcu quis lorem lacinia accumsan. Maecenas sollicitudin, quam id faucibus elementum, orci sem faucibus ex, sit amet fringilla nisi mi at eros. Nam volutpat accumsan tempor. Suspendisse ullamcorper purus id aliquet cursus. Suspendisse eget risus nec risus pharetra condimentum. Phasellus felis orci, sodales porta finibus ullamcorper, volutpat at sem. Morbi vitae lacus eget lacus blandit placerat ac at dolor. Suspendisse ex quam, euismod sed laoreet eget, efficitur vitae neque. Vivamus facilisis imperdiet ipsum, at auctor dui eleifend ut. Nullam sed sem ac mauris auctor vestibulum.
+          </p>
+          <flavour>
+            Mauris bibendum arcu at feugiat vulputate. Integer euismod nulla nec neque gravida blandit. Pellentesque erat ipsum, faucibus eu sollicitudin in, facilisis eu augue. Fusce sed mauris tincidunt, vestibulum nulla eu, mollis quam. Sed quis aliquam nulla. Aliquam gravida vitae orci vel hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam in consequat massa, ac tempus eros. Maecenas nec semper libero. Curabitur ultrices posuere augue, fringilla condimentum sem pharetra eu. Morbi in velit sapien.
+          </flavour>
+        </description>
+        <guideline>
+          <base>34</base>
+          <modifiers>
+            <modifier>+0 roba</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+    </artifact>
+    <artifact>
+      <name>Una diversa variante di un artefatto</name>
+      <description>
+        <p>
+          Etiam quis justo feugiat, egestas quam vitae, dictum dolor. Donec sagittis viverra ex convallis pellentesque. Ut vel ipsum venenatis risus rhoncus rutrum. Mauris et augue sit amet enim finibus hendrerit. Nulla facilisi. Donec massa massa, malesuada sollicitudin velit non, ultrices egestas orci. Pellentesque in lectus nunc. In fermentum purus sit amet nunc fermentum eleifend. Quisque vestibulum viverra orci eu lacinia. Ut sed eros arcu. Integer non ipsum euismod, iaculis tortor vel, gravida nibh. Suspendisse potenti. Curabitur venenatis metus porta, eleifend neque sit amet, pellentesque justo.
+        </p>
+      </description>
+      <spell type="standard" >
+        <name>un effetto a caso</name>
+        <level>25</level>
+        <arts>
+          <form>Creo</form>
+          <technique>Ignem</technique>
+          <requisite>Intellego</requisite>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Nunc augue risus, sagittis non dui ut, convallis gravida sapien. Curabitur iaculis, sem vitae accumsan egestas, orci elit tincidunt sem, eu eleifend odio odio a purus. Sed sit amet facilisis tortor. Morbi non nulla viverra, aliquet sapien vel, ultrices arcu. Curabitur eleifend lacinia rhoncus. Sed ac arcu eu ipsum porta tristique id eget odio. Ut accumsan, odio et efficitur vehicula, quam sem ultricies lectus, at efficitur neque metus id magna. In auctor velit eu dolor suscipit semper. Mauris mattis dictum metus ut faucibus. Aenean vitae cursus tellus. Etiam finibus finibus nunc, vitae consequat sem blandit sed. Sed at mattis est. Nulla nibh dolor, molestie id hendrerit sit amet, rutrum et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas blandit leo quis risus tempor ornare. Vivamus et justo augue.
+          </p>
+          <flavour>
+            "Sed semper libero luctus nibh porta, vel congue arcu gravida. Nullam vestibulum posuere dolor, a luctus nulla euismod non. Phasellus facilisis, tortor ut ornare congue, felis lectus luctus erat, ut egestas ligula odio et nibh. Integer malesuada, orci quis convallis dictum, ipsum mi vulputate magna, in porta erat dolor non lectus. Fusce at laoreet metus. Aliquam pulvinar eleifend purus vel finibus. Vivamus malesuada mattis arcu eget sagittis. Sed lorem elit, convallis non quam eu, finibus blandit sem. Vestibulum laoreet lorem at nisi consectetur ullamcorper. " - Eufemia Angelina Porfirogenita.
+          </flavour>
+        </description>
+        <guideline>
+          <base>3</base>
+          <modifiers>
+            <modifier>+2 Taglia</modifier>
+            <modifier>+3 Effetto Ambientale</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="standard" >
+        <name>un effetto inutile</name>
+        <level>1</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Phasellus laoreet bibendum posuere. Maecenas ultricies ullamcorper nibh eget laoreet. Praesent convallis diam nec felis porttitor, a feugiat enim suscipit. Cras aliquet at quam nec laoreet. Etiam cursus nisl bibendum velit fringilla, vitae tincidunt purus ultricies. Nunc accumsan lectus eget magna rutrum, eget placerat ipsum viverra. Integer at ipsum libero. Sed cursus sapien non eros suscipit ullamcorper. Donec iaculis augue eget sem accumsan, non fermentum nulla sagittis. Morbi elit lectus, faucibus eget convallis vitae, consequat ut sem. In ipsum ex, sagittis a diam id, dapibus fringilla turpis. Duis ornare, odio ut sollicitudin porttitor, quam lorem feugiat purus, ac sollicitudin ligula libero ac quam.
+          </p>
+          <flavour>
+            Nunc interdum non lectus a maximus. Maecenas tristique velit sem, sit amet sollicitudin libero ultrices sed. Phasellus convallis purus sit amet porta varius. Phasellus ut ligula vitae tellus dapibus tempus in et mi. Integer vitae diam ut sapien sagittis semper nec in augue. Aliquam libero quam, convallis non lorem eu, molestie maximus ipsum. Curabitur tempus leo in viverra varius.
+          </flavour>
+        </description>
+        <guideline>
+          <base>34</base>
+          <modifiers>
+            <modifier>+2 cose varie</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+    </artifact>
+    <artifact>
+      <name>La terza variante di un artefatto, uguale alla seconda ma cambia il nome</name>
+      <description>
+        <p>
+          Etiam quis justo feugiat, egestas quam vitae, dictum dolor. Donec sagittis viverra ex convallis pellentesque. Ut vel ipsum venenatis risus rhoncus rutrum. Mauris et augue sit amet enim finibus hendrerit. Nulla facilisi. Donec massa massa, malesuada sollicitudin velit non, ultrices egestas orci. Pellentesque in lectus nunc. In fermentum purus sit amet nunc fermentum eleifend. Quisque vestibulum viverra orci eu lacinia. Ut sed eros arcu. Integer non ipsum euismod, iaculis tortor vel, gravida nibh. Suspendisse potenti. Curabitur venenatis metus porta, eleifend neque sit amet, pellentesque justo.
+        </p>
+      </description>
+      <spell type="standard" >
+        <name>un effetto a caso</name>
+        <level>25</level>
+        <arts>
+          <form>Creo</form>
+          <technique>Ignem</technique>
+          <requisite>Intellego</requisite>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Nunc augue risus, sagittis non dui ut, convallis gravida sapien. Curabitur iaculis, sem vitae accumsan egestas, orci elit tincidunt sem, eu eleifend odio odio a purus. Sed sit amet facilisis tortor. Morbi non nulla viverra, aliquet sapien vel, ultrices arcu. Curabitur eleifend lacinia rhoncus. Sed ac arcu eu ipsum porta tristique id eget odio. Ut accumsan, odio et efficitur vehicula, quam sem ultricies lectus, at efficitur neque metus id magna. In auctor velit eu dolor suscipit semper. Mauris mattis dictum metus ut faucibus. Aenean vitae cursus tellus. Etiam finibus finibus nunc, vitae consequat sem blandit sed. Sed at mattis est. Nulla nibh dolor, molestie id hendrerit sit amet, rutrum et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas blandit leo quis risus tempor ornare. Vivamus et justo augue.
+          </p>
+          <flavour>
+            "Sed semper libero luctus nibh porta, vel congue arcu gravida. Nullam vestibulum posuere dolor, a luctus nulla euismod non. Phasellus facilisis, tortor ut ornare congue, felis lectus luctus erat, ut egestas ligula odio et nibh. Integer malesuada, orci quis convallis dictum, ipsum mi vulputate magna, in porta erat dolor non lectus. Fusce at laoreet metus. Aliquam pulvinar eleifend purus vel finibus. Vivamus malesuada mattis arcu eget sagittis. Sed lorem elit, convallis non quam eu, finibus blandit sem. Vestibulum laoreet lorem at nisi consectetur ullamcorper. " - Eufemia Angelina Porfirogenita.
+          </flavour>
+        </description>
+        <guideline>
+          <base>3</base>
+          <modifiers>
+            <modifier>+2 Taglia</modifier>
+            <modifier>+3 Effetto Ambientale</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="standard" >
+        <name>un effetto inutile</name>
+        <level>1</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Vocale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>
+            Phasellus laoreet bibendum posuere. Maecenas ultricies ullamcorper nibh eget laoreet. Praesent convallis diam nec felis porttitor, a feugiat enim suscipit. Cras aliquet at quam nec laoreet. Etiam cursus nisl bibendum velit fringilla, vitae tincidunt purus ultricies. Nunc accumsan lectus eget magna rutrum, eget placerat ipsum viverra. Integer at ipsum libero. Sed cursus sapien non eros suscipit ullamcorper. Donec iaculis augue eget sem accumsan, non fermentum nulla sagittis. Morbi elit lectus, faucibus eget convallis vitae, consequat ut sem. In ipsum ex, sagittis a diam id, dapibus fringilla turpis. Duis ornare, odio ut sollicitudin porttitor, quam lorem feugiat purus, ac sollicitudin ligula libero ac quam.
+          </p>
+          <flavour>
+            Nunc interdum non lectus a maximus. Maecenas tristique velit sem, sit amet sollicitudin libero ultrices sed. Phasellus convallis purus sit amet porta varius. Phasellus ut ligula vitae tellus dapibus tempus in et mi. Integer vitae diam ut sapien sagittis semper nec in augue. Aliquam libero quam, convallis non lorem eu, molestie maximus ipsum. Curabitur tempus leo in viverra varius.
+          </flavour>
+        </description>
+        <guideline>
+          <base>34</base>
+          <modifiers>
+            <modifier>+2 cose varie</modifier>
+            <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+    </artifact>
+  </artifacts>
+  <!-- ARTEFATTI MAGICI -->
 </ars_magica>
