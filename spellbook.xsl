@@ -118,7 +118,7 @@
       <xsl:call-template name="artifacts"></xsl:call-template>
       <xsl:call-template name="spellindex"></xsl:call-template>
       <xsl:call-template name="bookindex"></xsl:call-template>
-	  <xsl:call-template name="artifactindex"></xsl:call-template>
+      <xsl:call-template name="artifactindex"></xsl:call-template>
       <xsl:call-template name="smbonuses"></xsl:call-template>
 
 
@@ -141,15 +141,16 @@
       </fo:static-content>
       <fo:static-content flow-name="xsl-region-after">
         <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
-          <fo:page-number/><fo:leader leader-pattern="space" />
-		  <xsl:value-of select="$form"/><xsl:text> </xsl:text>
+          <fo:page-number/>
+          <fo:leader leader-pattern="space" />
+          <fo:inline font-family="{$artfont}"><xsl:value-of select="$form"/><xsl:text> </xsl:text></fo:inline>
           <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>				  
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block id="{$form}" text-align="center" font-family="{$artfont}" font-size="24pt" font-weight="normal">
           <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png"  content-height="scale-to-fit" height="24pt" width="24pt" content-width="scale-to-fit" scaling="non-uniform"/>
-		  <xsl:text> </xsl:text>
+          <xsl:text> </xsl:text>
           <xsl:value-of select="$form"/>
         </fo:block>
         <xsl:apply-templates select="/ars_magica/arts/form[name = $form]/description/p" mode="notes"/>
@@ -174,12 +175,17 @@
         <fo:block></fo:block>
       </fo:static-content>
       <fo:static-content flow-name="xsl-region-after">
-        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$artfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
-          <fo:page-number/><fo:leader leader-pattern="space" />
-		  <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>				  
-		  <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/>
-          <xsl:text> </xsl:text>
-		  <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>				  
+        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
+          <fo:page-number/>
+          <fo:leader leader-pattern="space" />
+          <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>
+          <fo:inline font-family="{$artfont}">
+            <xsl:value-of select="$technique"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$form"/>
+            <xsl:text> </xsl:text>
+          </fo:inline>
+          <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>				  
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
@@ -240,19 +246,24 @@
         <fo:block></fo:block>
       </fo:static-content>
       <fo:static-content flow-name="xsl-region-after">
-        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$artfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
+        <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
           <fo:page-number/><fo:leader leader-pattern="space" />
-		    <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>		
-		    <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/>
-		    <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>		
+          <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>
+          <fo:inline font-family="{$artfont}">
+            <xsl:value-of select="$technique"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$form"/>
+            <xsl:text> </xsl:text>
+          </fo:inline>
+          <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="8pt"  content-height="scale-to-fit" height="8pt"  content-width="scale-to-fit" scaling="non-uniform"/>		
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
         <fo:block text-align="center" span="all" font-family="{$artfont}" font-size="12pt" margin-bottom="8px" font-weight="normal">
-          <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="12pt"  content-height="scale-to-fit" height="12pt"  content-width="scale-to-fit" scaling="non-uniform"/>		
-		  Incantesimi <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/><xsl:text> </xsl:text>
-          <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="12pt" content-height="scale-to-fit" height="12pt"  content-width="scale-to-fit" scaling="non-uniform"/>		
-		</fo:block>
+          <fo:external-graphic  vertical-align="middle" src="images/techniques/{$technique}_symbol.png" width="12pt"  content-height="scale-to-fit" height="12pt"  content-width="scale-to-fit" scaling="non-uniform"/>
+          Incantesimi <xsl:value-of select="$technique"/><xsl:text> </xsl:text><xsl:value-of select="$form"/><xsl:text> </xsl:text>
+          <fo:external-graphic  vertical-align="middle" src="images/forms/{$form}_symbol.png" width="12pt" content-height="scale-to-fit" height="12pt"  content-width="scale-to-fit" scaling="non-uniform"/>
+        </fo:block>
         <xsl:variable name="generalspells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level='GENERICO']"/>
         <xsl:variable name="spells" select="$in/ars_magica/spells/spell[arts/technique=$technique and arts/form=$form and level != 'GENERICO']"/>
         <xsl:variable name="levels" select="distinct-values($spells/level)"/>
@@ -390,7 +401,7 @@
       </fo:static-content>
       <fo:static-content flow-name="xsl-region-after">
         <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
-          <fo:page-number/><fo:leader leader-pattern="space" /> 
+          <fo:page-number/><fo:leader leader-pattern="space" />Artefatti Magici
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
