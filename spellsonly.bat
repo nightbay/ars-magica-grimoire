@@ -23,8 +23,10 @@ SHIFT
 GOTO parse
 :endparse
 
-java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%" -xsl:"%template%" -o:ars_spells.fo edit=%print% cover=%cover% flow=%flow% paper=%paper% orientation=%orientation% source=%spellsource%
-c:\WinUtil\fop\fop -fo ars_spells.fo -pdf ars_magica_grimoire.pdf -c fop.cfg
+REM java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%" -xsl:"%template%" -o:ars_spells.fo edit=%print% cover=%cover% flow=%flow% paper=%paper% orientation=%orientation% source=%spellsource%
+REM c:\WinUtil\fop\fop -fo ars_spells.fo -pdf ars_magica_grimoire.pdf -c fop.cfg
+java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%" -xsl:"%template%" edit=%print% cover=%cover% flow=%flow% paper=%paper% orientation=%orientation% source=%spellsource% 
+         | c:\WinUtil\fop\fop -fo - -pdf asd.pdf -c fop.cfg
 exit /B
 
 :help

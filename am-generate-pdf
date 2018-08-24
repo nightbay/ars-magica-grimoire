@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# Ars Magica Grimoire - bash script
+#
+# Flavio Serreri (2018)
+#
+
+# path di installazione utility: SAXON e FOP
+
+# c:\winutil\saxon\saxon9he.jar
+SAXON_PATH="/path/to/saxon/"
+# c:\WinUtil\fop\fop
+FOP_PATH="/path/to/fop/"
+
+# base script install dir
+INSTALLDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+# parametri di configurazione
+template=spellbook.xsl
+print=
+flow=
+source=ars_spells.xml
+cover=true
+spellsource=true
+paper=letter
+orientation=portrait
+
+while getopts ":cfs:Ppo" opt; do
+  case $opt in
+    c)
+      cover=false;
+      ;;
+    f)
+      flow=true;
+      ;;
+    s)
+      source=$OPTARG;
+      ;;
+    P)
+      print=true;
+      ;;
+    p)
+      paper=$OPTARG:
+      ;;
+    o)
+      orientation=$OPTARG;
+      ;;
+    \?)
+      echo "Opzione invalida: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG richiede un argomento" >&2
+      exit 1
+      ;;      
+done
+
+
+java -cp ${SAXON_PATH} net.sf.saxon.Transform -t -s:- -xsl:"${template}" \
+      edit=$print cover=$cover flow=$flow paper=$paper orientation=$orientation source=$spellsource \
+      | ${FOP_PATH}/fop -pdf - -c ${INSTALLDIR}/fop.cfg
+
