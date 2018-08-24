@@ -3272,7 +3272,35 @@
         </modifiers>
       </guideline>
     </spell>
-  
+    <!-- IBT -->
+    <!--<spell id="19" source="IBT" page="1" type="standard">
+      <name>Padronanza di Pensieri e Intenti</name>
+      <level>15</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Personale</target>
+      <description>
+        <p>Quando l'incantesimo è lanciato un'immagine astratta si forma di fronte al Magus, che può poi manipolarla con dei tiri su Finezza mentre effettua
+        tiri di Concentrazione. Via via che il tempo passa l'immagine cambia più rapidamente, e il Magus deve impegnarsi per controllare l'incantesimo quanto
+        più a lungo possibile.</p>
+        <p>A differenza della pratica effettuata utilizzando normali incantesimi che richiedono Concentrazione e Finezza, questo incantesimo è progettato esplicitamente
+        per frustrare e mettere alla prova il Magus. Questo fornisce una Qualità dell'Esperienza di 5 per la pratica delle abilità di Concentrazione e Finezza.</p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+          <modifier>+2 Immagine in movimento mentre si mantiene Concentrazione</modifier>
+          <modifier>+1 Immagine molto complessa</modifier>
+          <modifier>+1 Progettata per mettere in difficoltà o impedire le intenzioni del Magus</modifier>
+        </modifiers>
+      </guideline>
+    </spell>-->  
+    <!-- IBT -->
+    
     <!-- Leonardo -->
     <!--<spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
