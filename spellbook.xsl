@@ -401,7 +401,8 @@
       </fo:static-content>
       <fo:static-content flow-name="xsl-region-after">
         <fo:block color="{$handcolour}" text-align-last="justify" font-family="{$textfont}" font-size="8pt" font-weight="normal" margin-left="2cm" margin-right="2cm">
-          <fo:page-number/><fo:leader leader-pattern="space" />Artefatti Magici
+          <fo:page-number/><fo:leader leader-pattern="space" />
+          <fo:inline font-family="{$artfont}"> Artefatti Magici</fo:inline>
         </fo:block>
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body">
@@ -432,8 +433,9 @@
 				  </xsl:choose>
 				</fo:block>			
 				<fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">
-				  <xsl:apply-templates select="arts/*" mode="abbreviation"><xsl:sort select="."/></xsl:apply-templates><xsl:text> </xsl:text><xsl:value-of select="level" />	
+				  <xsl:apply-templates select="arts" mode="abbreviation"></xsl:apply-templates><xsl:text> </xsl:text><xsl:value-of select="level" />	
 				</fo:block>
+				<!-- <xsl:sort select="."/> ordinamento arti + requisito -->
 				<fo:block font-family="{$textfont}" text-indent="1em" font-size="8pt" font-weight="normal">				
 				  P: <xsl:apply-templates select="range" />, D: <xsl:apply-templates select="duration" />, B: <xsl:value-of select="target" />
 				  <xsl:if test="@type='mystery'">, Misterico</xsl:if>
