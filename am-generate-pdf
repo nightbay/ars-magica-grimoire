@@ -5,15 +5,15 @@
 # Flavio Serreri (2018)
 #
 
+# base script install dir
+INSTALLDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
 # path di installazione utility: SAXON e FOP
 
 # c:\winutil\saxon\saxon9he.jar
-SAXON_PATH="/path/to/saxon/"
+SAXON_PATH="${INSTALLDIR}/processors/Saxon/saxon9he.jar"
 # c:\WinUtil\fop\fop
-FOP_PATH="/path/to/fop/"
-
-# base script install dir
-INSTALLDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+FOP_PATH="${INSTALLDIR}/processors/fop/fop"
 
 # parametri di configurazione
 template=spellbook.xsl
