@@ -55,6 +55,7 @@ while getopts ":cfs:Ppo" opt; do
       ;;      
 done
 
+# riceve da pipeline. I parametri di commandline non vengono utilizzati.
 
 java -cp ${SAXON_PATH} net.sf.saxon.Transform -t -s:- -xsl:"${template}" \
       edit=$print cover=$cover flow=$flow paper=$paper orientation=$orientation source=$spellsource \
