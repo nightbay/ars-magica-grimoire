@@ -15,6 +15,13 @@ SAXON_PATH="${INSTALLDIR}/processors/Saxon/saxon9he.jar"
 # c:\WinUtil\fop\fop
 FOP_PATH="${INSTALLDIR}/processors/fop"
 
+# verifica la presenza dei processori, altrimenti tenta di ricavarla
+# estraendola dall'archivio
+
+if [ ! -f ${INSTALLDIR}/processors/.gitignore ]; then
+  tar xzf ${INSTALLDIR}/processors/processors.tar.gz -C ${INSTALLDIR}/processors
+fi
+
 # parametri di configurazione
 template=spellbook.xsl
 print=
@@ -60,5 +67,5 @@ done
 
 java -cp ${SAXON_PATH} net.sf.saxon.Transform -t -s:- -xsl:"${template}" \
       edit=$print cover=$cover flow=$flow paper=$paper orientation=$orientation source=$spellsource \
-      | ${FOP_PATH}/fop -pdf - -c ${INSTALLDIR}/fop.cfg
+      | ${FOP_PATH}/fop -fo - -pdf - -c ${INSTALLDIR}/fop.cfg
 
