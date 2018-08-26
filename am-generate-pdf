@@ -13,7 +13,7 @@ INSTALLDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 # c:\winutil\saxon\saxon9he.jar
 SAXON_PATH="${INSTALLDIR}/processors/Saxon/saxon9he.jar"
 # c:\WinUtil\fop\fop
-FOP_PATH="${INSTALLDIR}/processors/fop/fop"
+FOP_PATH="${INSTALLDIR}/processors/fop"
 
 # parametri di configurazione
 template=spellbook.xsl
