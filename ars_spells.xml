@@ -219,7 +219,6 @@
     <book><abbreviation>HoH:TL</abbreviation><name>House of Hermes: True Lineages</name></book>
     <book><abbreviation>TC</abbreviation><name>The Church</name></book>
     <book><abbreviation>HoH:MC</abbreviation><name>House of Hermes: Mystery Cults</name></book>
-    <book><abbreviation>HoH:S</abbreviation><name>House of Hermes: Societates</name></book>
     <book><abbreviation>H</abbreviation><name>Hooks</name></book>
     <book><abbreviation>RoP:TD</abbreviation><name>Realms of Power: The Divine</name></book>
     <book><abbreviation>GotF</abbreviation><name>Guardians of the Forest</name></book>
@@ -239,16 +238,17 @@
     <book><abbreviation>LoM</abbreviation><name>Lords of Men</name></book>
     <book><abbreviation>TME</abbreviation><name>Transforming Mythic Europe</name></book>
     <book><abbreviation>LotN</abbreviation><name>Lands of the Nile</name></book>
-    <book canon="false"><abbreviation>IBG</abbreviation><name>Iron-bound Grimoire</name></book>
     <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
     -->
-    <book canon="false">
-      <abbreviation>EEE</abbreviation>
-      <name>Esperimenti Ermetici di Eufemia</name>
-    </book>
+    <book><abbreviation>HoH:S</abbreviation><name>House of Hermes: Societates</name></book>
     <book>
       <abbreviation>HP</abbreviation>
       <name>Hermetic Projects</name>
+    </book>
+    <book canon="false"><abbreviation>IBG</abbreviation><name>Iron-bound Grimoire</name></book>    
+    <book canon="false">
+      <abbreviation>EEE</abbreviation>
+      <name>Esperimenti Ermetici di Eufemia</name>
     </book>
     <!--<book canon="false">
       <abbreviation>CRL</abbreviation>
@@ -3272,8 +3272,32 @@
         </modifiers>
       </guideline>
     </spell>
+    <spell id="19" source="HoH:S" page="97" type="standard">
+      <name>L'Inganno del Succubo</name>
+      <level>5</level>
+      <arts>
+        <form>Corpus</form>
+        <technique>Muto</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo fa sì che un'incantatrice femminile adotti caratteristiche fisiche maschili. Un incantesimo simile (<emphasis>L'Inganno
+        dell'Incubo</emphasis>) trasforma un incantatore maschio in una donna. Colore degli occhi, colore dei capelli, pettinatura, statura, corporatura
+        e simili caratteristiche non sono modificate da questo incantesimo, così che chiunque abbia familiarità con l'aspetto originale dell'incantatrice
+        può facilmente riconoscerla dopo il cambiamento (anche se a volte la Maga sotto l'incantesimo può venire identificata come il suo "fratello gemello").
+        </p>
+        <p>Il nome di questi incantesimi deriva dai demoni della lussuria che possono mutare il proprio sesso.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>        
+        </modifiers>
+      </guideline>
+    </spell>    
     <!-- IBT -->
-    <!--<spell id="19" source="IBT" page="1" type="standard">
+    <spell id="20" source="IBT" page="1" type="standard">
       <name>Padronanza di Pensieri e Intenti</name>
       <level>15</level>
       <arts>
@@ -3298,7 +3322,7 @@
           <modifier>+1 Progettata per mettere in difficoltà o impedire le intenzioni del Magus</modifier>
         </modifiers>
       </guideline>
-    </spell>-->  
+    </spell>  
     <!-- IBT -->
     
     <!-- Leonardo -->
