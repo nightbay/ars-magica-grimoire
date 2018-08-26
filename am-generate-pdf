@@ -52,7 +52,8 @@ while getopts ":cfs:Ppo" opt; do
     :)
       echo "Option -$OPTARG richiede un argomento" >&2
       exit 1
-      ;;      
+      ;;
+  esac
 done
 
 # riceve da pipeline. I parametri di commandline non vengono utilizzati.
