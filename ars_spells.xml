@@ -2,11 +2,14 @@
 <ars_magica>
   <!-- PREFAZIONE -->
   <preface>
-    <p indent="false" font="hand" size="24pt" colour="hand">Le Chiavi di Costantinopoli</p>
-    <p font="hand" size="18pt" colour="hand">
+    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C">Le Chiavi di </p>
+    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C"><artimage art="Ignem" type="form" size="48pt"/></p>
+    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C">Costantinopoli</p>
+    <p indent="false" text-align="center" font="hand" size="18pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p indent="false" font="hand" size="18pt" colour="hand">
       Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi provenienti da svariate fonti: <booklist/>.
     </p>
-    <p indent="false" font="hand" size="48pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
+    <p text-align="right" indent="false" font="hand" size="32pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
     <toc/>
   </preface>
   <!-- PREFAZIONE -->
@@ -3297,7 +3300,7 @@
       </guideline>
     </spell>    
     <!-- IBT -->
-    <spell id="20" source="IBT" page="1" type="standard">
+    <spell id="20" source="IBG" page="1" type="standard">
       <name>Padronanza di Pensieri e Intenti</name>
       <level>15</level>
       <arts>
@@ -3306,7 +3309,7 @@
       </arts>
       <range>Tocco</range>
       <duration>Concentrazione</duration>
-      <target>Personale</target>
+      <target>Singolo</target>
       <description>
         <p>Quando l'incantesimo è lanciato un'immagine astratta si forma di fronte al Magus, che può poi manipolarla con dei tiri su Finezza mentre effettua
         tiri di Concentrazione. Via via che il tempo passa l'immagine cambia più rapidamente, e il Magus deve impegnarsi per controllare l'incantesimo quanto

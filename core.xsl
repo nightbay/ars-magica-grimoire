@@ -58,7 +58,13 @@
         <xsl:otherwise>8pt</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-    <fo:block text-indent="{$indent}" color="{$colour}" font-family="{$font}" font-size="{$size}" font-weight="normal"><xsl:apply-templates/></fo:block>
+    <xsl:variable name="text-align">
+      <xsl:choose>
+        <xsl:when test="@text-align"><xsl:value-of select="@text-align"/></xsl:when>
+        <xsl:otherwise>justify</xsl:otherwise>
+      </xsl:choose>    
+    </xsl:variable>
+    <fo:block text-indent="{$indent}" text-align="{$text-align}" color="{$colour}" font-family="{$font}" font-size="{$size}" font-weight="normal"><xsl:apply-templates/></fo:block>
   </xsl:template>
 
   <xsl:template match="spell-link"><xsl:variable name="sname" select="@name"/><fo:inline font-style="italic"><xsl:value-of select="@name"/> <fo:basic-link internal-destination="{generate-id($sortedspells/spell[name=$sname])}"> (pag. <fo:page-number-citation ref-id="{generate-id($sortedspells/spell[name=$sname])}" />)</fo:basic-link></fo:inline></xsl:template>

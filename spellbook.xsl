@@ -551,5 +551,10 @@
       </fo:flow>
     </fo:page-sequence>
   </xsl:template>
-  
+  <xsl:template match="artimage">
+    <xsl:variable name="type" select="@type"/>
+    <xsl:variable name="art" select="@art"/>
+    <xsl:variable name="size" select="@size"/>
+    <fo:external-graphic  vertical-align="middle" src="images/{$type}s/{$art}_symbol.png"  content-height="scale-to-fit" height="{$size}" width="{$size}" content-width="scale-to-fit" scaling="non-uniform"/>
+  </xsl:template>  
 </xsl:stylesheet>
