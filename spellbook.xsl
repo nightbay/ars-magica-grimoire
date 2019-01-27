@@ -318,6 +318,11 @@
         </fo:block>
       </xsl:for-each>
     </xsl:for-each>
+    <fo:block span="all" margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
+      <fo:basic-link internal-destination="artifacts">
+        Artefatti Magici<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="artifacts" />
+      </fo:basic-link>
+    </fo:block>	    
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="spell_index">
         Indice Incantesimi<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="spell_index" />
@@ -328,11 +333,6 @@
         Incantesimi per Libro<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="book_index" />
       </fo:basic-link>
     </fo:block>
-    <fo:block span="all" margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
-      <fo:basic-link internal-destination="artifacts">
-        Artefatti Magici<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="artifacts" />
-      </fo:basic-link>
-    </fo:block>	
     <fo:block margin-top="0.5em" font-family="{$textfont}" font-size="8pt" font-weight="normal" text-align-last="justify">
       <fo:basic-link internal-destination="artifact_index">
         Indice Artefatti<fo:leader leader-pattern="dots" /><fo:page-number-citation ref-id="artifact_index" />
@@ -552,9 +552,19 @@
     </fo:page-sequence>
   </xsl:template>
   <xsl:template match="artimage">
+    <xsl:variable name="width" select="@width"/>
+    <xsl:variable name="height" select="@height"/>
+    <xsl:variable name="img" select="@img"/>
     <xsl:variable name="type" select="@type"/>
     <xsl:variable name="art" select="@art"/>
-    <xsl:variable name="size" select="@size"/>
-    <fo:external-graphic  vertical-align="middle" src="images/{$type}s/{$art}_symbol.png"  content-height="scale-to-fit" height="{$size}" width="{$size}" content-width="scale-to-fit" scaling="non-uniform"/>
+    <xsl:choose>
+      <xsl:when test="@img">
+        <fo:external-graphic  vertical-align="middle" src="images/{$img}"  content-height="scale-to-fit" height="{$height}" width="{$width}" content-width="scale-to-fit" scaling="non-uniform"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <fo:external-graphic  vertical-align="middle" src="images/{$type}s/{$art}_symbol.png"  content-height="scale-to-fit" height="{$height}" width="{$width}" content-width="scale-to-fit" scaling="non-uniform"/>      
+      </xsl:otherwise>
+  </xsl:choose>
+	
   </xsl:template>  
 </xsl:stylesheet>

@@ -209,8 +209,9 @@
   <xsl:template match="requisite">
     <xsl:value-of select="." /><xsl:if test="position() &lt; last()">, </xsl:if>
   </xsl:template>
-<!--
-  <xsl:template match="requisite" mode="abbreviation">
+
+
+   <xsl:template name="art-abbreviation">
     <xsl:choose>
       <xsl:when test=". = 'Animal'">An</xsl:when>
       <xsl:when test=". = 'Corpus'">Co</xsl:when>
@@ -228,51 +229,6 @@
       <xsl:when test=". = 'Perdo'">Pe</xsl:when>
       <xsl:when test=". = 'Intellego'">In</xsl:when>
       <xsl:when test=". = 'Rego'">Re</xsl:when>
-    </xsl:choose><xsl:if test="position() &lt; last()">, </xsl:if>
-  </xsl:template>
-  
-  <xsl:template match="arts/*" mode="abbreviation">
-	<xsl:if test="name() = 'requisite'">(</xsl:if>
-    <xsl:choose>
-      <xsl:when test=". = 'Animal'">An</xsl:when>
-      <xsl:when test=". = 'Corpus'">Co</xsl:when>
-      <xsl:when test=". = 'Herbam'">He</xsl:when>
-      <xsl:when test=". = 'Ignem'">Ig</xsl:when>
-      <xsl:when test=". = 'Auram'">Au</xsl:when>
-      <xsl:when test=". = 'Aquam'">Aq</xsl:when>
-      <xsl:when test=". = 'Mentem'">Me</xsl:when>
-      <xsl:when test=". = 'Imaginem'">Im</xsl:when>
-      <xsl:when test=". = 'Terram'">Te</xsl:when>
-      <xsl:when test=". = 'Vim'">Vi</xsl:when>
-
-      <xsl:when test=". = 'Creo'">Cr</xsl:when>
-      <xsl:when test=". = 'Muto'">Mu</xsl:when>
-      <xsl:when test=". = 'Perdo'">Pe</xsl:when>
-      <xsl:when test=". = 'Intellego'">In</xsl:when>
-      <xsl:when test=". = 'Rego'">Re</xsl:when>
-    </xsl:choose>
-	<xsl:if test="name() = 'requisite'">)</xsl:if>
-  </xsl:template>
-  -->
-  <xsl:template name="art-abbreviation">
-    <xsl:param name="art"></xsl:param>
-    <xsl:choose>
-      <xsl:when test="$art = 'Animal'">An</xsl:when>
-      <xsl:when test="$art = 'Corpus'">Co</xsl:when>
-      <xsl:when test="$art = 'Herbam'">He</xsl:when>
-      <xsl:when test="$art = 'Ignem'">Ig</xsl:when>
-      <xsl:when test="$art = 'Auram'">Au</xsl:when>
-      <xsl:when test="$art = 'Aquam'">Aq</xsl:when>
-      <xsl:when test="$art = 'Mentem'">Me</xsl:when>
-      <xsl:when test="$art = 'Imaginem'">Im</xsl:when>
-      <xsl:when test="$art = 'Terram'">Te</xsl:when>
-      <xsl:when test="$art = 'Vim'">Vi</xsl:when>
-
-      <xsl:when test="$art = 'Creo'">Cr</xsl:when>
-      <xsl:when test="$art = 'Muto'">Mu</xsl:when>
-      <xsl:when test="$art = 'Perdo'">Pe</xsl:when>
-      <xsl:when test="$art = 'Intellego'">In</xsl:when>
-      <xsl:when test="$art = 'Rego'">Re</xsl:when>
     </xsl:choose>
   </xsl:template>
   
@@ -282,32 +238,18 @@
   </xsl:template>
   
   <xsl:template match="arts" mode="abbreviation">
-      <xsl:call-template name="art-abbreviation">
-        <xsl:with-param name="art">
-          <xsl:value-of select="technique" />
-        </xsl:with-param>
-      </xsl:call-template>
-      <xsl:call-template name="art-abbreviation">
-        <xsl:with-param name="art">
-          <xsl:value-of select="form" />
-        </xsl:with-param>     
-      </xsl:call-template>
-      <xsl:variable name="requisite" select="requisite"/>
-      <xsl:if test="count($requisite) &gt; 0">
-        <xsl:text>(</xsl:text>
-        <xsl:call-template name="art-abbreviation">
-          <xsl:with-param name="art">
-            <xsl:value-of select="$requisite" />
-          </xsl:with-param>     
-        </xsl:call-template>  
-        <xsl:text>)</xsl:text>
-      </xsl:if>
+    <xsl:value-of select="technique">
+      <xsl:call-template name="art-abbreviation"/>
+    </xsl:value-of>
+      <xsl:call-template name="art-abbreviation"/>
+      (
+      <xsl:call-template name="art-abbreviation"/>
+      )
   </xsl:template>
   
   <xsl:template match="requisite" mode="guideline">
     , <xsl:choose>
         <xsl:when test="@free = 'true'"><xsl:value-of select="." /> requisito gratuito</xsl:when>
-        <xsl:when test="@free = 'cosmetic'"><xsl:value-of select="." /> requisito decorativo</xsl:when>
         <xsl:otherwise>+1 requisito <xsl:value-of select="." /><xsl:if test="@note != ''"><xsl:text> </xsl:text><xsl:value-of select="@note" /></xsl:if></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
