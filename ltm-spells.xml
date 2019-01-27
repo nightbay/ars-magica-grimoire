@@ -1,12 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ars_magica>
   <preface>
-    <p indent="false" font="hand" size="24pt" colour="hand">Enchiridion Caeruleae Rosae</p>
+    <p text-align="center" indent="false" font="Parchment" size="48pt" colour="hand">Enchiridion Caeruleae Rosae</p>
+    <p indent="false" text-align="center">
+      <artimage img="La Rosa Cerulea.png" height="48pt" width="144pt" />
+    </p>    
+    <p indent="false" text-align="center">
+      <artimage height="20pt" img=".png" width="24pt"/>
+    </p>    
     <p font="hand" size="18pt" colour="hand">
       Dello studio e della raccolta delle formule e dei riti Ermetici, di come farli propri e di come migliorarli. Un compendio di <spellcount/> incantesimi tratti da: <booklist/>
     </p>
+    <p text-align="right" indent="false" font="Parchment" size="48pt" colour="#661A1A">Leonardo Teofrasto Mocenigo</p>
     <toc/>
-    <p indent="false" font="Parchment" size="48pt" colour="#661A1A">Leonardo Teofrasto Mocenigo</p>
   </preface>
   <arts>
   <form>
