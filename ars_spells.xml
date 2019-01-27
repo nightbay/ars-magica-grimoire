@@ -2,14 +2,22 @@
 <ars_magica>
   <!-- PREFAZIONE -->
   <preface>
-    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C">Le Chiavi di </p>
-    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C"><artimage art="Ignem" type="form" size="48pt"/></p>
-    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#DC143C">Costantinopoli</p>
+    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#66023C">Le Chiavi di </p>
+    <p indent="false" text-align="center">
+      <artimage img="eufemia-coat-of-arms2.png" height="60pt" width="60pt" />
+    </p>
+    <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#66023C">Costantinopoli</p>
     <p indent="false" text-align="center" font="hand" size="18pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
     <p indent="false" font="hand" size="18pt" colour="hand">
-      Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi provenienti da svariate fonti: <booklist/>.
+      Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi e <artifactcount/> artefatti provenienti da svariate fonti: <booklist/>.
     </p>
-    <p text-align="right" indent="false" font="hand" size="32pt" colour="#661A1A">Eufemia Angelina Porfirogenita</p>
+    <p indent="false" text-align="center" font="hand" size="18pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p text-align="center" indent="false" font="hand" size="32pt" colour="#66023C">
+      <!--<artimage img="eufemia-coat-of-arms.png" height="32pt" width="32pt"/>-->
+      <artimage img="SIGILLO EUFEMIA.png" height="48pt" width="48pt" />
+      Eufemia Angelina Porfirogenita
+      <artimage img="SIGILLO EUFEMIA.png" height="48pt" width="48pt" />
+    </p>
     <toc/>
   </preface>
   <!-- PREFAZIONE -->
@@ -253,10 +261,14 @@
       <abbreviation>EEE</abbreviation>
       <name>Esperimenti Ermetici di Eufemia</name>
     </book>
-    <!--<book canon="false">
+    <book canon="false">
       <abbreviation>CRL</abbreviation>
-      <name>della Costante Ricerca di Leonardo</name>
-    </book>-->  
+      <name>Della Costante Ricerca di Leonardo</name>
+    </book>
+    <book>
+      <abbreviation>MoH</abbreviation>
+      <name>Magi of Hermes</name>
+    </book>  
   </books>
   <!-- LIBRI -->
 
@@ -2657,7 +2669,7 @@
         <p>Secondo, devi effettuare un tiro di Ingenium + Concentrazione di 9+ se lanci entrambi gli incantesimi (quello MuVi e quello influenzato). Se fallisci,
         gli incantesimi non partono; se ottieni un fallimento critico, lo ottieni per entrambi (è leggermente più facile del solito).</p>
         <p>Se desideri lanciare uno di questi incantesimi su uno che sta venendo lanciato da un altro Magus, dovete cooperare, oppure devi essere rapido a lanciare
-        l'incantesimo MuVi. Non c'è atro modo per coordinare gli incantesimi. Inoltre, a meno che non cooperiate, per alterare l'incantesimo il tuo totale di 
+        l'incantesimo MuVi. Non c'è altro modo per coordinare gli incantesimi. Inoltre, a meno che non cooperiate, per alterare l'incantesimo il tuo totale di 
         Penetrazione per l'incantesimo Muto Vim deve battere il Totale di Penetrazione dell'altro Magus.</p>
         <p>Per influenzare i tuoi incantesimi è sufficiente la Portata Tocco, ma per influenzare quelli di un altro è richiesta almeno la Portata Vocale. 
         Non puoi toccare l'incantesimo in se.</p>
@@ -2695,7 +2707,7 @@
     <arts_guideline>
       <arts><form>Vim</form><technique>Perdo</technique></arts>
       <description>
-        <p>Per lanciare un incanteismo Perdo Vim su un personaggio con Resistenza alla Magia, devi superare quest'ultima. </p>
+        <p>Per lanciare un incantesimo Perdo Vim su un personaggio con Resistenza alla Magia, devi superare quest'ultima. </p>
       </description>
       <guidelines>
         <guideline>
@@ -2810,7 +2822,7 @@
       <arts>
         <form>Terram</form>
         <technique>Rego</technique>
-        </arts>
+      </arts>
       <range>Vocale</range>
       <duration>Concentrazione</duration>
       <target>Singolo</target>
@@ -2828,14 +2840,17 @@
     <spell id="1" page="213" type="standard">
       <name>Calore della Forgia Ardente</name>
       <level>10</level>
-      <arts><form>Ignem</form><technique>Creo</technique></arts>
+      <arts>
+        <form>Ignem</form>
+        <technique>Creo</technique>
+      </arts>
       <range>Vocale</range>
       <duration>Istantanea</duration>
       <target>Singolo</target>
       <description>
         <p>Rende un pezzo di metallo troppo caldo per tenerlo in mano. Un oggetto della Taglia di una corazza pettorale o un elmo infligge
         +5 danni se in diretto contatto con la pelle per un turno. In ogni turno addizionale viene inflitto ulteriore danno, in quantità
-        che scende di due punti ogni volta (+3 danni nel secondo turno, poi +1). Gli oggetti pià piccoli non infliggono danno. Le armature
+        che scende di due punti ogni volta (+3 danni nel secondo turno, poi +1). Gli oggetti più piccoli non infliggono danno. Le armature
         metalliche si indossano perlopiù sopra cuoio e stoffa, e questo tipo di protezioni conferiscono un bonus di +3 all'Assorbimento
         contro il calore.</p>
       </description>
@@ -3077,7 +3092,7 @@
       </guideline>
     </spell>
     <spell id="12" page="80" source="HP" type="general" subtype="Canale Intangibile" >
-      <name>To Matiasma</name>
+      <name>Scagliare il Malocchio del Magus</name>
       <level>GENERALE</level>
       <arts>
         <form>Vim</form>
@@ -3087,7 +3102,6 @@
       <duration>Diametro</duration>
       <target>Singolo</target>
       <description>
-        <flavour>Scagliare il Malocchio</flavour>
         <p>A volte un Magus non è in grado di acquisire una Connessione Arcana con il proprio Bersaglio. Questo incantesimo apre un canale magico dal 
         Magus ad un qualunqe Bersaglio entro il suo raggio visivo.</p>
         <p>Il vantaggio di ciò è che questo riduce la distanza effettiva tra il Magus e il suo Bersaglio, il che si traduce nella possibilità
@@ -3100,17 +3114,17 @@
       </guideline>
     </spell>
     <spell id="12" page="1" source="EEE" type="general" subtype="Canale Intangibile" >
-      <name>Rimprovero della Madre Adirata</name>
+      <name>L'Incantamento portato dal Vento</name>
       <level>GENERALE</level>
       <arts>
         <form>Vim</form>
         <technique>Rego</technique>
       </arts>
       <range>Vocale</range>
-      <duration>Diametro</duration>
+      <duration>Concentrazione</duration>
       <target>Singolo</target>
       <description>
-        <p>Come per <spell-link name="To Matiasma"/>, lanciato a Distanza Vocale e con Durata Diametro.</p>
+        <p>Come per <spell-link name="Aprire il Canale Intangibile"/>, lanciato a Distanza Vocale e con Durata Concentrazione.</p>
         <p>Il vantaggio di ciò è che questo riduce la distanza effettiva tra il Magus e il suo Bersaglio, il che si traduce nella possibilità
         di lanciare incantesimi di Magnitudine minore sul Bersaglio, aumentando così il Totale di Penetrazione effettivo.</p>
         <p>Gli effetti lanciati attraverso un canale <self/> devono essere al più due Magnitudini superiore all'incantesimo <self/>.</p>
@@ -3169,7 +3183,8 @@
       <arts>
         <form>Ignem</form>
         <technique>Perdo</technique>
-        <requisite free="true">Auram</requisite>
+        <requisite free="cosmetic">Auram</requisite>
+        <requisite free="true">Rego</requisite>        
       </arts>
       <range>Tocco</range>
       <duration>Diametro</duration>
@@ -3326,10 +3341,187 @@
         </modifiers>
       </guideline>
     </spell>  
+    <spell id="21" source="IBG" page="1" type="standard">
+      <name>Catturare l'Immagine Congelata</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Cerchio</duration>
+      <target>Singolo</target>
+      <description>
+        <p>L'incantesimo sposta un'immagine da un luogo (come ad esempio uno specchio) all'interno di un cerchio entro un passo di distanza, e sostiene l'immagine per la durata.</p>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="22" source="IBG" page="1" type="standard">
+      <name>Raffigurare il Cerchio Magico</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il Magus traccia un cerchio sulla superficie toccata. Il cerchio può essere largo o stretto quanto il Magus desidera, fino ad un diametro di 4 passi.</p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>  	
     <!-- IBT -->
     
+    <spell id="23" source="EEE" page="1" type="standard">
+      <name>Velare di Forma la Fiamma</name>
+      <level>5</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Muto</technique>
+        <requisite>Creo</requisite>
+      </arts>
+      <range>Tocco</range>
+      <duration>Cerchio</duration>
+      <target>Circolo</target>
+      <description>
+        <p>Il Magus trasforma un fuoco in modo da intensificarne la luce emessa e contemporaneamente attenuare l'illuminazione nei confronti degli esseri la cui essenza non è basata su una forma specifica. L'effetto è simile a
+        quello ottenibile ponendo un velo colorato di fronte ad una sorgente di luce. Un essere la cui natura è basata sulla Forma indicata esposto a questo fuoco risulta quindi molto più illuminato rispetto ad uno che non lo è.
+        Richiede requisiti di lancio della forma adatta.</p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>  
+    <spell id="24" source="MoH" page="113" type="general">
+      <name>L'incantesimo Paziente</name>
+      <level>GENERALE</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Quando questo incantesimo viene lanciato in congiunzione con un secondo incantesimo (cosa che richiede un Tiro Stress di Ingenium + Concentrazione con difficoltà 9), l'effetto dell'altro incantesimo è sottoposto a ritardo
+        nel prendere effetto fino a che il Magus non smette di mantenere la concentrazione su <self/>. Il livello dell'incantesimo non può essere superiore al livello di <self/>. Un incantesimo mantenuto attraverso <self/> può essere
+        rilasciato per interrompere un'azione allo stesso modo in un incantesimo Rapido, cosa che richiede un tiro di lancio rapido di Finezza + Celeritas.
+      </p>
+        <p>
+          <emphasis>Ranulf di Flambeau</emphasis> usa <self/> per procurarsi l'opportunità di lanciare <spell-link name="Fiamme Boreali"/>" con <spell-link name="Pilum di Fuoco"/>". Mantenere la concentrazione su <self/> mentre si lancia un altro
+        incantesimo richiede un Tiro Stress di Ingenium + Concentrazione di 9+ per riuscire (un risultato inferiore al normale, perchè l'incantesimo è pensato proprio per questo)</p>
+      </description>
+      <guideline>
+        <base></base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="25" source="MoH" page="111" type="standard">
+      <name>Fiamme Boreali</name>
+      <level>15</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Perdo</technique>
+        <requisite>Rego</requisite>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo altera per un istante un fuoco in modo che invece di irradiare calore irradi un freddo gelido. Il colore del fuoco muta da giallo e arancio a viola e blu. Ogni fuoco influenzato da questo incantesimo
+        infligge danno da freddo al posto di danno da calore nel momento della durata dell'incantesimo. <self/> non funziona su fuochi tanto caldi da infliggere più di +15 danni. Questo incantesimo è stato progettato specificamente
+        per modificare il lancio di <spell-link name="Pilum di Fuoco"/>. <self/> può essere lanciato in congiunzione con un altro incantesimo; per fare questo è necessario un Tiro Stress di Ingenium + Concentrazione di 15+.
+        <emphasis>Ranulf di Flambeau</emphasis> usa <self/> in congiunzione con <spell-link name="L'incantesimo Paziente"/>, perchè questo permette di eliminare la necessità di una tale difficile prova di concentrazione.
+      </p>
+      </description>
+      <guideline>
+        <base></base>
+        <modifiers>
+          <modifier>+2 Intensità delle fiamme</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="26" source="HoH:S" page="37" type="standard">
+      <name>Soffocare la Conflagrazione Divampante</name>
+      <level>20</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Perdo</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>
+        Estingue ogni fuoco di dimensioni pari a quelli di una casa in fiamme. Molti Magi Flambeau imparano questo incantesimo, o portano con se oggetti incantati con un effetto simile, per controllare incendi accidentali
+        causati da magia erratica Creo Ignem
+        </p>
+      </description>
+      <guideline>
+        <base>4</base>
+        <modifiers>
+          <modifier>+2 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+   <spell id="27" source="HoH:S" page="37" type="standard">
+      <name>Il Fuoco Ubbidiente</name>
+      <level>20</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>
+        Controlla la velocità e la direzione con la quale un fuoco si diffonde. Il Magus può spargere il fuoco su una superficie combustibile ad una velocità pari al passo d'uomo. Il fuoco può saltare la maggior parte degli
+        ostacoli di al più un passo, ma non può superare nemmeno il più piccolo rivolo d'acqua. Il Magus può impedire al fuoco di diffondersi in una certa direzione, ma non può impedirgli di bruciare ciò che tocca. Potrebbe,
+        ad esempio, diffondere il fuoco in forma di un cerchio e poi farlo espandere verso l'esterno, oppure mantenere il fuoco lontano da se mentre insegue i propri nemici all'interno di una stanza. Se il fuoco circonda una
+        persona, il suo calore è non magico e perciò ignora la Resistenza Magica. Un tiro per mirare è richiesto per portare il fuoco abbastanza vicino da infliggere danno. Se il fuoco diventa più grande di un Bersaglio Stanza
+        Base il Magus ne perde il controllo.
+        </p>
+      </description>
+      <guideline>
+        <base>4</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="28" page="1" source="EEE" type="standard" >
+      <name>Circolo di Difesa dalle Creature Demoniache</name>
+      <level>6</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Circolo</target>
+      <description>
+        <p>Crea un circolo in grado di proteggere da creature con Potenza Infernale pari o inferiore al livello più una Magnitudine dell'incantesimo, purchè superi la loro resistenza alla magia.</p>
+      </description>
+      <guideline>
+        <base></base>
+        <modifiers></modifiers>
+      </guideline>
+    </spell>    
     <!-- Leonardo -->
-    <!--<spell id="1000" type="standard">
+    <spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
       <level>10</level>
       <arts>
@@ -3486,45 +3678,6 @@
         </modifiers>
       </guideline>
     </spell>
-    <spell id="1008" type="general">
-      <name>Comunione dello Stregone</name>
-      <level>GENERICO</level>
-      <arts>
-        <form>Vim</form>
-        <technique>Muto</technique>
-      </arts>
-      <range>Vocale</range>
-      <duration>Istantanea</duration>
-      <target>Gruppo</target>
-      <description>
-        <p>
-          Consente ai Magi di combinare i loro poteri per lanciare gli incantesimi. Il gruppo lavora in concerto per lanciare un incantesimo specifico
-          attraverso il potere unificato della <self/>. Può unirsi alla <self/> un Magus addizionale per ogni
-          5 livelli dell'incantesimo lanciato. Uno dei Magi nel gruppo deve conoscere l'incantesimo specificato.
-        </p>
-        <p>
-          Tutti i Magi del gruppo che conoscono <self/> aggiungono il livello a cui lo conoscono per determinare il livello
-          effettivo di <self/>. Il totale ottenuto deve essere almeno il doppio del livello dell'incantesimo che sta venendo
-          lanciato.
-        </p>
-        <p>
-          Il tiro viene effettuato da un Magus, come se lanciasse l'incantesimo specificato da solo. Tuttavia, il numero da battere per il lancio è il
-          livello dell'incantesimo diviso per il numero di Magi nella <self/>: quindi, se cinque Magi partecipano al lancio di un
-          incantesimo di livello 50, il lanciatore deve lanciarne con successo uno di livello 10, ovviamente con tutti i requisiti. Questo metodo di lancio
-          aggiunge un tiro per il fallimento critico per ogni Magus che partecipa. Con un fallimento critico, tutti i partecipanti ottengono Punti Distorsione
-          e devono tirare per il Crepuscolo.
-        </p>
-        <p>
-          <self/> è un rimasuglio di rituale Mercuriale, quindi non si possono lanciare in tal modo incantesimi spontanei, e non si
-          inserisce alla perfezione nelle linee guida della teoria Ermetica
-        </p>
-      </description>
-      <guideline>
-        <base></base>
-        <modifiers>
-        </modifiers>
-      </guideline>
-    </spell>
     <spell id="1009" type="general" ritual="true">
       <name>Guscio di false valutazioni</name>
       <level>20</level>
@@ -3563,7 +3716,7 @@
         <modifiers>
         </modifiers>
       </guideline>
-    </spell>-->
+    </spell>
     <!-- Leonardo -->
   </spells>
   <!-- INCANTESIMI -->
@@ -3975,78 +4128,269 @@
   <!-- ARTEFATTI MAGICI -->
   <artifacts>
     <artifact>
-      <name>L'artefatto che fa tutto</name>
+      <name>Il Faro di Labyrinthos</name>
       <description>
         <p>
-        Lorem ipsum <emphasis>dolor sit amet</emphasis>, <strong>consectetur adipiscing</strong> elit. Duis ut metus consequat, ornare massa ac, imperdiet felis. Etiam a erat id lorem euismod congue. Nulla tempus risus sit amet diam suscipit, nec vestibulum sapien hendrerit. Cras mollis diam tortor, at porttitor lectus ultrices efficitur. Vestibulum ut malesuada nibh. Integer in orci laoreet, dictum nisi non, consequat turpis. Aliquam lectus est, euismod vitae dui ut, venenatis porta nisi. Morbi fermentum porttitor arcu, quis faucibus metus facilisis ac. Suspendisse consectetur nisi a lacus imperdiet, sit amet finibus nulla vehicula. Nullam id est tempor, cursus nulla a, tristique libero. Aliquam ac justo dapibus, varius diam in, viverra enim. Aliquam tincidunt, quam ut tincidunt aliquam, nunc felis mattis nibh, a placerat velit ipsum in dui. Nunc dictum eu nibh non bibendum.
-      </p>
+        Pur non contando strettamente come un Artefatto vero e proprio, la quantità di incantesimi lanciati sul faro lo classificano come interessante.
+        </p>
         <p>
-        Etiam quis justo feugiat, egestas quam vitae, dictum dolor. Donec sagittis viverra ex convallis pellentesque. Ut vel ipsum venenatis risus rhoncus rutrum. Mauris et augue sit amet enim finibus hendrerit. Nulla facilisi. Donec massa massa, malesuada sollicitudin velit non, ultrices egestas orci. Pellentesque in lectus nunc. In fermentum purus sit amet nunc fermentum eleifend. Quisque vestibulum viverra orci eu lacinia. Ut sed eros arcu. Integer non ipsum euismod, iaculis tortor vel, gravida nibh. Suspendisse potenti. Curabitur venenatis metus porta, eleifend neque sit amet, pellentesque justo.
+        Molti degli incantesimi utilizzati necessitano di essere lanciati in sequenza. Principalmente si tratta delle varianti di <spell-link name="Mantenere l'Incantesimo Impegnativo"/>, lanciati con differenti parametri. 
+        </p>
+        <p>
+          Gli incantesimi sono pensati come lanciati in condizione di lavoro adeguate, non di fretta. In condizioni normali non è necessario lanciare ripetutamente gli incantesimi uno di seguito all’altro,
+          senza pausa. In generale quindi si dovrebbe assumere che siano lanciati in condizione riposata, o al più affannata.
+        </p>
+            <p indent="false" text-align="center">
+      <artimage height="10pt" img=".png" width="24pt"/>
+    </p>  
+      <p>L’unica condizione che dovrebbe però richiedere il lancio in condizione affannata è quella dovuta ad una perdita di controllo legata al difetto <emphasis>Dipendenza Magica</emphasis>. In molti casi sarà sufficiente
+        lanciare l’incantesimo <spell-link name="Mantenere l'Incantesimo Impegnativo"/>, per soddisfare la dipendenza.</p>
+            <p indent="false" text-align="center">
+      <artimage height="10pt" img=".png" width="24pt"/>
+    </p>  
+        
+        <p>Qualora questo non sia possibile, nella stanza sarà sempre presente un qualunque oggetto di metallo (come una spada o un attrezzo agricolo) di dimensioni normali, che sarà il bersaglio di 
+        <spell-link name="Calore della Forgia Ardente"/> nei casi dove sarà necessario lanciare un incantesimo per dominare la dipendenza. L’incantesimo sarà ripetuto nel turno seguente se necessario. Se l’incantesimo
+        richiesto fosse di livello superiore sarà invece <spell-link name="Carica dei Venti Furiosi"/>ad essere lanciato.
+        </p>
+        <p>
+          Il lavoro inizia con una prima fase preparatoria. Questi incantesimi sono lanciati quotidianamente, in ogni giorno in cui sia necessario lavorare al lancio di incantesimi faro o nel laboratorio. 
+          Di questi, solo il primo viene lanciato sotto un’aura superiore a quella generale della congrega (se applicabile).
         </p>
       </description>
+      <!-- 
       <spell type="standard" >
-        <name>Fare tutto</name>
-        <level>125</level>
+        <name>Sgombrare la Mente da Pensieri e Distrazioni</name>
+        <level>20</level>
         <arts>
-          <form>Creo</form>
-          <technique>Ignem</technique>
-          <requisite>Terram</requisite>
-          <requisite>Rego</requisite>
-          <requisite>Intellego</requisite>
-          <requisite>Perdo</requisite>
-          <requisite>Muto</requisite>
-          <requisite>Auram</requisite>
-          <requisite>Vim</requisite>
-          <requisite>Herbam</requisite>
-          <requisite>Corpus</requisite>
+          <form>Mentem</form>
+          <technique>Rego</technique>
         </arts>
-        <range>Vocale</range>
-        <duration>Istantanea</duration>
-        <target>Parte</target>
+        <range>Personale</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
         <description>
           <p>
-            Nunc augue risus, sagittis non dui ut, convallis gravida sapien. Curabitur iaculis, sem vitae accumsan egestas, orci elit tincidunt sem, eu eleifend odio odio a purus. Sed sit amet facilisis tortor. Morbi non nulla viverra, aliquet sapien vel, ultrices arcu. Curabitur eleifend lacinia rhoncus. Sed ac arcu eu ipsum porta tristique id eget odio. Ut accumsan, odio et efficitur vehicula, quam sem ultricies lectus, at efficitur neque metus id magna. In auctor velit eu dolor suscipit semper. Mauris mattis dictum metus ut faucibus. Aenean vitae cursus tellus. Etiam finibus finibus nunc, vitae consequat sem blandit sed. Sed at mattis est. Nulla nibh dolor, molestie id hendrerit sit amet, rutrum et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas blandit leo quis risus tempor ornare. Vivamus et justo augue.
+            Induce nel Magus uno stato mentale tale da permettergli di focalizzare completamente l'attenzione, fornendogli un bonus di +3 ai tiri di Concentrazione. (Sigillo: vapore che si alza dalla testa del bersaglio)
           </p>
-          <flavour>
-            "Ora avrò tempo per bruciare qualcosa" - Eufemia Angelina Porfirogenita.
-          </flavour>
         </description>
         <guideline>
-          <base>25</base>
+          <base>15</base>
           <modifiers>
-            <modifier>+20 Taglia</modifier>
-            <modifier penetration="30">+15 Penetrazione</modifier>
-            <modifier frequency="costante">+4 costante</modifier>
           </modifiers>
         </guideline>
       </spell>
-      <spell type="standard" >
-        <name>L'effetto che non fa nulla</name>
-        <level>1</level>
+      <spell type="general" >
+        <name>Mantenere L'incantesimo Impegnativo</name>
+        <level>20</level>
         <arts>
-          <form>Muto</form>
-          <technique>Imaginem</technique>
+          <form>Vim</form>
+          <technique>Rego</technique>
         </arts>
-        <range>Vocale</range>
-        <duration>Istantanea</duration>
-        <target>Parte</target>
+        <range>Tocco</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
         <description>
           <p>
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam pellentesque mi sit amet dolor ultrices suscipit. Duis varius justo enim, nec luctus erat laoreet sit amet. Nunc sit amet arcu quis lorem lacinia accumsan. Maecenas sollicitudin, quam id faucibus elementum, orci sem faucibus ex, sit amet fringilla nisi mi at eros. Nam volutpat accumsan tempor. Suspendisse ullamcorper purus id aliquet cursus. Suspendisse eget risus nec risus pharetra condimentum. Phasellus felis orci, sodales porta finibus ullamcorper, volutpat at sem. Morbi vitae lacus eget lacus blandit placerat ac at dolor. Suspendisse ex quam, euismod sed laoreet eget, efficitur vitae neque. Vivamus facilisis imperdiet ipsum, at auctor dui eleifend ut. Nullam sed sem ac mauris auctor vestibulum.
+            Come per l'incantesimo da manuale, ma con durata Sole invece che Diametro. Funziona su incantesimi di livello pari o inferiore al (livello -5)
           </p>
           <flavour>
-            Mauris bibendum arcu at feugiat vulputate. Integer euismod nulla nec neque gravida blandit. Pellentesque erat ipsum, faucibus eu sollicitudin in, facilisis eu augue. Fusce sed mauris tincidunt, vestibulum nulla eu, mollis quam. Sed quis aliquam nulla. Aliquam gravida vitae orci vel hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam in consequat massa, ac tempus eros. Maecenas nec semper libero. Curabitur ultrices posuere augue, fringilla condimentum sem pharetra eu. Morbi in velit sapien.
+            Nota: formulaico
           </flavour>
         </description>
         <guideline>
-          <base>34</base>
+          <base>15</base>
           <modifiers>
-            <modifier>+0 roba</modifier>
           </modifiers>
         </guideline>
       </spell>
+-->            
+      <spell type="standard" >
+        <name>Protezione dal Calore e dalla Fiamma</name>
+        <level>10</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
+        <description>
+          <p>
+            Permette di interagire con un fuoco o una fonte di calore che infligge fino a +10 danni per turno senza subire danni. Fornisce +10 ad Assorbimento per i danni da fuoco e calore.
+          </p>
+        </description>
+        <guideline>
+          <base>4</base>
+          <modifiers>
+            <modifier>+1 per +5 danni</modifier>            
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="general" >
+        <name>Mantenere L'incantesimo Impegnativo</name>
+        <level>20</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Cerchio</duration>
+        <target>Singolo</target>
+        <description>
+          <p>
+            Come per l'incantesimo da manuale, ma con durata Cerchio invece che Diametro. Funziona su incantesimi di livello pari o inferiore al (livello -5)
+          </p>
+          <flavour>
+            Nota: formulaico
+          </flavour>
+        </description>
+        <guideline>
+          <base>15</base>
+          <modifiers>
+          </modifiers>
+        </guideline>
+      </spell>
+    
     </artifact>
     <artifact>
+      <name>Effige Fiammeggiante del Faro</name>
+      <description>
+        <p>Creata per rispondere alle esigenze di sicurezza della Congrega di Labyrinthos evidenziate da Najden Comneno nella Primavera della Congrega stessa, l'Effige consiste in un braciere all'interno del quale
+        brucia un fuoco di forma innaturale che ricorda approssimativamente la forma del faro stesso, sormontato da una lastra di metallo lucidata a specchio orientata verso il fuoco. Il colore della fiamme non è
+        uniforme, ma varia in funzione  delle altri fonti di calore presenti all'interno dell'intera struttura del faro. Dallo specchio si propaga un'immagine riflessa della fiamma, congelata in un momento ben preciso.
+        </p>
+        <p>Il fuoco è modellato per aderire ad un'intelaiatura di vetro sottostante, ed è alterato in modo da poter assumere colorazioni differenti. Tutte intorno al braciere sono inscritti i simboli ermetici che
+        sostengono gli incantesimi con cui sono stati creati intelaiatura, fuoco e riflesso dello stesso.</p>
+        <p>Ad un occhio allenato lo schema dei colori permette di capire immediatamente eventuali differenze tra l'immagine congelata e quella in movimento.</p>
+      </description>
+      <spell type="standard">
+        <name>Intelaiatura dell'Effige</name>
+        <level>10</level>
+        <arts>
+          <form>Terram</form>
+          <technique>Creo</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Crea una struttura di vetro la cui forma approssima quella della struttura del faro.</p>
+        </description>
+        <guideline>
+          <base>2 Vetro</base>
+          <modifiers>
+            <modifier>+2 Forma Elaborata</modifier>
+          </modifiers>
+        </guideline>
+      </spell>      
+      <spell type="standard">
+        <name>Fuoco dell'Effige</name>
+        <level>20</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Creo</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Cerchio</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Crea un fuoco all'interno del braciere, modellandolo innaturalmente sulla superficie dell'intelaiatura di vetro.</p>
+        </description>
+        <guideline>
+          <base>5 Forma innaturale</base>
+          <modifiers>
+          </modifiers>
+        </guideline>
+      </spell>         
+      <spell type="standard">
+        <name>Modellare l'Effige</name>
+        <level>15</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Muto</technique>
+          <requisite>Intellego</requisite>
+        </arts>
+        <range>Tocco</range>
+        <duration>Concentrazione</duration>
+        <target>Circolo</target>
+        <description>
+          <p>Altera il fuoco all'interno del braciere, rendendolo in grado di assumere diverse colorazioni. Il colore assunto in ciascun punto è strettamente collegato al livello di calore presente all'interno del
+          cerchio che circonda il faro.</p>
+        </description>
+        <guideline>
+          <base>4 Trasformazione Innaturale</base>
+          <modifiers>
+          </modifiers>
+        </guideline>
+      </spell>       
+      <spell type="standard">
+        <name>Enumera le Sorgenti di Calore</name>
+        <level>10</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Intellego</technique>
+          <requisite>Rego</requisite>
+        </arts>
+        <range>Tocco</range>
+        <duration>Concentrazione</duration>
+        <target>Struttura</target>
+        <description>
+          <p>Altera il fuoco all'interno del braciere, rendendolo in grado di assumere diverse colorazioni mentre brucia, indipendentemente dal combustibile usato.</p>
+        </description>
+        <guideline>
+          <base>2 Percepisce i livelli di calore all'interno del Cerchio</base>
+          <modifiers>
+          </modifiers>
+        </guideline>
+      </spell>             
+      <spell type="standard">
+        <name>Immagine della Fiamma Riflessa</name>
+        <level>5</level>
+        <arts>
+          <form>Imaginem</form>
+          <technique>Rego</technique>
+          <requisite>Creo</requisite>
+        </arts>
+        <range>Tocco</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
+        <description>
+          <p>L'incantesimo congela l'immagine speculare della fiamma, facendola apparire come se fuoriuscisse dallo specchio.</p>
+        </description>
+        <guideline>
+          <base>2</base>
+          <modifiers>
+            <modifier>+1 Immagine complessa</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="general" >
+        <name>Mantenere L'incantesimo Impegnativo (Cerchio)</name>
+        <level>20</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Cerchio</duration>
+        <target>Singolo</target>
+        <description>
+          <p>
+            Come per l'incantesimo da manuale, ma con durata Cerchio invece che Diametro. Funziona su incantesimi di livello pari o inferiore al (livello -5)
+          </p>
+          <flavour>
+            Nota: formulaico
+          </flavour>
+        </description>
+        <guideline>
+          <base>15</base>
+          <modifiers>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>
+    <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
         <p>
@@ -4105,8 +4449,8 @@
           </modifiers>
         </guideline>
       </spell>
-    </artifact>
-    <artifact>
+    </artifact>-->
+    <!--<artifact>
       <name>La terza variante di un artefatto, uguale alla seconda ma cambia il nome</name>
       <description>
         <p>
@@ -4166,7 +4510,7 @@
           </modifiers>
         </guideline>
       </spell>
-    </artifact>
+    </artifact>-->
   </artifacts>
   <!-- ARTEFATTI MAGICI -->
 </ars_magica>
