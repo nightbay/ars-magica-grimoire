@@ -6,6 +6,7 @@ set cover=true
 set spellsource=true
 set paper=letter
 set orientation=portrait
+set output=ars_magica_grimoire
 
 :parse
 IF "%~1"=="" GOTO endparse
@@ -16,15 +17,16 @@ IF "%~1"=="-p" set print=true
 IF "%~1"=="-nospellsource" set spellsource=false
 IF "%~1"=="-paper" set paper=%~2
 IF "%~1"=="-orientation" set orientation=%~2
+IF "%~1"=="-o" set output=%~2
 IF "%~1"=="/?" goto help
 IF "%~1"=="-?" goto help
 SHIFT
 GOTO parse
 :endparse
 
-REM java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%" -xsl:"%template%" -o:ars_spells.fo edit=%print% cover=%cover% paper=%paper% orientation=%orientation% source=%spellsource%
-REM c:\WinUtil\fop\fop -fo ars_spells.fo -pdf ars_magica_grimoire.pdf -c fop.cfg
-java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%"  -xsl:"%template%" edit=%print% cover=%cover% flow=%flow% paper=%paper% orientation=%orientation% source=%spellsource% | c:\WinUtil\fop\fop -fo - -pdf ars_magica_grimoire.pdf -c fop.cfg
+rem java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%" -xsl:"%template%" -o:ars_spells.fo edit=%print% cover=%cover% paper=%paper% orientation=%orientation% source=%spellsource%
+rem c:\WinUtil\fop\fop -fo ars_spells.fo -pdf ars_magica_grimoire.pdf -c fop.cfg
+java -cp c:\winutil\saxon\saxon9he.jar net.sf.saxon.Transform -t -s:"%source%"  -xsl:"%template%" edit=%print% cover=%cover% flow=%flow% paper=%paper% orientation=%orientation% source=%spellsource% | c:\WinUtil\fop\fop -fo - -pdf "%output%.pdf" -c fop.cfg
 exit /B
 
 :help
