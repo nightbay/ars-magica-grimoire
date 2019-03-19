@@ -1894,7 +1894,7 @@
         un cavaliere. Questo è spesso il primo (e più importante) indizio che l'immagine è solo un'illusione. D'altro canto, l'illusione di
         un muro può sembrare solida, ma non farà resistenza se qualcuno ci infla una mano.</p>
         <p>Aumentare la complessità di una creazione sensoriale, come creare un immagine che si muove o che pronuncia parole chiare invece
-        di rumore, aggiunge una Magnitudine. Far muovere un'immagine o far udire dei suoni nel modo da te voluto mentre ti concentri agginge
+        di rumore, aggiunge una Magnitudine. Far muovere un'immagine o far udire dei suoni nel modo da te voluto mentre ti concentri aggiunge
         due Magnitudini. Inoltre, anche immagini molto complicate (come un ponte con decorazioni sfarzose) sono generalmente di una Magnitudine
         più alta.</p>
         <p>I sigilli arcani possono essere molto ovvi negli incantesimi Creo Imaginem. Le illusioni hanno di solito dei piccoli tratti che le
@@ -3502,9 +3502,9 @@
         </modifiers>
       </guideline>
     </spell>
-    <spell id="28" page="1" source="EEE" type="standard" >
+    <spell id="28" page="1" source="EEE" type="general" >
       <name>Circolo di Difesa dalle Creature Demoniache</name>
-      <level>6</level>
+      <level>GENERALE</level>
       <arts>
         <form>Vim</form>
         <technique>Rego</technique>
@@ -3519,7 +3519,53 @@
         <base></base>
         <modifiers></modifiers>
       </guideline>
-    </spell>    
+    </spell>      
+    <spell id="29" page="1" source="EEE" type="standard" >
+      <name>Parvenza della Fenice</name>
+      <level>4</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Crea un'immagine illusoria le cui species si sovrappongono a quelle naturalmente emesse dall'incantatore, mascherando queste ultime. L'immagine segue in maniera approssimativa i movimenti 
+        dell'incantatore, anche se l'immagine dell'incantatore può comunque essere intravista come in trasparenza attraverso di essa. Il nome dell'incantesimo deriva da una delle prime forme utilizzate
+        da per mascheramento da Eufemia nell'utilizzo di questo Incantesimo.</p> 
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+          <modifier>+2 Immagini in movimento</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="30" page="110" source="MoH" type="standard" >
+      <name>Aspetto di Helios</name>
+      <level>15</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo fa si che il corpo e gli effetti personali dell'incantatore rispendano della luminosità del solo. Chiunque entro 10 passi guardi nella direzione dell'incantatore è temporaneamente
+        accecato, a meno che non superi un Tiro Stress di Vigor con Fattore di Difficoltà 9. Le persone tra i 10 e i 50 passi subiscono una penalità di -3 per tutti i tiri che hanno come bersaglio l'incantatore.
+        La luca creata da questo incantesimo illumina un'area ampia e, se le condizioni lo permettono, può essere vista da svariate miglia di distanza. L'autore della versione originale di questo incantesimo,
+        Ranulf di Flambeau, ha notato che le creature e le persone la cui Resistenza alla Magia non è penetrata da questo incantesimo non ne sono illuminate, e possono facilmente essere identificate dalla
+        mancanza di luce riflessa. </p> 
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+          <modifier>+1 Luce di intensità eccezionale</modifier>
+        </modifiers>
+      </guideline>
+    </spell>         
     <!-- Leonardo -->
     <spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
@@ -3766,6 +3812,10 @@
       <bonus value="4">Controllare oggetti a distanza</bonus>
       <bonus value="4">Distruggere oggetti a distanza</bonus>
     </sm>
+    <sm name="Basalto">
+      <bonus value="3">Ignem</bonus>
+      <bonus value="3">Perdo</bonus>
+    </sm>    
     <sm name="Benda">
       <bonus value="4">Guarire ferite</bonus>
     </sm>
@@ -4390,6 +4440,79 @@
         </guideline>
       </spell>    
     </artifact>
+    <artifact>
+      <name>Il Conforto del Calore nell'Inverno</name>
+      <description>
+        <p>Questo Artefatto minore prende la forma di un disco piatto di basalto con un ampio foro al suo centro, posto verticalmente sopra una base di pietra. Viene attivato facendo passare un capo di abbigliamento o un oggetto (come ad esempio un mantello, una tunica o una coperta) attraverso il foro centrale. L'oggetto diventa caldo al tocco come se esposto al fuoco di un camino, e resta caldo fino al tramonto o all'alba successiva.</p>
+        <p>Il Testo di Laboratorio per questo artefatto inlude un modificatore dato dal basalto (+3 Ignem).</p>
+      </description>
+      <spell type="standard">
+        <name>Una coperta calda per le notti d'inverno</name>
+        <level>15</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Creo</technique>          
+        </arts>
+        <range>Tocco</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Rende l'oggetto fatto passare attraverso il foro centrale caldo al tocco.</p>
+        </description>
+        <guideline>
+          <base>2</base>
+          <modifiers>
+            <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
+          </modifiers>
+        </guideline>
+      </spell>     
+    </artifact>
+    <artifact>
+      <name>Cuore d'Inverno</name>
+      <description>
+      <p>
+      Questo bastone liscio e nodoso viene risvegliato dal comando "Cheimonaspalmos" ("Polso Invernale)"; lo stesso comando lo riporta in stato dormiente. Quando
+      il bastone è attivo, il piroclasto basaltico posto ad una delle estremità pulsa come un cuore vivente, al ritmo di una volta per round circa, dissipando il
+      calore di ciò con cui è a contatto. Il requisito Creo impedisce che il gelo si propaghi lungo il bastone, infondendo in esso una quantità di calore pari a
+      quella dissipata. Ad ogni battito, se il bastone si trova a contatto di un liquido il freddo è sufficientemente intenso da portare a congelamento un blocco
+      di ghiaccio profondo circa 2 piedi, largo 7 e di 20 piedi di lunghezza (con le stesse proporzioni del cuore di basalto); il ghiaccio inizia a formarsi nel 
+      punto in cui il bastone è a contatto dell'acqua. Il ghiaccio sarà di dimensioni ridotte qualora non ci fosse acqua a sufficienza.      
+      </p>
+      <p>
+      Creature ed oggetti presenti nell'acqua restano intrappolati nel ghiaccio. Il calore generato dal requisito Creo è sufficiente a far si che il bastone non
+      resti intrappolato in esso. Il ghiaccio è di tipo mondano e si scioglie lentamente col tempo, a temperature al di sopra del punto di congelamento, anche
+      se in molti casi questo potrebbe richiedere molti giorni per un blocco di grosse dimensioni. Se mantenuto in grosse quantità in una cantina potrebbe 
+      facilmente durate per mesi o addirittura per un intero anno; vendere il ghiaccio potrebbe fornire una fonte di introiti ( ci sono mondani che lo sfruttano
+      già, in alcune parti dell'Europa come il Regno di Sicilia). Perfino quando ottenuto da acqua salata, il ghiaccio si scioglie in acqua dolce, cosicchè 
+      Cuore d'Inverno può essere usato come fonte d'acqua dolce in mare. Il ghiaccio galleggia naturalmente ed è in grado di sostenere peso: un quadrato di un
+      passo per lato e due di profondità è in grado di sostenere un essere umano. Il processo di congelamento è molto rapido ma non istantaneo
+      (approssimativamente quanto il battito di un cuore umano). Una persona che cammini sul ghiaccio continuando a toccare con Cuore d'Inverno l'acqua potrebbe
+      effettivamente estendere il ghiaccio e renderlo un solido ponte potenzialmente lungo svariate miglia.
+      </p>
+      <p>Il Testo di Laboratorio per questo artefatto inlude un modificatore dato dal basalto (+3 Ignem).</p>
+      </description>
+      <spell type="standard">
+        <name>Cheimonaspalmos</name>
+        <level>20</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Perdo</technique>
+          <requisite>Creo</requisite>
+        </arts>
+        <range>Personale</range>
+        <duration>Istantanea</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Il cuore di basalto del bastone pulsa, emettendo ondate di gelo ad ogni pulsazione.</p>
+        </description>
+        <guideline>
+          <base>5</base>
+          <modifiers>
+            <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
+          </modifiers>
+        </guideline>
+      </spell>     
+    </artifact>    
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
