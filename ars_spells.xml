@@ -3975,6 +3975,9 @@
       <bonus value="3">Nascondere oggetti all'interno</bonus>
       <bonus value="4">Proteggere oggetti all'interno</bonus>
     </sm>
+    <sm name="Limone">
+      <bonus value="5">Udito</bonus>
+    </sm>
     <sm name="Lingua di serpente">
       <bonus value="6">Mentire</bonus>
       <bonus value="3">Inganno</bonus>
@@ -4082,6 +4085,13 @@
     <sm name="Quercia">
       <bonus value="7">Protezione dalle tempeste</bonus>
     </sm>
+    <sm name="Rame">
+      <bonus value="4">Perizia</bonus>
+      <bonus value="4">Effetti che alterano il proprio aspetto</bonus>
+      <bonus value="3">Spargimento di sangue</bonus>
+      <bonus value="2">Magia sessuale</bonus>
+      <bonus value="2">Passioni</bonus>
+    </sm>
     <sm name="Remo">
       <bonus value="4">Influenzare correnti</bonus>
     </sm>
@@ -4177,6 +4187,7 @@
 
   <!-- ARTEFATTI MAGICI -->
   <artifacts>
+  <!--
     <artifact>
       <name>Il Faro di Labyrinthos</name>
       <description>
@@ -4207,54 +4218,7 @@
           Il lavoro inizia con una prima fase preparatoria. Questi incantesimi sono lanciati quotidianamente, in ogni giorno in cui sia necessario lavorare al lancio di incantesimi faro o nel laboratorio. 
           Di questi, solo il primo viene lanciato sotto un’aura superiore a quella generale della congrega (se applicabile).
         </p>
-      </description>
-      <!-- 
-      <spell type="standard" >
-        <name>Sgombrare la Mente da Pensieri e Distrazioni</name>
-        <level>20</level>
-        <arts>
-          <form>Mentem</form>
-          <technique>Rego</technique>
-        </arts>
-        <range>Personale</range>
-        <duration>Concentrazione</duration>
-        <target>Singolo</target>
-        <description>
-          <p>
-            Induce nel Magus uno stato mentale tale da permettergli di focalizzare completamente l'attenzione, fornendogli un bonus di +3 ai tiri di Concentrazione. (Sigillo: vapore che si alza dalla testa del bersaglio)
-          </p>
-        </description>
-        <guideline>
-          <base>15</base>
-          <modifiers>
-          </modifiers>
-        </guideline>
-      </spell>
-      <spell type="general" >
-        <name>Mantenere L'incantesimo Impegnativo</name>
-        <level>20</level>
-        <arts>
-          <form>Vim</form>
-          <technique>Rego</technique>
-        </arts>
-        <range>Tocco</range>
-        <duration>Sole</duration>
-        <target>Singolo</target>
-        <description>
-          <p>
-            Come per l'incantesimo da manuale, ma con durata Sole invece che Diametro. Funziona su incantesimi di livello pari o inferiore al (livello -5)
-          </p>
-          <flavour>
-            Nota: formulaico
-          </flavour>
-        </description>
-        <guideline>
-          <base>15</base>
-          <modifiers>
-          </modifiers>
-        </guideline>
-      </spell>
--->            
+      </description>      
       <spell type="standard" >
         <name>Protezione dal Calore e dalla Fiamma</name>
         <level>10</level>
@@ -4300,9 +4264,9 @@
           <modifiers>
           </modifiers>
         </guideline>
-      </spell>
-    
+      </spell>    
     </artifact>
+    -->
     <artifact>
       <name>Effige Fiammeggiante del Faro</name>
       <description>
@@ -4318,8 +4282,8 @@
         <name>Intelaiatura dell'Effige</name>
         <level>10</level>
         <arts>
-          <form>Terram</form>
           <technique>Creo</technique>
+          <form>Terram</form>
         </arts>
         <range>Tocco</range>
         <duration>Concentrazione</duration>
@@ -4338,8 +4302,8 @@
         <name>Fuoco dell'Effige</name>
         <level>20</level>
         <arts>
-          <form>Ignem</form>
           <technique>Creo</technique>
+          <form>Ignem</form>
         </arts>
         <range>Tocco</range>
         <duration>Cerchio</duration>
@@ -4378,8 +4342,8 @@
         <name>Enumera le Sorgenti di Calore</name>
         <level>10</level>
         <arts>
-          <form>Ignem</form>
           <technique>Intellego</technique>
+          <form>Ignem</form>
           <requisite>Rego</requisite>
         </arts>
         <range>Tocco</range>
@@ -4398,8 +4362,8 @@
         <name>Immagine della Fiamma Riflessa</name>
         <level>5</level>
         <arts>
+          <technique>Rego</technique>        
           <form>Imaginem</form>
-          <technique>Rego</technique>
           <requisite>Creo</requisite>
         </arts>
         <range>Tocco</range>
@@ -4409,7 +4373,7 @@
           <p>L'incantesimo congela l'immagine speculare della fiamma, facendola apparire come se fuoriuscisse dallo specchio.</p>
         </description>
         <guideline>
-          <base>2</base>
+          <base>2 Fa apparire alla vista un oggetto a un passo dalla posizione reale</base>
           <modifiers>
             <modifier>+1 Immagine complessa</modifier>
           </modifiers>
@@ -4419,8 +4383,8 @@
         <name>Mantenere L'incantesimo Impegnativo (Cerchio)</name>
         <level>20</level>
         <arts>
-          <form>Vim</form>
           <technique>Rego</technique>
+          <form>Vim</form>
         </arts>
         <range>Tocco</range>
         <duration>Cerchio</duration>
@@ -4450,8 +4414,8 @@
         <name>Una coperta calda per le notti d'inverno</name>
         <level>15</level>
         <arts>
-          <form>Ignem</form>
-          <technique>Creo</technique>          
+          <technique>Creo</technique> 
+          <form>Ignem</form>         
         </arts>
         <range>Tocco</range>
         <duration>Sole</duration>
@@ -4460,7 +4424,7 @@
           <p>Rende l'oggetto fatto passare attraverso il foro centrale caldo al tocco.</p>
         </description>
         <guideline>
-          <base>2</base>
+          <base>2 Rende un oggetto caldo al tocco</base>
           <modifiers>
             <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
           </modifiers>
@@ -4495,8 +4459,8 @@
         <name>Cheimonaspalmos</name>
         <level>20</level>
         <arts>
-          <form>Ignem</form>
           <technique>Perdo</technique>
+          <form>Ignem</form>
           <requisite>Creo</requisite>
         </arts>
         <range>Personale</range>
@@ -4506,13 +4470,54 @@
           <p>Il cuore di basalto del bastone pulsa, emettendo ondate di gelo ad ogni pulsazione.</p>
         </description>
         <guideline>
-          <base>5</base>
+          <base>5 Congela l'acqua</base>
           <modifiers>
             <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
           </modifiers>
         </guideline>
       </spell>     
-    </artifact>    
+    </artifact>
+    <artifact>
+      <name>Strumenti del Cantiere Fantasma</name>
+      <description>
+        <p>
+          Gli Strumenti del Cantiere Fantasma sono costituiti da due strumenti da muratore uniti tra di loro: una squadra in legno di limone e un peso ricavato da un cilindro di rame, collegati con una
+          corda di circa 20 passi di lunghezza. Fino a quando la corda è annodata l'Artefatto è inerte e il suo effetto non può essere attivato. Quando invece la corda è priva di nodi ed estesa, da tutto il tratto di essa
+          compreso tra la squadra e il peso si sentono provenire i rumori tipici di un cantiere edile con una decina di persone al lavoro. Come è lecito aspettarsi, i rumori iniziano all'alba e terminano al tramonto.
+        </p>
+        <p>
+          La lunghezza della corda influenza l'area di provenienza apparente dei suoni. La sua massima estensione è un tratto di circa 20 passi, ma può essere ridotta semplicemente avvolgendo la corda intorno alla squadra,
+          prestando attenzione a non annodarla completamente. Per replicare in maniera credibile i suoni prodotti da un vero cantiere, gli Strumenti del Cantiere Fantasma devono essere stati esposti ad essi durante il processo
+          di infusione dell'Artefatto. Non è comunque strettamente necessario che l'esposizione sia stata diretta, è possibile utilizzare la magia per fornire una sufficiente esposizione.
+        </p>
+        <p>Il testo di laboratorio include l'uso di legno di Limone (+5 udito) e Rame (+4 effetti che modificano il proprio aspetto), fornendo un bonus di Forma e Materiale di +9 (limitato al punteggio di Teoria della Magia dell'Incantatore)</p>
+      </description>
+      <spell type="standard" >
+        <name>La Voce degli Strumenti Operosi</name>
+        <level>13</level>
+        <arts>
+          <technique>Creo</technique>
+          <form>Imaginem</form>
+        </arts>
+        <range>Vocale</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
+        <description>
+          <p>
+            Dalla corda tesa degli Strumenti vengono emesse le Species dei suoni che erano state in essi impresse durante la sua lavorazione. I suoni iniziano all'alba e terminano al tramonto, sempre che la corda non venga
+            annodata prima. Nel caso in cui le Species non siano sufficienti a coprire l'intero arco dall'alba al tramonto (ad esempio per via della differente durata del giorno in uso rispetto a quello in cui è stata creata,
+            oppure per una minore esposizione), gli Strumenti ripetono l'emissione delle Species dal principio, in un ciclo continuo fino al termine del periodo di attività.
+          </p>
+        </description>
+        <guideline>
+          <base>1 Crea un'immagine che influenza un solo senso (udito)</base>
+          <modifiers>
+            <modifier>+1 Taglia</modifier>
+            <modifier>+3 livelli Condizione Ambientale (Alba)</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+    </artifact>
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
