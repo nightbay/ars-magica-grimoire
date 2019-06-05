@@ -247,11 +247,11 @@
     <book><abbreviation>ToME</abbreviation><name>Tales of Mythic Europe</name></book>
     <book><abbreviation>RM</abbreviation><name>Rival Magic</name></book>
     <book><abbreviation>LoM</abbreviation><name>Lords of Men</name></book>
-    <book><abbreviation>TME</abbreviation><name>Transforming Mythic Europe</name></book>
     <book><abbreviation>LotN</abbreviation><name>Lands of the Nile</name></book>
     <book canon="false"><abbreviation>SR</abbreviation><name>Sub Rosa</name></book>
     -->
     <book><abbreviation>HoH:S</abbreviation><name>House of Hermes: Societates</name></book>
+    <book><abbreviation>TME</abbreviation><name>Transforming Mythic Europe</name></book>
     <book>
       <abbreviation>HP</abbreviation>
       <name>Hermetic Projects</name>
@@ -3419,7 +3419,7 @@
         rilasciato per interrompere un'azione allo stesso modo in un incantesimo Rapido, cosa che richiede un tiro di lancio rapido di Finezza + Celeritas.
       </p>
         <p>
-          <emphasis>Ranulf di Flambeau</emphasis> usa <self/> per procurarsi l'opportunità di lanciare <spell-link name="Fiamme Boreali"/>" con <spell-link name="Pilum di Fuoco"/>". Mantenere la concentrazione su <self/> mentre si lancia un altro
+          <emphasis>Eraclio Phlogistophilos di Flambeau</emphasis> usa <self/> per procurarsi l'opportunità di lanciare <spell-link name="Fiamme Boreali"/>" con <spell-link name="Pilum di Fuoco"/>". Mantenere la concentrazione su <self/> mentre si lancia un altro
         incantesimo richiede un Tiro Stress di Ingenium + Concentrazione di 9+ per riuscire (un risultato inferiore al normale, perchè l'incantesimo è pensato proprio per questo)</p>
       </description>
       <guideline>
@@ -3443,7 +3443,7 @@
         <p>Questo incantesimo altera per un istante un fuoco in modo che invece di irradiare calore irradi un freddo gelido. Il colore del fuoco muta da giallo e arancio a viola e blu. Ogni fuoco influenzato da questo incantesimo
         infligge danno da freddo al posto di danno da calore nel momento della durata dell'incantesimo. <self/> non funziona su fuochi tanto caldi da infliggere più di +15 danni. Questo incantesimo è stato progettato specificamente
         per modificare il lancio di <spell-link name="Pilum di Fuoco"/>. <self/> può essere lanciato in congiunzione con un altro incantesimo; per fare questo è necessario un Tiro Stress di Ingenium + Concentrazione di 15+.
-        <emphasis>Ranulf di Flambeau</emphasis> usa <self/> in congiunzione con <spell-link name="L'incantesimo Paziente"/>, perchè questo permette di eliminare la necessità di una tale difficile prova di concentrazione.
+        <emphasis>Eraclio Phlogistophilos di Flambeau</emphasis> usa <self/> in congiunzione con <spell-link name="L'incantesimo Paziente"/>, perchè questo permette di eliminare la necessità di una tale difficile prova di concentrazione.
       </p>
       </description>
       <guideline>
@@ -3556,7 +3556,7 @@
         <p>Questo incantesimo fa si che il corpo e gli effetti personali dell'incantatore rispendano della luminosità del solo. Chiunque entro 10 passi guardi nella direzione dell'incantatore è temporaneamente
         accecato, a meno che non superi un Tiro Stress di Vigor con Fattore di Difficoltà 9. Le persone tra i 10 e i 50 passi subiscono una penalità di -3 per tutti i tiri che hanno come bersaglio l'incantatore.
         La luca creata da questo incantesimo illumina un'area ampia e, se le condizioni lo permettono, può essere vista da svariate miglia di distanza. L'autore della versione originale di questo incantesimo,
-        Ranulf di Flambeau, ha notato che le creature e le persone la cui Resistenza alla Magia non è penetrata da questo incantesimo non ne sono illuminate, e possono facilmente essere identificate dalla
+        Eraclio Phlogistophilos di Flambeau, ha notato che le creature e le persone la cui Resistenza alla Magia non è penetrata da questo incantesimo non ne sono illuminate, e possono facilmente essere identificate dalla
         mancanza di luce riflessa. </p> 
       </description>
       <guideline>
@@ -3565,7 +3565,149 @@
           <modifier>+1 Luce di intensità eccezionale</modifier>
         </modifiers>
       </guideline>
-    </spell>         
+    </spell>
+    <spell id="31" page="55" source="TME" type="standard" ritual="true">
+      <name>Un Dispendioso e Permanente Muro di Pietra Protettiva</name>
+      <level>30</level>
+      <arts>
+        <form>Terram</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Crea un muro alto fino a 30 passi, largo 2 passi e di poco meno di 9,5 miglia di lunghezza, per un totale di circa un milione di passi cubici di pietra. La Vis è utilizzata per evitare che il muro si dissolva
+        alla termine dell'incantesimo. Le mura create con questo incantesimo sono composte da singoli blocchi di pietra non lavorata e assemblate a secco, cosa che le conferisce durevolezza superiore a quella di mura convenzionali, a meno che il Magus che lancia l'incantesimo abbia un Sigillo che ne degradi la loro composizione.
+        </p>
+        <flavour>Incantesimi per creare semplici forme geometriche sono ben conosciuti all'interno dell'Ordine, e sono stati usati per creare fortificazioni fin dai tempi dei Fondatori. Questo incantesimo è pensato
+        per creare strutture megalitiche della dimensione e forma desiderata.</flavour>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+6 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="32" type="standard" source="EEE" page="1">
+      <name>Palizzata di Legno Vivente</name>
+      <level>30</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Crea un muro dritto di quercia vivente, che cresce rapidamente da un albero toccato, una pianta o da terreno fertile; è lungo fino a 100 passi, spesso 1 e alto 10. Può essere scalato con un Tiro Stress di Atletica contro un Fattore Difficoltà di 9.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+3 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="33" page="1" source="EEE" type="standard" >
+      <name>I Fantasmi Non Mi Spaventano</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Muto</technique>
+        <requisite free="true">Mentem</requisite>
+      </arts>
+      <range>Occhio</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Altera le Species visive e uditive prodotte da un fantasma, rendendole visibili anche a creature prive di Vista Fatata, Seconda Vista o altri metodi per individuare uno spirito invisibile. Per poter lanciare
+        questo incantesimo è necessario che il Magus abbia comunque modo di stabilire un contatto visivo preliminare con il fantasma, come la Seconda Vista o altri effetti appropriati. Trattandosi normalmente di creature
+        appartenenti ad uno dei Reami, nella maggior parte dei casi sarà necessario superare la Resistenza alla Magia data da un Punteggio di Potenza Magica del bersaglio.</p> 
+        <flavour>C'è qualcosa di strano, nelle vicinanze...</flavour>        
+      </description>
+      <guideline>
+        <base>2 (Immagini e suoni) </base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="34" page="1" source="EEE" type="standard" >
+      <name>Fiamme Gemellate</name>
+      <level>15</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>Progettato da Eufemia basandosi su <spell-link name="La Fiamma Unificata"/> sviluppato da Eraclio Phlogistohilos, suo Parens, questo incantesimo è pensato per essere lanciato attraverso dei
+        Canali Intangibili, anche se questo non è un requisito dell'incantesimo. Come per tutti i gli incantesimi con Portata Tocco, lanciarlo su un fuoco particolarmente caldo può risultare difficoltoso o
+        perfino dannoso. La Durata superiore è pensata per consentire la comunicazione tramite <spell-link name="Discorso di Lingue Incandescenti"/> anche durante una sua assenza dalla Congrega.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="35" page="112" source="MoH" type="standard" >
+      <name>La Fiamma Unificata</name>
+      <level>35</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Connessione Arcana</range>
+      <duration>Sole</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>Questo incantesimo altera i fuochi bersaglio per assomigliarsi l'un l'altro in tutti i modi. I fuochi bersaglio di questo incantesimo devono essere tutti connessioni arcane l'uno con l'altro.
+        I fuochi mutano nel corso di pochi minuti per rispecchiarsi a vicenda completamente nella forma delle loro fiamme, nel loro ruggito e crepitii, e nel fumo che producono. Qualunque cambiamento
+        in un fuoco si rifletterà negli altri. I fuochi influenzati assumono tutti un aspetto leggermente innaturale quando le loro fiamme si spostano in una configurazione che non corrisponde 
+        completamente ai tronchi che stanno bruciando, e sono alterati dal sigillo del Magus che ha lanciato l'incantesimo.</p>
+        <p>Sebbene questo incantesimo sia normalmente pensato per unire due fuochi, è stato progettato con un Bersaglio di Gruppo. Eraclio Phlogistohilos credeva che lo sforzo richiesto per creare
+        un'incantesimo con bersaglio limitato a due fuochi sarebbe stato almeno pari, se non superiore, a quello del lavoro necessario per svilupparne uno in grado di avere come Bersaglio un Gruppo,
+        a causa della difficoltà di utilizzare Bersagli non standard. Di conseguenza, più di due fuochi possono essere influenzati da questo incantesimo, e il Magus potrebbe essere completamente
+        inconsapevole di fuochi aggiuntivi, potenzialmente permettendo di intercettare una comunicazione, vedi <spell-link name="Discorso di Lingue Incandescenti"/>.
+        </p>
+        <p>Questo incantesimo è un esempio di magia creata per soddisfare i bisogni del Magus. Per la maggior parte dei Magi, un qualunque numero di incantesimi Intellego potrebbe fornire
+        un metodo di comunicazione significativamente più semplice. Eppure per Eraclio, che ha un Focus Maggiore in fuochi innaturali e il Difetto Tecnica Scarsa con Intellego, la stagione
+        che ha investito per inventare questo incantesimo era una scelta più saggia che cercare di imparare una magia non adatta ai suoi talenti.
+        </p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="36" page="111" source="MoH" type="standard" >
+      <name>Discorso di Lingue Incandescenti</name>
+      <level>10</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Percezione + Consapevolezza contro un Fattore Difficoltà di 3. Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Percezione + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta producendo parole.
+          </p>
+        <p>Eraclio e i suoi apprendisti, tra cui Eufemia, utilizzano questo incantesimo per controllare i fuochi soggetti all'Incantesimo <spell-link name="La Fiamma Unificata"/>. Quando <spell-link name="La Fiamma Unificata"/> è lanciata da un Magus dall'interno di una Congrega, la comunicazione non è ostacolata dall'Egida del Focolare della Congrega Stessa.
+        </p>
+        <p>Notare che questo incantesimo ha Portata Tocco, e può essere difficile o anche dannoso da lanciare su un fuoco particolarmente caldo.</p>
+      </description>
+      <guideline>
+        <base>4 (Controlla un fuoco in maniera lievemente innaturale)</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>   
     <!-- Leonardo -->
     <spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
@@ -3902,6 +4044,9 @@
       <bonus value="4">Influenzare pensieri/emozioni del portatore</bonus>
       <bonus value="6">Influenzare vista del portatore</bonus>
     </sm>
+    <sm name="Faggio">
+      <bonus value="3">Conoscenza</bonus>
+    </sm>
     <sm name="Ferro">
       <bonus value="7">Ferire o respingere fate</bonus>
     </sm>
@@ -4037,6 +4182,11 @@
       <bonus value="3">Distruggere mente umana</bonus>
       <bonus value="4">Distruggere corpo umano</bonus>
     </sm>
+    <sm name="Ottone">
+      <bonus value="3">Ignem</bonus>
+      <bonus value="4">Musica</bonus>
+      <bonus value="4">Demoni, Diavoli e Angeli</bonus>
+    </sm>    
     <sm name="Pavimento">
       <bonus value="7">Movimento attraverso qualcosa</bonus>
     </sm>
@@ -4432,6 +4582,35 @@
       </spell>     
     </artifact>
     <artifact>
+      <name>Il Pungolo per un Fuoco Loquace</name>
+      <description>
+        <p>Questo attizzatoio in ottone brunito permette a chi lo impugna di manipolare un fuoco in modo che questo, con i suoi rumori naturali quali scoppiettii, crepitii, sibili e ruggito, riproduca le parole
+        pronunciate dall'utilizzatore.</p>
+        <p>Il Testo di Laboratorio per questo artefatto inlude un modificatore dato dall'ottone (+3 Ignem).</p>
+      </description>
+      <spell type="standard" >
+        <name>Discorso di Lingue Incandescenti</name>
+        <level>10</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Diametro</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Percezione + Consapevolezza contro un Fattore Difficoltà di 3. Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Percezione + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta producendo parole.
+          </p>
+        </description>
+        <guideline>
+          <base>4 Controlla un fuoco in maniera lievemente innaturale</base>
+          <modifiers>
+            <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>    
+    <artifact>
       <name>Cuore d'Inverno</name>
       <description>
       <p>
@@ -4517,6 +4696,91 @@
           </modifiers>
         </guideline>
       </spell>
+    </artifact>
+    <artifact>
+      <name>Scriptorium Volatili Magistri</name>
+      <description>
+        <p>Un artefatto realizzato per permettere al fantasma di Bartolo Gradenigo di trascrivere il contenuto del suo libro e permetterne la consultazione anche a persone
+        non in grado di percepirlo.</p>
+        <p>Tecnicamente si tratta di una serie di strumenti che replicano l'opera di uno scrivano in grado di ascoltare quello che l'utilizzatore dello Scriptorium detta. 
+        Lo Scriptorium è realizzato per rispondere innanzitutto alla voce di Bartolo Gradenigo, ma può comunque essere utilizzato da chiunque ne conosca i comandi di attivazione.</p>
+        <p>L'artefatto consiste in un leggio di legno di faggio, al cui interno è inserita una penna d'oca. Sopra al leggio una leggera armatura metallica sostiene una serie di 
+        calamai nei quali è conservato dell'inchiostro. Il leggio è abbastanza ampio da poter mantenere tre zone distinte: un'area in cui poggiare delle pergamene vuote, 
+        un'area in cui riporre la pergamena correntemente in lavorazione e una terza nella quale trovano posto le pergamene lavorate.</p>
+        <p>Lo Scriptorium può utilizzare sia pergamene in senso proprio che prodotti di origine vegetale come i papiri. Le pergamene (o i papiri) possono poi essere consegnate 
+        ad uno scrivano per essere ricopiate e successivamente rilegate.</p>
+        <p>Il Testo di Laboratorio per questo artefatto inlude un modificatore dato dal legno di faggio (+3 legno morto, +3 Conoscenza) e dalla penna d'oca (+7 scrivere).</p>
+      </description>
+      <spell type="standard">
+        <name>Ascoltare la Voce del Maestro</name>
+        <level>15</level>
+        <arts>
+          <technique>Intellego</technique> 
+          <form>Imaginem</form>
+          <requisite free="true">Mentem</requisite>
+        </arts>
+        <range>Personale</range>
+        <duration>Sole</duration>
+        <target>Udito</target>
+        <description>
+          <p>Lo Scriptorium resta in attesa di comandi da parte del suo utilizzatore. Ascoltare la Voce del Maestro attiva gli altri effetti infusi nell'artefatto. I comandi impartibili
+           sono quelli che un buon scrivano sarebbe in grado di interpretare svolgendo la sua professione: scrittura, punteggiatura, note, sottolineature e simili.</p>
+        </description>
+        <guideline>
+          <base>1 Species uditive</base>
+          <modifiers>
+            <modifier frequency="Costante">+3 Innesco ambientale alba/tramonto, +1 2/giorno</modifier>
+            <modifier penetration="+12">+6 Penetrazione</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="standard">
+        <name>Pensieri Marchiati con Chiarezza</name>
+        <level>9</level>
+        <arts>
+          <technique>Rego</technique> 
+          <form>Aquam</form>
+        </arts>
+        <range>Personale</range>
+        <duration>Sole</duration>
+        <target>Gruppo</target>
+        <description>
+          <p>Attraverso questo effetto lo Scriptorium controlla gli inchiostri presenti nei calamai, in modo che rispondano ad Ascoltare la Voce del Maestro, zampillando sulla pergamena 
+          ed andando a rappresentare ciò che l'utilizzatore detta ad alta voce. Questo effetto non permette ad un utilizzatore di scrivere più rapidamente rispetto alla normale velocità
+           di dettatura ad uno scrivano, ma permette anche ad un utilizzatore menomato di prendere appunti senza dover ricorrere ad uno scrivano. </p>
+           <p>Un tiro di Finezza rende la scrittura particolarmente precisa e pulita, cosa che però non è particolarmente rilevante.</p>
+        </description>
+        <guideline>
+          <base>1 Muove un liquido in maniera molto lieve</base>
+          <modifiers>
+            <modifier frequency="Illimitato">+10 Uso Illimitato</modifier>
+            <modifier>+3 Innesco Collegato [Ascoltare La Voce del Maestro]</modifier>
+          </modifiers>
+        </guideline>
+      </spell>     
+      <spell type="standard">
+        <name>Voltare le Pagine</name>
+        <level>18</level>
+        <arts>
+          <technique>Rego</technique> 
+          <form>Herbam</form>
+          <requisite>Animal</requisite>
+        </arts>
+        <range>Tocco</range>
+        <duration>Istantanea</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Al comando dell'utilizzatore, lo Scriptorium prepara una nuova pergamena, attingendone una  dalla sezione dedicata, e spostando la pergamena correntemente in lavorazione
+           nello spazio destinato alle pergamene terminate, qualora questa fosse presente.</p> 
+        </description>
+        <guideline>
+          <base>3 Sposta un prodotto di origine vegetale o animale</base>
+          <modifiers>
+            <modifier frequency="Illimitato">+10 Uso Illimitato</modifier>
+            <modifier>+3 Innesco Collegato [Ascoltare La Voce del Maestro]</modifier>
+          </modifiers>
+        </guideline>
+      </spell>     
     </artifact>
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
