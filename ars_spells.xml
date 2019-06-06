@@ -3533,7 +3533,7 @@
       <description>
         <p>Crea un'immagine illusoria le cui species si sovrappongono a quelle naturalmente emesse dall'incantatore, mascherando queste ultime. L'immagine segue in maniera approssimativa i movimenti 
         dell'incantatore, anche se l'immagine dell'incantatore può comunque essere intravista come in trasparenza attraverso di essa. Il nome dell'incantesimo deriva da una delle prime forme utilizzate
-        da per mascheramento da Eufemia nell'utilizzo di questo Incantesimo.</p> 
+        per mascheramento da Eufemia nell'utilizzo di questo Incantesimo.</p> 
       </description>
       <guideline>
         <base>1</base>
@@ -3645,7 +3645,7 @@
       <target>Gruppo</target>
       <description>
         <p>Progettato da Eufemia basandosi su <spell-link name="La Fiamma Unificata"/> sviluppato da Eraclio Phlogistohilos, suo Parens, questo incantesimo è pensato per essere lanciato attraverso dei
-        Canali Intangibili, anche se questo non è un requisito dell'incantesimo. Come per tutti i gli incantesimi con Portata Tocco, lanciarlo su un fuoco particolarmente caldo può risultare difficoltoso o
+        Canali Intangibili, anche se questo non è un requisito dell'incantesimo. Come per tutti gli incantesimi con Portata Tocco, lanciarlo su un fuoco particolarmente caldo può risultare difficoltoso o
         perfino dannoso. La Durata superiore è pensata per consentire la comunicazione tramite <spell-link name="Discorso di Lingue Incandescenti"/> anche durante una sua assenza dalla Congrega.</p>
       </description>
       <guideline>
@@ -3696,14 +3696,18 @@
       <duration>Concentrazione</duration>
       <target>Singolo</target>
       <description>
-          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Percezione + Consapevolezza contro un Fattore Difficoltà di 3. Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Percezione + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta producendo parole.
+          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni
+           aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Percezione + Consapevolezza contro un Fattore Difficoltà di 3. 
+           Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Percezione + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta
+           producendo parole.
           </p>
-        <p>Eraclio e i suoi apprendisti, tra cui Eufemia, utilizzano questo incantesimo per controllare i fuochi soggetti all'Incantesimo <spell-link name="La Fiamma Unificata"/>. Quando <spell-link name="La Fiamma Unificata"/> è lanciata da un Magus dall'interno di una Congrega, la comunicazione non è ostacolata dall'Egida del Focolare della Congrega Stessa.
+        <p>Eraclio e i suoi apprendisti, tra cui Eufemia, utilizzano questo incantesimo per controllare i fuochi soggetti all'Incantesimo <spell-link name="La Fiamma Unificata"/>. Quando
+          <spell-link name="La Fiamma Unificata"/> è lanciata da un Magus dall'interno di una Congrega, la comunicazione non è ostacolata dall'Egida del Focolare della Congrega Stessa.
         </p>
         <p>Notare che questo incantesimo ha Portata Tocco, e può essere difficile o anche dannoso da lanciare su un fuoco particolarmente caldo.</p>
       </description>
       <guideline>
-        <base>4 (Controlla un fuoco in maniera lievemente innaturale)</base>
+        <base>4 Controlla un fuoco in maniera lievemente innaturale</base>
         <modifiers>          
         </modifiers>
       </guideline>
