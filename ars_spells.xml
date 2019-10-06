@@ -4030,8 +4030,9 @@
     <sm name="Cristallo">
       <bonus value="5">Effetto correlato all'acqua</bonus>
     </sm>
-    <sm name="Cristallo di roccia">
+    <sm name="Cristallo di rocca">
       <bonus value="3">Guarigione</bonus>
+      <bonus value="4">Chiarezza</bonus>
       <bonus value="5">Chiaroveggenza</bonus>
     </sm>
     <sm name="Diamante">
@@ -4603,7 +4604,7 @@
         <duration>Diametro</duration>
         <target>Singolo</target>
         <description>
-          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Percezione + Consapevolezza contro un Fattore Difficoltà di 3. Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Percezione + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta producendo parole.
+          <p>Questo incantesimo controlla i suoni creati da un fuoco per fargli formare parole. L'alterazione è sottile; le parole sono formate da ruggito naturale, crepitii e sibili del fuoco - non da suoni aggiuntivi. Qualcuno che ascolti il fuoco sapendo di doversi aspettarsi delle parole può ricavarle con un Tiro di Sensus + Consapevolezza contro un Fattore Difficoltà di 3. Qualcuno non consapevole che sia il fuoco a parlare ha bisogno di effettuare una prova di Sensus + Consapevolezza contro un Fattore di Difficoltà di 9 per rendersi conto che il fuoco sta producendo parole.
           </p>
         </description>
         <guideline>
@@ -4786,6 +4787,66 @@
         </guideline>
       </spell>     
     </artifact>
+    <artifact>
+      <name>Il Distillatore di Helios</name>
+      <description>
+        <p>Un raffinato artefatto pensato per catturare e immagazzinare la luce cocente del sole del deserto, sotto forma di vetro simile alle folgoriti, generate dai fulmini sulla sabbia.</p>
+        <p>Si tratta di un apparato in legno di pino intarsiato, con un'intelaiatura terminante in un supporto circolare, sopra il quale è poggiato un vetro lavorato a sfera. 
+        Al di sotto della sfera, a poco più di un piede di distanza, un contenitore quadrato sorregge il tutto. All'interno del contenitore viene posta della sabbia del deserto, che
+        deve essere prima passata al setaccio per eliminare pietre e e altre impurità.</p>
+        <p>Posizionato nella notte prima del solstizio estivo in una locazione in cui la luce del sole è particolarmente intensa (come ad esempio in un deserto, anche se questo
+        non è strettamente necessario), il Distillatore è in grado di trasferire nel corso di una giornata una quantità di Ignem che risulterà quindi condensata in un numero di
+        pedoni variabile, in funzione dell'abilità di chi sta controllandolo. Per poter condensare una quantità sufficiente ad essere estratta e trasferita è necessario che il 
+        Distillatore resti in funzione ininterrottamente dall'alba al tramonto. Un Tiro di Dexteritas + Finezza determina la qualità del prodotto finito, sebbene sia possibile
+        ricavare sempre un minimo. In caso di fallimento critico nessuna vis viene condensata.</p>        
+        <p>Il Distillatore è primariamente un oggetto di legno di taglia media. Il suo Testo di Laboratorio originale inlude modificatori 
+        dati dal contenitore (+5 creare o trasformare all'interno) e dal legno di pino (+3 luce).</p>
+      </description>
+      <spell type="standard" >
+        <name>Seguire le Tracce del Cammino di Helios</name>
+        <level>23</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Intellego</technique>
+        </arts>
+        <range>Personale</range>
+        <duration>Sole</duration>
+        <target>Vista</target>
+        <description>
+          <p>Il supporto della sfera è incantato con questo effetto che segue la luce man mano che il sole si sposta nell'arco della giornata. Questo effetto viene utilizzato dall'altro 
+          effetto del Distillatore per catturare la massima quantità di luce solare.
+          </p>
+        </description>
+        <guideline>
+          <base>2 Determina i livelli di luce (calore)</base>
+          <modifiers>
+            <modifier>+3 Innesco ambientale alba</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+      <spell type="standard" >
+        <name>Distillare l'Essenza di Helios</name>
+        <level>28</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Rego</technique>
+          <requisite free="true">Ignem</requisite>
+        </arts>
+        <range>Tocco</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Atraverso la sfera di vetro, la luce viene concentrata sulla sabbia presente nel contenitore, portandola oltre la temperatura di fusione e trasformandola in una sostanza simile al vetro.
+          </p>
+        </description>
+        <guideline>
+          <base>10 Muovi la vis grezza da un oggetto fisico a un altro senza bisogno di laboratorio</base>
+          <modifiers>
+            <modifier>+3 Innesco Collegato [Seguire le Tracce del Cammino di Helios]</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>    
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
