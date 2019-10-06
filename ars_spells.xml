@@ -3712,6 +3712,128 @@
         </modifiers>
       </guideline>
     </spell>   
+    <spell id="37" page="1" source="EEE" type="standard" >
+      <name>Assumere gli Occhi di Argo</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Stanza</target>
+      <description>
+          <p>Questo incantesimo permette di vedere la Stanza al cui interno si trovi il bersaglio toccato. Similmente a <emphasis>Dita come Occhi</emphasis>, 
+          questo incantesimo può essere utilizzato da un mago cieco per <emphasis>vedere</emphasis>, muovendosi con una mano sulla spalla di un servitore. Può essere
+          utilizzato anche per vedere il luogo in cui termina un effetto di Canale Intangibile. Per tutta la durata dell'incantesimo, è possibile cambiare il punto di vista
+          all'interno della stanza.Se l'interno della stanza è poco illuminato, si può vedere soltanto quello che si vedrebbe essendo fisicamente presenti all'interno,
+          ma si applicano eventuali miglioramenti magici dei sensi. 
+          </p>
+          <p>Per poter percepire creature dotate di Resistenza alla Magia è necessario Penetrare quest'ultima. L'incantesimo è stato creato appositamente in modo tale da poter
+          essere lanciato con Lancio Debole, in modo da non commettere involontariamente il Reato Ermetico Maggiore di Spionaggio nei confronti di Magi dell'Ordine.</p>
+      </description>
+      <guideline>
+        <base>1 Utilizzare un senso a distanza.</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="38" page="1" source="EEE" type="standard" >
+      <name>Percepire la Voce di Eco</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Stanza</target>
+      <description>
+          <p>Questo incantesimo è analogo a <spell-link name="Assumere gli Occhi di Argo"/>, con la differenza che il senso a cui si applica è quello dell'udito. Gli incantesimi
+             sono stati progettati insieme sulla stessa base, e rispondono alle stesse caratteristiche, ciascuno per il senso a cui fanno riferimento.
+          </p>
+          <p>Per poter percepire creature dotate di Resistenza alla Magia è necessario Penetrare quest'ultima. L'incantesimo è stato creato appositamente in modo tale da poter
+          essere lanciato con Lancio Debole, in modo da non commettere involontariamente il Reato Ermetico Maggiore di Spionaggio nei confronti di Magi dell'Ordine.</p>
+      </description>
+      <guideline>
+        <base>1 Utilizzare un senso a distanza.</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>  
+    <spell id="39" page="1" source="EEE" type="standard" >
+      <name>Osservare con gli Occhi di Omero</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Stanza</target>
+      <description>
+          <p>Questo incantesimo è analogo a <spell-link name="Assumere gli Occhi di Argo"/>, con la differenza che il senso a cui si applica è quello del tatto. Gli incantesimi
+             sono stati progettati insieme sulla stessa base, e rispondono alle stesse caratteristiche, ciascuno per il senso a cui fanno riferimento.
+          </p>
+          <p>Per poter percepire creature dotate di Resistenza alla Magia è necessario Penetrare quest'ultima. L'incantesimo è stato creato appositamente in modo tale da poter
+          essere lanciato con Lancio Debole, in modo da non commettere involontariamente il Reato Ermetico Maggiore di Spionaggio nei confronti di Magi dell'Ordine.</p>
+      </description>
+      <guideline>
+        <base>1 Utilizzare un senso a distanza.</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="40" page="1" source="EEE" type="standard" >
+      <name>Percepire la Realtà Distante</name>
+      <level>10</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Intellego</technique>
+        <requisite>Muto</requisite>
+        <requisite free="true">Vim</requisite>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Stanza</target>
+      <description>
+          <p>Questo incantesimo permette di percepire la Stanza al cui interno si trovi il bersaglio toccato. Similmente a <emphasis>Assumere gli Occhi di Argo</emphasis>, 
+          questo incantesimo può essere utilizzato per percepire, muovendosi con una mano sulla spalla di un servitore. Può essere
+          utilizzato anche per percepire il luogo in cui termina un effetto di Canale Intangibile. Per tutta la durata dell'incantesimo, è possibile cambiare il punto di percezione
+          all'interno della stanza. A differenza di <spell-link name="Assumere gli Occhi di Argo"/>, <spell-link name="Osservare con gli Occhi di Omero"/>, <spell-link name="Percepire la Voce di Eco"/>,
+          nei quali è prestabilito, i requisiti Muto e Vim aggiuntivi permettono di stabilire al momento del lancio il Senso con cui percepire l'interno della stanza. 
+          Una volta lanciato non è possibile modificarlo.</p>
+          <p>Tutte le limitazioni indicate negli incantesimi di magnitudo inferiore continuano ad applicarsi. La differenza principale è data dalla flessibilità nella scelta del senso da percepire.</p>
+          <p>Per poter percepire creature dotate di Resistenza alla Magia è necessario Penetrare quest'ultima. L'incantesimo è stato creato appositamente in modo tale da poter
+          essere lanciato con Lancio Debole, in modo da non commettere involontariamente il Reato Ermetico Maggiore di Spionaggio nei confronti di Magi dell'Ordine.</p>
+      </description>
+      <guideline>
+        <base>1 Utilizzare un senso a distanza.</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="41" page="1" source="EEE" type="standard" >
+      <name>Sorvegliare i Servitori</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Gruppo</target>
+      <description>
+          <p>Questo incantesimo permette di osservare un Gruppo di soggetti. Lanciato su un gruppo di persone, permette di vedere a distanza loro e ciò con cui interagiscono.</p>
+          <p>Per poter percepire creature dotate di Resistenza alla Magia è necessario Penetrare quest'ultima. L'incantesimo è stato creato appositamente in modo tale da poter
+          essere lanciato con Lancio Debole, in modo da non commettere involontariamente il Reato Ermetico Maggiore di Spionaggio nei confronti di Magi dell'Ordine.</p>
+      </description>
+      <guideline>
+        <base>1 Utilizzare un senso a distanza.</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>    
     <!-- Leonardo -->
     <spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
