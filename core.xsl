@@ -166,7 +166,7 @@
           <xsl:when test="target = 'Profumo'">, +2 Profumo</xsl:when>
           <xsl:when test="target = 'Speciale'">, +2 Speciale</xsl:when>
           <xsl:when test="target = 'Stanza'">, +2 Stanza</xsl:when>
-          <xsl:when test="target = 'Vista'">, +3 Vista</xsl:when>
+          <xsl:when test="target = 'Vista'">, +4 Vista</xsl:when>
           <xsl:when test="target = 'Udito'">, +3 Udito</xsl:when>
           <xsl:when test="target = 'Suono'">, +3 Suono</xsl:when>
           <xsl:when test="target = 'Barriera'">, +3 Barriera</xsl:when>
