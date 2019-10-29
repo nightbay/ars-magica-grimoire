@@ -4,19 +4,23 @@
   <preface>
     <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#66023C">Le Chiavi di </p>
     <p indent="false" text-align="center">
-      <artimage img="eufemia-coat-of-arms2.png" height="60pt" width="60pt" />
+      <artimage img="eufemia-coat-of-arms2.png" height="80pt" width="80pt" />
+      
     </p>
     <p indent="false" text-align="center" font="Lombardy MC" size="48pt" colour="#66023C">Costantinopoli</p>
-    <p indent="false" text-align="center" font="hand" size="18pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
-    <p indent="false" font="hand" size="18pt" colour="hand">
-      Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi e <artifactcount/> artefatti provenienti da svariate fonti: <booklist/>.
+    <p indent="false" text-align="center" font="Onciale PhF" size="16pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p indent="false" font="Onciale PhF" size="18pt" colour="hand">
+      Una descrizione delle Arti della Magia Ermetica e del modo di combinarle fra loro, con una lista di <spellcount/> differenti incantesimi e <artifactcount/> artefatti provenienti da svariate fonti: <booklist font="Onciale PhF"/>.
     </p>
-    <p indent="false" text-align="center" font="hand" size="18pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
-    <p text-align="center" indent="false" font="hand" size="32pt" colour="#66023C">
-      <!--<artimage img="eufemia-coat-of-arms.png" height="32pt" width="32pt"/>-->
+    <p indent="false" text-align="center" font="Onciale PhF" size="16pt" >~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p text-align="center" indent="false" font="Onciale PhF" size="22pt" colour="#66023C">
       <artimage img="SIGILLO EUFEMIA.png" height="48pt" width="48pt" />
-      Eufemia Angelina Porfirogenita
-      <artimage img="SIGILLO EUFEMIA.png" height="48pt" width="48pt" />
+      Eufemia Angelina
+      Porfirogenita
+      <artimage img="labyrinthos_seal.png" height="48pt" width="48pt" />
+    </p>
+    <p text-align="center" indent="false">
+      <artimage img="labylabrysHD.png" height="48pt" width="48pt" />
     </p>
     <toc/>
   </preface>
@@ -3553,7 +3557,7 @@
       <duration>Concentrazione</duration>
       <target>Singolo</target>
       <description>
-        <p>Questo incantesimo fa si che il corpo e gli effetti personali dell'incantatore rispendano della luminosità del solo. Chiunque entro 10 passi guardi nella direzione dell'incantatore è temporaneamente
+        <p>Questo incantesimo fa si che il corpo e gli effetti personali dell'incantatore rispendano della luminosità del sole. Chiunque entro 10 passi guardi nella direzione dell'incantatore è temporaneamente
         accecato, a meno che non superi un Tiro Stress di Vigor con Fattore di Difficoltà 9. Le persone tra i 10 e i 50 passi subiscono una penalità di -3 per tutti i tiri che hanno come bersaglio l'incantatore.
         La luca creata da questo incantesimo illumina un'area ampia e, se le condizioni lo permettono, può essere vista da svariate miglia di distanza. L'autore della versione originale di questo incantesimo,
         Eraclio Phlogistophilos di Flambeau, ha notato che le creature e le persone la cui Resistenza alla Magia non è penetrata da questo incantesimo non ne sono illuminate, e possono facilmente essere identificate dalla
@@ -3832,6 +3836,44 @@
         <base>1 Utilizzare un senso a distanza.</base>
         <modifiers>          
         </modifiers>
+      </guideline>
+    </spell>    
+    <spell id="42" page="1" source="EEE" type="standard" >
+      <name>Sortilegio Sostenuto dal Carro di Helios</name>
+      <level>20</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Variante di <spell-link name="Mantenere l'Incantesimo Impegnativo"/> lanciato a durata Sole. Può essere utilizzato per sostenere incantesimi fino al 15 livello.
+        </p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers></modifiers>
+      </guideline>
+    </spell>
+    <spell id="43" page="1" source="EEE" type="standard" >
+      <name>Scacciare l'Ospite Indesiderato</name>
+      <level>15</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Perdo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Struttura</target>
+      <description>
+        <p>Variante di <emphasis>Oblio Eterno del Demone</emphasis>, indirizzato verso una Struttura. Ogni Creatura Infernale presente nella Struttura al momento del lancio la cui Resistenza Magica venga superata da questo incantesimo perde 5 punti di Potenza Magica. Se la Potenza Magica della creatura raggiunge lo zero, questa è distrutta.
+        </p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers></modifiers>
       </guideline>
     </spell>    
     <!-- Leonardo -->
@@ -4968,7 +5010,40 @@
           </modifiers>
         </guideline>
       </spell>    
-    </artifact>    
+    </artifact>
+    <artifact>
+      <name>Il Battente dell'Ospite Indesiderato</name>
+      <description>
+      <p>Un minuscolo battente decorativo in ottone, con un supporto per permettere di essere attaccato ad una porta o ad una finestra di una casa o struttura, anche se in realtà non ci sono limitazioni a riguardo.</p>
+      <p>Si tratta di un artefatto schiuso con della vis, nel quale viene infuso un effetto analogo a Oblio Eterno del Demone indirizzato verso tutta la Struttura a cui è stato applicato. L'effetto viene attivato automaticamente una volta all'alba e una al tramonto. In aggiunta a questo, l'effetto viene attivato ogni qualvolta il battente viene mosso. Quando attaccato ad una porta o finestra, l'azione di aprirla o chiuderla è sufficiente per causarne l'attivazione.
+      </p>
+      <p>L'artefatto è pensato per poter essere impiegato anche da una Congrega di Magi relativamente giovani, a costo di una spesa maggiore di Vis. Il testo di laboratorio originale include le istruzioni per infondere l'effetto limitandone l'efficacia ad tempo dalla sua prima attivazione. Alla scadenza del periodo d'uso, l'oggetto torna ad essere un semplice oggetto schiuso, pronto a ricevere una nuova infusione. Ideato in un momento della sua Primavera da Eufemia Angelina Porfirogenita di Labyrinthos, il primo effetto è stato infuso con una scadenza di un anno. Il progetto originale prevedeva l'estensione progressiva delle scadenze, fino al raggiungimento dell'obiettivo finale, l'infusione senza limite di scadenza.</p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di Materiale Ottone (+4 Demoni, Diavoli e Angeli)</p>
+      </description>
+      <spell type="standard" >
+        <name>Scacciare l'Ospite Indesiderato</name>
+        <level>50</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Perdo</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Istantanea</duration>
+        <target>Struttura</target>
+        <description>
+          <p>Come per l'omonimo Incantesimo <emphasis>Scacciare l'Ospite Indesiderato</emphasis>, riduce la Potenza Magica di ogni creatura Infernale presente nella Struttura al momento dell'attivazione dell'effetto.
+          </p>
+        </description>
+        <guideline>
+          <base>3 Riduce il punteggio di potenza di un Bersaglio del livello dell'incantesimo +10, fintanto che l'incantesimo penetra la resistenza della creatura.</base>
+          <modifiers>
+            <modifier>+3 Innesco Ambientale [Alba e Tramonto]</modifier>
+            <modifier penetration="+52">+26 Penetrazione</modifier>
+            <modifier frequency="50/Giorno">+6 50 usi giornalieri</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>       
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
