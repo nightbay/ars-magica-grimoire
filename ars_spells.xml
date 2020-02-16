@@ -3294,7 +3294,7 @@
         </modifiers>
       </guideline>
     </spell>
-    <spell id="19" source="HoH:S" page="97" type="standard">
+    <spell id="19" source="HoH:S" page="97" type="standard" link="https://drive.google.com/open?id=1IOwxuhuveU_IVZ4PJO0HcdgturrEzZrW">
       <name>L'Inganno del Succubo</name>
       <level>5</level>
       <arts>
@@ -3875,7 +3875,76 @@
         <base>3</base>
         <modifiers></modifiers>
       </guideline>
+    </spell>
+    <spell id="44" page="1" source="EEE" type="standard" >
+      <name>La Chiave di Teodoro</name>
+      <level>10</level>
+      <arts>
+        <form>Terram</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Parte</target>
+      <description>
+        <p>Questo incantesimo apre magicamente una singola serratura o lucchetto. Indipendentemente dalla qualità o complessità della serratura, questa viene aperta al termine dell'incantesimo. Dal momento che il meccanismo di chiusura è progettato per
+        essere mosso naturalmente in una singola direzione per bloccarlo o sbloccarlo, questo è un effetto di base 1. L'inventore greco del sesto secolo, Teodoro di Samos, è accreditato per aver creato la prima serratura nell'Europa Mitica.
+        </p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>+2 Metallo</modifiers>
+      </guideline>
     </spell>    
+    <!-- 
+    <spell id="44" page="1" source="EEE" type="standard" >
+      <name>Deflagrazione della Nube Termobarica</name>
+      <level>25</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+        <requisite>Rego</requisite>
+        <requisite>Ignem</requisite>
+        <requisite free="true">Auram</requisite>
+      </arts>
+      <range>Connessione Arcana</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo crea una nube di farina in un punto verso il quale il Magus ha una Connessione Arcana. Il requisito Rego la mantiene confinata all'interno di uno spazio ristretto, mescolandola uniformemente con l'aria presente nel luogo e rendendola così estremamente infiammabile. Una scintilla è tutto ciò che è necessario perchè la Nube si incendi, provocando così una violenta esplosione.
+        </p>
+      </description>
+      <guideline>
+        <base>2 Crea prodotti di origine vegetale trattati</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="45" page="1" source="EEE" type="standard" >
+      <name>Nube Termobarica di Eufemia</name>
+      <level>30</level>
+      <arts>
+        <form>Aquam</form>
+        <technique>Creo</technique>
+        <requisite>Rego</requisite>
+        <requisite>Ignem</requisite>
+        <requisite free="true">Auram</requisite>
+      </arts>
+      <range>Connessione Arcana</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo crea una sfera di olio infiammabile a partire da un punto verso il quale il Magus ha una Connessione Arcana. Il requisito Rego miscela uniformemente l'olio con l'aria presente nel luogo e lo tiene sospeso per un istante appena, il tempo perchè una scintilla ne inneschi la combustione, provocando così una violenta esplosione.
+        </p>
+      </description>
+      <guideline>
+        <base>4 crea un liquido naturale in una forma innaturale</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    -->
     <!-- Leonardo -->
     <spell id="1000" type="standard">
       <name>Sortilegio contro la putrefazione</name>
@@ -5012,6 +5081,74 @@
       </spell>    
     </artifact>
     <artifact>
+      <name>Amuleto Frangifiamma</name>
+      <description>
+      <p>Un piccolo ciondolo a forma di disco circolare in ceramica, di colore rosso mattone, decorato da incisioni che ricordano delle fiamme. Il suo diametro orizzontale presenta un solco, su entrambi lati, che sembra dividere in due metà il disco.</p>
+      <p>L'oggetto è un Artefatto a Cariche, in grado di fornire al suo portatore una protezione da fiamme e calore di temperatura pari a quella della fusione del piombo. Per attivare l'effetto è necessario rompere l'oggetto mentre lo si tiene in mano o a contatto con il proprio corpo. Il solco orizzontale serve a favorirne la rottura.
+      </p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di materiale Argilla Refrattaria (+4 Contenere o proteggere dal fuoco). Utilizzando questo testo è possibile creare, in una stagione, tanti
+      ciondoli quante sono le cariche ricavate dal totale di laboratorio del Magus che lo sta utilizzando.</p>
+      </description>
+      <spell type="standard" >
+        <name>Protezione dal Calore e dalle Fiamme</name>
+        <level>15</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Diametro</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Effetto variante di <emphasis>Difesa dal Calore e dalle Fiamme</emphasis>, tiene a bada fiamme e calore, che non possono avvicinarsi entro 1 passo dal Bersaglio. Ciò rende il Bersaglio immune al danno da fiamme
+          o calore di intensità minore del ferro fuso. Il Bersaglio ottiene +10 all'Assorbimento contro qualsiasi danno correlato al fuoco. I fuochi che infliggono meno di +10 danni per turno non possono penetrare la difesa:
+          si affievoliscono al passaggio della persona protetta e tornano ad ardere quando se n'è andata.
+          </p>
+        </description>
+        <guideline>
+          <base>4 Controlla un fuoco in modo leggermente innaturale [Impedisce al fuoco di bruciare una persona]</base>
+          <modifiers>
+            <modifier frequency="Artefatto a cariche">+1 Intensità del calore</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>
+    <artifact>
+      <name>La Verga del Fuoco Ubbidiente</name>
+      <description>
+      <p>Una piccola bacchetta cilindrica in ceramica, di colore rosso mattone, decorata da incisioni che ricordano delle fiamme. A metà della sua lunghezza presenta un solco circolare, che sembra dividerla in due metà </p>
+      <p>L'oggetto è un Artefatto a Cariche, spezzandolo in due parti e tenendo ciascuna metà in una mano è possibile controllare il rateo e la direzione in cui un fuoco si propaga. L'utilizzatore può far propagare un fuoco su una superfice combustibile
+      tanto velocemente quanto un uomo che cammini normalmente. Il fuoco puà saltare distanze di un passo, ma non è in grado di scavalcare anche un rivolo minimo di acqua. L'utilizzatore può impedire che un fuoco si propaghi in una certa direzione, ma
+      non è in grado di impedire che bruci le cose con cui viene in contatto. Potrebbe, ad esempio, far si che un fuoco assuma la forma di un cerchio e poi farlo propagare verso l'esterno, oppure mantenere il fuoco lontano da se mentre insegue i suoi nemici
+      all'interno di una stanza. Se un fuoco circonda una persona, il suo calore è non-magico e così facendo bypassa la Resistenza Magica. Un tiro di Finezza è richiesto per portare il fuoco abbastanza vicino da infliggere danno. Se il fuoco si estende per
+      più di una Struttura base, l'utilizzatore ne perde il controllo.
+      </p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di materiale Argilla Refrattaria (+4 Contenere o proteggere dal fuoco). Utilizzando questo testo è possibile creare, in una stagione, tante
+      bacchette quante sono le cariche ricavate dal totale di laboratorio del Magus che lo sta utilizzando.</p>
+      </description>
+      <spell type="standard" >
+        <name>Il Fuoco Ubbidiente</name>
+        <level>25</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Vocale</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Controlla la direzione e il rateo di propagazione di un fuoco di taglia pari a quella di una casa.
+          </p>
+        </description>
+        <guideline>
+          <base>4 Controlla un fuoco in modo leggermente innaturale</base>
+          <modifiers>
+            <modifier frequency="Artefatto a cariche">+2 Taglia</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>    
+    <artifact>
       <name>Il Battente dell'Ospite Indesiderato</name>
       <description>
       <p>Un minuscolo battente decorativo in ottone, con un supporto per permettere di essere attaccato ad una porta o ad una finestra di una casa o struttura, anche se in realtà non ci sono limitazioni a riguardo.</p>
@@ -5043,7 +5180,61 @@
           </modifiers>
         </guideline>
       </spell>    
-    </artifact>       
+    </artifact>
+    <artifact>
+      <name>La Bussola per un Porto Sicuro</name>
+      <description>
+      <p>Uno strumento pensato per la navigazione nel Mediterraneo, ma il cui uso non è a questo limitato. Si tratta di un disco di legno diviso in 16 settori circolari rappresentanti una Rosa dei Venti stilizzata, al centro del quale è incastonato un piccolo frammento di basalto.</p>
+      <p>L'oggetto nel suo complesso è schiuso con 4 pedoni di vis, ed infuso con due effetti. Il primo effetto, <emphasis>La Rotta verso il Faro</emphasis>, sempre attivo dal momento della sua prima infusione, permette di percepire la direzione verso la quale si trova un fuoco di cui si aveva una connessione arcana. Il secondo effetto, <emphasis>Luce di un Porto Sicuro</emphasis>, illumina leggermente il settore posizionato nella direzione più vicina all'origine del fuoco.</p>
+      <p>Nonostante l'artefatto faccia uso di una Connessione Arcana verso un fuoco, esso non è tuttavia una Connessiona Arcana verso il fuoco stesso, essendovi soltanto stato esposto al momento della sua infusione iniziale.</p>
+      <p>L'artefatto è stato progettato da Eufemia Angelina Porfirogenita di Labyrinthos per permettere ai naviganti del Mediterraneo di poter sempre seguire una rotta che li conducesse verso il Faro di Labyrinthos a Candia, ma il luogo di destinazione è comunque modificabile al momento dell'Infusione dell'effetto, e qualunque fuoco può essere utilizzato a questo scopo.</p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di Materiale Basalto (+3 Ignem).</p>
+      </description>
+      <spell type="standard" >
+        <name>La Rotta Verso il Faro</name>
+        <level>19</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Intellego</technique>
+        </arts>
+        <range>Connessione Arcana</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Individua la direzione verso un fuoco di cui una Connessione Arcana sia stata messa in contatto durante l'infusione dell'effetto
+          </p>
+        </description>
+        <guideline>
+          <base>1 Individua un fuoco</base>
+          <modifiers>
+            <modifier>+3 Innesco Ambientale [Alba e Tramonto]</modifier>
+            <modifier frequency="2/Giorno">+1 2 usi giornalieri</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+      <spell type="standard" >
+        <name>Luce di un Porto Sicuro</name>
+        <level>15</level>
+        <arts>
+          <form>Ignem</form>
+          <technique>Creo</technique>
+        </arts>
+        <range>Personale</range>
+        <duration>Istantanea</duration>
+        <target>Parte</target>
+        <description>
+          <p>Utilizzando <emphasis>La Rotta verso il Faro</emphasis>, il settore del disco più vicino alla direzione puntata dall'Effetto Collegato viene illuminato brevemente da una fioca luce 
+          </p>
+        </description>
+        <guideline>
+          <base>1 Crea una luce fioca</base>
+          <modifiers>
+            <modifier>+3 Innesco Collegato [La Rotta Verso il Faro]</modifier>
+            <modifier frequency="Illimitato">+10 Uso illimitato</modifier>
+          </modifiers>
+        </guideline>
+      </spell>      
+    </artifact>     
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
