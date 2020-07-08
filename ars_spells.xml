@@ -272,7 +272,11 @@
     <book>
       <abbreviation>MoH</abbreviation>
       <name>Magi of Hermes</name>
-    </book>  
+    </book>
+    <book canon="false">
+      <abbreviation>CNOH</abbreviation>
+      <name>Codex Novo Ordo Hiberniae</name>
+    </book>      
   </books>
   <!-- LIBRI -->
 
@@ -2743,7 +2747,7 @@
         <guideline page="136">
           <level>5</level>
           <description>Riduce la Durata di una Connessione Arcana di un passo sulla tabella delle connessioni Arcane. Se ciò porta la Durata al di sotto di ore,
-          la Conessione termina immediatamente. Non funziona su Connessioni che hanno naturalmente Durata Indefinita, ma può far scadere una Connessione Arcana
+          la Connessione termina immediatamente. Non funziona su Connessioni che hanno naturalmente Durata Indefinita, ma può far scadere una Connessione Arcana
           saldata in laboratorio. Nota che la Portata è quella verso la Connessione Arcana, e devi sapere a cosa stai mirando, come per ogni altro incantesimo.</description>
         </guideline>
         <guideline page="136">
@@ -3896,6 +3900,222 @@
         <modifiers>+2 Metallo</modifiers>
       </guideline>
     </spell>    
+    <spell id="45" page="1" source="CNOH" type="standard" >
+      <name>Manipolare la Staffa dello Stregone</name>
+      <level>5</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Controlla una staffa o un oggetto con un'asta di legno con una forza pari a quella di una persona con Fortitudo 6. Può essere usato per strappare di
+        mano un'oggetto o per scagliarlo.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+            <modifier>+1 Forza nel controllo</modifier>         
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="46" page="1" source="CNOH" type="standard" >
+      <name>Stridio dei Fusti Incombenti</name>
+      <level>10</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Intellego</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Diametro</duration>
+      <target>Udito</target>
+      <description>
+        <p>Come per Stridio Dei Fusti Incombenti canonico, ma a durata Diametro</p>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+
+    <spell id="47" page="1" source="CNOH" type="standard" >
+      <name>Pioggia di un Nugolo di Frecce</name>
+      <level>20</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+        <requisite>Rego</requisite>
+      </arts>
+      <range>Vocale</range>
+      <duration>Istantanea</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>Entro il raggio della sua Voce il Magus evoca e scaglia un nugolo di circa un centinaio di frecce di legno appuntito verso un'area bersaglio. 
+        Gli individui presenti nell'area bersaglio vengono facilmente colpiti da 3 a 10 frecce ciascuna da +5 danni, a seconda di quanto ampia sia la zona
+        bersagliata e di quanto siano raggruppati tra loro. Un tiro stress di Ingenium + Finezza da 6+ è richiesto per controllare precisamente l'ampiezza
+        dell'area bersaglio,con un fallimento critico l'area che si intendeva bersagliare è completamente mancata.</p>
+      </description>
+      <guideline>
+        <base>2</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+
+    <spell id="48" page="227" source="CNOH" type="standard" >
+      <name>Dono di Morfeo</name>
+      <level>5</level>
+      <arts>
+        <form>Mentem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Occhio</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il Bersaglio ha sonno e si addormenta nel giro di pochi istanti</p>
+        <flavour>Variante a bersaglio Occhio di Richiamo del Sonno</flavour>
+      </description>
+      <guideline>
+        <base>4</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="49" page="207"  type="standard" >
+      <name>Ponte di Legno</name>
+      <level>20</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Creas un ponte decorato e di fattura squisita, fatto di foglie, legno e rampicanti vivi. La struttura può misurare fino a 20 passi ed è ampia 5. 
+        È abbastanza solida da sostenere creature di una Taglia massima di +4</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+4 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="50" page="1" source="CNOH" type="standard" >
+      <name>Magus di Aspetto Nobile</name>
+      <level>5</level>
+      <arts>
+        <form>Imaginem</form>
+        <technique>Muto</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Sole</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il Magus appare più determinato, autoritario e credibile. Il mutamento è dato da numerosi piccoli cambiamento d'aspetto, fra cui una lieve illuminazione
+        sovrannaturale del volto, una postura più eretta e una voce più forte e suadente. Il Magus ottiene +3 ai tiri per influenzare, comandare o convincere.
+        L'incantesimo non annulla in ogni caso gli effetti del Dono</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="51" page="1" source="CNOH" type="standard" >
+      <name>L'Intagliatore Mistico</name>
+      <level>15</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Simile a <emphasis>Il Carpentiere Mistico</emphasis>, questo incantesimi riorganizza e manipola del materiale grezzo per ottenere un risultato paragonabile
+        a quello ottenibile da un artigiano competente nell'intagliatura del legno. Si tratta di magia di tipo Artigianato, che richiede un tiro di Ingenium + Finezza
+        a difficoltà variabile. La difficoltà è determinata dalla difficoltà del compito e dal tempo in cui si vuole ottenerlo. Fare riferimento alla tabella su Covenant.</p>
+      </description>
+      <guideline>
+        <base>10</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="52" page="207" type="standard" >
+      <name>Muro di Spine</name>
+      <level>20</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Creo</technique>
+      </arts>
+      <range>Vocale</range>
+      <duration>Sole</duration>
+      <target>Gruppo</target>
+      <description>
+        <p>Crei nel giro di pochi secondi un muro dritto di robusti cespugli spinosi, lungo fino a 20 passi, spesso 1 e alto 4. Le spine, con una resistenza innaturale,
+        hanno +15 assorbimento, si tagliano solo con armi taglienti e per fenderle è necessario infliggere una Ferita Grave. Passarvi attraverso con la forza richiede
+        un Tiro Stress di Fortitudo 9+ e infligge +15 danni a prescindere dal risultato del tentativo. Con un fallimento critico si subiscono 5 danni addizionali.
+        Il muro spunta da cespugli esistenti o terreno fertile. Un Tiro Stress di Atletica contrro un Fattore Difficoltà di 9+ permette ad un personaggio di scalarlo,
+        subendo però +10 danni nel processo.</p>
+      </description>
+      <guideline>
+        <base>1</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="53" page="1" source="CNOH" type="standard" >
+      <name>L'Arciere Invisibile</name>
+      <level>10</level>
+      <arts>
+        <form>Herbam</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il Magus scaglia magicamente una freccia che sta tenendo in mano, come se scoccata da un'arco. Questo richiede un Tiro Stress di Mira su Sensus + Finezza
+        per colpire, ma ignora completamente la Resistenza Magica del Bersaglio e infligge +6 danni (incrementi di raggio da 15 passi).</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="54" page="93" source="MoH" type="standard" >
+      <name>Non Sono Mai Stata Qui</name>
+      <level>5</level>
+      <arts>
+        <form>Mentem</form>
+        <technique>Perdo</technique>
+      </arts>
+      <range>Occhio</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Il Bersaglio dimentica di aver incontrato il Magus. Contatti precedenti tra il Magus e il bersaglio devono essere limitati a brevi e poco significativi
+        eventi accaduti nel corso dell'ultima giornata, e questo include il lancio di questo incantesimo. Questo incantesimo è perfetto per far dimenticare al
+        bersaglio di aver visto il Magus lanciare un'incantesimo apertamente, oppure per far dimenticare ad una guardia di averlo lasciato passare da una porta.
+        In ogni caso una persona non può essere forzata a dimenticare chi lo abbia pugnalato.</p>
+      </description>
+      <guideline>
+        <base>4</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+                  
     <!-- 
     <spell id="44" page="1" source="EEE" type="standard" >
       <name>Deflagrazione della Nube Termobarica</name>
@@ -4454,6 +4674,9 @@
     <sm name="Piombo">
       <bonus value="4">Difesa</bonus>
     </sm>
+    <sm name="Pioppo bianco">
+      <bonus value="3">Divinazione</bonus>
+    </sm>    
     <sm name="Porta">
       <bonus value="5">Difesa</bonus>
     </sm>
@@ -5147,7 +5370,119 @@
           </modifiers>
         </guideline>
       </spell>    
-    </artifact>    
+    </artifact>
+    <artifact>
+      <name>Fuso e Rocca Arcani di Eufemia</name>
+      <description>
+      <p>Modellati come gli omonimi utensili per la filatura, la Rocca è un bastone di legno con un ingrossamento ad una delle sue estremità,
+      uno spazio parzialmente cavo all'interno del quale va inserita una Connessione Arcana. Il rigonfiamento regge le fibre tessili, che verranno
+      poi trasferite al Fuso durante la filatura. Filare le fibre è un'operazione triviale che richiede un Tiro Stress di Finezza con Fattore di
+      Difficoltà di 3.
+      </p>
+      <p>Il completamento con successo della filatura attiva l'effetto incantato che prende come bersaglio un Gruppo di Connessioni Arcane di cui
+      la Connessione Arcana inserita all'interno della Rocca faccia parte, facendo partire verso di esse un Canale Intangibile, come per
+      l'incantesimo analogo, che le raggiunge tutte. Il filato sul fuso funge da estremità locale del Canale, che può essere utilizzato come di consueto.</p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di forma Bastone (+4 Controllare oggetti a distanza).</p>
+      </description>
+      <spell type="standard" >
+        <name>Stendere la Trama Arcana</name>
+        <level>50</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Rego</technique>
+        </arts>
+        <range>Connessione Arcana</range>
+        <duration>Diametro</duration>
+        <target>Gruppo</target>
+        <description>
+          <p>Apre un fascio di Canali Intangibili verso un gruppo di Connessioni Arcane individuate dalla Connessione Arcana presente nella Rocca.
+          I Canali Intangibili aperti permettono il passaggio di incantesimi Ermetici fino al livello 25.
+          </p>
+        </description>
+        <guideline>
+          <base>4 Crea un condotto o un contenitore per incantesimi di livello inferiore al livello +5 Magnitudine dell'incantesimo Vim</base>
+          <modifiers>
+            <modifier frequency="Artefatto a cariche" penetration="+30">+15 Penetrazione</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>
+    <artifact>
+      <name>Lo Strigile del Magus Prudente</name>
+      <description>
+      <p>Un artefatto a cariche composto da uno strigile in bronzo con un frammento di basalto inserito nel manico.
+      Il bronzo funge da supporto, mentre l'effetto è infuso nel frammento di basalto, che si consuma con l'uso.
+      La parte in bronzo può essere riutilizzata unendoci un nuovo frammento di basalto, dopo che questo sia stato
+      già consumato dagli usi precedenti.
+      </p>
+      <p>Utilizzato su un gruppo di Connessioni Arcane, l'effetto dello Strigile provoca il decadimento della durata
+      della connessione stessa di due passi secondo la tabella delle Connessioni Arcane .
+      Tre utilizzi dello Strigile sono sufficienti a far decadere completamente anche una Connessione Arcana saldata
+      in laboratorio. Non ha effetto su Connessioni Arcane di durata naturalmente Indefinita.</p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di Materiale Basalto (+3 Perdo).</p>
+      </description>
+      <spell type="standard" >
+        <name>Indebolire la Connessione Arcana</name>
+        <level>40</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Perdo</technique>
+        </arts>
+        <range>Tocco</range>
+        <duration>Istantanea</duration>
+        <target>Gruppo</target>
+        <description>
+          <p>Indebilisce ogni Connessione Arcana legata al bersaglio di due passi secondo la tabella delle Connessioni
+          Arcane. Non ha effetto su Connessioni Arcane di durata naturalmente Indefinita.
+          </p>
+        </description>
+        <guideline>
+          <base>10 Riduce la Durata di una Connessione Arcana di due passi sulla tabella delle connessioni Arcane</base>
+          <modifiers>
+            <modifier frequency="Artefatto a cariche" penetration="+30">+15 Penetrazione</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>
+    <artifact>
+      <name>Il Thymiaterion Arcano</name>
+      <description>
+      <p>Un artefatto a cariche composto da un incensiere decorato in bronzo al cui interno vengono inserite
+      delle stecche di Pioppo Bianco. L'effetto è infuso nel legno di pioppo, mentre l'incensiere può essere
+      riutilizzato sostituendo il legno dopo che questo sia stato consumato dagli usi precedenti.
+      </p>
+      <p>Ponendo a contatto con una Connessione Arcana il Thymiaterion ed inspirandone i fumi prodotti, è possibile
+      per l'utilizzatore avere un'idea del numero e del tipo di Connessioni Arcane a cui la Connessione iniziale
+      è associabile per simiglianza. Questo è sufficiente per poter trattare successivamente tutte le Connessioni
+      come Gruppo della Connessione stessa. L'effetto sfrutta i minori vincoli della Magia Ermetica nella
+      Tecnica Intellego per raggiungere bersagli non del tutto percepibili. Nessun Limite Ermetico è violato da
+      questo effetto.</p>
+      <p>Il Testo di Laboratorio originale include un bonus di modificatore di Materiale Pioppo Bianco (+3 Divinazione).</p>
+      </description>
+      <spell type="standard" >
+        <name>Divinare le Connessioni Arcane</name>
+        <level>45</level>
+        <arts>
+          <form>Vim</form>
+          <technique>Intellego</technique>
+        </arts>
+        <range>Connessione Arcana</range>
+        <duration>Diametro</duration>
+        <target>Gruppo</target>
+        <description>
+          <p>Enumera e classifica per categorie le Connessioni Arcane associabili per simiglianza alla Connessione Arcana Originaria.
+          Permette di avere un'idea sommaria del numero distinto di Connessioni Arcane esistenti associabili alla Connessione originale,
+          dando poi modo di trattarli successivamente come Gruppo.
+          </p>
+        </description>
+        <guideline>
+          <base>3 Enumera e classifica in categorie gli individui nel bersaglio dell'incantesimo</base>
+          <modifiers>
+            <modifier frequency="Artefatto a cariche" penetration="+30">+15 Penetrazione</modifier>
+          </modifiers>
+        </guideline>
+      </spell>    
+    </artifact>                   
     <artifact>
       <name>Il Battente dell'Ospite Indesiderato</name>
       <description>
@@ -5234,7 +5569,40 @@
           </modifiers>
         </guideline>
       </spell>      
-    </artifact>     
+    </artifact>
+    <artifact>
+      <name>Lanterna della Porfirogenita</name>
+      <description>
+        <p>Una lampada di ottone chiusa da uno sportello, il cui interno è levigato a specchio, alimentata da un serbatoio d’olio. Una volta accesa, al suo interno la luce
+        viene raccolta e può essere proiettata a distanza visiva come un fascio, orientando opportunamente l’apertura dello sportello. La luce viene proiettata ogni volta che si apre lo sportello,
+        e si raccoglie nuovamente alla sua chiusura. La luce è tanto intensa da poter appiccare un fuoco che infligge +5 danni, sufficiente ad incendiare materiale leggermente
+        infiammabile come cuoio o legno bagnato, o delle vele al vento. La lampada può essere spenta in sicurezza rimuovendo il serbatoio, senza necessità di aprire
+        lo sportello.</p>
+        <p>Il Testo di Laboratorio originale include un bonus di modificatore di Forma Lanterna (+7 Luce).</p>
+      </description>
+      <spell type="standard" >
+        <name>Fulgore della Porfirogenita</name>
+        <level>35</level>
+        <arts>
+          <technique>Creo</technique>
+          <requisite>Rego</requisite>
+          <form>Ignem</form>
+        </arts>
+        <range>Visuale</range>
+        <duration>Concentrazione</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Proietta un fascio di luce concentrata, in grado di appiccare un fuoco a materiali leggermente infiammabili. Il calore sprigionato è sufficiente per rendere incandescente il bersagio. Il calore infligge +5 danni.</p>
+        </description>
+        <guideline>
+          <base>4</base>
+          <modifiers>
+            <modifier frequency="24/Giorno">+5 24 usi giornalieri</modifier>
+          </modifiers>
+        </guideline>
+      </spell>
+    </artifact>
+         
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
