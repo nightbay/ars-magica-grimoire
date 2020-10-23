@@ -276,7 +276,11 @@
     <book canon="false">
       <abbreviation>CNOH</abbreviation>
       <name>Codex Novo Ordo Hiberniae</name>
-    </book>      
+    </book>
+    <book canon="false">
+      <abbreviation>BdL</abbreviation>
+      <name>Biblioteca di Labyrinthos</name>
+    </book>            
   </books>
   <!-- LIBRI -->
 
@@ -4115,7 +4119,325 @@
         </modifiers>
       </guideline>
     </spell>
-                  
+    <spell id="55" page="Ignem" source="BdL" type="standard" >
+      <name>Camera della Mezzanotte</name>
+      <level>15</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Perdo</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Diametro</duration>
+      <target>Stanza</target>
+      <description>
+        <p>Una Stanza Bersaglio viene fatta piombare nella completa oscurità per la durata dell’Incantesimo</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="56" page="Ignem" source="BdL" type="standard" >
+      <name>Furto di Calore dello Stregone</name>
+      <level>25</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Perdo</technique>
+        <requisite>Rego</requisite>
+      </arts>
+      <range>Vocale</range>
+      <duration>Istantanea</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Rimuove tutto il calore da un’area di quattro passi per lato, raffreddandola
+          a sufficienza da congelare l’acqua istantaneamente. Ogni fuoco nell’area
+          diminuisce significativamente di dimensione. Le creature viventi colte
+          nell’area devono superare un Tiro Stress di Vigor a 12+ o perdere un livello
+          di fatica per il freddo. L’incantatore può controllare a piacimento la forma
+          dell’area, anche se forme complicate possono richiedere un Tiro Stress
+          di Finezza a discrezione del Cantastorie.</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="57" page="Ignem" source="BdL" type="standard" >
+      <name>Immunità dal Calore e dalle Fiamme</name>
+      <level>50</level>
+      <arts>
+        <form>Ignem</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Personale</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Questo incantesimo fornisce al bersaglio una protezione dal calore e dalle
+          fiamme fino a +50 danni, abbastanza per sostenere un’immersione completa
+          nella lava o nel ferro fuso</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+          <modifier>+9 calore aggiuntivo</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="58" page="Ignem" source="BdL" type="general" ritual="true">
+      <name>Proiettare l'Egida del Focolare</name>
+      <level>GENERALE</level>
+      <arts>
+        <technique>Muto</technique>
+        <form>Vim</form>
+      </arts>
+      <range>Tocco</range>
+      <duration>Anno</duration>
+      <target>Struttura</target>
+      <description>
+        <p>Questo incantesimo è usato dalle Congreghe con dipendenze. Una dipendenza (termine monastico che significa possesso di un monastero
+         lontano dal nucleo del monastero) è un santuario del mago che non è fisicamente legato al resto dell'alleanza. La motivazione per
+         mantenere una dipendenza potrebbe essere perché gli esperimenti del mago sono troppo pericolosi per il resto della congrega, oppure
+         potrebbe preferire avere il santuario in un luogo utile per i suoi studi magici. (un mago Auram potrebbe scegliere di essere in un 
+         castello sulla cima ventosa di una montagna, con il resto dell'alleanza nella valle sottostante).</p>
+         <p>Poiché le dipendenze non saranno protette da una normale Egida del Focolare, questo incantesimo cerca di risolvere questo problema.
+          Per usarlo bisogna usare un oggetto che faceva parte del patto (ad esempio, una pietra dal muro, una statua o un albero dai suoi giardini).
+          L'oggetto deve essere preparato per l'uso nel lancio dell'Egida del Focolare. L'oggetto sarà utilizzabile in lanci successivi dell'Egida
+          senza essere nuovamente preparato, a condizione che il rituale dell'Egida sia lanciato dalla stessa persona o persone, con lo stesso livello,
+          e sia partecipato dalle stesse persone magicamente dotate.</p>
+        <p>L'oggetto deve essere impiantato nella dipendenza, svolgendo la stessa funzione che svolgeva nel patto originale (la pietra deve essere
+        all'interno di un muro, la statua o l'albero devono essere posti in un luogo simile) per essere un collegamento arcano valido.</p>
+        <p>Il rituale <self/> può quindi essere lanciato. A condizione che sia lanciato con successo, l'Egida della congrega madre viene proiettato
+        attraverso la connessione arcana e protegge la dipendenza. Mentre il rituale Egida del Focolare deve essere normalmente eseguito da tutti i
+        magi della congrega, il <self/> deve essere eseguito solo dal mago (o magi) che abita la dipendenza. Il livello massimo di protezione
+        fornito da <self/> è o il livello dell'Egida della congrega o il doppio del livello del rituale <self/>, essendo uguale al livello
+        del minore dei due.</p>
+        <p>Se l'incantatore del rituale <self/> ha partecipato al rituale Egida del Focolare, non ha bisogno di penetrare la resistenza dell'Egida,
+        altrimenti la penetrazione della <self/> deve superare il livello dell'Egida. Se la connessione arcana viene distrutta 
+        (la statua o la pietra vengono distrutte o l'albero muore) o cessa di svolgere la funzione che svolgeva nel patto originale
+         (la pietra viene estratta dal muro, la statua viene tolta dalla dipendenza o l'albero viene sradicato) il collegamento è interrotto 
+         e la dipendenza non è protetta.</p>
+        <p>Questo sistema presenta alcuni pericoli, poiché la connessione arcana può essere utilizzata per evitare l'Egida della congrega originale.
+        Una dipendenza normalmente è meno sicura di una congrega, quindi la dipendenza potrebbe essere una crepa nella protezione della congrega.
+        Quindi una dipendenza non dovrebbe essere creata per ragioni futili. Un trucco comune utilizzato dai costruttori di dipendenze è
+        nascondere la connessione arcana o usare un oggetto fragile in modo che la connessione possa essere distrutta facilmente per
+        proteggere la congrega madre se la dipendenza viene presa con la forza.</p>
+        <p>Se l'Egida della congrega madre viene dissolta, anche il rituale <self/> viene annullato. Il rinnovo annuale dell'Egida
+        (se eseguito dalle stesse persone, con lo stesso livello e le stesse persone Dotate partecipanti) non influisce sulla 
+        <self/>>, che rimarrà attiva fino alla scadenza della durata (sebbene possa anche essere rinnovata ).</p>
+      </description>
+      <guideline>
+        <base>30</base>
+        <modifiers>          
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="59" page="1" source="EEE" type="standard" >
+      <name>Guardia del Circolo Interrotto</name>
+      <level>10</level>
+      <arts>
+        <technique>Rego</technique>
+        <form>Vim</form>
+      </arts>
+      <range>Tocco</range>
+      <duration>Cerchio</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Guardia del Circolo Interrotto pone un altro o altri incantesimi in sospensione fino a che la <self/> termina, tipicamente quando
+        il cerchio utilizzato dalla <self/> è esso stesso interrotto. Quando il cerchio di <self/> viene interrotto gli incantesimi in sospensione
+        hanno effetto come se fossero appena lanciati. Gli incantesimi così rilasciati non hanno necessariamente un bersaglio significativo. Il Cantastorie
+        determina il modo in cui tali incantesimi hanno effetto in caso di incertezza.</p>
+        <p><self/> può contenere al più incantesimi per un totale pari a 2 Magnitudo superiori al livello di <self/>. Un solo <self/> può essere posto su
+        un singolo cerchio fisico.</p>
+      </description>
+      <guideline>
+        <base>10</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="60" page="215"  type="standard" >
+      <name>Parole della Fiamma Tremula</name>
+      <level>35</level>
+      <arts>
+        <technique>Intellego</technique>
+        <form>Ignem</form>
+      </arts>
+      <range>Vocale</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Ti permette di conversare con un fuoco, solitamente molto caotico e distratto. La promessa di altro combustibile può mantenere il suo interesse.
+        I fuochi conoscono principalmente ciò che hanno bruciato, ma hanno anche una conoscenza limitata di ciò che gli accade intorno.</p>
+      </description>
+      <guideline>
+        <base>20</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="61" page="231"  type="standard" >
+      <name>Racconto di Pietra della Mente Seduta</name>
+      <level>30</level>
+      <arts>
+        <technique>Intellego</technique>
+        <form>Terram</form>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Ti permette di parlare con la pietra naturale. Le parole della pietra sembrano lente e pesanti, ma la conversazione non richiede in realtà
+        più tempo del normale. Benchè una pietra abbia solitamente voglia di parlare, il suo senso della direzione e la consapevolezza delle cose che
+        si muovono rapidamente (come le persone) sono limitate.</p>
+      </description>
+      <guideline>
+        <base>20</base>
+        <modifiers>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="62" page="Terram" source="BdL" type="standard" >
+      <name>Modellare la Forma della Terra</name>
+      <level>20</level>
+      <arts>
+        <technique>Muto</technique>
+        <form>Terram</form>
+        <requisite>Rego</requisite>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Parte</target>
+      <description>
+        <p>Permette all'incantatore di ammorbidire e rimodellare rapidamente fino a un volume di pietra di 10 passi fintanto che la concentrazione
+        dell'incantatore è ininterrotta. Il requisito Rego consente all'incantatore di modellare la massa interessata tramite gesti (questo non 
+        interferisce con la concentrazione). Ciò consente manipolazioni di complessità moderata (forme regolari e strutture non più sottili
+         di pochi pollici) ma qualsiasi lavoro fine tentato richiede un Tiro Stress di Finezza (9+) per essere eseguito. Finché l'obiettivo
+         rimane una singola massa connessa, tutto può continuare a essere rimodellato. Parti del bersaglio possono essere "ri-indurite" o "staccate"
+         selettivamente, ma cessano di essere influenzate dall'incantesimo e non possono essere rimodellate dopo questo. Poiché l'incantesimo è 
+         a portata di Tocco, l'incantatore deve rimanere in contatto con una parte della massa per continuare a modellare qualsiasi parte di essa.
+         Se nessuna parte della massa influenzata si trova entro 5 passi dal lanciatore, l'incantesimo termina.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+1 pietra</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="63" page="Terram" source="BdL" type="standard" >
+      <name>Muro Accomodante</name>
+      <level>15</level>
+      <arts>
+        <technique>Muto</technique>
+        <form>Terram</form>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Parte</target>
+      <description>
+        <p>Una sezione di un muro di pietra è trasformata in un passaggio ad arco abbastanza largo da far passare comodamente una persona di taglia 0.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+1 pietra</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="64" page="1" source="EEE" type="standard" >
+      <name>Ammorbidire il Ferro e Irrigidire la Corda</name>
+      <level>5</level>
+      <arts>
+        <technique>Muto</technique>
+        <form>Terram</form>
+      </arts>
+      <range>Tocco</range>
+      <duration>Concentrazione</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Rende flessibile un oggetto rigido o viceversa. Sono richiesti requisiti di lancio della Forma appropriata al materiale influenzato.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+1 pietra</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="65" page="Terram" source="BdL" type="standard" >
+      <name>La Strada Infinita</name>
+      <level>15</level>
+      <arts>
+        <technique>Rego</technique>
+        <form>Terram</form>
+      </arts>
+      <range>Strada</range>
+      <duration>Istantaneo</duration>
+      <target>Parte</target>
+      <description>
+        <p>Questo incantesimo prende a bersaglio un punto di una strada con la quale l’incantatore sia a contatto, e permette la costruzione
+        di una porzione di strada, incrocio, selciato, oppure una alterazione di una strada fino al limite della taglia del Bersaglio. 
+        Un tiro stress di Finezza è richiesto per determinare la qualità del lavoro prodotto, 6+ per terriccio, 9+ per pietra dal momento che
+        la costruzione delle strade non è un lavoro complesso. Strutture speciali come archi o ponti possono richiedere tiri di 12+, a seconda
+        della complessità del compito. L’incantesimo rimuove materiali da costruzione disponibile nell’area bersaglio della sezione alterata
+        della strada, oppure entro un passo dal dal ciglio più vicino della stessa.</p>
+        <p>L’incantesimo può essere utilizzato anche per il miglioramento e il mantenimento della stessa, come ad esempio la rimozione degli
+        ostacoli, ripristino del degrado o miglioramento di una sezione. Strade fatte di terra, argilla o sabbia possono alterare fino a 100
+        passi cubici di materiale, e quelle di pietra 10 passi cubici. L’ideatore originale dell’incantesimo posizionava eventuali altri
+        materiali necessari per la costruzione attraverso altri incantesimi o mezzi mondani.</p>
+      </description>
+      <guideline>
+        <base>3</base>
+        <modifiers>
+          <modifier>+1 Taglia</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="66" page="1" source="EEE" type="standard" >
+      <name>Sentore delle Magie Attive</name>
+      <level>30</level>
+      <arts>
+        <technique>Intellego</technique>
+        <form>Vim</form>
+      </arts>
+      <range>Personale</range>
+      <duration>Concentrazione</duration>
+      <target>Olfatto</target>
+      <description>
+        <p>Percepisci gli incantesimi come odori e profumi attorno a cose, persone o luoghi. L'intensità del profumo permette di percepire la magnitudo
+        dell'effetto, mentre Forma e Tecnica sono ricavabili dal tipo di profumo. Un incantesimo di Creo ha un odore di fresco, uno di Perdo sentore
+        di marcio; Intellego è pungente, Muto è cangiante, Rego è secco.</p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers>
+          <modifier>+2 Tecniche e Forme</modifier>
+        </modifiers>
+      </guideline>
+    </spell>
+    <spell id="67" page="1" source="EEE" type="standard" >
+      <name>Sortilegio Sostenuto da Selene</name>
+      <level>45</level>
+      <arts>
+        <form>Vim</form>
+        <technique>Rego</technique>
+      </arts>
+      <range>Tocco</range>
+      <duration>Luna</duration>
+      <target>Singolo</target>
+      <description>
+        <p>Variante di <spell-link name="Mantenere l'Incantesimo Impegnativo"/> lanciato a durata Luna. Può essere utilizzato per sostenere incantesimi fino al 30 livello.
+        </p>
+      </description>
+      <guideline>
+        <base>5</base>
+        <modifiers></modifiers>
+      </guideline>
+    </spell>        
     <!-- 
     <spell id="44" page="1" source="EEE" type="standard" >
       <name>Deflagrazione della Nube Termobarica</name>
@@ -5051,7 +5373,7 @@
       </description>
       <spell type="standard" >
         <name>Discorso di Lingue Incandescenti</name>
-        <level>10</level>
+        <level>20</level>
         <arts>
           <form>Ignem</form>
           <technique>Rego</technique>
@@ -5602,7 +5924,43 @@
         </guideline>
       </spell>
     </artifact>
-         
+    <artifact>
+      <name>Rosario della Meditazione</name>
+      <description>
+        <p>Realizzato da Anton d'Amiens della Congrega di Labyrinthos in previsione della sua assenza prolungata, la sua forma è ispirata al komboskini, la tradizionale corda da preghiera del monachesimo
+        cristiano. Al posto dei nodi sulla corda sono presenti dei grani in legno di cedro intarsiati con simboli Ermetici. Toccando i grani in una sequenza prestabilita si attiva l'effetto infuso in essi,
+        che porta l'utilizzatore in uno stato di trance meditativa nella quale è in grado di visualizzare un immaginario laboratorio ermetico nella propria mente. Come per la più conosciuta Corona di Hermes,
+        l'uso continuato di questo artefatto nel corso delle stagioni permette di intraprendere alcuni tipi di attività di laboratorio, così come miglioramenti allo stesso. Quando l'effetto termina e viene
+        riattivato, l'utilizzatore mantiene il ricordo dello stato in cui ha lasciato il laboratorio immaginario dall'ultima volta che vi ha fatto accesso.</p>
+        <p>Attivare il rosario per la prima volta infligge un Punto Distorsione, trattandosi di un Effetto Mistico Potente. L'uso per più di una stagione all'anno infligge un ulteriore punto
+        distorsione in quanto effetto continuativo. Il prototipo è stato realizzato in modo che Eufemia non subisca l'effetto della prima attivazione, avendo partecipato all'elaborazione
+        della teoria dietro questo oggetto</p>
+        <p>Il testo di laboratorio include un modificatore di Materiale Legno di Cedro (+5 effetti con requisiti Mentem e Herbam)</p>
+      </description>
+      <spell type="standard" >
+        <name>Laboratorio Mentale di Anton</name>
+        <level>50</level>
+        <arts>
+          <technique>Creo</technique>
+          <requisite>Imaginem</requisite>
+          <requisite>Intellego</requisite>
+          <requisite>Rego</requisite>
+          <form>Mentem</form>
+        </arts>
+        <range>Tocco</range>
+        <duration>Sole</duration>
+        <target>Singolo</target>
+        <description>
+          <p>Crea nella mente dell'utilizzatore un laboratorio mentale con le caratteristiche di un laboratorio standard ed il difetto aggiuntivo Costrutto Mentale.</p>
+        </description>
+        <guideline>
+          <base>35</base>
+          <modifiers>
+          </modifiers>           
+        </guideline>
+      </spell>
+    </artifact>
+             
     <!--<artifact>
       <name>Una diversa variante di un artefatto</name>
       <description>
